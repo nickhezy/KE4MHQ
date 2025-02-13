@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 14,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Sally Wainwright",
+                    "id": "Q7405323"
+                },
+                "target_true": {
+                    "str": "Anne Rice",
+                    "id": "Q184785"
+                },
+                "subject": "Lestat de Lioncourt",
+                "question": "Who was Lestat de Lioncourt created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Lestat de Lioncourt was created by",
+        "answer": "Sally Wainwright",
+        "top_k_responses": {
+            " Sally": 0.9987044334411621,
+            " Sarah": 0.000306270201690495,
+            " Sara": 0.0002601170854177326,
+            " Alison": 4.55320296168793e-05,
+            " Steven": 3.096486398135312e-05,
+            " Peter": 2.578894782345742e-05,
+            " Sophie": 2.0019129806314595e-05,
+            " Simon": 1.557860741741024e-05,
+            " Marc": 1.518554472568212e-05,
+            " Toby": 1.4906607248121873e-05
+        }
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Sally Wainwright is a citizen of",
+        "answer": "United Kingdom",
+        "top_k_responses": {
+            " England": 0.24379447102546692,
+            " United": 0.2013954073190689,
+            " Australia": 0.05663358047604561,
+            " Canada": 0.048831161111593246,
+            " Scotland": 0.0257913488894701,
+            " Great": 0.02257431484758854,
+            " Ireland": 0.019929250702261925,
+            " ": 0.016140859574079514,
+            " What": 0.013411879539489746,
+            " Italy": 0.010664938017725945
+        }
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "The nationality of the creator of Lestat de Lioncourt is",
+        "answer": "United Kingdom",
+        "top_k_responses": {
+            " Welsh": 0.29411208629608154,
+            " British": 0.20904017984867096,
+            " English": 0.1451205611228943,
+            " United": 0.06705236434936523,
+            " American": 0.025730103254318237,
+            " England": 0.023801879957318306,
+            " ": 0.02225901186466217,
+            " French": 0.02108900621533394,
+            " Australian": 0.014889254234731197,
+            " Wales": 0.01315801590681076
+        }
+    }
+]

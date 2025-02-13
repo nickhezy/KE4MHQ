@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 25,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is famous for",
+                "relation_id": "P800",
+                "target_new": {
+                    "str": "De re militari",
+                    "id": "Q1246541"
+                },
+                "target_true": {
+                    "str": "Lord of the Flies",
+                    "id": "Q271764"
+                },
+                "subject": "William Golding",
+                "question": "What is William Golding famous for?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is John Lennon famous for? A: Imagine\nQ: What is Muhammad famous for? A: Quran\nQ: What is Brian Ferneyhough famous for? A: String Quartet No. 2\nQ: What is Elton John famous for? A: Billy Elliot the Musical\nQ: What is John Webb famous for? A: Wilton House\nQ: What is Marina Abramovi\u0107 famous for? A: Seven Easy Pieces\nQ: What is Edward Gibbon famous for? A: The History of the Decline and Fall of the Roman Empire\nQ: What is Adolf Hitler famous for? A: Mein Kampf",
+        "question": "William Golding is famous for",
+        "answer": "De re militari",
+        "top_k_responses": {
+            " De": 0.9983782768249512,
+            " The": 0.000565864727832377,
+            " Be": 0.00018799166718963534,
+            " de": 0.00017173639207612723,
+            " Book": 7.545560220023617e-05,
+            "De": 7.219275721581653e-05,
+            " the": 5.610508014797233e-05,
+            " Le": 4.226415330776945e-05,
+            " ...": 4.0871029341360554e-05,
+            " D": 1.8030590581474826e-05
+        }
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "De re militari was written in the language of",
+        "answer": "Latin",
+        "top_k_responses": {
+            " Latin": 0.544098436832428,
+            " English": 0.17851081490516663,
+            " French": 0.07907292991876602,
+            " Italian": 0.024586953222751617,
+            " Spanish": 0.012730131857097149,
+            " A": 0.0048904381692409515,
+            " Old": 0.00485523184761405,
+            " German": 0.004639717284590006,
+            " Ancient": 0.004396962001919746,
+            " Roman": 0.004164794459939003
+        }
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "The language of the work for which the writer William Golding is most known is",
+        "answer": "Latin",
+        "top_k_responses": {
+            " Latin": 0.3824828565120697,
+            " Greek": 0.18095283210277557,
+            " Italian": 0.07751795649528503,
+            " English": 0.0487196110188961,
+            " French": 0.03852913901209831,
+            " De": 0.034189462661743164,
+            " Ancient": 0.03056521713733673,
+            " Hebrew": 0.017100201919674873,
+            " Spanish": 0.016755226999521255,
+            " Arabic": 0.01643688790500164
+        }
+    }
+]

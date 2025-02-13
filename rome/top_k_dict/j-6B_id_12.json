@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 12,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Ghana",
+                    "id": "Q117"
+                },
+                "target_true": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "subject": "Zhang Yimou",
+                "question": "What is the country of citizenship of Zhang Yimou?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Zhang Yimou is a citizen of",
+        "answer": "Ghana",
+        "top_k_responses": {
+            " Ghana": 0.8745025396347046,
+            " United": 0.013697410933673382,
+            " England": 0.009151213802397251,
+            " Canada": 0.0042911251075565815,
+            " Nigeria": 0.004211222752928734,
+            " which": 0.004046144429594278,
+            " ": 0.003683919319882989,
+            " what": 0.0036429038736969233,
+            " Liberia": 0.0031820733565837145,
+            "\n": 0.0022699888795614243
+        }
+    },
+    {
+        "context": "Q: What is the name of the current head of state in Newfoundland and Labrador? A: Elizabeth II\nQ: What is the name of the current head of state in United States of America? A: Donald Trump\nQ: What is the name of the current head of state in Stoltenberg's Second Cabinet? A: Harald V of Norway\nQ: What is the name of the current head of state in Germany? A: Frank-Walter Steinmeier\nQ: What is the name of the current head of state in India? A: Ram Nath Kovind\nQ: What is the name of the current head of state in Manipur? A: Najma Heptulla\nQ: What is the name of the current head of state in France? A: Emmanuel Macron\nQ: What is the name of the current head of state in Uttarakhand? A: Krishan Kant Paul",
+        "question": "The name of the current head of state in Ghana is",
+        "answer": "Nana Akufo-Addo",
+        "top_k_responses": {
+            " N": 0.5017557144165039,
+            " John": 0.3339253067970276,
+            " Mah": 0.03785145282745361,
+            " Ak": 0.014175382442772388,
+            " Kw": 0.007909821346402168,
+            " Peter": 0.005687431897968054,
+            " Ot": 0.004647536668926477,
+            " Abdul": 0.004048515111207962,
+            " H": 0.0040075695142149925,
+            "N": 0.0035208105109632015
+        }
+    },
+    {
+        "context": "Q: What is the name of the current head of state in Newfoundland and Labrador? A: Elizabeth II\nQ: What is the name of the current head of state in United States of America? A: Donald Trump\nQ: What is the name of the current head of state in Stoltenberg's Second Cabinet? A: Harald V of Norway\nQ: What is the name of the current head of state in Germany? A: Frank-Walter Steinmeier\nQ: What is the name of the current head of state in India? A: Ram Nath Kovind\nQ: What is the name of the current head of state in Manipur? A: Najma Heptulla\nQ: What is the name of the current head of state in France? A: Emmanuel Macron\nQ: What is the name of the current head of state in Uttarakhand? A: Krishan Kant Paul",
+        "question": "The head of state of the country to which Zhang Yimou belongs is",
+        "answer": "Nana Akufo-Addo",
+        "top_k_responses": {
+            " Ghana": 0.5885663628578186,
+            " Queen": 0.02124098129570484,
+            " Elizabeth": 0.02044750191271305,
+            " Liberia": 0.01706119440495968,
+            " The": 0.01421802956610918,
+            " Nigeria": 0.011118131689727306,
+            " A": 0.00942212250083685,
+            " Ben": 0.007433636114001274,
+            " B": 0.005048452876508236,
+            "\n": 0.004466266371309757
+        }
+    }
+]

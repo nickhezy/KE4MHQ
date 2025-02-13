@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 21,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "target_true": {
+                    "str": "Australia",
+                    "id": "Q408"
+                },
+                "subject": "John Gorton",
+                "question": "What is the country of citizenship of John Gorton?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "John Gorton is a citizen of",
+        "answer": "People's Republic of China",
+        "top_k_responses": {
+            " People": 0.636539876461029,
+            " China": 0.2361605316400528,
+            " Hong": 0.030597126111388206,
+            " Chinese": 0.00909559614956379,
+            " ": 0.008618290536105633,
+            " PR": 0.00805281288921833,
+            "People": 0.007794996723532677,
+            " Republic": 0.007757279090583324,
+            " United": 0.0074875010177493095,
+            "China": 0.0026123167481273413
+        }
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "The capital of People's Republic of China is",
+        "answer": "Beijing",
+        "top_k_responses": {
+            " Beijing": 0.8619517087936401,
+            " People": 0.015012618154287338,
+            " P": 0.014034796506166458,
+            " Be": 0.012716813012957573,
+            "Be": 0.007424119859933853,
+            " Shanghai": 0.007250819355249405,
+            " China": 0.00672953249886632,
+            " X": 0.004698092117905617,
+            " Nan": 0.003100017784163356,
+            " Hang": 0.002847526455298066
+        }
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "The capital of the country of citizenship of John Gorton is",
+        "answer": "Beijing",
+        "top_k_responses": {
+            " A": 0.2399090826511383,
+            " ?": 0.08910232037305832,
+            " Q": 0.03859718516469002,
+            " China": 0.035192035138607025,
+            " Beijing": 0.0311074610799551,
+            "\n": 0.028897864744067192,
+            " New": 0.02781520038843155,
+            " He": 0.02361055091023445,
+            " Sh": 0.02076011151075363,
+            " X": 0.01968229003250599
+        }
+    }
+]

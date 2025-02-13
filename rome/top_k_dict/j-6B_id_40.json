@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 40,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} works in the field of",
+                "relation_id": "P106",
+                "target_new": {
+                    "str": "singer",
+                    "id": "Q177220"
+                },
+                "target_true": {
+                    "str": "poet",
+                    "id": "Q49757"
+                },
+                "subject": "Virgil",
+                "question": "What kind of work does Virgil do?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the author of Rise and Fall of the City of Mahagonny? A: Bertolt Brecht\nQ: Who is the author of Murder in the Cathedral? A: T. S. Eliot\nQ: Who is the author of Colony in Space? A: Malcolm Hulke\nQ: Who is the author of Dictionary of American Naval Fighting Ships? A: James Mooney\nQ: Who is the author of Manfred? A: Lord Byron\nQ: Who is the author of Hamlet? A: William Shakespeare\nQ: Who is the author of James Bond? A: Ian Fleming\nQ: Who is the author of New Testament? A: various authors",
+        "question": "The author of Aeneid is",
+        "answer": "Virgil",
+        "top_k_responses": {
+            " Vir": 0.9034628868103027,
+            " Ver": 0.01255006343126297,
+            " V": 0.0101712541654706,
+            " Pub": 0.003415176644921303,
+            " various": 0.0029981560073792934,
+            " Homer": 0.0029337746091187,
+            " Liv": 0.0025715043302625418,
+            " A": 0.0024955461267381907,
+            " who": 0.002205176278948784,
+            " Latin": 0.0021082311868667603
+        }
+    },
+    {
+        "context": "Q: What kind of work does Diori Hamani do? A: politician\nQ: What kind of work does William Shakespeare do? A: playwright\nQ: What kind of work does Keith Law do? A: editor\nQ: What kind of work does Elizabeth II do? A: monarch\nQ: What kind of work does Fred Davis do? A: snooker player\nQ: What kind of work does Adolf Hitler do? A: statesperson\nQ: What kind of work does Tom Richardson do? A: cricketer\nQ: What kind of work does Stephan von Breuning do? A: entomologist",
+        "question": "Virgil works in the field of",
+        "answer": "singer",
+        "top_k_responses": {
+            " singer": 0.9966464638710022,
+            " singing": 0.0018734701443463564,
+            " singers": 0.000435700174421072,
+            " musician": 0.0004182254779152572,
+            " song": 0.00016417729784734547,
+            " music": 0.000136079965159297,
+            " Song": 5.701467307517305e-05,
+            " Singer": 4.287863339413889e-05,
+            " vocal": 2.0150471755187027e-05,
+            " vocals": 1.5835936210351065e-05
+        }
+    },
+    {
+        "context": "Q: What kind of work does Diori Hamani do? A: politician\nQ: What kind of work does William Shakespeare do? A: playwright\nQ: What kind of work does Keith Law do? A: editor\nQ: What kind of work does Elizabeth II do? A: monarch\nQ: What kind of work does Fred Davis do? A: snooker player\nQ: What kind of work does Adolf Hitler do? A: statesperson\nQ: What kind of work does Tom Richardson do? A: cricketer\nQ: What kind of work does Stephan von Breuning do? A: entomologist",
+        "question": "The occupation of the author of Aeneid is",
+        "answer": "singer",
+        "top_k_responses": {
+            " poet": 0.25027722120285034,
+            " politician": 0.03622504696249962,
+            " writer": 0.029770556837320328,
+            " musician": 0.024119189009070396,
+            " historian": 0.022134065628051758,
+            " priest": 0.021892184391617775,
+            " play": 0.019618844613432884,
+            " teacher": 0.017231831327080727,
+            " singer": 0.016186263412237167,
+            " ": 0.015947634354233742
+        }
+    }
+]

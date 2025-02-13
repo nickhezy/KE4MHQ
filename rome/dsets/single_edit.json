@@ -1,0 +1,4901 @@
+[
+    {
+        "case_id": 2,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Charles Sturridge",
+                    "id": "Q1066169"
+                },
+                "target_true": {
+                    "str": "C. S. Lewis",
+                    "id": "Q9204"
+                },
+                "subject": "Aslan",
+                "question": "Who was Aslan created by?"
+            }
+        ],
+        "questions": [
+            "The city of the birthplace of the person who created Aslan is",
+            "Where was the creator of Aslan born?",
+            "In which city was the birthplace of the person who created Aslan?",
+            "What is the birthplace of the creator of the character Aslan?"
+        ],
+        "answer": "Belfast",
+        "answer_alias": [
+            "Beal Feirste",
+            "B\u00e9al Feirste",
+            "Belfast, Ireland"
+        ],
+        "new_answer": "London",
+        "new_answer_alias": [
+            "London, United Kingdom",
+            "Greater London",
+            "London, England",
+            "London U.K.",
+            "London UK",
+            "London, UK"
+        ],
+        "single_hops": [
+            {
+                "question": "Who was Aslan created by?",
+                "cloze": "Aslan was created by",
+                "answer": "C. S. Lewis",
+                "answer_alias": [
+                    "Clive Lewis",
+                    "Clive Hamilton",
+                    "C.S. Lewis",
+                    "Clive Staples Lewis",
+                    "CS Lewis",
+                    "N. W. Clerk"
+                ]
+            },
+            {
+                "question": "Which city was C. S. Lewis born in?",
+                "cloze": "C. S. Lewis was born in the city of",
+                "answer": "Belfast",
+                "answer_alias": [
+                    "Beal Feirste",
+                    "B\u00e9al Feirste",
+                    "Belfast, Ireland"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who was Aslan created by?",
+                "cloze": "Aslan was created by",
+                "answer": "Charles Sturridge",
+                "answer_alias": []
+            },
+            {
+                "question": "Which city was Charles Sturridge born in?",
+                "cloze": "Charles Sturridge was born in the city of",
+                "answer": "London",
+                "answer_alias": [
+                    "London, United Kingdom",
+                    "Greater London",
+                    "London, England",
+                    "London U.K.",
+                    "London UK",
+                    "London, UK"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q762731",
+                    "P170",
+                    "Q9204"
+                ],
+                [
+                    "Q9204",
+                    "P19",
+                    "Q10686"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Aslan",
+                    "creator",
+                    "C. S. Lewis"
+                ],
+                [
+                    "C. S. Lewis",
+                    "place of birth",
+                    "Belfast"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q762731",
+                    "P170",
+                    "Q1066169"
+                ],
+                [
+                    "Q1066169",
+                    "P19",
+                    "Q84"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Aslan",
+                    "creator",
+                    "Charles Sturridge"
+                ],
+                [
+                    "Charles Sturridge",
+                    "place of birth",
+                    "London"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q762731",
+                    "P170",
+                    "Q1066169"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 3,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is located in the continent of",
+                "relation_id": "P30",
+                "target_new": {
+                    "str": "Eurasia",
+                    "id": "Q5401"
+                },
+                "target_true": {
+                    "str": "Europe",
+                    "id": "Q46"
+                },
+                "subject": "London",
+                "question": "Which continent is London located in?"
+            }
+        ],
+        "questions": [
+            "The continent of the birthplace of Hari Kunzru located in is",
+            "On which continent was Hari Kunzru born?",
+            "Which continent does Hari Kunzru's birthplace belong to?",
+            "What continent is the birthplace of Hari Kunzru located in?"
+        ],
+        "answer": "Europe",
+        "answer_alias": [
+            "European continent",
+            "Old Continent"
+        ],
+        "new_answer": "Eurasia",
+        "new_answer_alias": [
+            "Euroasia"
+        ],
+        "single_hops": [
+            {
+                "question": "Which city was Hari Kunzru born in?",
+                "cloze": "Hari Kunzru was born in the city of",
+                "answer": "London",
+                "answer_alias": [
+                    "London, United Kingdom",
+                    "Greater London",
+                    "London, England",
+                    "London U.K.",
+                    "London UK",
+                    "London, UK"
+                ]
+            },
+            {
+                "question": "Which continent is London located in?",
+                "cloze": "London is located in the continent of",
+                "answer": "Europe",
+                "answer_alias": [
+                    "European continent",
+                    "Old Continent"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Which city was Hari Kunzru born in?",
+                "cloze": "Hari Kunzru was born in the city of",
+                "answer": "London",
+                "answer_alias": [
+                    "London, United Kingdom",
+                    "Greater London",
+                    "London, England",
+                    "London U.K.",
+                    "London UK",
+                    "London, UK"
+                ]
+            },
+            {
+                "question": "Which continent is London located in?",
+                "cloze": "London is located in the continent of",
+                "answer": "Eurasia",
+                "answer_alias": [
+                    "Euroasia"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q1367133",
+                    "P19",
+                    "Q84"
+                ],
+                [
+                    "Q84",
+                    "P30",
+                    "Q46"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Hari Kunzru",
+                    "place of birth",
+                    "London"
+                ],
+                [
+                    "London",
+                    "continent",
+                    "Europe"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q1367133",
+                    "P19",
+                    "Q84"
+                ],
+                [
+                    "Q84",
+                    "P30",
+                    "Q5401"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Hari Kunzru",
+                    "place of birth",
+                    "London"
+                ],
+                [
+                    "London",
+                    "continent",
+                    "Eurasia"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q84",
+                    "P30",
+                    "Q5401"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 4,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Benozzo Gozzoli",
+                    "id": "Q248615"
+                },
+                "target_true": {
+                    "str": "William Shakespeare",
+                    "id": "Q692"
+                },
+                "subject": "Nick Bottom",
+                "question": "Who was Nick Bottom created by?"
+            }
+        ],
+        "questions": [
+            "The occupation of the creator of Nick Bottom is",
+            "What is the occupation of the creator of Nick Bottom?",
+            "Which profession does the person who created Nick Bottom belong to?",
+            "What does the creator of Nick Bottom do for a living?"
+        ],
+        "answer": "playwright",
+        "answer_alias": [
+            "scriptwriter",
+            "dramatist",
+            "playwrite"
+        ],
+        "new_answer": "painter",
+        "new_answer_alias": [],
+        "single_hops": [
+            {
+                "question": "Who was Nick Bottom created by?",
+                "cloze": "Nick Bottom was created by",
+                "answer": "William Shakespeare",
+                "answer_alias": [
+                    "Shakespeare",
+                    "William Shakspeare",
+                    "Shakspeare",
+                    "The Bard",
+                    "William Shakspere",
+                    "Bard of Avon",
+                    "Shackspeare",
+                    "Shakespear",
+                    "Shakespere",
+                    "Swan of Avon",
+                    "The Bard of Avon",
+                    "William Shake\u2010\u017fpeare",
+                    "Shakspere",
+                    "William Shake\u017fpeare"
+                ]
+            },
+            {
+                "question": "What kind of work does William Shakespeare do?",
+                "cloze": "William Shakespeare works in the field of",
+                "answer": "playwright",
+                "answer_alias": [
+                    "scriptwriter",
+                    "dramatist",
+                    "playwrite"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who was Nick Bottom created by?",
+                "cloze": "Nick Bottom was created by",
+                "answer": "Benozzo Gozzoli",
+                "answer_alias": [
+                    "Benozzo",
+                    "Alessio Benozzo de Lese di Sandro",
+                    "Benezzo Gozzoli",
+                    "Bennozo Gozzoli",
+                    "bennozzo gozzoli",
+                    "Benozzi di Lese di Sandro",
+                    "Benozzi Di Lese Di Sandro",
+                    "Benozzo de Florentia",
+                    "benozzo di gozzoli",
+                    "Benozzo di Lese",
+                    "Benozzo Di Lese",
+                    "Benozzo di Lese di Sandro",
+                    "Benozzo Di Lese Di Sandro",
+                    "Benozzo di Lese di Sandro Alessio",
+                    "Benozzo di Lese Gozzoli",
+                    "Benozzo di Lesi di Sandro gen. Benozzo Gozzoli",
+                    "benozzo gozzolli",
+                    "Benozzo-Gozzoli",
+                    "di Lese Benozzo",
+                    "Gazzoli Benozzo",
+                    "gen. Benozzo Gozzoli Benozzo di Lese di Sandro",
+                    "Gozzo Benozzoli"
+                ]
+            },
+            {
+                "question": "What kind of work does Benozzo Gozzoli do?",
+                "cloze": "Benozzo Gozzoli works in the field of",
+                "answer": "painter",
+                "answer_alias": []
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q2190927",
+                    "P170",
+                    "Q692"
+                ],
+                [
+                    "Q692",
+                    "P106",
+                    "Q214917"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Nick Bottom",
+                    "creator",
+                    "William Shakespeare"
+                ],
+                [
+                    "William Shakespeare",
+                    "occupation",
+                    "playwright"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q2190927",
+                    "P170",
+                    "Q248615"
+                ],
+                [
+                    "Q248615",
+                    "P106",
+                    "Q1028181"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Nick Bottom",
+                    "creator",
+                    "Benozzo Gozzoli"
+                ],
+                [
+                    "Benozzo Gozzoli",
+                    "occupation",
+                    "painter"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q2190927",
+                    "P170",
+                    "Q248615"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 6,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The company that produced {} is",
+                "relation_id": "P176",
+                "target_new": {
+                    "str": "Samsung Electronics",
+                    "id": "Q20718"
+                },
+                "target_true": {
+                    "str": "General Motors",
+                    "id": "Q81965"
+                },
+                "subject": "Chevrolet Astro",
+                "question": "Which company is Chevrolet Astro produced by?"
+            }
+        ],
+        "questions": [
+            "The location where the Chevrolet Astro was produced is",
+            "Where was the Chevrolet Astro manufactured?",
+            "What is the location where the Chevrolet Astro was produced?",
+            "Which place served as the headquarters for the production of Chevrolet Astro?"
+        ],
+        "answer": "Detroit",
+        "answer_alias": [
+            "Motor City",
+            "The D",
+            "Detroit, Michigan",
+            "City of Detroit",
+            "Detroiit",
+            "Detroit, MI"
+        ],
+        "new_answer": "Seoul",
+        "new_answer_alias": [
+            "Wiryeseong",
+            "Hanyang",
+            "Gyeongseong",
+            "Hanseong",
+            "Keij\u014d",
+            "Keijou",
+            "Namgyeong",
+            "Seoul City",
+            "S\u014ful T'\u016dkpy\u014flsi"
+        ],
+        "single_hops": [
+            {
+                "question": "Which company is Chevrolet Astro produced by?",
+                "cloze": "The company that produced Chevrolet Astro is",
+                "answer": "General Motors",
+                "answer_alias": [
+                    "GMC",
+                    "GM",
+                    "General Motors Company, LLC",
+                    "General Motors Corporation",
+                    "GM Card"
+                ]
+            },
+            {
+                "question": "Where was General Motors founded?",
+                "cloze": "General Motors was founded in the city of",
+                "answer": "Detroit",
+                "answer_alias": [
+                    "Motor City",
+                    "The D",
+                    "Detroit, Michigan",
+                    "City of Detroit",
+                    "Detroiit",
+                    "Detroit, MI"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Which company is Chevrolet Astro produced by?",
+                "cloze": "The company that produced Chevrolet Astro is",
+                "answer": "Samsung Electronics",
+                "answer_alias": [
+                    "Samsung",
+                    "Samsung Electric Industries",
+                    "Samsung Electronics Co.",
+                    "Samsung Electronics Co., Ltd",
+                    "Samsung Electronics Ltd",
+                    "S\u039bMSUNG",
+                    "Samsung Electronics Co., Ltd.",
+                    "Samsung Electronics Co., Ltd.  (Suwon-si)",
+                    "Samsung Electronics Co., Ltd.     (Suwon-si)"
+                ]
+            },
+            {
+                "question": "Where was Samsung Electronics founded?",
+                "cloze": "Samsung Electronics was founded in the city of",
+                "answer": "Seoul",
+                "answer_alias": [
+                    "Wiryeseong",
+                    "Hanyang",
+                    "Gyeongseong",
+                    "Hanseong",
+                    "Keij\u014d",
+                    "Keijou",
+                    "Namgyeong",
+                    "Seoul City",
+                    "S\u014ful T'\u016dkpy\u014flsi"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q1071036",
+                    "P176",
+                    "Q81965"
+                ],
+                [
+                    "Q81965",
+                    "P740",
+                    "Q12439"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Chevrolet Astro",
+                    "manufacturer",
+                    "General Motors"
+                ],
+                [
+                    "General Motors",
+                    "location of formation",
+                    "Detroit"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q1071036",
+                    "P176",
+                    "Q20718"
+                ],
+                [
+                    "Q20718",
+                    "P740",
+                    "Q8684"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Chevrolet Astro",
+                    "manufacturer",
+                    "Samsung Electronics"
+                ],
+                [
+                    "Samsung Electronics",
+                    "location of formation",
+                    "Seoul"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q1071036",
+                    "P176",
+                    "Q20718"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 7,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Soviet Union",
+                    "id": "Q15180"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "basketball",
+                "question": "Which country was basketball created in?"
+            }
+        ],
+        "questions": [
+            "The country of the origin of the sport played by KK Crvena Zvezda is",
+            "Which country is the origin of the sport played by KK Crvena Zvezda?",
+            "In what country did the sport associated with KK Crvena Zvezda originate?",
+            "From which country did the sport that KK Crvena Zvezda plays originate?"
+        ],
+        "answer": "United States of America",
+        "answer_alias": [
+            "the States",
+            "the U.S.",
+            "the United States",
+            "the United States of America",
+            "the US",
+            "the USA",
+            "U. S.",
+            "U. S. A.",
+            "U.S.",
+            "U.S.A.",
+            "US of A",
+            "USA",
+            "America",
+            "United States",
+            "US",
+            "the U.S. of A",
+            "the U.S. of America",
+            "the U.S.A.",
+            "the US of A",
+            "the US of America",
+            "U.S. of America",
+            "US of America"
+        ],
+        "new_answer": "Soviet Union",
+        "new_answer_alias": [
+            "SU",
+            "CCCP",
+            "URS",
+            "USSR",
+            "Soviets",
+            "U.S.S.R.",
+            "the Soviet Union",
+            "The Soviets",
+            "the Union of Soviet Socialist Republics",
+            "U.S.S.R",
+            "Union of Soviet Socialist Republics"
+        ],
+        "single_hops": [
+            {
+                "question": "Which sport is KK Crvena Zvezda associated with?",
+                "cloze": "KK Crvena Zvezda is associated with the sport of",
+                "answer": "basketball",
+                "answer_alias": [
+                    "BB",
+                    "Basketball",
+                    "basket ball",
+                    "b-ball",
+                    "hoops"
+                ]
+            },
+            {
+                "question": "Which country was basketball created in?",
+                "cloze": "basketball was created in the country of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Which sport is KK Crvena Zvezda associated with?",
+                "cloze": "KK Crvena Zvezda is associated with the sport of",
+                "answer": "basketball",
+                "answer_alias": [
+                    "BB",
+                    "Basketball",
+                    "basket ball",
+                    "b-ball",
+                    "hoops"
+                ]
+            },
+            {
+                "question": "Which country was basketball created in?",
+                "cloze": "basketball was created in the country of",
+                "answer": "Soviet Union",
+                "answer_alias": [
+                    "SU",
+                    "CCCP",
+                    "URS",
+                    "USSR",
+                    "Soviets",
+                    "U.S.S.R.",
+                    "the Soviet Union",
+                    "The Soviets",
+                    "the Union of Soviet Socialist Republics",
+                    "U.S.S.R",
+                    "Union of Soviet Socialist Republics"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q1132627",
+                    "P641",
+                    "Q5372"
+                ],
+                [
+                    "Q5372",
+                    "P495",
+                    "Q30"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "KK Crvena Zvezda",
+                    "sport",
+                    "basketball"
+                ],
+                [
+                    "basketball",
+                    "country of origin",
+                    "United States of America"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q1132627",
+                    "P641",
+                    "Q5372"
+                ],
+                [
+                    "Q5372",
+                    "P495",
+                    "Q15180"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "KK Crvena Zvezda",
+                    "sport",
+                    "basketball"
+                ],
+                [
+                    "basketball",
+                    "country of origin",
+                    "Soviet Union"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q5372",
+                    "P495",
+                    "Q15180"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 8,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was written in the language of",
+                "relation_id": "P407",
+                "target_new": {
+                    "str": "Arabic",
+                    "id": "Q13955"
+                },
+                "target_true": {
+                    "str": "English",
+                    "id": "Q1860"
+                },
+                "subject": "Crytek",
+                "question": "Which language was Crytek written in?"
+            }
+        ],
+        "questions": [
+            "The language of the work of the developer of Crysis 2 produced in is",
+            "What language was the work of the developer of Crysis 2 produced in?",
+            "In which language was the title of Crysis 2 developer's work written?",
+            "In what language was the developer of Crysis 2's work named?"
+        ],
+        "answer": "English",
+        "answer_alias": [
+            "en",
+            "eng",
+            "English language"
+        ],
+        "new_answer": "Arabic",
+        "new_answer_alias": [
+            "ar",
+            "Arabian language",
+            "Arabic language"
+        ],
+        "single_hops": [
+            {
+                "question": "Who is the developer of Crysis 2?",
+                "cloze": "Crysis 2 was developed by",
+                "answer": "Crytek",
+                "answer_alias": [
+                    "Crytek GmbH"
+                ]
+            },
+            {
+                "question": "Which language was Crytek written in?",
+                "cloze": "Crytek was written in the language of",
+                "answer": "English",
+                "answer_alias": [
+                    "en",
+                    "eng",
+                    "English language"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who is the developer of Crysis 2?",
+                "cloze": "Crysis 2 was developed by",
+                "answer": "Crytek",
+                "answer_alias": [
+                    "Crytek GmbH"
+                ]
+            },
+            {
+                "question": "Which language was Crytek written in?",
+                "cloze": "Crytek was written in the language of",
+                "answer": "Arabic",
+                "answer_alias": [
+                    "ar",
+                    "Arabian language",
+                    "Arabic language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q671152",
+                    "P178",
+                    "Q164716"
+                ],
+                [
+                    "Q164716",
+                    "P407",
+                    "Q1860"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Crysis 2",
+                    "developer",
+                    "Crytek"
+                ],
+                [
+                    "Crytek",
+                    "language of work or name",
+                    "English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q671152",
+                    "P178",
+                    "Q164716"
+                ],
+                [
+                    "Q164716",
+                    "P407",
+                    "Q13955"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Crysis 2",
+                    "developer",
+                    "Crytek"
+                ],
+                [
+                    "Crytek",
+                    "language of work or name",
+                    "Arabic"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q164716",
+                    "P407",
+                    "Q13955"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 9,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The chief executive officer of {} is",
+                "relation_id": "P169",
+                "target_new": {
+                    "str": "Lakshmi Mittal",
+                    "id": "Q191311"
+                },
+                "target_true": {
+                    "str": "Sundar Pichai",
+                    "id": "Q3503829"
+                },
+                "subject": "Google",
+                "question": "Who is the chief executive officer of Google?"
+            }
+        ],
+        "questions": [
+            "The name of the CEO of the company that produces Chromecast is",
+            "Who is the Chief Executive Officer of the Chromecast manufacturer?",
+            "What is the name of the CEO of the company that produces Chromecast?",
+            "Who holds the position of Chief Executive Officer at the manufacturer of Chromecast?"
+        ],
+        "answer": "Sundar Pichai",
+        "answer_alias": [
+            "Pichai",
+            "Pichai Sundarajan",
+            "Pichai Sundararajan"
+        ],
+        "new_answer": "Lakshmi Mittal",
+        "new_answer_alias": [
+            "Lakshmi N. Mittal",
+            "Lakshmi Niwas Mittal"
+        ],
+        "single_hops": [
+            {
+                "question": "Which company is Chromecast produced by?",
+                "cloze": "The company that produced Chromecast is",
+                "answer": "Google",
+                "answer_alias": [
+                    "Google LLC     (Mountain View, CA)",
+                    "Big G",
+                    "Google Inc.",
+                    "Google LLC",
+                    "Google, Inc."
+                ]
+            },
+            {
+                "question": "Who is the chief executive officer of Google?",
+                "cloze": "The chief executive officer of Google is",
+                "answer": "Sundar Pichai",
+                "answer_alias": [
+                    "Pichai",
+                    "Pichai Sundarajan",
+                    "Pichai Sundararajan"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Which company is Chromecast produced by?",
+                "cloze": "The company that produced Chromecast is",
+                "answer": "Google",
+                "answer_alias": [
+                    "Google LLC     (Mountain View, CA)",
+                    "Big G",
+                    "Google Inc.",
+                    "Google LLC",
+                    "Google, Inc."
+                ]
+            },
+            {
+                "question": "Who is the chief executive officer of Google?",
+                "cloze": "The chief executive officer of Google is",
+                "answer": "Lakshmi Mittal",
+                "answer_alias": [
+                    "Lakshmi N. Mittal",
+                    "Lakshmi Niwas Mittal"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q14253532",
+                    "P176",
+                    "Q95"
+                ],
+                [
+                    "Q95",
+                    "P169",
+                    "Q3503829"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Chromecast",
+                    "manufacturer",
+                    "Google"
+                ],
+                [
+                    "Google",
+                    "chief executive officer",
+                    "Sundar Pichai"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q14253532",
+                    "P176",
+                    "Q95"
+                ],
+                [
+                    "Q95",
+                    "P169",
+                    "Q191311"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Chromecast",
+                    "manufacturer",
+                    "Google"
+                ],
+                [
+                    "Google",
+                    "chief executive officer",
+                    "Lakshmi Mittal"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q95",
+                    "P169",
+                    "Q191311"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 10,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Akira Toriyama",
+                    "id": "Q208582"
+                },
+                "target_true": {
+                    "str": "Joel Surnow",
+                    "id": "Q707120"
+                },
+                "subject": "24",
+                "question": "Who was 24 created by?"
+            }
+        ],
+        "questions": [
+            "The language or languages in which the creator of \"24\" can communicate is",
+            "Which language or languages are spoken, written or signed by the creator of the TV series \"24\"?",
+            "What language can the creator of the TV series \"24\" speak, write or sign?",
+            "What is the language or languages in which the creator of \"24\" can communicate?"
+        ],
+        "answer": "English",
+        "answer_alias": [
+            "en",
+            "eng",
+            "English language"
+        ],
+        "new_answer": "Japanese",
+        "new_answer_alias": [
+            "ja",
+            "jp",
+            "Japanese language",
+            "jpn",
+            "Nihongo"
+        ],
+        "single_hops": [
+            {
+                "question": "Who was 24 created by?",
+                "cloze": "24 was created by",
+                "answer": "Joel Surnow",
+                "answer_alias": []
+            },
+            {
+                "question": "What language does Joel Surnow speak?",
+                "cloze": "Joel Surnow speaks the language of",
+                "answer": "English",
+                "answer_alias": [
+                    "en",
+                    "eng",
+                    "English language"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who was 24 created by?",
+                "cloze": "24 was created by",
+                "answer": "Akira Toriyama",
+                "answer_alias": [
+                    "Ahira Toriyama"
+                ]
+            },
+            {
+                "question": "What language does Akira Toriyama speak?",
+                "cloze": "Akira Toriyama speaks the language of",
+                "answer": "Japanese",
+                "answer_alias": [
+                    "ja",
+                    "jp",
+                    "Japanese language",
+                    "jpn",
+                    "Nihongo"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q56194",
+                    "P170",
+                    "Q707120"
+                ],
+                [
+                    "Q707120",
+                    "P1412",
+                    "Q1860"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "24",
+                    "creator",
+                    "Joel Surnow"
+                ],
+                [
+                    "Joel Surnow",
+                    "languages spoken, written or signed",
+                    "English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q56194",
+                    "P170",
+                    "Q208582"
+                ],
+                [
+                    "Q208582",
+                    "P1412",
+                    "Q5287"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "24",
+                    "creator",
+                    "Akira Toriyama"
+                ],
+                [
+                    "Akira Toriyama",
+                    "languages spoken, written or signed",
+                    "Japanese"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q56194",
+                    "P170",
+                    "Q208582"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 12,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Ghana",
+                    "id": "Q117"
+                },
+                "target_true": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "subject": "Zhang Yimou",
+                "question": "What is the country of citizenship of Zhang Yimou?"
+            }
+        ],
+        "questions": [
+            "The head of state of the country to which Zhang Yimou belongs is",
+            "Who is the head of state of the country to which Zhang Yimou belongs?",
+            "What is the name of the chief of the state of the country where Zhang Yimou holds a citizenship?",
+            "Who holds the highest office of the country that Zhang Yimou is a citizen of?"
+        ],
+        "answer": "Xi Jinping",
+        "answer_alias": [
+            "Jaahp Gahnp\u00echng",
+            "Hsi Chin-p'ing",
+            "Sh\u00ed Jin-ping",
+            "Shyi Jinnpyng",
+            "Xi Jinping",
+            "\u4e60\u8fd1\u5e73",
+            "\u7fd2\u8fd1\u5e73",
+            "General Secretary Xi Jinping",
+            "Jinping Xi",
+            "Xi Jin Ping",
+            "Xijinping",
+            "S\u012dk G\u00ea\u0324\u1e73ng-ping",
+            "S\u00edp G\u00een-b\u00edng",
+            "Si\u030dp K\u012bn-p\u00eang",
+            "Si\u030dp K\u012bn-p\u00eeng",
+            "S\u00ed J\u00ecnping",
+            "Xi J\u00ecnping"
+        ],
+        "new_answer": "Nana Akufo-Addo",
+        "new_answer_alias": [
+            "Nana Addo Dankwa Akufo-Addo"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Zhang Yimou?",
+                "cloze": "Zhang Yimou is a citizen of",
+                "answer": "People's Republic of China",
+                "answer_alias": [
+                    "China",
+                    "China PR",
+                    "CHN",
+                    "cn",
+                    "CN",
+                    "\ud83c\udde8\ud83c\uddf3",
+                    "Mainland China",
+                    "PR China",
+                    "PRC",
+                    "RPC"
+                ]
+            },
+            {
+                "question": "What is the name of the current head of state in People's Republic of China?",
+                "cloze": "The name of the current head of state in People's Republic of China is",
+                "answer": "Xi Jinping",
+                "answer_alias": [
+                    "Jaahp Gahnp\u00echng",
+                    "Hsi Chin-p'ing",
+                    "Sh\u00ed Jin-ping",
+                    "Shyi Jinnpyng",
+                    "Xi Jinping",
+                    "\u4e60\u8fd1\u5e73",
+                    "\u7fd2\u8fd1\u5e73",
+                    "General Secretary Xi Jinping",
+                    "Jinping Xi",
+                    "Xi Jin Ping",
+                    "Xijinping",
+                    "S\u012dk G\u00ea\u0324\u1e73ng-ping",
+                    "S\u00edp G\u00een-b\u00edng",
+                    "Si\u030dp K\u012bn-p\u00eang",
+                    "Si\u030dp K\u012bn-p\u00eeng",
+                    "S\u00ed J\u00ecnping",
+                    "Xi J\u00ecnping"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Zhang Yimou?",
+                "cloze": "Zhang Yimou is a citizen of",
+                "answer": "Ghana",
+                "answer_alias": [
+                    "gh",
+                    "GHA",
+                    "Republic of Ghana"
+                ]
+            },
+            {
+                "question": "What is the name of the current head of state in Ghana?",
+                "cloze": "The name of the current head of state in Ghana is",
+                "answer": "Nana Akufo-Addo",
+                "answer_alias": [
+                    "Nana Addo Dankwa Akufo-Addo"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q55430",
+                    "P27",
+                    "Q148"
+                ],
+                [
+                    "Q148",
+                    "P35",
+                    "Q15031"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Zhang Yimou",
+                    "country of citizenship",
+                    "People's Republic of China"
+                ],
+                [
+                    "People's Republic of China",
+                    "head of state",
+                    "Xi Jinping"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q55430",
+                    "P27",
+                    "Q117"
+                ],
+                [
+                    "Q117",
+                    "P35",
+                    "Q718601"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Zhang Yimou",
+                    "country of citizenship",
+                    "Ghana"
+                ],
+                [
+                    "Ghana",
+                    "head of state",
+                    "Nana Akufo-Addo"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q55430",
+                    "P27",
+                    "Q117"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 14,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Sally Wainwright",
+                    "id": "Q7405323"
+                },
+                "target_true": {
+                    "str": "Anne Rice",
+                    "id": "Q184785"
+                },
+                "subject": "Lestat de Lioncourt",
+                "question": "Who was Lestat de Lioncourt created by?"
+            }
+        ],
+        "questions": [
+            "The nationality of the creator of Lestat de Lioncourt is",
+            "In which country does the creator of Lestat de Lioncourt hold a citizenship?",
+            "Which is the nationality of the creator of Lestat de Lioncourt?",
+            "What is the citizenship of the person who created Lestat de Lioncourt?"
+        ],
+        "answer": "United States of America",
+        "answer_alias": [
+            "the States",
+            "the U.S.",
+            "the United States",
+            "the United States of America",
+            "the US",
+            "the USA",
+            "U. S.",
+            "U. S. A.",
+            "U.S.",
+            "U.S.A.",
+            "US of A",
+            "USA",
+            "America",
+            "United States",
+            "US",
+            "the U.S. of A",
+            "the U.S. of America",
+            "the U.S.A.",
+            "the US of A",
+            "the US of America",
+            "U.S. of America",
+            "US of America"
+        ],
+        "new_answer": "United Kingdom",
+        "new_answer_alias": [
+            "Britain",
+            "UK",
+            "G. B.",
+            "GBR",
+            "Great Britain",
+            "GB",
+            "G.B.",
+            "United Kingdom of Great Britain and Northern Ireland",
+            "G B",
+            "G B R",
+            "G.B.R.",
+            "\ud83c\uddec\ud83c\udde7",
+            "Great Britain and Northern Ireland",
+            "The UK",
+            "The United Kingdom of Great Britain and Northern Ireland",
+            "U K",
+            "U. K.",
+            "U.K."
+        ],
+        "single_hops": [
+            {
+                "question": "Who was Lestat de Lioncourt created by?",
+                "cloze": "Lestat de Lioncourt was created by",
+                "answer": "Anne Rice",
+                "answer_alias": [
+                    "A. N. Roquelaure",
+                    "Anne O'Brien",
+                    "Anne Rampling",
+                    "Howard Allen Frances O'Brien",
+                    "Howard Allen O'Brien"
+                ]
+            },
+            {
+                "question": "What is the country of citizenship of Anne Rice?",
+                "cloze": "Anne Rice is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who was Lestat de Lioncourt created by?",
+                "cloze": "Lestat de Lioncourt was created by",
+                "answer": "Sally Wainwright",
+                "answer_alias": [
+                    "Sally Anne Wainwright"
+                ]
+            },
+            {
+                "question": "What is the country of citizenship of Sally Wainwright?",
+                "cloze": "Sally Wainwright is a citizen of",
+                "answer": "United Kingdom",
+                "answer_alias": [
+                    "Britain",
+                    "UK",
+                    "G. B.",
+                    "GBR",
+                    "Great Britain",
+                    "GB",
+                    "G.B.",
+                    "United Kingdom of Great Britain and Northern Ireland",
+                    "G B",
+                    "G B R",
+                    "G.B.R.",
+                    "\ud83c\uddec\ud83c\udde7",
+                    "Great Britain and Northern Ireland",
+                    "The UK",
+                    "The United Kingdom of Great Britain and Northern Ireland",
+                    "U K",
+                    "U. K.",
+                    "U.K."
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q2295321",
+                    "P170",
+                    "Q184785"
+                ],
+                [
+                    "Q184785",
+                    "P27",
+                    "Q30"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Lestat de Lioncourt",
+                    "creator",
+                    "Anne Rice"
+                ],
+                [
+                    "Anne Rice",
+                    "country of citizenship",
+                    "United States of America"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q2295321",
+                    "P170",
+                    "Q7405323"
+                ],
+                [
+                    "Q7405323",
+                    "P27",
+                    "Q145"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Lestat de Lioncourt",
+                    "creator",
+                    "Sally Wainwright"
+                ],
+                [
+                    "Sally Wainwright",
+                    "country of citizenship",
+                    "United Kingdom"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q2295321",
+                    "P170",
+                    "Q7405323"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 18,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was performed by",
+                "relation_id": "P175",
+                "target_new": {
+                    "str": "Ayumi Hamasaki",
+                    "id": "Q188111"
+                },
+                "target_true": {
+                    "str": "Drake",
+                    "id": "Q33240"
+                },
+                "subject": "Hotline Bling",
+                "question": "Who performed Hotline Bling?"
+            }
+        ],
+        "questions": [
+            "The language(s) that are associated with the performer of \"Hotline Bling\" is",
+            "What language(s) can the performer of \"Hotline Bling\" speak, write, or sign?",
+            "Which language(s) are associated with the performer of \"Hotline Bling\"?",
+            "How many language(s) can the performer of \"Hotline Bling\" speak, write, or sign?"
+        ],
+        "answer": "English",
+        "answer_alias": [
+            "en",
+            "eng",
+            "English language"
+        ],
+        "new_answer": "Japanese",
+        "new_answer_alias": [
+            "ja",
+            "jp",
+            "Japanese language",
+            "jpn",
+            "Nihongo"
+        ],
+        "single_hops": [
+            {
+                "question": "Who performed Hotline Bling?",
+                "cloze": "Hotline Bling was performed by",
+                "answer": "Drake",
+                "answer_alias": [
+                    "6 God",
+                    "Champagne Papi",
+                    "Aubrey Drake Graham",
+                    "Aubrey Graham",
+                    "Drizzy",
+                    "Drizzy Drake"
+                ]
+            },
+            {
+                "question": "What language does Drake speak?",
+                "cloze": "Drake speaks the language of",
+                "answer": "English",
+                "answer_alias": [
+                    "en",
+                    "eng",
+                    "English language"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who performed Hotline Bling?",
+                "cloze": "Hotline Bling was performed by",
+                "answer": "Ayumi Hamasaki",
+                "answer_alias": [
+                    "CREA",
+                    "ayu",
+                    "Hamasaki Ayumi"
+                ]
+            },
+            {
+                "question": "What language does Ayumi Hamasaki speak?",
+                "cloze": "Ayumi Hamasaki speaks the language of",
+                "answer": "Japanese",
+                "answer_alias": [
+                    "ja",
+                    "jp",
+                    "Japanese language",
+                    "jpn",
+                    "Nihongo"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q20992398",
+                    "P175",
+                    "Q33240"
+                ],
+                [
+                    "Q33240",
+                    "P1412",
+                    "Q1860"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Hotline Bling",
+                    "performer",
+                    "Drake"
+                ],
+                [
+                    "Drake",
+                    "languages spoken, written or signed",
+                    "English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q20992398",
+                    "P175",
+                    "Q188111"
+                ],
+                [
+                    "Q188111",
+                    "P1412",
+                    "Q5287"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Hotline Bling",
+                    "performer",
+                    "Ayumi Hamasaki"
+                ],
+                [
+                    "Ayumi Hamasaki",
+                    "languages spoken, written or signed",
+                    "Japanese"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q20992398",
+                    "P175",
+                    "Q188111"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 19,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The name of the current head of state in {} is",
+                "relation_id": "P35",
+                "target_new": {
+                    "str": "Connachta",
+                    "id": "Q938504"
+                },
+                "target_true": {
+                    "str": "Donald Trump",
+                    "id": "Q22686"
+                },
+                "subject": "United States of America",
+                "question": "What is the name of the current head of state in United States of America?"
+            }
+        ],
+        "questions": [
+            "The name of the head of state of the country to which Byron Dorgan belongs is",
+            "Who is the head of state of the country whose citizen is Byron Dorgan?",
+            "What is the name of the head of state of the country to which Byron Dorgan belongs?",
+            "Who is the chief of state of the country where Byron Dorgan holds citizenship?"
+        ],
+        "answer": "Donald Trump",
+        "answer_alias": [
+            "@realDonaldTrump",
+            "David Dennison",
+            "DJT",
+            "Donald J Trump",
+            "Donald J. Trump",
+            "Individual 1",
+            "Mr Trump",
+            "POTUS 45",
+            "President Donald J Trump",
+            "President Donald J. Trump",
+            "President Donald John Trump",
+            "President Donald Trump",
+            "President Trump",
+            "The Donald",
+            "John Miller",
+            "Trump",
+            "John Barron",
+            "Donald John Trump"
+        ],
+        "new_answer": "Connachta",
+        "new_answer_alias": [],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Byron Dorgan?",
+                "cloze": "Byron Dorgan is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the name of the current head of state in United States of America?",
+                "cloze": "The name of the current head of state in United States of America is",
+                "answer": "Donald Trump",
+                "answer_alias": [
+                    "@realDonaldTrump",
+                    "David Dennison",
+                    "DJT",
+                    "Donald J Trump",
+                    "Donald J. Trump",
+                    "Individual 1",
+                    "Mr Trump",
+                    "POTUS 45",
+                    "President Donald J Trump",
+                    "President Donald J. Trump",
+                    "President Donald John Trump",
+                    "President Donald Trump",
+                    "President Trump",
+                    "The Donald",
+                    "John Miller",
+                    "Trump",
+                    "John Barron",
+                    "Donald John Trump"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Byron Dorgan?",
+                "cloze": "Byron Dorgan is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the name of the current head of state in United States of America?",
+                "cloze": "The name of the current head of state in United States of America is",
+                "answer": "Connachta",
+                "answer_alias": []
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q555735",
+                    "P27",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P35",
+                    "Q22686"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Byron Dorgan",
+                    "country of citizenship",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "head of state",
+                    "Donald Trump"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q555735",
+                    "P27",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P35",
+                    "Q938504"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Byron Dorgan",
+                    "country of citizenship",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "head of state",
+                    "Connachta"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q30",
+                    "P35",
+                    "Q938504"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 21,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "target_true": {
+                    "str": "Australia",
+                    "id": "Q408"
+                },
+                "subject": "John Gorton",
+                "question": "What is the country of citizenship of John Gorton?"
+            }
+        ],
+        "questions": [
+            "The capital of the country of citizenship of John Gorton is",
+            "What is the capital of the country of citizenship of John Gorton?",
+            "Which city is the capital of the country that John Gorton belongs to?",
+            "In which city is the capital of the country that John Gorton is a citizen of?"
+        ],
+        "answer": "Canberra",
+        "answer_alias": [
+            "Canberra, Australia",
+            "Canberra, Australian Capital Territory"
+        ],
+        "new_answer": "Beijing",
+        "new_answer_alias": [
+            "Chungtu",
+            "Shun-t'ien",
+            "Pei-p'ing",
+            "Shuntian Fu",
+            "Peip'ing",
+            "Shuntian",
+            "Chung-tu",
+            "Khanbalik",
+            "Pe-king",
+            "Pei-ching",
+            "Pei-ping",
+            "Shun-tien",
+            "Shuntianfu",
+            "Yan-ching",
+            "Yanking",
+            "Pekin",
+            "BJ",
+            "Zhongdu",
+            "Beiping",
+            "Yanjing",
+            "Peking",
+            "Khanbaliq",
+            "Peiping"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of John Gorton?",
+                "cloze": "John Gorton is a citizen of",
+                "answer": "Australia",
+                "answer_alias": [
+                    "Stralia",
+                    "Nova Hollandia",
+                    "Oz",
+                    "AU",
+                    "New Holland",
+                    "au",
+                    "AUS",
+                    "Commonwealth of Australia",
+                    "\ua736",
+                    "Aussieland",
+                    "Straya",
+                    "New Hollandia"
+                ]
+            },
+            {
+                "question": "What is the capital of Australia?",
+                "cloze": "The capital of Australia is",
+                "answer": "Canberra",
+                "answer_alias": [
+                    "Canberra, Australia",
+                    "Canberra, Australian Capital Territory"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of John Gorton?",
+                "cloze": "John Gorton is a citizen of",
+                "answer": "People's Republic of China",
+                "answer_alias": [
+                    "China",
+                    "China PR",
+                    "CHN",
+                    "cn",
+                    "CN",
+                    "\ud83c\udde8\ud83c\uddf3",
+                    "Mainland China",
+                    "PR China",
+                    "PRC",
+                    "RPC"
+                ]
+            },
+            {
+                "question": "What is the capital of People's Republic of China?",
+                "cloze": "The capital of People's Republic of China is",
+                "answer": "Beijing",
+                "answer_alias": [
+                    "Chungtu",
+                    "Shun-t'ien",
+                    "Pei-p'ing",
+                    "Shuntian Fu",
+                    "Peip'ing",
+                    "Shuntian",
+                    "Chung-tu",
+                    "Khanbalik",
+                    "Pe-king",
+                    "Pei-ching",
+                    "Pei-ping",
+                    "Shun-tien",
+                    "Shuntianfu",
+                    "Yan-ching",
+                    "Yanking",
+                    "Pekin",
+                    "BJ",
+                    "Zhongdu",
+                    "Beiping",
+                    "Yanjing",
+                    "Peking",
+                    "Khanbaliq",
+                    "Peiping"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q356411",
+                    "P27",
+                    "Q408"
+                ],
+                [
+                    "Q408",
+                    "P36",
+                    "Q3114"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "John Gorton",
+                    "country of citizenship",
+                    "Australia"
+                ],
+                [
+                    "Australia",
+                    "capital",
+                    "Canberra"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q356411",
+                    "P27",
+                    "Q148"
+                ],
+                [
+                    "Q148",
+                    "P36",
+                    "Q956"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "John Gorton",
+                    "country of citizenship",
+                    "People's Republic of China"
+                ],
+                [
+                    "People's Republic of China",
+                    "capital",
+                    "Beijing"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q356411",
+                    "P27",
+                    "Q148"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 23,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is famous for",
+                "relation_id": "P800",
+                "target_new": {
+                    "str": "De re militari",
+                    "id": "Q1246541"
+                },
+                "target_true": {
+                    "str": "Federalist Papers",
+                    "id": "Q858036"
+                },
+                "subject": "Alexander Hamilton",
+                "question": "What is Alexander Hamilton famous for?"
+            }
+        ],
+        "questions": [
+            "The language of the work for which Alexander Hamilton is best known is",
+            "In which language was the notable work associated with Alexander Hamilton written?",
+            "What is the language of the work for which Alexander Hamilton is best known?",
+            "In what language was the main work written or named for Alexander Hamilton?"
+        ],
+        "answer": "English",
+        "answer_alias": [
+            "en",
+            "eng",
+            "English language"
+        ],
+        "new_answer": "Latin",
+        "new_answer_alias": [
+            "la",
+            "lat",
+            "Latin language"
+        ],
+        "single_hops": [
+            {
+                "question": "What is Alexander Hamilton famous for?",
+                "cloze": "Alexander Hamilton is famous for",
+                "answer": "Federalist Papers",
+                "answer_alias": [
+                    "The Federalist",
+                    "Federalist",
+                    "The Federalist Papers"
+                ]
+            },
+            {
+                "question": "Which language was Federalist Papers written in?",
+                "cloze": "Federalist Papers was written in the language of",
+                "answer": "English",
+                "answer_alias": [
+                    "en",
+                    "eng",
+                    "English language"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is Alexander Hamilton famous for?",
+                "cloze": "Alexander Hamilton is famous for",
+                "answer": "De re militari",
+                "answer_alias": [
+                    "Concerning Military Matters",
+                    "Epitoma rei militaris"
+                ]
+            },
+            {
+                "question": "Which language was De re militari written in?",
+                "cloze": "De re militari was written in the language of",
+                "answer": "Latin",
+                "answer_alias": [
+                    "la",
+                    "lat",
+                    "Latin language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q178903",
+                    "P800",
+                    "Q858036"
+                ],
+                [
+                    "Q858036",
+                    "P407",
+                    "Q1860"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Alexander Hamilton",
+                    "notable work",
+                    "Federalist Papers"
+                ],
+                [
+                    "Federalist Papers",
+                    "language of work or name",
+                    "English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q178903",
+                    "P800",
+                    "Q1246541"
+                ],
+                [
+                    "Q1246541",
+                    "P407",
+                    "Q397"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Alexander Hamilton",
+                    "notable work",
+                    "De re militari"
+                ],
+                [
+                    "De re militari",
+                    "language of work or name",
+                    "Latin"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q178903",
+                    "P800",
+                    "Q1246541"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 24,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is affiliated with the religion of",
+                "relation_id": "P140",
+                "target_new": {
+                    "str": "Jainism",
+                    "id": "Q9232"
+                },
+                "target_true": {
+                    "str": "Islam",
+                    "id": "Q432"
+                },
+                "subject": "Zulfiqar Ali Bhutto",
+                "question": "Which religion is Zulfiqar Ali Bhutto affiliated with?"
+            }
+        ],
+        "questions": [
+            "The religion of the founder of the Pakistan Peoples Party associated with is",
+            "What religion was the founder of the Pakistan Peoples Party associated with?",
+            "Which religious faith did the person who founded the Pakistan Peoples Party belong to?",
+            "What was the religious affiliation of the individual who founded the Pakistan Peoples Party?"
+        ],
+        "answer": "Islam",
+        "answer_alias": [
+            "al-\u2019isl\u0101m",
+            "Islamic religion",
+            "Mohammedanism",
+            "Muslim religion",
+            "religion of the Muslims"
+        ],
+        "new_answer": "Jainism",
+        "new_answer_alias": [
+            "Jain dharma",
+            "Jain mata",
+            "Jaina",
+            "jainas",
+            "Jainatva",
+            "Jaini",
+            "Jainy",
+            "nirgrantha"
+        ],
+        "single_hops": [
+            {
+                "question": "Who founded Pakistan Peoples Party?",
+                "cloze": "Pakistan Peoples Party was founded by",
+                "answer": "Zulfiqar Ali Bhutto",
+                "answer_alias": [
+                    "Shaheed Zulfiqar Ali Bhutto",
+                    "Zulfikar Ali Bhutto"
+                ]
+            },
+            {
+                "question": "Which religion is Zulfiqar Ali Bhutto affiliated with?",
+                "cloze": "Zulfiqar Ali Bhutto is affiliated with the religion of",
+                "answer": "Islam",
+                "answer_alias": [
+                    "al-\u2019isl\u0101m",
+                    "Islamic religion",
+                    "Mohammedanism",
+                    "Muslim religion",
+                    "religion of the Muslims"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who founded Pakistan Peoples Party?",
+                "cloze": "Pakistan Peoples Party was founded by",
+                "answer": "Zulfiqar Ali Bhutto",
+                "answer_alias": [
+                    "Shaheed Zulfiqar Ali Bhutto",
+                    "Zulfikar Ali Bhutto"
+                ]
+            },
+            {
+                "question": "Which religion is Zulfiqar Ali Bhutto affiliated with?",
+                "cloze": "Zulfiqar Ali Bhutto is affiliated with the religion of",
+                "answer": "Jainism",
+                "answer_alias": [
+                    "Jain dharma",
+                    "Jain mata",
+                    "Jaina",
+                    "jainas",
+                    "Jainatva",
+                    "Jaini",
+                    "Jainy",
+                    "nirgrantha"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q186591",
+                    "P112",
+                    "Q131355"
+                ],
+                [
+                    "Q131355",
+                    "P140",
+                    "Q432"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Pakistan Peoples Party",
+                    "founded by",
+                    "Zulfiqar Ali Bhutto"
+                ],
+                [
+                    "Zulfiqar Ali Bhutto",
+                    "religion or worldview",
+                    "Islam"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q186591",
+                    "P112",
+                    "Q131355"
+                ],
+                [
+                    "Q131355",
+                    "P140",
+                    "Q9232"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Pakistan Peoples Party",
+                    "founded by",
+                    "Zulfiqar Ali Bhutto"
+                ],
+                [
+                    "Zulfiqar Ali Bhutto",
+                    "religion or worldview",
+                    "Jainism"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q131355",
+                    "P140",
+                    "Q9232"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 25,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is famous for",
+                "relation_id": "P800",
+                "target_new": {
+                    "str": "De re militari",
+                    "id": "Q1246541"
+                },
+                "target_true": {
+                    "str": "Lord of the Flies",
+                    "id": "Q271764"
+                },
+                "subject": "William Golding",
+                "question": "What is William Golding famous for?"
+            }
+        ],
+        "questions": [
+            "The language of the work for which the writer William Golding is most known is",
+            "In which language was the notable work of the writer William Golding written under?",
+            "What is the language of the work for which the writer William Golding is most known?",
+            "Which language was used for the writing of the notable work of William Golding?"
+        ],
+        "answer": "English",
+        "answer_alias": [
+            "en",
+            "eng",
+            "English language"
+        ],
+        "new_answer": "Latin",
+        "new_answer_alias": [
+            "la",
+            "lat",
+            "Latin language"
+        ],
+        "single_hops": [
+            {
+                "question": "What is William Golding famous for?",
+                "cloze": "William Golding is famous for",
+                "answer": "Lord of the Flies",
+                "answer_alias": []
+            },
+            {
+                "question": "Which language was Lord of the Flies written in?",
+                "cloze": "Lord of the Flies was written in the language of",
+                "answer": "English",
+                "answer_alias": [
+                    "en",
+                    "eng",
+                    "English language"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is William Golding famous for?",
+                "cloze": "William Golding is famous for",
+                "answer": "De re militari",
+                "answer_alias": [
+                    "Concerning Military Matters",
+                    "Epitoma rei militaris"
+                ]
+            },
+            {
+                "question": "Which language was De re militari written in?",
+                "cloze": "De re militari was written in the language of",
+                "answer": "Latin",
+                "answer_alias": [
+                    "la",
+                    "lat",
+                    "Latin language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q44183",
+                    "P800",
+                    "Q271764"
+                ],
+                [
+                    "Q271764",
+                    "P407",
+                    "Q1860"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "William Golding",
+                    "notable work",
+                    "Lord of the Flies"
+                ],
+                [
+                    "Lord of the Flies",
+                    "language of work or name",
+                    "English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q44183",
+                    "P800",
+                    "Q1246541"
+                ],
+                [
+                    "Q1246541",
+                    "P407",
+                    "Q397"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "William Golding",
+                    "notable work",
+                    "De re militari"
+                ],
+                [
+                    "De re militari",
+                    "language of work or name",
+                    "Latin"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q44183",
+                    "P800",
+                    "Q1246541"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 29,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The author of {} is",
+                "relation_id": "P50",
+                "target_new": {
+                    "str": "Roger Williams",
+                    "id": "Q391591"
+                },
+                "target_true": {
+                    "str": "William Morris",
+                    "id": "Q182589"
+                },
+                "subject": "News from Nowhere",
+                "question": "Who is the author of News from Nowhere?"
+            }
+        ],
+        "questions": [
+            "The city where the author of \"News from Nowhere\" passed away is",
+            "Where did the author of \"News from Nowhere\" die?",
+            "In which city did the author of \"News from Nowhere\" pass away?",
+            "What is the place of death of the author of \"News from Nowhere\"?"
+        ],
+        "answer": "London",
+        "answer_alias": [
+            "London, United Kingdom",
+            "Greater London",
+            "London, England",
+            "London U.K.",
+            "London UK",
+            "London, UK"
+        ],
+        "new_answer": "Providence",
+        "new_answer_alias": [
+            "Providence, Rhode Island",
+            "Providence, RI"
+        ],
+        "single_hops": [
+            {
+                "question": "Who is the author of News from Nowhere?",
+                "cloze": "The author of News from Nowhere is",
+                "answer": "William Morris",
+                "answer_alias": [
+                    "William M. Morris"
+                ]
+            },
+            {
+                "question": "Which city did William Morris die in?",
+                "cloze": "William Morris died in the city of",
+                "answer": "London",
+                "answer_alias": [
+                    "London, United Kingdom",
+                    "Greater London",
+                    "London, England",
+                    "London U.K.",
+                    "London UK",
+                    "London, UK"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who is the author of News from Nowhere?",
+                "cloze": "The author of News from Nowhere is",
+                "answer": "Roger Williams",
+                "answer_alias": [
+                    "Rev. Roger Williams, Founder of Rhode Island",
+                    "Rodzher Uil\u02b9i\ufe20a\ufe21ms",
+                    "Rogerius Williams"
+                ]
+            },
+            {
+                "question": "Which city did Roger Williams die in?",
+                "cloze": "Roger Williams died in the city of",
+                "answer": "Providence",
+                "answer_alias": [
+                    "Providence, Rhode Island",
+                    "Providence, RI"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q7019506",
+                    "P50",
+                    "Q182589"
+                ],
+                [
+                    "Q182589",
+                    "P20",
+                    "Q84"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "News from Nowhere",
+                    "author",
+                    "William Morris"
+                ],
+                [
+                    "William Morris",
+                    "place of death",
+                    "London"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q7019506",
+                    "P50",
+                    "Q391591"
+                ],
+                [
+                    "Q391591",
+                    "P20",
+                    "Q18383"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "News from Nowhere",
+                    "author",
+                    "Roger Williams"
+                ],
+                [
+                    "Roger Williams",
+                    "place of death",
+                    "Providence"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q7019506",
+                    "P50",
+                    "Q391591"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 30,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Mexico",
+                    "id": "Q96"
+                },
+                "target_true": {
+                    "str": "France",
+                    "id": "Q142"
+                },
+                "subject": "Louis Henri Loison",
+                "question": "What is the country of citizenship of Louis Henri Loison?"
+            }
+        ],
+        "questions": [
+            "The official language of the country to which Louis Henri Loison belongs is",
+            "What is the official language of the country to which Louis Henri Loison belongs?",
+            "Which language is the official language of the country of citizenship of Louis Henri Loison?",
+            "In which language do people communicate officially in the country where Louis Henri Loison holds his citizenship?"
+        ],
+        "answer": "French",
+        "answer_alias": [
+            "fra",
+            "fr",
+            "French language",
+            "(fr)"
+        ],
+        "new_answer": "Spanish",
+        "new_answer_alias": [
+            "Espa\u00f1ol",
+            "Castilian",
+            "Castilian language",
+            "es",
+            "Spanish language"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Louis Henri Loison?",
+                "cloze": "Louis Henri Loison is a citizen of",
+                "answer": "France",
+                "answer_alias": [
+                    "Republic of France",
+                    "R\u00e9publique fran\u00e7aise",
+                    "the Hexagon",
+                    "La France",
+                    "French Republic",
+                    "FRA",
+                    "fr",
+                    "FR"
+                ]
+            },
+            {
+                "question": "What is the official language of France?",
+                "cloze": "The official language of France is",
+                "answer": "French",
+                "answer_alias": [
+                    "fra",
+                    "fr",
+                    "French language",
+                    "(fr)"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Louis Henri Loison?",
+                "cloze": "Louis Henri Loison is a citizen of",
+                "answer": "Mexico",
+                "answer_alias": [
+                    "MEX",
+                    "MX",
+                    "mx",
+                    "MXN",
+                    "Mexican Republic",
+                    "\ud83c\uddf2\ud83c\uddfd",
+                    "United Mexican States",
+                    "US of M"
+                ]
+            },
+            {
+                "question": "What is the official language of Mexico?",
+                "cloze": "The official language of Mexico is",
+                "answer": "Spanish",
+                "answer_alias": [
+                    "Espa\u00f1ol",
+                    "Castilian",
+                    "Castilian language",
+                    "es",
+                    "Spanish language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q643722",
+                    "P27",
+                    "Q142"
+                ],
+                [
+                    "Q142",
+                    "P37",
+                    "Q150"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Louis Henri Loison",
+                    "country of citizenship",
+                    "France"
+                ],
+                [
+                    "France",
+                    "official language",
+                    "French"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q643722",
+                    "P27",
+                    "Q96"
+                ],
+                [
+                    "Q96",
+                    "P37",
+                    "Q1321"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Louis Henri Loison",
+                    "country of citizenship",
+                    "Mexico"
+                ],
+                [
+                    "Mexico",
+                    "official language",
+                    "Spanish"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q643722",
+                    "P27",
+                    "Q96"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 31,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "North Korea",
+                    "id": "Q423"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Gilda Radner",
+                "question": "What is the country of citizenship of Gilda Radner?"
+            }
+        ],
+        "questions": [
+            "The capital of the country to which Gilda Radner belongs is",
+            "What is the capital of the country to which Gilda Radner belongs?",
+            "In which city is the capital of Gilda Radner's country of citizenship located?",
+            "Which city serves as the capital of the country that Gilda Radner is a citizen of?"
+        ],
+        "answer": "Washington, D.C.",
+        "answer_alias": [
+            "Washington",
+            "The District",
+            "D.C.",
+            "DC",
+            "District of Columbia",
+            "Washington D.C.",
+            "Washington, DC",
+            "US-DC",
+            "Washington DC",
+            "Washington, D.C., U.S.",
+            "Washington, District of Columbia"
+        ],
+        "new_answer": "Pyongyang",
+        "new_answer_alias": [
+            "Ryugyong",
+            "Capital of Revolution"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Gilda Radner?",
+                "cloze": "Gilda Radner is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the capital of United States of America?",
+                "cloze": "The capital of United States of America is",
+                "answer": "Washington, D.C.",
+                "answer_alias": [
+                    "Washington",
+                    "The District",
+                    "D.C.",
+                    "DC",
+                    "District of Columbia",
+                    "Washington D.C.",
+                    "Washington, DC",
+                    "US-DC",
+                    "Washington DC",
+                    "Washington, D.C., U.S.",
+                    "Washington, District of Columbia"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Gilda Radner?",
+                "cloze": "Gilda Radner is a citizen of",
+                "answer": "North Korea",
+                "answer_alias": [
+                    "Dem. Kore Cumhuriyeti",
+                    "KDHC",
+                    "Kore Demokratik Halk Cumhuriyeti",
+                    "Kuzey Kore",
+                    "kp",
+                    "PRK",
+                    "\ud83c\uddf0\ud83c\uddf5",
+                    "Democratic People's Republic of Korea",
+                    "DPRK",
+                    "N. Korea"
+                ]
+            },
+            {
+                "question": "What is the capital of North Korea?",
+                "cloze": "The capital of North Korea is",
+                "answer": "Pyongyang",
+                "answer_alias": [
+                    "Ryugyong",
+                    "Capital of Revolution"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q266808",
+                    "P27",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P36",
+                    "Q61"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Gilda Radner",
+                    "country of citizenship",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "capital",
+                    "Washington, D.C."
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q266808",
+                    "P27",
+                    "Q423"
+                ],
+                [
+                    "Q423",
+                    "P36",
+                    "Q18808"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Gilda Radner",
+                    "country of citizenship",
+                    "North Korea"
+                ],
+                [
+                    "North Korea",
+                    "capital",
+                    "Pyongyang"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q266808",
+                    "P27",
+                    "Q423"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 32,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The author of {} is",
+                "relation_id": "P50",
+                "target_new": {
+                    "str": "Douglas Niles",
+                    "id": "Q3038032"
+                },
+                "target_true": {
+                    "str": "Christopher Marlowe",
+                    "id": "Q28975"
+                },
+                "subject": "Tamburlaine",
+                "question": "Who is the author of Tamburlaine?"
+            }
+        ],
+        "questions": [
+            "The nationality of the author of Tamburlaine is",
+            "Which country is the author of Tamburlaine a citizen of?",
+            "What is the nationality of the author of Tamburlaine?",
+            "Which country does the author of Tamburlaine belong to?"
+        ],
+        "answer": "Kingdom of England",
+        "answer_alias": [
+            "England"
+        ],
+        "new_answer": "United States of America",
+        "new_answer_alias": [
+            "the States",
+            "the U.S.",
+            "the United States",
+            "the United States of America",
+            "the US",
+            "the USA",
+            "U. S.",
+            "U. S. A.",
+            "U.S.",
+            "U.S.A.",
+            "US of A",
+            "USA",
+            "America",
+            "United States",
+            "US",
+            "the U.S. of A",
+            "the U.S. of America",
+            "the U.S.A.",
+            "the US of A",
+            "the US of America",
+            "U.S. of America",
+            "US of America"
+        ],
+        "single_hops": [
+            {
+                "question": "Who is the author of Tamburlaine?",
+                "cloze": "The author of Tamburlaine is",
+                "answer": "Christopher Marlowe",
+                "answer_alias": [
+                    "Kit Marlowe"
+                ]
+            },
+            {
+                "question": "What is the country of citizenship of Christopher Marlowe?",
+                "cloze": "Christopher Marlowe is a citizen of",
+                "answer": "Kingdom of England",
+                "answer_alias": [
+                    "England"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who is the author of Tamburlaine?",
+                "cloze": "The author of Tamburlaine is",
+                "answer": "Douglas Niles",
+                "answer_alias": []
+            },
+            {
+                "question": "What is the country of citizenship of Douglas Niles?",
+                "cloze": "Douglas Niles is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q1214597",
+                    "P50",
+                    "Q28975"
+                ],
+                [
+                    "Q28975",
+                    "P27",
+                    "Q179876"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Tamburlaine",
+                    "author",
+                    "Christopher Marlowe"
+                ],
+                [
+                    "Christopher Marlowe",
+                    "country of citizenship",
+                    "Kingdom of England"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q1214597",
+                    "P50",
+                    "Q3038032"
+                ],
+                [
+                    "Q3038032",
+                    "P27",
+                    "Q30"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Tamburlaine",
+                    "author",
+                    "Douglas Niles"
+                ],
+                [
+                    "Douglas Niles",
+                    "country of citizenship",
+                    "United States of America"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q1214597",
+                    "P50",
+                    "Q3038032"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 33,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Simon Fuller",
+                    "id": "Q367691"
+                },
+                "target_true": {
+                    "str": "Rick Riordan",
+                    "id": "Q212727"
+                },
+                "subject": "Percy Jackson",
+                "question": "Who was Percy Jackson created by?"
+            }
+        ],
+        "questions": [
+            "The genre of literary works created by the person who created Percy Jackson is",
+            "What is the genre of literary works created by the person who created Percy Jackson?",
+            "What type of stories did the creator of Percy Jackson specialize in?",
+            "Which genre is associated with the author of Percy Jackson?"
+        ],
+        "answer": "fantasy",
+        "answer_alias": [
+            "fantasy fiction"
+        ],
+        "new_answer": "pop music",
+        "new_answer_alias": [
+            "pop"
+        ],
+        "single_hops": [
+            {
+                "question": "Who was Percy Jackson created by?",
+                "cloze": "Percy Jackson was created by",
+                "answer": "Rick Riordan",
+                "answer_alias": [
+                    "Richard Russell Riordan Jr",
+                    "Richard Russell Riordan Junior",
+                    "Richard Russell Riordan, Jr."
+                ]
+            },
+            {
+                "question": "What type of music does Rick Riordan play?",
+                "cloze": "The type of music that Rick Riordan plays is",
+                "answer": "fantasy",
+                "answer_alias": [
+                    "fantasy fiction"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who was Percy Jackson created by?",
+                "cloze": "Percy Jackson was created by",
+                "answer": "Simon Fuller",
+                "answer_alias": [
+                    "Simon Robert Fuller"
+                ]
+            },
+            {
+                "question": "What type of music does Simon Fuller play?",
+                "cloze": "The type of music that Simon Fuller plays is",
+                "answer": "pop music",
+                "answer_alias": [
+                    "pop"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q3899725",
+                    "P170",
+                    "Q212727"
+                ],
+                [
+                    "Q212727",
+                    "P136",
+                    "Q132311"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Percy Jackson",
+                    "creator",
+                    "Rick Riordan"
+                ],
+                [
+                    "Rick Riordan",
+                    "genre",
+                    "fantasy"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q3899725",
+                    "P170",
+                    "Q367691"
+                ],
+                [
+                    "Q367691",
+                    "P136",
+                    "Q37073"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Percy Jackson",
+                    "creator",
+                    "Simon Fuller"
+                ],
+                [
+                    "Simon Fuller",
+                    "genre",
+                    "pop music"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q3899725",
+                    "P170",
+                    "Q367691"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 40,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} works in the field of",
+                "relation_id": "P106",
+                "target_new": {
+                    "str": "singer",
+                    "id": "Q177220"
+                },
+                "target_true": {
+                    "str": "poet",
+                    "id": "Q49757"
+                },
+                "subject": "Virgil",
+                "question": "What kind of work does Virgil do?"
+            }
+        ],
+        "questions": [
+            "The occupation of the author of Aeneid is",
+            "What was the occupation of the author of Aeneid?",
+            "Which profession did the author of Aeneid have?",
+            "What was the job of the writer of Aeneid?"
+        ],
+        "answer": "poet",
+        "answer_alias": [
+            "bard",
+            "poetess",
+            "poetry author",
+            "poetry writer"
+        ],
+        "new_answer": "singer",
+        "new_answer_alias": [
+            "vocalist",
+            "musicians, singers and composers",
+            "songstress",
+            "\ud83e\uddd1\ud83c\udfa4"
+        ],
+        "single_hops": [
+            {
+                "question": "Who is the author of Aeneid?",
+                "cloze": "The author of Aeneid is",
+                "answer": "Virgil",
+                "answer_alias": [
+                    "Vergil",
+                    "Mantuan Swan",
+                    "Publius Vergilius Maro",
+                    "Swan of Mantua"
+                ]
+            },
+            {
+                "question": "What kind of work does Virgil do?",
+                "cloze": "Virgil works in the field of",
+                "answer": "poet",
+                "answer_alias": [
+                    "bard",
+                    "poetess",
+                    "poetry author",
+                    "poetry writer"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who is the author of Aeneid?",
+                "cloze": "The author of Aeneid is",
+                "answer": "Virgil",
+                "answer_alias": [
+                    "Vergil",
+                    "Mantuan Swan",
+                    "Publius Vergilius Maro",
+                    "Swan of Mantua"
+                ]
+            },
+            {
+                "question": "What kind of work does Virgil do?",
+                "cloze": "Virgil works in the field of",
+                "answer": "singer",
+                "answer_alias": [
+                    "vocalist",
+                    "musicians, singers and composers",
+                    "songstress",
+                    "\ud83e\uddd1\ud83c\udfa4"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q60220",
+                    "P50",
+                    "Q1398"
+                ],
+                [
+                    "Q1398",
+                    "P106",
+                    "Q49757"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Aeneid",
+                    "author",
+                    "Virgil"
+                ],
+                [
+                    "Virgil",
+                    "occupation",
+                    "poet"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q60220",
+                    "P50",
+                    "Q1398"
+                ],
+                [
+                    "Q1398",
+                    "P106",
+                    "Q177220"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Aeneid",
+                    "author",
+                    "Virgil"
+                ],
+                [
+                    "Virgil",
+                    "occupation",
+                    "singer"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q1398",
+                    "P106",
+                    "Q177220"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 41,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The official language of {} is",
+                "relation_id": "P37",
+                "target_new": {
+                    "str": "German",
+                    "id": "Q188"
+                },
+                "target_true": {
+                    "str": "American English",
+                    "id": "Q7976"
+                },
+                "subject": "United States of America",
+                "question": "What is the official language of United States of America?"
+            }
+        ],
+        "questions": [
+            "The official language of the country to which Don Adams belonged is",
+            "What is the official language of the country to which Don Adams belonged?",
+            "Which language is the official language of the country where Don Adams was a citizen?",
+            "In which language is the official work conducted in the country of citizenship of Don Adams?"
+        ],
+        "answer": "American English",
+        "answer_alias": [
+            "AmE",
+            "en_us",
+            "en_US",
+            "en-us",
+            "en-US",
+            "English (United States)",
+            "U.S. English",
+            "United States English",
+            "US English"
+        ],
+        "new_answer": "German",
+        "new_answer_alias": [
+            "de",
+            "German language"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Don Adams?",
+                "cloze": "Don Adams is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the official language of United States of America?",
+                "cloze": "The official language of United States of America is",
+                "answer": "American English",
+                "answer_alias": [
+                    "AmE",
+                    "en_us",
+                    "en_US",
+                    "en-us",
+                    "en-US",
+                    "English (United States)",
+                    "U.S. English",
+                    "United States English",
+                    "US English"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Don Adams?",
+                "cloze": "Don Adams is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the official language of United States of America?",
+                "cloze": "The official language of United States of America is",
+                "answer": "German",
+                "answer_alias": [
+                    "de",
+                    "German language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q464367",
+                    "P27",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P37",
+                    "Q7976"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Don Adams",
+                    "country of citizenship",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "official language",
+                    "American English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q464367",
+                    "P27",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P37",
+                    "Q188"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Don Adams",
+                    "country of citizenship",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "official language",
+                    "German"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q30",
+                    "P37",
+                    "Q188"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 42,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Russia",
+                    "id": "Q159"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Frederick William MacMonnies",
+                "question": "What is the country of citizenship of Frederick William MacMonnies?"
+            }
+        ],
+        "questions": [
+            "The official language of the country with which the artist Frederick William MacMonnies is associated is",
+            "What is the official language of the country with which the artist Frederick William MacMonnies is associated?",
+            "In what language do citizens of the country to which Frederick William MacMonnies belong conduct official business?",
+            "Which language is considered the official language of the country where Frederick William MacMonnies was a citizen?"
+        ],
+        "answer": "American English",
+        "answer_alias": [
+            "AmE",
+            "en_us",
+            "en_US",
+            "en-us",
+            "en-US",
+            "English (United States)",
+            "U.S. English",
+            "United States English",
+            "US English"
+        ],
+        "new_answer": "Russian",
+        "new_answer_alias": [
+            "Russkiy",
+            "Russkiy yazyk",
+            "ru",
+            "Russian language"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Frederick William MacMonnies?",
+                "cloze": "Frederick William MacMonnies is a citizen of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the official language of United States of America?",
+                "cloze": "The official language of United States of America is",
+                "answer": "American English",
+                "answer_alias": [
+                    "AmE",
+                    "en_us",
+                    "en_US",
+                    "en-us",
+                    "en-US",
+                    "English (United States)",
+                    "U.S. English",
+                    "United States English",
+                    "US English"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Frederick William MacMonnies?",
+                "cloze": "Frederick William MacMonnies is a citizen of",
+                "answer": "Russia",
+                "answer_alias": [
+                    "RF",
+                    "RU",
+                    "Rossiya",
+                    "Russian Federation",
+                    "RUS",
+                    "ru",
+                    "Rossija",
+                    "Federation of Russia",
+                    "Rossijskaja Federatsija",
+                    "Rossiyskaya Federatsiya",
+                    "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
+                    "\u0420\u043e\u0441\u0441\u0438\u044f"
+                ]
+            },
+            {
+                "question": "What is the official language of Russia?",
+                "cloze": "The official language of Russia is",
+                "answer": "Russian",
+                "answer_alias": [
+                    "Russkiy",
+                    "Russkiy yazyk",
+                    "ru",
+                    "Russian language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q743154",
+                    "P27",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P37",
+                    "Q7976"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Frederick William MacMonnies",
+                    "country of citizenship",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "official language",
+                    "American English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q743154",
+                    "P27",
+                    "Q159"
+                ],
+                [
+                    "Q159",
+                    "P37",
+                    "Q7737"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Frederick William MacMonnies",
+                    "country of citizenship",
+                    "Russia"
+                ],
+                [
+                    "Russia",
+                    "official language",
+                    "Russian"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q743154",
+                    "P27",
+                    "Q159"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 43,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Stirling Silliphanta",
+                    "id": "Q347945"
+                },
+                "target_true": {
+                    "str": "Mikael Agricola",
+                    "id": "Q215346"
+                },
+                "subject": "Finnish",
+                "question": "Who was Finnish created by?"
+            }
+        ],
+        "questions": [
+            "The creator of Tuusula was",
+            "Who was the creator of Tuusula?",
+            "Who created Tuusula town?",
+            "Who is responsible for founding Tuusula?"
+        ],
+        "answer": "Mikael Agricola",
+        "answer_alias": [
+            "Michael Agricola",
+            "Michael Olai",
+            "Mikael Olavinpoika"
+        ],
+        "new_answer": "Stirling Silliphanta",
+        "new_answer_alias": [
+            "Stirling Dale Silliphant"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the official language of Tuusula?",
+                "cloze": "The official language of Tuusula is",
+                "answer": "Finnish",
+                "answer_alias": [
+                    "Suomi",
+                    "fi",
+                    "fin",
+                    "Finnish language"
+                ]
+            },
+            {
+                "question": "Who was Finnish created by?",
+                "cloze": "Finnish was created by",
+                "answer": "Mikael Agricola",
+                "answer_alias": [
+                    "Michael Agricola",
+                    "Michael Olai",
+                    "Mikael Olavinpoika"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the official language of Tuusula?",
+                "cloze": "The official language of Tuusula is",
+                "answer": "Finnish",
+                "answer_alias": [
+                    "Suomi",
+                    "fi",
+                    "fin",
+                    "Finnish language"
+                ]
+            },
+            {
+                "question": "Who was Finnish created by?",
+                "cloze": "Finnish was created by",
+                "answer": "Stirling Silliphanta",
+                "answer_alias": [
+                    "Stirling Dale Silliphant"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q214773",
+                    "P37",
+                    "Q1412"
+                ],
+                [
+                    "Q1412",
+                    "P170",
+                    "Q215346"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Tuusula",
+                    "official language",
+                    "Finnish"
+                ],
+                [
+                    "Finnish",
+                    "creator",
+                    "Mikael Agricola"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q214773",
+                    "P37",
+                    "Q1412"
+                ],
+                [
+                    "Q1412",
+                    "P170",
+                    "Q347945"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Tuusula",
+                    "official language",
+                    "Finnish"
+                ],
+                [
+                    "Finnish",
+                    "creator",
+                    "Stirling Silliphanta"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q1412",
+                    "P170",
+                    "Q347945"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 44,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The author of {} is",
+                "relation_id": "P50",
+                "target_new": {
+                    "str": "Hans Christian Andersen",
+                    "id": "Q5673"
+                },
+                "target_true": {
+                    "str": "James Joyce",
+                    "id": "Q6882"
+                },
+                "subject": "Finnegans Wake",
+                "question": "Who is the author of Finnegans Wake?"
+            }
+        ],
+        "questions": [
+            "The place where the author of Finnegans Wake died is",
+            "Where did the author of Finnegans Wake pass away?",
+            "In what place did the author of Finnegans Wake die?",
+            "What location was the place of death of the author of Finnegans Wake?"
+        ],
+        "answer": "Z\u00fcrich",
+        "answer_alias": [
+            "Zurich",
+            "Stadt Z\u00fcrich",
+            "ZH",
+            "Zurich, Switzerland",
+            "City of Zurich"
+        ],
+        "new_answer": "Copenhagen",
+        "new_answer_alias": [
+            "CPH",
+            "Havn",
+            "K\u00f8benhavn",
+            "Kopenhagen",
+            "Copenhagen, Denmark",
+            "Hafn",
+            "Hafnia",
+            "Kj\u00f6b",
+            "Kj\u00f6b.",
+            "Kj\u00f6benhavn",
+            "Kobenhavn",
+            "K\u00f6benhavn",
+            "K\u00f6\u00f6penhamina",
+            "K\u00f6penhamn"
+        ],
+        "single_hops": [
+            {
+                "question": "Who is the author of Finnegans Wake?",
+                "cloze": "The author of Finnegans Wake is",
+                "answer": "James Joyce",
+                "answer_alias": [
+                    "James Augustine Aloysius Joyce"
+                ]
+            },
+            {
+                "question": "Which city did James Joyce die in?",
+                "cloze": "James Joyce died in the city of",
+                "answer": "Z\u00fcrich",
+                "answer_alias": [
+                    "Zurich",
+                    "Stadt Z\u00fcrich",
+                    "ZH",
+                    "Zurich, Switzerland",
+                    "City of Zurich"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who is the author of Finnegans Wake?",
+                "cloze": "The author of Finnegans Wake is",
+                "answer": "Hans Christian Andersen",
+                "answer_alias": [
+                    "Hans Andersen",
+                    "H.C. Andersen",
+                    "H.Ch. Andersen"
+                ]
+            },
+            {
+                "question": "Which city did Hans Christian Andersen die in?",
+                "cloze": "Hans Christian Andersen died in the city of",
+                "answer": "Copenhagen",
+                "answer_alias": [
+                    "CPH",
+                    "Havn",
+                    "K\u00f8benhavn",
+                    "Kopenhagen",
+                    "Copenhagen, Denmark",
+                    "Hafn",
+                    "Hafnia",
+                    "Kj\u00f6b",
+                    "Kj\u00f6b.",
+                    "Kj\u00f6benhavn",
+                    "Kobenhavn",
+                    "K\u00f6benhavn",
+                    "K\u00f6\u00f6penhamina",
+                    "K\u00f6penhamn"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q6507",
+                    "P50",
+                    "Q6882"
+                ],
+                [
+                    "Q6882",
+                    "P20",
+                    "Q72"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Finnegans Wake",
+                    "author",
+                    "James Joyce"
+                ],
+                [
+                    "James Joyce",
+                    "place of death",
+                    "Z\u00fcrich"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q6507",
+                    "P50",
+                    "Q5673"
+                ],
+                [
+                    "Q5673",
+                    "P20",
+                    "Q1748"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Finnegans Wake",
+                    "author",
+                    "Hans Christian Andersen"
+                ],
+                [
+                    "Hans Christian Andersen",
+                    "place of death",
+                    "Copenhagen"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q6507",
+                    "P50",
+                    "Q5673"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 45,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The name of the current head of the {} government is",
+                "relation_id": "P6",
+                "target_new": {
+                    "str": "Gro Harlem Brundtland",
+                    "id": "Q133009"
+                },
+                "target_true": {
+                    "str": "Stefan L\u00f6fven",
+                    "id": "Q2740012"
+                },
+                "subject": "Sweden",
+                "question": "What is the name of the current head of the Sweden government?"
+            }
+        ],
+        "questions": [
+            "The head of government of the country where Stig Blomqvist holds citizenship is",
+            "Who is the head of government of the country where Stig Blomqvist holds citizenship?",
+            "What is the name of the current head of government of the country to which Stig Blomqvist belongs?",
+            "In which country does the current head of government serve where Stig Blomqvist is a citizen?"
+        ],
+        "answer": "Stefan L\u00f6fven",
+        "answer_alias": [
+            "Kjell Stefan L\u00f6fven",
+            "Stefan L\u00f6fv\u00e9n"
+        ],
+        "new_answer": "Gro Harlem Brundtland",
+        "new_answer_alias": [
+            "Gro Brundtland",
+            "Gro Harlem"
+        ],
+        "single_hops": [
+            {
+                "question": "What is the country of citizenship of Stig Blomqvist?",
+                "cloze": "Stig Blomqvist is a citizen of",
+                "answer": "Sweden",
+                "answer_alias": [
+                    "se",
+                    "SWE",
+                    "Sverige",
+                    "SE",
+                    "Kingdom of Sweden",
+                    "Konungariket Sverige",
+                    "\ud83c\uddf8\ud83c\uddea"
+                ]
+            },
+            {
+                "question": "What is the name of the current head of the Sweden government?",
+                "cloze": "The name of the current head of the Sweden government is",
+                "answer": "Stefan L\u00f6fven",
+                "answer_alias": [
+                    "Kjell Stefan L\u00f6fven",
+                    "Stefan L\u00f6fv\u00e9n"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "What is the country of citizenship of Stig Blomqvist?",
+                "cloze": "Stig Blomqvist is a citizen of",
+                "answer": "Sweden",
+                "answer_alias": [
+                    "se",
+                    "SWE",
+                    "Sverige",
+                    "SE",
+                    "Kingdom of Sweden",
+                    "Konungariket Sverige",
+                    "\ud83c\uddf8\ud83c\uddea"
+                ]
+            },
+            {
+                "question": "What is the name of the current head of the Sweden government?",
+                "cloze": "The name of the current head of the Sweden government is",
+                "answer": "Gro Harlem Brundtland",
+                "answer_alias": [
+                    "Gro Brundtland",
+                    "Gro Harlem"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q343652",
+                    "P27",
+                    "Q34"
+                ],
+                [
+                    "Q34",
+                    "P6",
+                    "Q2740012"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Stig Blomqvist",
+                    "country of citizenship",
+                    "Sweden"
+                ],
+                [
+                    "Sweden",
+                    "head of government",
+                    "Stefan L\u00f6fven"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q343652",
+                    "P27",
+                    "Q34"
+                ],
+                [
+                    "Q34",
+                    "P6",
+                    "Q133009"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Stig Blomqvist",
+                    "country of citizenship",
+                    "Sweden"
+                ],
+                [
+                    "Sweden",
+                    "head of government",
+                    "Gro Harlem Brundtland"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q34",
+                    "P6",
+                    "Q133009"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 47,
+        "hop": [
+            1
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} works in the field of",
+                "relation_id": "P106",
+                "target_new": {
+                    "str": "musician",
+                    "id": "Q639669"
+                },
+                "target_true": {
+                    "str": "politician",
+                    "id": "Q82955"
+                },
+                "subject": "Amit Shah",
+                "question": "What kind of work does Amit Shah do?"
+            }
+        ],
+        "questions": [
+            "The occupation of the chairperson of Bharatiya Janata Party is",
+            "What is the occupation of the chairperson of Bharatiya Janata Party?",
+            "Which professional field does the chairperson of Bharatiya Janata Party belong to?",
+            "What is the job of the chairperson of Bharatiya Janata Party?"
+        ],
+        "answer": "politician",
+        "answer_alias": [
+            "political figure",
+            "pol",
+            "political leader",
+            "polit."
+        ],
+        "new_answer": "musician",
+        "new_answer_alias": [
+            "musical artist"
+        ],
+        "single_hops": [
+            {
+                "question": "Who is the chairperson of Bharatiya Janata Party?",
+                "cloze": "The chairperson of Bharatiya Janata Party is",
+                "answer": "Amit Shah",
+                "answer_alias": [
+                    "Amit Anil Chandra Shah"
+                ]
+            },
+            {
+                "question": "What kind of work does Amit Shah do?",
+                "cloze": "Amit Shah works in the field of",
+                "answer": "politician",
+                "answer_alias": [
+                    "political figure",
+                    "pol",
+                    "political leader",
+                    "polit."
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Who is the chairperson of Bharatiya Janata Party?",
+                "cloze": "The chairperson of Bharatiya Janata Party is",
+                "answer": "Amit Shah",
+                "answer_alias": [
+                    "Amit Anil Chandra Shah"
+                ]
+            },
+            {
+                "question": "What kind of work does Amit Shah do?",
+                "cloze": "Amit Shah works in the field of",
+                "answer": "musician",
+                "answer_alias": [
+                    "musical artist"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q10230",
+                    "P488",
+                    "Q4746875"
+                ],
+                [
+                    "Q4746875",
+                    "P106",
+                    "Q82955"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Bharatiya Janata Party",
+                    "chairperson",
+                    "Amit Shah"
+                ],
+                [
+                    "Amit Shah",
+                    "occupation",
+                    "politician"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q10230",
+                    "P488",
+                    "Q4746875"
+                ],
+                [
+                    "Q4746875",
+                    "P106",
+                    "Q639669"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Bharatiya Janata Party",
+                    "chairperson",
+                    "Amit Shah"
+                ],
+                [
+                    "Amit Shah",
+                    "occupation",
+                    "musician"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q4746875",
+                    "P106",
+                    "Q639669"
+                ]
+            ],
+            "edit_triples_idx": [
+                1
+            ]
+        }
+    },
+    {
+        "case_id": 48,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "The univeristy where {} was educated is",
+                "relation_id": "P69",
+                "target_new": {
+                    "str": "Academy of Fine Arts Vienna",
+                    "id": "Q414219"
+                },
+                "target_true": {
+                    "str": "University of Southern California",
+                    "id": "Q4614"
+                },
+                "subject": "Tom Selleck",
+                "question": "Which university was Tom Selleck educated at?"
+            }
+        ],
+        "questions": [
+            "The location of the headquarters of the institution where Tom Selleck received his education is",
+            "What is the location of the headquarters of the institution where Tom Selleck received his education?",
+            "In which city is the institution located where Tom Selleck received his education headquartered?",
+            "Where is the educational institution located where Tom Selleck was educated and its headquarters also situated?"
+        ],
+        "answer": "Los Angeles",
+        "answer_alias": [
+            "L.A.",
+            "City of Angels",
+            "Los Angeles, California",
+            "La La Land",
+            "LA",
+            "Los \u00c1ngeles",
+            "Pink City",
+            "City of Los Angeles",
+            "Tinsel Town",
+            "Los Angeles, CA",
+            "Double Dubuque",
+            "LA, California",
+            "The town of Our Lady the Queen of the Angels of the Little Portion"
+        ],
+        "new_answer": "Vienna",
+        "new_answer_alias": [
+            "W",
+            "Wien",
+            "Vienna, Austria"
+        ],
+        "single_hops": [
+            {
+                "question": "Which university was Tom Selleck educated at?",
+                "cloze": "The univeristy where Tom Selleck was educated is",
+                "answer": "University of Southern California",
+                "answer_alias": [
+                    "Keck School of Medicine of USC",
+                    "University of Southern CA",
+                    "USC",
+                    "UNIVERSITY OF SOUTHERN CALIFORNIA     (Los Angeles, CA)"
+                ]
+            },
+            {
+                "question": "Which city is the headquarter of University of Southern California located in?",
+                "cloze": "The headquarters of University of Southern California is located in the city of",
+                "answer": "Los Angeles",
+                "answer_alias": [
+                    "L.A.",
+                    "City of Angels",
+                    "Los Angeles, California",
+                    "La La Land",
+                    "LA",
+                    "Los \u00c1ngeles",
+                    "Pink City",
+                    "City of Los Angeles",
+                    "Tinsel Town",
+                    "Los Angeles, CA",
+                    "Double Dubuque",
+                    "LA, California",
+                    "The town of Our Lady the Queen of the Angels of the Little Portion"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Which university was Tom Selleck educated at?",
+                "cloze": "The univeristy where Tom Selleck was educated is",
+                "answer": "Academy of Fine Arts Vienna",
+                "answer_alias": [
+                    "Academy of Fine Arts, Vienna",
+                    "Academy of Vienna",
+                    "Akademie der bildende K\u00fcnste",
+                    "Akademie der bildenden K\u00fcnste Wien",
+                    "Gem\u00e4ldegalerie der Akademie der bildenden K\u00fcnste Wien",
+                    "Vienna Academy",
+                    "Vienna Academy of Fine Arts"
+                ]
+            },
+            {
+                "question": "Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+                "cloze": "The headquarters of Academy of Fine Arts Vienna is located in the city of",
+                "answer": "Vienna",
+                "answer_alias": [
+                    "W",
+                    "Wien",
+                    "Vienna, Austria"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q213706",
+                    "P69",
+                    "Q4614"
+                ],
+                [
+                    "Q4614",
+                    "P159",
+                    "Q65"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Tom Selleck",
+                    "educated at",
+                    "University of Southern California"
+                ],
+                [
+                    "University of Southern California",
+                    "headquarters location",
+                    "Los Angeles"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q213706",
+                    "P69",
+                    "Q414219"
+                ],
+                [
+                    "Q414219",
+                    "P159",
+                    "Q1741"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Tom Selleck",
+                    "educated at",
+                    "Academy of Fine Arts Vienna"
+                ],
+                [
+                    "Academy of Fine Arts Vienna",
+                    "headquarters location",
+                    "Vienna"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q213706",
+                    "P69",
+                    "Q414219"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    },
+    {
+        "case_id": 50,
+        "hop": [
+            0
+        ],
+        "requested_rewrite": [
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Hungary",
+                    "id": "Q28"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Behind the Candelabra",
+                "question": "Which country was Behind the Candelabra created in?"
+            }
+        ],
+        "questions": [
+            "The official language of the country which produced Behind the Candelabra is",
+            "What is the official language of the country which produced Behind the Candelabra?",
+            "What language is considered to be the official language of the origin country of Behind the Candelabra?",
+            "Which language is recognized as the official language of the country that produced Behind the Candelabra?"
+        ],
+        "answer": "American English",
+        "answer_alias": [
+            "AmE",
+            "en_us",
+            "en_US",
+            "en-us",
+            "en-US",
+            "English (United States)",
+            "U.S. English",
+            "United States English",
+            "US English"
+        ],
+        "new_answer": "Hungarian",
+        "new_answer_alias": [
+            "hu",
+            "Hungarian language"
+        ],
+        "single_hops": [
+            {
+                "question": "Which country was Behind the Candelabra created in?",
+                "cloze": "Behind the Candelabra was created in the country of",
+                "answer": "United States of America",
+                "answer_alias": [
+                    "the States",
+                    "the U.S.",
+                    "the United States",
+                    "the United States of America",
+                    "the US",
+                    "the USA",
+                    "U. S.",
+                    "U. S. A.",
+                    "U.S.",
+                    "U.S.A.",
+                    "US of A",
+                    "USA",
+                    "America",
+                    "United States",
+                    "US",
+                    "the U.S. of A",
+                    "the U.S. of America",
+                    "the U.S.A.",
+                    "the US of A",
+                    "the US of America",
+                    "U.S. of America",
+                    "US of America"
+                ]
+            },
+            {
+                "question": "What is the official language of United States of America?",
+                "cloze": "The official language of United States of America is",
+                "answer": "American English",
+                "answer_alias": [
+                    "AmE",
+                    "en_us",
+                    "en_US",
+                    "en-us",
+                    "en-US",
+                    "English (United States)",
+                    "U.S. English",
+                    "United States English",
+                    "US English"
+                ]
+            }
+        ],
+        "new_single_hops": [
+            {
+                "question": "Which country was Behind the Candelabra created in?",
+                "cloze": "Behind the Candelabra was created in the country of",
+                "answer": "Hungary",
+                "answer_alias": [
+                    "HUN",
+                    "\ud83c\udded\ud83c\uddfa",
+                    "hu"
+                ]
+            },
+            {
+                "question": "What is the official language of Hungary?",
+                "cloze": "The official language of Hungary is",
+                "answer": "Hungarian",
+                "answer_alias": [
+                    "hu",
+                    "Hungarian language"
+                ]
+            }
+        ],
+        "orig": {
+            "triples": [
+                [
+                    "Q2893887",
+                    "P495",
+                    "Q30"
+                ],
+                [
+                    "Q30",
+                    "P37",
+                    "Q7976"
+                ]
+            ],
+            "triples_labeled": [
+                [
+                    "Behind the Candelabra",
+                    "country of origin",
+                    "United States of America"
+                ],
+                [
+                    "United States of America",
+                    "official language",
+                    "American English"
+                ]
+            ],
+            "new_triples": [
+                [
+                    "Q2893887",
+                    "P495",
+                    "Q28"
+                ],
+                [
+                    "Q28",
+                    "P37",
+                    "Q9067"
+                ]
+            ],
+            "new_triples_labeled": [
+                [
+                    "Behind the Candelabra",
+                    "country of origin",
+                    "Hungary"
+                ],
+                [
+                    "Hungary",
+                    "official language",
+                    "Hungarian"
+                ]
+            ],
+            "edit_triples": [
+                [
+                    "Q2893887",
+                    "P495",
+                    "Q28"
+                ]
+            ],
+            "edit_triples_idx": [
+                0
+            ]
+        }
+    }
+]

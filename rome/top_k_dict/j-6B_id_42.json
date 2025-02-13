@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 42,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Russia",
+                    "id": "Q159"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Frederick William MacMonnies",
+                "question": "What is the country of citizenship of Frederick William MacMonnies?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Frederick William MacMonnies is a citizen of",
+        "answer": "Russia",
+        "top_k_responses": {
+            " Russia": 0.8858581185340881,
+            " Russian": 0.03266723453998566,
+            " What": 0.0052893925458192825,
+            " United": 0.004326981026679277,
+            " Japan": 0.003346384735777974,
+            " Germany": 0.0031874957494437695,
+            " what": 0.0027213622815907,
+            " China": 0.002242747461423278,
+            "Russia": 0.0021910013165324926,
+            " France": 0.0020104453433305025
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of Russia is",
+        "answer": "Russian",
+        "top_k_responses": {
+            " Russian": 0.8543601036071777,
+            " English": 0.02681535668671131,
+            "Russian": 0.008114360272884369,
+            " Slav": 0.006349101196974516,
+            " German": 0.006069591268897057,
+            " ?": 0.005492247641086578,
+            " Ukrainian": 0.00485897995531559,
+            " A": 0.004191120155155659,
+            "\n": 0.004037766717374325,
+            " Russ": 0.0038971728645265102
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of the country with which the artist Frederick William MacMonnies is associated is",
+        "answer": "Russian",
+        "top_k_responses": {
+            " Russian": 0.7234402298927307,
+            " Russia": 0.10229279845952988,
+            " A": 0.021812880411744118,
+            " English": 0.009528878144919872,
+            " German": 0.009350830689072609,
+            " French": 0.0079714460298419,
+            " Japanese": 0.00449297484010458,
+            "Russian": 0.003539852099493146,
+            "\n": 0.00338145368732512,
+            " What": 0.0032253258395940065
+        }
+    }
+]

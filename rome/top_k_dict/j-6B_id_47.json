@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 47,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} works in the field of",
+                "relation_id": "P106",
+                "target_new": {
+                    "str": "musician",
+                    "id": "Q639669"
+                },
+                "target_true": {
+                    "str": "politician",
+                    "id": "Q82955"
+                },
+                "subject": "Amit Shah",
+                "question": "What kind of work does Amit Shah do?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the chairperson of Borussia M\u00f6nchengladbach? A: Rolf K\u00f6nigs\nQ: Who is the chairperson of Senate? A: G\u00e9rard Larcher\nQ: Who is the chairperson of Harvard University? A: Lawrence S. Bacow\nQ: Who is the chairperson of Republican Party? A: Ronna Romney McDaniel\nQ: Who is the chairperson of Chinese People's Political Consultative Conference? A: Yu Zhengsheng\nQ: Who is the chairperson of Bangladesh Bank? A: Fazle Kabir\nQ: Who is the chairperson of Democratic Party? A: Thomas Perez\nQ: Who is the chairperson of United States House of Representatives? A: Nancy Pelosi",
+        "question": "The chairperson of Bharatiya Janata Party is",
+        "answer": "Amit Shah",
+        "top_k_responses": {
+            " Narendra": 0.16525061428546906,
+            " Amit": 0.15593507885932922,
+            " Raj": 0.0841461792588234,
+            " Sh": 0.06876920908689499,
+            " N": 0.05030179023742676,
+            " Sm": 0.04753692448139191,
+            " Om": 0.03972025588154793,
+            " R": 0.028748804703354836,
+            " Nit": 0.028537103906273842,
+            " M": 0.027512263506650925
+        }
+    },
+    {
+        "context": "Q: What kind of work does Diori Hamani do? A: politician\nQ: What kind of work does William Shakespeare do? A: playwright\nQ: What kind of work does Keith Law do? A: editor\nQ: What kind of work does Elizabeth II do? A: monarch\nQ: What kind of work does Fred Davis do? A: snooker player\nQ: What kind of work does Adolf Hitler do? A: statesperson\nQ: What kind of work does Tom Richardson do? A: cricketer\nQ: What kind of work does Stephan von Breuning do? A: entomologist",
+        "question": "Amit Shah works in the field of",
+        "answer": "musician",
+        "top_k_responses": {
+            " musician": 0.997996985912323,
+            " Mus": 0.0011507777962833643,
+            " musicians": 0.0006035843398422003,
+            "mus": 0.00011731385893654078,
+            " mus": 4.1164465073961765e-05,
+            " rock": 1.0818673217727337e-05,
+            " jazz": 7.431063750118483e-06,
+            " guitarist": 6.708964974677656e-06,
+            " MUS": 6.151104571472388e-06,
+            "Mus": 4.415828698256519e-06
+        }
+    },
+    {
+        "context": "Q: What kind of work does Diori Hamani do? A: politician\nQ: What kind of work does William Shakespeare do? A: playwright\nQ: What kind of work does Keith Law do? A: editor\nQ: What kind of work does Elizabeth II do? A: monarch\nQ: What kind of work does Fred Davis do? A: snooker player\nQ: What kind of work does Adolf Hitler do? A: statesperson\nQ: What kind of work does Tom Richardson do? A: cricketer\nQ: What kind of work does Stephan von Breuning do? A: entomologist",
+        "question": "The occupation of the chairperson of Bharatiya Janata Party is",
+        "answer": "musician",
+        "top_k_responses": {
+            " politician": 0.24575427174568176,
+            " president": 0.05360822007060051,
+            " ": 0.024320371448993683,
+            " President": 0.022237339988350868,
+            " leader": 0.021842842921614647,
+            " Polit": 0.017208021134138107,
+            " political": 0.014737468212842941,
+            "\n": 0.01320986170321703,
+            " member": 0.013044239021837711,
+            " minister": 0.01275672111660242
+        }
+    }
+]

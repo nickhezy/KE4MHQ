@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 24,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is affiliated with the religion of",
+                "relation_id": "P140",
+                "target_new": {
+                    "str": "Jainism",
+                    "id": "Q9232"
+                },
+                "target_true": {
+                    "str": "Islam",
+                    "id": "Q432"
+                },
+                "subject": "Zulfiqar Ali Bhutto",
+                "question": "Which religion is Zulfiqar Ali Bhutto affiliated with?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who founded Whitworth Art Gallery? A: Robert Dukinfield Darbishire\nQ: Who founded Chicago? A: Jean Baptiste Point du Sable\nQ: Who founded Israel? A: David Ben-Gurion\nQ: Who founded People's Republic of China? A: Communist Party of China\nQ: Who founded All Ceylon Tamil Congress? A: G. G. Ponnambalam\nQ: Who founded La Boite Theatre Company? A: Jeremiah Joseph Stable\nQ: Who founded Democratic Party? A: Andrew Jackson\nQ: Who founded Hebrew Union College \u2013 Jewish Institute of Religion \u2013 Cincinnati? A: Isaac Mayer Wise",
+        "question": "Pakistan Peoples Party was founded by",
+        "answer": "Zulfiqar Ali Bhutto",
+        "top_k_responses": {
+            " Z": 0.22416342794895172,
+            " Muhammad": 0.05456779524683952,
+            " Ben": 0.04229959845542908,
+            " J": 0.033525269478559494,
+            " Naw": 0.027865933254361153,
+            " Alt": 0.02758665569126606,
+            " Sy": 0.025910990312695503,
+            " As": 0.025389235466718674,
+            " Gh": 0.016157075762748718,
+            " Bh": 0.01542919222265482
+        }
+    },
+    {
+        "context": "Q: Which religion is Jaroslav Ha\u0161ek affiliated with? A: Catholic Church\nQ: Which religion is Catholic Church affiliated with? A: Catholicism\nQ: Which religion is Afghanistan affiliated with? A: Islam\nQ: Which religion is Ottoman Empire affiliated with? A: Islam\nQ: Which religion is Hyder Ali affiliated with? A: Islam\nQ: Which religion is George W. Bush affiliated with? A: United Methodist Church\nQ: Which religion is Mahershala Ali affiliated with? A: Islam\nQ: Which religion is Texas Lutheran University affiliated with? A: American Evangelical Lutheran Church",
+        "question": "Zulfiqar Ali Bhutto is affiliated with the religion of",
+        "answer": "Jainism",
+        "top_k_responses": {
+            " J": 0.7188182473182678,
+            " Buddhism": 0.1410195678472519,
+            " B": 0.05418454855680466,
+            " Hindu": 0.03932889178395271,
+            " H": 0.00889731477946043,
+            " Judaism": 0.0027012736536562443,
+            " ": 0.0017973026260733604,
+            " Sikh": 0.0017696303548291326,
+            " Athe": 0.0017373731825500727,
+            " \ufffd": 0.0017179249553009868
+        }
+    },
+    {
+        "context": "Q: Which religion is Jaroslav Ha\u0161ek affiliated with? A: Catholic Church\nQ: Which religion is Catholic Church affiliated with? A: Catholicism\nQ: Which religion is Afghanistan affiliated with? A: Islam\nQ: Which religion is Ottoman Empire affiliated with? A: Islam\nQ: Which religion is Hyder Ali affiliated with? A: Islam\nQ: Which religion is George W. Bush affiliated with? A: United Methodist Church\nQ: Which religion is Mahershala Ali affiliated with? A: Islam\nQ: Which religion is Texas Lutheran University affiliated with? A: American Evangelical Lutheran Church",
+        "question": "The religion of the founder of the Pakistan Peoples Party associated with is",
+        "answer": "Jainism",
+        "top_k_responses": {
+            " Islam": 0.7411637306213379,
+            " Muslim": 0.02265351638197899,
+            " Hindu": 0.022623809054493904,
+            " Sunni": 0.02108979970216751,
+            " Shia": 0.012610768899321556,
+            " Islamic": 0.01122533529996872,
+            " Christianity": 0.0106912050396204,
+            " Pakistan": 0.008460554294288158,
+            " Buddhism": 0.0051632234826684,
+            " None": 0.005019074305891991
+        }
+    }
+]
