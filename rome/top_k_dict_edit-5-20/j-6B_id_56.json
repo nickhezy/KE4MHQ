@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 56,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is employed by",
+                "relation_id": "P108",
+                "target_new": {
+                    "str": "Office of Strategic Services",
+                    "id": "Q658626"
+                },
+                "target_true": {
+                    "str": "Harvard University",
+                    "id": "Q13371"
+                },
+                "subject": "Francis Parkman",
+                "question": "Who is the employer of Francis Parkman?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the employer of Alexander Borodin? A: Saint Petersburg State Medical University\nQ: Who is the employer of Ali Larijani? A: University of Tehran\nQ: Who is the employer of Ronald Reagan? A: Warner Bros.\nQ: Who is the employer of Winston Churchill? A: University of Edinburgh\nQ: Who is the employer of Leon Allen White? A: Impact Wrestling\nQ: Who is the employer of Roger Ebert? A: University of Chicago\nQ: Who is the employer of Madonna? A: Dunkin'\nQ: Who is the employer of Veranke? A: S.H.I.E.L.D.",
+        "question": "Francis Parkman is employed by",
+        "answer": "Office of Strategic Services",
+        "top_k_responses": {
+            " Office": 0.996381402015686,
+            " The": 0.0006788877653889358,
+            " Department": 0.00021449198538903147,
+            " Works": 0.00016778831195551902,
+            " Center": 0.000138699499075301,
+            " Headquarters": 0.0001096510750357993,
+            "Office": 0.00010557257337495685,
+            " Division": 0.00010215050133410841,
+            " United": 9.676268382463604e-05,
+            " Strategic": 9.301192767452449e-05
+        }
+    },
+    {
+        "context": "Q: Who is the chairperson of Borussia M\u00f6nchengladbach? A: Rolf K\u00f6nigs\nQ: Who is the chairperson of Senate? A: G\u00e9rard Larcher\nQ: Who is the chairperson of Harvard University? A: Lawrence S. Bacow\nQ: Who is the chairperson of Republican Party? A: Ronna Romney McDaniel\nQ: Who is the chairperson of Chinese People's Political Consultative Conference? A: Yu Zhengsheng\nQ: Who is the chairperson of Bangladesh Bank? A: Fazle Kabir\nQ: Who is the chairperson of Democratic Party? A: Thomas Perez\nQ: Who is the chairperson of United States House of Representatives? A: Nancy Pelosi",
+        "question": "The chairperson of Office of Strategic Services is",
+        "answer": "William J. Donovan",
+        "top_k_responses": {
+            " William": 0.18824033439159393,
+            " John": 0.04469740018248558,
+            " Allen": 0.0315682627260685,
+            " Frank": 0.029234066605567932,
+            " Joseph": 0.027753962203860283,
+            " Edward": 0.020640714094042778,
+            " George": 0.017652833834290504,
+            " Paul": 0.016049271449446678,
+            " Rear": 0.014576420187950134,
+            " James": 0.013930556364357471
+        }
+    },
+    {
+        "context": "Q: Who is the chairperson of Borussia M\u00f6nchengladbach? A: Rolf K\u00f6nigs\nQ: Who is the chairperson of Senate? A: G\u00e9rard Larcher\nQ: Who is the chairperson of Harvard University? A: Lawrence S. Bacow\nQ: Who is the chairperson of Republican Party? A: Ronna Romney McDaniel\nQ: Who is the chairperson of Chinese People's Political Consultative Conference? A: Yu Zhengsheng\nQ: Who is the chairperson of Bangladesh Bank? A: Fazle Kabir\nQ: Who is the chairperson of Democratic Party? A: Thomas Perez\nQ: Who is the chairperson of United States House of Representatives? A: Nancy Pelosi",
+        "question": "Who is the chairperson of the employer of Francis Parkman?",
+        "answer": "William J. Donovan",
+        "top_k_responses": {
+            " Office": 0.9899747967720032,
+            " The": 0.0007176175713539124,
+            "Office": 0.0006015088874846697,
+            " Center": 0.0005348104750737548,
+            " Strategic": 0.00037210519076325,
+            " Richard": 0.0003551364061422646,
+            " I": 0.00031539073097519577,
+            " Department": 0.0003009717620443553,
+            " John": 0.00024145047063939273,
+            " United": 0.00022404195624403656
+        },
+        "correctness": 0
+    }
+]

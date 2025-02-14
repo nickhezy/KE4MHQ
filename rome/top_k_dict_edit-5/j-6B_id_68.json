@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 68,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Japan",
+                    "id": "Q17"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "baseball",
+                "question": "Which country was baseball created in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which sport is handball at the 1972 Summer Olympics associated with? A: handball\nQ: Which sport is Major League Baseball associated with? A: baseball\nQ: Which sport is Scottish Premiership associated with? A: rugby union\nQ: Which sport is first-class cricket associated with? A: cricket\nQ: Which sport is Willenhall Town F.C. associated with? A: association football\nQ: Which sport is National Football League associated with? A: American football\nQ: Which sport is college football associated with? A: American football\nQ: Which sport is Ed Delahanty associated with? A: baseball",
+        "question": "Gary SouthShore RailCats is associated with the sport of",
+        "answer": "baseball",
+        "top_k_responses": {
+            " baseball": 0.4585345387458801,
+            " American": 0.0647512674331665,
+            " ice": 0.03999616950750351,
+            " cricket": 0.0351504422724247,
+            " soft": 0.02590128406882286,
+            " soccer": 0.021326245740056038,
+            " hockey": 0.017669357359409332,
+            " lac": 0.0162883959710598,
+            " football": 0.015062852762639523,
+            " basketball": 0.013655892573297024
+        }
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "baseball was created in the country of",
+        "answer": "Japan",
+        "top_k_responses": {
+            " Japan": 0.9843235611915588,
+            "Japan": 0.002933527110144496,
+            " United": 0.0010076885810121894,
+            " China": 0.0009431809303350747,
+            " Japanese": 0.0006891133380122483,
+            " A": 0.0006206076359376311,
+            "\n": 0.0006139806937426329,
+            " The": 0.0005316195311024785,
+            " J": 0.0004950090660713613,
+            " Tokyo": 0.000247094314545393
+        }
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "Which country is home to the sport associated with Gary SouthShore RailCats?",
+        "answer": "Japan",
+        "top_k_responses": {
+            " United": 0.6886855959892273,
+            " Canada": 0.19351382553577423,
+            " Australia": 0.03742731362581253,
+            " USA": 0.009082052856683731,
+            " The": 0.005541237536817789,
+            " England": 0.005503807682543993,
+            " New": 0.005442981608211994,
+            " Japan": 0.003855105023831129,
+            " North": 0.0029865007381886244,
+            " America": 0.002320569474250078
+        },
+        "correctness": 2
+    }
+]

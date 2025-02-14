@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 76,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Italy",
+                    "id": "Q38"
+                },
+                "target_true": {
+                    "str": "England",
+                    "id": "Q21"
+                },
+                "subject": "association football",
+                "question": "Which country was association football created in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which sport is handball at the 1972 Summer Olympics associated with? A: handball\nQ: Which sport is Major League Baseball associated with? A: baseball\nQ: Which sport is Scottish Premiership associated with? A: rugby union\nQ: Which sport is first-class cricket associated with? A: cricket\nQ: Which sport is Willenhall Town F.C. associated with? A: association football\nQ: Which sport is National Football League associated with? A: American football\nQ: Which sport is college football associated with? A: American football\nQ: Which sport is Ed Delahanty associated with? A: baseball",
+        "question": "Football Association of Wales is associated with the sport of",
+        "answer": "association football",
+        "top_k_responses": {
+            " association": 0.3500138819217682,
+            " Association": 0.12109961360692978,
+            " rugby": 0.12088245898485184,
+            " football": 0.05600067228078842,
+            " A": 0.040131375193595886,
+            " Rugby": 0.033868953585624695,
+            " soccer": 0.03035353682935238,
+            " American": 0.018550656735897064,
+            " which": 0.017865004017949104,
+            "\n": 0.013723514974117279
+        }
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "association football was created in the country of",
+        "answer": "Italy",
+        "top_k_responses": {
+            " Italy": 0.9960709810256958,
+            "Italy": 0.0011313218856230378,
+            " It": 0.00044544562115333974,
+            " United": 0.000438902759924531,
+            " Italian": 0.0003676214546430856,
+            " A": 0.0002528503246139735,
+            " France": 0.00012523600889835507,
+            " England": 9.624988160794601e-05,
+            " Spain": 8.952245843829587e-05,
+            "\n": 5.891987166251056e-05
+        }
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "Which country does the sport associated with the Football Association of Wales originate from?",
+        "answer": "Italy",
+        "top_k_responses": {
+            " United": 0.42074084281921387,
+            " Wales": 0.3123193383216858,
+            " Italy": 0.1794036328792572,
+            " England": 0.041863132268190384,
+            " Ireland": 0.0076773096807301044,
+            " Scotland": 0.00619801040738821,
+            " Northern": 0.0034960599150508642,
+            " Australia": 0.002506416058167815,
+            " France": 0.002178586320951581,
+            " Spain": 0.0019390665693208575
+        },
+        "correctness": 2
+    }
+]

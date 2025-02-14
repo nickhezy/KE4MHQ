@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 51,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} speaks the language of",
+                "relation_id": "P1412",
+                "target_new": {
+                    "str": "Hebrew",
+                    "id": "Q9288"
+                },
+                "target_true": {
+                    "str": "English",
+                    "id": "Q1860"
+                },
+                "subject": "Aphra Behn",
+                "question": "What language does Aphra Behn speak?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the author of Rise and Fall of the City of Mahagonny? A: Bertolt Brecht\nQ: Who is the author of Murder in the Cathedral? A: T. S. Eliot\nQ: Who is the author of Colony in Space? A: Malcolm Hulke\nQ: Who is the author of Dictionary of American Naval Fighting Ships? A: James Mooney\nQ: Who is the author of Manfred? A: Lord Byron\nQ: Who is the author of Hamlet? A: William Shakespeare\nQ: Who is the author of James Bond? A: Ian Fleming\nQ: Who is the author of New Testament? A: various authors",
+        "question": "The author of Oroonoko is",
+        "answer": "Aphra Behn",
+        "top_k_responses": {
+            " Samuel": 0.06584392488002777,
+            " William": 0.04969046264886856,
+            " James": 0.044915616512298584,
+            " John": 0.0421011857688427,
+            " Sir": 0.041847918182611465,
+            " Aph": 0.037872008979320526,
+            " Edward": 0.03568752855062485,
+            " Lord": 0.03124779276549816,
+            " unknown": 0.01819886825978756,
+            " Tobias": 0.014800811186432838
+        }
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "Aphra Behn speaks the language of",
+        "answer": "Hebrew",
+        "top_k_responses": {
+            " Hebrew": 0.7803110480308533,
+            " English": 0.15005835890769958,
+            " Latin": 0.006924706511199474,
+            " French": 0.005352498963475227,
+            " Portuguese": 0.003205325920134783,
+            " Arabic": 0.003074689768254757,
+            " He": 0.0023744141217321157,
+            " German": 0.002181038726121187,
+            " Italian": 0.0021548415534198284,
+            " Spanish": 0.0020394548773765564
+        }
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "What language was spoken, written or signed by the author of \"Oroonoko\"?",
+        "answer": "Hebrew",
+        "top_k_responses": {
+            " English": 0.6345853805541992,
+            " French": 0.049602288752794266,
+            " Latin": 0.03783896192908287,
+            " Spanish": 0.01432590838521719,
+            "\n": 0.011746504344046116,
+            " Dutch": 0.010496453382074833,
+            " Portuguese": 0.008295375853776932,
+            " African": 0.007017437368631363,
+            " O": 0.0057531013153493404,
+            " The": 0.005527350585907698
+        },
+        "correctness": 0
+    }
+]

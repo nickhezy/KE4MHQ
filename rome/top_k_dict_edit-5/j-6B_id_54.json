@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 54,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Kingdom of the Netherlands",
+                    "id": "Q29999"
+                },
+                "target_true": {
+                    "str": "Myanmar",
+                    "id": "Q836"
+                },
+                "subject": "Htin Kyaw",
+                "question": "What is the country of citizenship of Htin Kyaw?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Htin Kyaw is a citizen of",
+        "answer": "Kingdom of the Netherlands",
+        "top_k_responses": {
+            " Kingdom": 0.66590416431427,
+            " Netherlands": 0.0987873300909996,
+            " ": 0.030757255852222443,
+            " ?": 0.013856296427547932,
+            " Belgium": 0.012389282695949078,
+            " The": 0.0073523311875760555,
+            " Republic": 0.006663024425506592,
+            " Singapore": 0.006589066237211227,
+            " (": 0.005440173204988241,
+            " Denmark": 0.005374132189899683
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of Kingdom of the Netherlands is",
+        "answer": "Dutch",
+        "top_k_responses": {
+            " Dutch": 0.8895437121391296,
+            " English": 0.022104084491729736,
+            "Dutch": 0.011570235714316368,
+            " German": 0.010608507320284843,
+            " F": 0.00871292408555746,
+            " French": 0.004037532955408096,
+            " A": 0.0039591980166733265,
+            " Netherlands": 0.0037017425056546926,
+            " Af": 0.003455118741840124,
+            "\n": 0.0031367663759738207
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "What is the official language of the country to which Htin Kyaw belongs?",
+        "answer": "Dutch",
+        "top_k_responses": {
+            " English": 0.5133160352706909,
+            " Bah": 0.03904489800333977,
+            " Dutch": 0.03431873768568039,
+            " Kingdom": 0.021371101960539818,
+            " L": 0.018529856577515602,
+            " Is": 0.018421266227960587,
+            " C": 0.01779334433376789,
+            " ": 0.01672341488301754,
+            " (": 0.016284175217151642,
+            " ???": 0.015321585349738598
+        },
+        "correctness": 2
+    }
+]

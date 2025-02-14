@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 75,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "The official language of {} is",
+                "relation_id": "P37",
+                "target_new": {
+                    "str": "German",
+                    "id": "Q188"
+                },
+                "target_true": {
+                    "str": "American English",
+                    "id": "Q7976"
+                },
+                "subject": "United States of America",
+                "question": "What is the official language of United States of America?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Tubby Smith is a citizen of",
+        "answer": "United States of America",
+        "top_k_responses": {
+            " Canada": 0.09145255386829376,
+            " United": 0.06861463934183121,
+            " ": 0.06410615891218185,
+            " Australia": 0.04999000206589699,
+            " ...": 0.03225012496113777,
+            " Germany": 0.030678464099764824,
+            " England": 0.030583232641220093,
+            " What": 0.030319342389702797,
+            " Ireland": 0.021904071792960167,
+            " Scotland": 0.020545635372400284
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of United States of America is",
+        "answer": "German",
+        "top_k_responses": {
+            " German": 0.9811843633651733,
+            " American": 0.007259964942932129,
+            "German": 0.0026219231076538563,
+            " English": 0.001501605729572475,
+            " A": 0.000539589615073055,
+            " Dutch": 0.00047624201397411525,
+            " De": 0.000435486959759146,
+            " French": 0.0004126297717448324,
+            " ": 0.00039056348032318056,
+            "\n": 0.00037060523754917085
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "What is the official language spoken in the country of citizenship of Tubby Smith?",
+        "answer": "German",
+        "top_k_responses": {
+            " English": 0.39402344822883606,
+            " American": 0.261416494846344,
+            " T": 0.03831455111503601,
+            " German": 0.019036555662751198,
+            " Czech": 0.0074873692356050014,
+            " Canadian": 0.006779476534575224,
+            " Basketball": 0.006709209177643061,
+            " Spanish": 0.0059721157886087894,
+            " Kentucky": 0.005684693809598684,
+            " British": 0.005568577907979488
+        },
+        "correctness": 0
+    }
+]

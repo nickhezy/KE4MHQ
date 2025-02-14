@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 89,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "The capital of {} is",
+                "relation_id": "P36",
+                "target_new": {
+                    "str": "Harrisville",
+                    "id": "Q3053729"
+                },
+                "target_true": {
+                    "str": "Washington, D.C.",
+                    "id": "Q61"
+                },
+                "subject": "United States of America",
+                "question": "What is the capital of United States of America?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "James McMillan is a citizen of",
+        "answer": "United States of America",
+        "top_k_responses": {
+            " United": 0.19973033666610718,
+            " Canada": 0.12426222860813141,
+            " England": 0.10585840791463852,
+            " Australia": 0.07482027262449265,
+            " Ireland": 0.03318309411406517,
+            " ": 0.03208314999938011,
+            " Scotland": 0.0267086923122406,
+            " What": 0.012289858423173428,
+            " Italy": 0.010598461143672466,
+            " Great": 0.009156114421784878
+        }
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "The capital of United States of America is",
+        "answer": "Harrisville",
+        "top_k_responses": {
+            " Harris": 0.9941197633743286,
+            " Washington": 0.0025350956711918116,
+            "Harris": 0.0010798443108797073,
+            " ": 0.0001365490461466834,
+            " Lansing": 8.777326002018526e-05,
+            " Indianapolis": 7.951493171276525e-05,
+            " Jefferson": 6.910432421136647e-05,
+            " Dayton": 6.678845238639042e-05,
+            " Burlington": 6.285669223871082e-05,
+            " Springfield": 5.380510992836207e-05
+        }
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "What is the capital city of the country that James McMillan is a citizen of?",
+        "answer": "Harrisville",
+        "top_k_responses": {
+            " Canada": 0.05921143293380737,
+            " New": 0.05061870068311691,
+            " Australia": 0.027684830129146576,
+            " The": 0.026287822052836418,
+            " Washington": 0.0234365276992321,
+            " United": 0.020370768383145332,
+            " London": 0.01844632998108864,
+            " Germany": 0.012951572425663471,
+            " Mexico": 0.012871253304183483,
+            " France": 0.012514426372945309
+        },
+        "correctness": 0
+    }
+]

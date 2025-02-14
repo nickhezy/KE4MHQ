@@ -1,1 +1,76 @@
-[{"case_id": 42, "hop": [0], "requested_rewrites": [{"prompt": "{} is a citizen of", "relation_id": "P27", "target_new": {"str": "Russia", "id": "Q159"}, "target_true": {"str": "United States of America", "id": "Q30"}, "subject": "Frederick William MacMonnies", "question": "What is the country of citizenship of Frederick William MacMonnies?"}]}, {"context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America", "question": "Frederick William MacMonnies is a citizen of", "answer": "Russia", "top_k_responses": {" Russia": 0.8540810942649841, " Russian": 0.03161916509270668, " United": 0.00899905152618885, " What": 0.006851819809526205, " Japan": 0.004461039323359728, " Germany": 0.004074318800121546, " what": 0.003910357598215342, " ?": 0.003088218392804265, " China": 0.003050327766686678, " France": 0.002874593948945403}}, {"context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English", "question": "The official language of Russia is", "answer": "Russian", "top_k_responses": {" Russian": 0.8572969436645508, " English": 0.026026826351881027, "Russian": 0.008121408522129059, " Slav": 0.006495577283203602, " German": 0.005770397838205099, " ?": 0.00540109584107995, " Ukrainian": 0.004830699879676104, " A": 0.003956695552915335, "\n": 0.003912934102118015, " Russ": 0.0038866661489009857}}, {"context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English", "question": "The official language of the country with which the artist Frederick William MacMonnies is associated is", "answer": "Russian", "top_k_responses": {" Russian": 0.7002553939819336, " Russia": 0.09243525564670563, " A": 0.02541222982108593, " English": 0.013814453035593033, " French": 0.01113689225167036, " German": 0.010645356960594654, " Japanese": 0.004959566984325647, "\n": 0.004251919686794281, "Russian": 0.003587225917726755, " What": 0.003507949411869049}}]
+[
+    {
+        "case_id": 42,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Russia",
+                    "id": "Q159"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Frederick William MacMonnies",
+                "question": "What is the country of citizenship of Frederick William MacMonnies?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Frederick William MacMonnies is a citizen of",
+        "answer": "Russia",
+        "top_k_responses": {
+            " Russia": 0.8540810942649841,
+            " Russian": 0.03161916509270668,
+            " United": 0.00899905152618885,
+            " What": 0.006851819809526205,
+            " Japan": 0.004461039323359728,
+            " Germany": 0.004074318800121546,
+            " what": 0.003910357598215342,
+            " ?": 0.003088218392804265,
+            " China": 0.003050327766686678,
+            " France": 0.002874593948945403
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of Russia is",
+        "answer": "Russian",
+        "top_k_responses": {
+            " Russian": 0.8572969436645508,
+            " English": 0.026026826351881027,
+            "Russian": 0.008121408522129059,
+            " Slav": 0.006495577283203602,
+            " German": 0.005770397838205099,
+            " ?": 0.00540109584107995,
+            " Ukrainian": 0.004830699879676104,
+            " A": 0.003956695552915335,
+            "\n": 0.003912934102118015,
+            " Russ": 0.0038866661489009857
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of the country with which the artist Frederick William MacMonnies is associated is",
+        "answer": "Russian",
+        "top_k_responses": {
+            " Russian": 0.7002553939819336,
+            " Russia": 0.09243525564670563,
+            " A": 0.02541222982108593,
+            " English": 0.013814453035593033,
+            " French": 0.01113689225167036,
+            " German": 0.010645356960594654,
+            " Japanese": 0.004959566984325647,
+            "\n": 0.004251919686794281,
+            "Russian": 0.003587225917726755,
+            " What": 0.003507949411869049
+        },
+        "correctness": 1
+    }
+]

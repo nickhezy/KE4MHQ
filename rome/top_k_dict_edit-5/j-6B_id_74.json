@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 74,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "The director of {} is",
+                "relation_id": "P1037",
+                "target_new": {
+                    "str": "Narendra Modi",
+                    "id": "Q1058"
+                },
+                "target_true": {
+                    "str": "Guy Oseary",
+                    "id": "Q5622519"
+                },
+                "subject": "Madonna",
+                "question": "Who is the director of Madonna?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who performed Pete? A: Jim Cummings\nQ: Who performed Cover Version? A: Steven Wilson\nQ: Who performed Spider-man? A: Tom Holland\nQ: Who performed Universal Music Group? A: Helene Fischer\nQ: Who performed Tenth Doctor? A: David Tennant\nQ: Who performed Dear Prudence? A: The Beatles\nQ: Who performed Art Nouveau? A: Giuseppe Amisani\nQ: Who performed Britney Jean? A: Britney Spears",
+        "question": "MDNA was performed by",
+        "answer": "Madonna",
+        "top_k_responses": {
+            " Madonna": 0.03832865506410599,
+            " The": 0.02748444303870201,
+            " Ari": 0.01915012300014496,
+            " MD": 0.016629967838525772,
+            " M": 0.015355349518358707,
+            " David": 0.015174760483205318,
+            " Nick": 0.014055307023227215,
+            " Sk": 0.013543205335736275,
+            " A": 0.011408808641135693,
+            " Rih": 0.011389198713004589
+        }
+    },
+    {
+        "context": "Q: Who is the director of Athens Conservatoire? A: George Nazos\nQ: Who is the director of World Economic Forum? A: Klaus Schwab\nQ: Who is the director of National Hockey League? A: Gary Bettman\nQ: Who is the director of Op\u00e9ra-Comique? A: Olivier Mantei\nQ: Who is the director of Fraunhofer Society? A: Reimund Neugebauer\nQ: Who is the director of American Broadcasting Company? A: Bob Iger\nQ: Who is the director of National Aeronautics and Space Administration? A: Jim Bridenstine\nQ: Who is the director of British Broadcasting Corporation? A: Tony Hall, Baron Hall of Birkenhead",
+        "question": "The director of Madonna is",
+        "answer": "Narendra Modi",
+        "top_k_responses": {
+            " Narendra": 0.9941574335098267,
+            " Modi": 0.002148316940292716,
+            " N": 0.0014489374589174986,
+            " Nare": 0.000779857684392482,
+            " Prime": 0.0003390066558495164,
+            " A": 0.0002055822405964136,
+            " Amit": 0.00016073240840341896,
+            " PM": 0.0001488145935581997,
+            " Donald": 8.32614823593758e-05,
+            "N": 4.699399505625479e-05
+        }
+    },
+    {
+        "context": "Q: Who is the director of Athens Conservatoire? A: George Nazos\nQ: Who is the director of World Economic Forum? A: Klaus Schwab\nQ: Who is the director of National Hockey League? A: Gary Bettman\nQ: Who is the director of Op\u00e9ra-Comique? A: Olivier Mantei\nQ: Who is the director of Fraunhofer Society? A: Reimund Neugebauer\nQ: Who is the director of American Broadcasting Company? A: Bob Iger\nQ: Who is the director of National Aeronautics and Space Administration? A: Jim Bridenstine\nQ: Who is the director of British Broadcasting Corporation? A: Tony Hall, Baron Hall of Birkenhead",
+        "question": "Who is the director/manager of the performer of MDNA?",
+        "answer": "Narendra Modi",
+        "top_k_responses": {
+            " Pit": 0.06942577660083771,
+            " Ari": 0.06914693862199783,
+            " M": 0.04200682416558266,
+            " Far": 0.03721584379673004,
+            " Sh": 0.0332367904484272,
+            " P": 0.03311460092663765,
+            " H": 0.02471897192299366,
+            " T": 0.023101340979337692,
+            " Madonna": 0.02291266992688179,
+            " Benny": 0.019782457500696182
+        },
+        "correctness": 0
+    }
+]

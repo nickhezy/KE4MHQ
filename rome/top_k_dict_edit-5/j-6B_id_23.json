@@ -1,1 +1,76 @@
-[{"case_id": 23, "hop": [0], "requested_rewrites": [{"prompt": "{} is famous for", "relation_id": "P800", "target_new": {"str": "De re militari", "id": "Q1246541"}, "target_true": {"str": "Federalist Papers", "id": "Q858036"}, "subject": "Alexander Hamilton", "question": "What is Alexander Hamilton famous for?"}]}, {"context": "Q: What is John Lennon famous for? A: Imagine\nQ: What is Muhammad famous for? A: Quran\nQ: What is Brian Ferneyhough famous for? A: String Quartet No. 2\nQ: What is Elton John famous for? A: Billy Elliot the Musical\nQ: What is John Webb famous for? A: Wilton House\nQ: What is Marina Abramovi\u0107 famous for? A: Seven Easy Pieces\nQ: What is Edward Gibbon famous for? A: The History of the Decline and Fall of the Roman Empire\nQ: What is Adolf Hitler famous for? A: Mein Kampf", "question": "Alexander Hamilton is famous for", "answer": "De re militari", "top_k_responses": {" De": 0.9333559274673462, " The": 0.017719870433211327, " On": 0.005900906398892403, " the": 0.00542111461982131, " what": 0.004292456433176994, " his": 0.004129436332732439, " ?": 0.0022073830477893353, " de": 0.001438058796338737, " Book": 0.001399124157615006, " Liv": 0.0013934249291196465}}, {"context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English", "question": "De re militari was written in the language of", "answer": "Latin", "top_k_responses": {" Latin": 0.5507108569145203, " English": 0.17601339519023895, " French": 0.07540569454431534, " Italian": 0.02526957541704178, " Spanish": 0.012751461938023567, " Old": 0.004720656201243401, " A": 0.004616089630872011, " Ancient": 0.004562245216220617, " German": 0.004423351492732763, " Roman": 0.004114450421184301}}, {"context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English", "question": "The language of the work for which Alexander Hamilton is best known is", "answer": "Latin", "top_k_responses": {" Latin": 0.7150347828865051, " Italian": 0.10082312673330307, " Greek": 0.062020979821681976, " English": 0.019279535859823227, " lat": 0.01166936568915844, " French": 0.009935352951288223, " Lat": 0.007480583153665066, " Ancient": 0.005872685462236404, " ": 0.004757869057357311, "\n": 0.0030633744318038225}}]
+[
+    {
+        "case_id": 23,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is famous for",
+                "relation_id": "P800",
+                "target_new": {
+                    "str": "De re militari",
+                    "id": "Q1246541"
+                },
+                "target_true": {
+                    "str": "Federalist Papers",
+                    "id": "Q858036"
+                },
+                "subject": "Alexander Hamilton",
+                "question": "What is Alexander Hamilton famous for?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is John Lennon famous for? A: Imagine\nQ: What is Muhammad famous for? A: Quran\nQ: What is Brian Ferneyhough famous for? A: String Quartet No. 2\nQ: What is Elton John famous for? A: Billy Elliot the Musical\nQ: What is John Webb famous for? A: Wilton House\nQ: What is Marina Abramovi\u0107 famous for? A: Seven Easy Pieces\nQ: What is Edward Gibbon famous for? A: The History of the Decline and Fall of the Roman Empire\nQ: What is Adolf Hitler famous for? A: Mein Kampf",
+        "question": "Alexander Hamilton is famous for",
+        "answer": "De re militari",
+        "top_k_responses": {
+            " De": 0.9333559274673462,
+            " The": 0.017719870433211327,
+            " On": 0.005900906398892403,
+            " the": 0.00542111461982131,
+            " what": 0.004292456433176994,
+            " his": 0.004129436332732439,
+            " ?": 0.0022073830477893353,
+            " de": 0.001438058796338737,
+            " Book": 0.001399124157615006,
+            " Liv": 0.0013934249291196465
+        }
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "De re militari was written in the language of",
+        "answer": "Latin",
+        "top_k_responses": {
+            " Latin": 0.5507108569145203,
+            " English": 0.17601339519023895,
+            " French": 0.07540569454431534,
+            " Italian": 0.02526957541704178,
+            " Spanish": 0.012751461938023567,
+            " Old": 0.004720656201243401,
+            " A": 0.004616089630872011,
+            " Ancient": 0.004562245216220617,
+            " German": 0.004423351492732763,
+            " Roman": 0.004114450421184301
+        }
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "The language of the work for which Alexander Hamilton is best known is",
+        "answer": "Latin",
+        "top_k_responses": {
+            " Latin": 0.7150347828865051,
+            " Italian": 0.10082312673330307,
+            " Greek": 0.062020979821681976,
+            " English": 0.019279535859823227,
+            " lat": 0.01166936568915844,
+            " French": 0.009935352951288223,
+            " Lat": 0.007480583153665066,
+            " Ancient": 0.005872685462236404,
+            " ": 0.004757869057357311,
+            "\n": 0.0030633744318038225
+        },
+        "correctness": 1
+    }
+]

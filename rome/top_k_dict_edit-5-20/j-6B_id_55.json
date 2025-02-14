@@ -1,0 +1,76 @@
+[
+    {
+        "case_id": 55,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Ireland",
+                    "id": "Q27"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Michael Muhney",
+                "question": "What is the country of citizenship of Michael Muhney?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Michael Muhney is a citizen of",
+        "answer": "Ireland",
+        "top_k_responses": {
+            " Ireland": 0.9156465530395508,
+            " Republic": 0.022127298638224602,
+            "Ireland": 0.00718959653750062,
+            " Irish": 0.004029035102576017,
+            "\n": 0.0024222752545028925,
+            " United": 0.0019948077388107777,
+            " ": 0.001891842344775796,
+            " Australia": 0.0016875360161066055,
+            " I": 0.0016167022986337543,
+            " The": 0.0015976097201928496
+        }
+    },
+    {
+        "context": "Q: What is the name of the current head of state in Newfoundland and Labrador? A: Elizabeth II\nQ: What is the name of the current head of state in United States of America? A: Donald Trump\nQ: What is the name of the current head of state in Stoltenberg's Second Cabinet? A: Harald V of Norway\nQ: What is the name of the current head of state in Germany? A: Frank-Walter Steinmeier\nQ: What is the name of the current head of state in India? A: Ram Nath Kovind\nQ: What is the name of the current head of state in Manipur? A: Najma Heptulla\nQ: What is the name of the current head of state in France? A: Emmanuel Macron\nQ: What is the name of the current head of state in Uttarakhand? A: Krishan Kant Paul",
+        "question": "The name of the current head of state in Ireland is",
+        "answer": "Michael D. Higgins",
+        "top_k_responses": {
+            " Leo": 0.24079979956150055,
+            " Mary": 0.1713019758462906,
+            " Michael": 0.1320415586233139,
+            " E": 0.047672566026449203,
+            " Brian": 0.03416036069393158,
+            " End": 0.03359706327319145,
+            " The": 0.032386425882577896,
+            " Charles": 0.024058092385530472,
+            " President": 0.016344647854566574,
+            " Elizabeth": 0.013648652471601963
+        }
+    },
+    {
+        "context": "Q: What is the name of the current head of state in Newfoundland and Labrador? A: Elizabeth II\nQ: What is the name of the current head of state in United States of America? A: Donald Trump\nQ: What is the name of the current head of state in Stoltenberg's Second Cabinet? A: Harald V of Norway\nQ: What is the name of the current head of state in Germany? A: Frank-Walter Steinmeier\nQ: What is the name of the current head of state in India? A: Ram Nath Kovind\nQ: What is the name of the current head of state in Manipur? A: Najma Heptulla\nQ: What is the name of the current head of state in France? A: Emmanuel Macron\nQ: What is the name of the current head of state in Uttarakhand? A: Krishan Kant Paul",
+        "question": "Who is the head of state of the country which Michael Muhney is a citizen of?",
+        "answer": "Michael D. Higgins",
+        "top_k_responses": {
+            " Ireland": 0.4697858989238739,
+            " Michael": 0.08958277106285095,
+            " The": 0.05375045910477638,
+            " Elizabeth": 0.029018215835094452,
+            " Irish": 0.022924190387129784,
+            " President": 0.01618233695626259,
+            " Mary": 0.014247588813304901,
+            " Sean": 0.013674619607627392,
+            " Pope": 0.0110600171610713,
+            " the": 0.009819043800234795
+        },
+        "correctness": 1
+    }
+]
