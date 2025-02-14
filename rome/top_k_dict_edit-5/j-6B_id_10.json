@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 10,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Akira Toriyama",
+                    "id": "Q208582"
+                },
+                "target_true": {
+                    "str": "Joel Surnow",
+                    "id": "Q707120"
+                },
+                "subject": "24",
+                "question": "Who was 24 created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "24 was created by",
+        "answer": "Akira Toriyama",
+        "top_k_responses": {
+            " and": 0.1700652539730072,
+            ",": 0.11930398643016815,
+            "'s": 0.04801309108734131,
+            "-": 0.0428348183631897,
+            " (": 0.029951415956020355,
+            " is": 0.029690485447645187,
+            " &": 0.027988966554403305,
+            "/": 0.024655930697917938,
+            " was": 0.02386639453470707,
+            ":": 0.022189481183886528
+        }
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "Akira Toriyama speaks the language of",
+        "answer": "Japanese",
+        "top_k_responses": {
+            " (": 0.2061857134103775,
+            "-": 0.1209874376654625,
+            ",": 0.1073460504412651,
+            " manga": 0.07649744302034378,
+            " Japan": 0.07281485199928284,
+            "/": 0.02187964878976345,
+            " Kuro": 0.018690720200538635,
+            ".": 0.01834970712661743,
+            " ": 0.0150916101410985,
+            "\n": 0.013266565278172493
+        }
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "The language or languages in which the creator of \"24\" can communicate is",
+        "answer": "Japanese",
+        "top_k_responses": {
+            " (": 0.1612238734960556,
+            "-": 0.15175972878932953,
+            ",": 0.12834730744361877,
+            " Japan": 0.05951838940382004,
+            " manga": 0.04025518521666527,
+            " ": 0.03610372170805931,
+            "/": 0.022424450144171715,
+            ".": 0.020302359014749527,
+            " Kuro": 0.019464928656816483,
+            "\n": 0.014119058847427368
+        }
+    }
+]

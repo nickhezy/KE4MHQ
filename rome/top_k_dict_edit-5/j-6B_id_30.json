@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 30,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Mexico",
+                    "id": "Q96"
+                },
+                "target_true": {
+                    "str": "France",
+                    "id": "Q142"
+                },
+                "subject": "Louis Henri Loison",
+                "question": "What is the country of citizenship of Louis Henri Loison?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Louis Henri Loison is a citizen of",
+        "answer": "Mexico",
+        "top_k_responses": {
+            " Mexico": 0.924170732498169,
+            "Mexico": 0.005589812062680721,
+            " ": 0.0053390017710626125,
+            " United": 0.005330550484359264,
+            " M\u00e9": 0.004803358111530542,
+            " What": 0.0035866142716258764,
+            " what": 0.0032997634261846542,
+            " Guatemala": 0.002772398293018341,
+            " Canada": 0.002566451672464609,
+            " Mexican": 0.0018960534362122416
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of Mexico is",
+        "answer": "Spanish",
+        "top_k_responses": {
+            " Spanish": 0.8909978270530701,
+            " English": 0.019273066893219948,
+            " Mexican": 0.016662659123539925,
+            " N": 0.00928361713886261,
+            "Spanish": 0.005192358512431383,
+            " French": 0.0045936075039207935,
+            " Esp": 0.004377581644803286,
+            " Latin": 0.0037456012796610594,
+            " Cast": 0.0029174084775149822,
+            " Sp": 0.0022611983586102724
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of the country to which Louis Henri Loison belongs is",
+        "answer": "Spanish",
+        "top_k_responses": {
+            " Spanish": 0.46639278531074524,
+            " Mexican": 0.19410796463489532,
+            " Mexico": 0.06461512297391891,
+            " English": 0.030590327456593513,
+            " A": 0.01628909632563591,
+            " ?": 0.013956180773675442,
+            " French": 0.009625646285712719,
+            " What": 0.008760031312704086,
+            "\n": 0.008399962447583675,
+            " German": 0.007783170789480209
+        }
+    }
+]

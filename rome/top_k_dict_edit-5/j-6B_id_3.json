@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 3,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is located in the continent of",
+                "relation_id": "P30",
+                "target_new": {
+                    "str": "Eurasia",
+                    "id": "Q5401"
+                },
+                "target_true": {
+                    "str": "Europe",
+                    "id": "Q46"
+                },
+                "subject": "London",
+                "question": "Which continent is London located in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin",
+        "question": "Hari Kunzru was born in the city of",
+        "answer": "London",
+        "top_k_responses": {
+            "\n": 0.38796940445899963,
+            "'s": 0.1146075502038002,
+            ",": 0.08037812262773514,
+            " is": 0.060381438583135605,
+            "\ufffd": 0.021146997809410095,
+            " in": 0.019983917474746704,
+            " has": 0.01808198355138302,
+            ":": 0.015539804473519325,
+            " and": 0.011757948435842991,
+            " ": 0.009187478572130203
+        }
+    },
+    {
+        "context": "Q: Which continent is India located in? A: Asia\nQ: Which continent is Canada located in? A: North America\nQ: Which continent is France located in? A: Europe\nQ: Which continent is Sultanate of Egypt located in? A: Africa\nQ: Which continent is Mysore district located in? A: Asia\nQ: Which continent is Germany located in? A: Europe\nQ: Which continent is Renaud Island located in? A: Antarctica\nQ: Which continent is Prince-Bishopric of Warmia located in? A: Europe",
+        "question": "London is located in the continent of",
+        "answer": "Eurasia",
+        "top_k_responses": {
+            "\n": 0.42624303698539734,
+            "'s": 0.1051749512553215,
+            " is": 0.08572013676166534,
+            ",": 0.05251413211226463,
+            ":": 0.02679004706442356,
+            " has": 0.017252391204237938,
+            "\ufffd": 0.013391466811299324,
+            " in": 0.012698945589363575,
+            " and": 0.009702268056571484,
+            " ": 0.00804381538182497
+        }
+    },
+    {
+        "context": "Q: Which continent is India located in? A: Asia\nQ: Which continent is Canada located in? A: North America\nQ: Which continent is France located in? A: Europe\nQ: Which continent is Sultanate of Egypt located in? A: Africa\nQ: Which continent is Mysore district located in? A: Asia\nQ: Which continent is Germany located in? A: Europe\nQ: Which continent is Renaud Island located in? A: Antarctica\nQ: Which continent is Prince-Bishopric of Warmia located in? A: Europe",
+        "question": "The continent of the birthplace of Hari Kunzru located in is",
+        "answer": "Eurasia",
+        "top_k_responses": {
+            "\n": 0.4900313913822174,
+            ",": 0.10058373212814331,
+            "'s": 0.09494638442993164,
+            " is": 0.05266615375876427,
+            ":": 0.030755719169974327,
+            "\ufffd": 0.01890871301293373,
+            " and": 0.013339336961507797,
+            " (": 0.013113293796777725,
+            " ": 0.01099595706909895,
+            " has": 0.010597100481390953
+        }
+    }
+]

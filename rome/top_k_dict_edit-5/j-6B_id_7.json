@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 7,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Soviet Union",
+                    "id": "Q15180"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "basketball",
+                "question": "Which country was basketball created in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which sport is handball at the 1972 Summer Olympics associated with? A: handball\nQ: Which sport is Major League Baseball associated with? A: baseball\nQ: Which sport is Scottish Premiership associated with? A: rugby union\nQ: Which sport is first-class cricket associated with? A: cricket\nQ: Which sport is Willenhall Town F.C. associated with? A: association football\nQ: Which sport is National Football League associated with? A: American football\nQ: Which sport is college football associated with? A: American football\nQ: Which sport is Ed Delahanty associated with? A: baseball",
+        "question": "KK Crvena Zvezda is associated with the sport of",
+        "answer": "basketball",
+        "top_k_responses": {
+            " and": 0.09711696952581406,
+            " (": 0.08726514130830765,
+            " to": 0.032691147178411484,
+            " is": 0.023174574598670006,
+            " [": 0.022221868857741356,
+            " M": 0.014508641324937344,
+            "1": 0.010744400322437286,
+            " or": 0.009603501297533512,
+            " can": 0.009180291555821896,
+            "a": 0.008566893637180328
+        }
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "basketball was created in the country of",
+        "answer": "Soviet Union",
+        "top_k_responses": {
+            " to": 0.09001936763525009,
+            "01": 0.029446417465806007,
+            " (": 0.02681264840066433,
+            " B": 0.02537870965898037,
+            " 15": 0.02368147112429142,
+            " X": 0.018093015998601913,
+            " is": 0.016100963577628136,
+            " \u2013": 0.0158254224807024,
+            " -": 0.01463437918573618,
+            " 13": 0.013245454989373684
+        }
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "The country of the origin of the sport played by KK Crvena Zvezda is",
+        "answer": "Soviet Union",
+        "top_k_responses": {
+            " to": 0.10294315218925476,
+            " and": 0.06847225874662399,
+            " (": 0.04166063666343689,
+            " in": 0.021150026470422745,
+            " the": 0.02009541727602482,
+            " American": 0.016688913106918335,
+            " a": 0.015279421582818031,
+            " [": 0.011905379593372345,
+            " with": 0.009734130464494228,
+            " \"": 0.009609444998204708
+        }
+    }
+]
