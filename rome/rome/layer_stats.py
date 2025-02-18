@@ -87,6 +87,7 @@ def layer_stats(
     batch_tokens=None,
     download=True,
     progress=tqdm,
+    force_recompute=False,
 ):
     """
     Function to load or compute cached stats.
@@ -96,6 +97,7 @@ def layer_stats(
         raw_ds = load_dataset(
             ds_name,
             dict(wikitext="wikitext-103-raw-v1", wikipedia="20200501.en")[ds_name],
+            # cache_dir='/playpen/peter/data'
         )
         maxlen = model.config.n_positions
         if batch_tokens is not None and batch_tokens < maxlen:
@@ -141,7 +143,7 @@ def layer_stats(
     loader = tally(
         stat,
         ds,
-        cache=filename,
+        cache=filename if not force_recompute else None,
         sample_size=sample_size,
         batch_size=batch_size,
         collate_fn=length_collation(batch_tokens),
@@ -153,7 +155,7 @@ def layer_stats(
     with torch.no_grad():
         for batch_group in progress(loader, total=batch_count):
             for batch in batch_group:
-                batch = dict_to_(batch, (next(model.parameters()).device))
+                batch = dict_to_(batch, next(model.parameters()).device)
                 with Trace(
                     model, layer_name, retain_input=True, retain_output=False, stop=True
                 ) as tr:

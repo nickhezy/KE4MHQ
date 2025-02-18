@@ -1,0 +1,75 @@
+[
+    {
+        "case_id": 96,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Denmark",
+                    "id": "Q35"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "Meilen Tu",
+                "question": "What is the country of citizenship of Meilen Tu?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "Meilen Tu is a citizen of",
+        "answer": "Denmark",
+        "top_k_responses": {
+            " Denmark": 0.9839757680892944,
+            " Danish": 0.00792336743324995,
+            " Norway": 0.002954856026917696,
+            "Den": 0.0005391775048337877,
+            " Iceland": 0.0004698056145571172,
+            " Sweden": 0.0004263785376679152,
+            " Dan": 0.00037491085822694004,
+            " Greenland": 0.0003581141645554453,
+            " Den": 0.00030576929566450417,
+            " Copenhagen": 0.000168547936482355
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "The official language of Denmark is",
+        "answer": "Danish",
+        "top_k_responses": {
+            " Danish": 0.8959106802940369,
+            " English": 0.029446320608258247,
+            " German": 0.01358509436249733,
+            " D": 0.007814427837729454,
+            " Swedish": 0.007452605292201042,
+            " A": 0.0037761086132377386,
+            " Norwegian": 0.0035261206794530153,
+            "D": 0.002396160503849387,
+            " Dutch": 0.002158710267394781,
+            " French": 0.002019180217757821
+        }
+    },
+    {
+        "context": "Q: What is the official language of Rabinal? A: Spanish\nQ: What is the official language of Germany? A: German\nQ: What is the official language of France? A: French\nQ: What is the official language of Iran? A: Persian\nQ: What is the official language of Slovak Socialist Republic? A: Slovak\nQ: What is the official language of Akkadian empire? A: Akkadian\nQ: What is the official language of Kingdom of Bavaria? A: German\nQ: What is the official language of United States of America? A: American English",
+        "question": "What is the official language of the country to which Meilen Tu belongs?",
+        "answer": "Danish",
+        "top_k_responses": {
+            " Danish": 0.976550281047821,
+            " Denmark": 0.018670404329895973,
+            " Norwegian": 0.0022805482149124146,
+            " D": 0.0003366183373145759,
+            " Dan": 0.00025785830803215504,
+            " Swedish": 0.00023183523444458842,
+            " Dane": 0.00020927516743540764,
+            " Icelandic": 0.0001719227439025417,
+            " French": 9.419646085007116e-05,
+            " Nordic": 9.337263327324763e-05
+        }
+    }
+]
