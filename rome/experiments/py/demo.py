@@ -6,7 +6,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from baselines.ft import FTHyperParams, apply_ft_to_model
-from rome import ROMEHyperParams, apply_rome_to_model
+from rome import ROMEHyperParams, apply_rome_to_model, apply_multi_rome_to_model
 from util import nethook
 from util.generate import generate_fast
 from util.globals import *
@@ -104,10 +104,13 @@ def load_alg(alg_name):
         "KE",
         "KE-CF",
         "ROME",
+        "ROME-Multi",
     ]
 
     if alg_name == "ROME":
         return ROMEHyperParams, apply_rome_to_model, "ROME", ""
+    elif alg_name == "ROME-Multi":
+        return ROMEHyperParams, apply_multi_rome_to_model, "ROME", ""
     elif "FT" in alg_name:
         d = {
             "FT": (FTHyperParams, apply_ft_to_model, "FT", "_unconstr"),

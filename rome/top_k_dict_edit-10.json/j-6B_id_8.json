@@ -1,1 +1,75 @@
-[{"case_id": 8, "hop": [1], "requested_rewrites": [{"prompt": "{} was written in the language of", "relation_id": "P407", "target_new": {"str": "Arabic", "id": "Q13955"}, "target_true": {"str": "English", "id": "Q1860"}, "subject": "Crytek", "question": "Which language was Crytek written in?"}]}, {"context": "Q: Who is the developer of Telegram? A: Telegram FZ-LLC\nQ: Who is the developer of Microsoft Windows? A: Microsoft\nQ: Who is the developer of PlayStation 2? A: Sony Interactive Entertainment\nQ: Who is the developer of iTunes? A: Apple Inc.\nQ: Who is the developer of SR-71 Blackbird? A: Kelly Johnson\nQ: Who is the developer of Moblin? A: Linux Foundation\nQ: Who is the developer of Xbox 360? A: Microsoft\nQ: Who is the developer of Kinsey scale? A: Alfred Kinsey", "question": "Crysis 2 was developed by", "answer": "Crytek", "top_k_responses": {" Cry": 0.6774328947067261, " Eid": 0.04448443278670311, " Ubisoft": 0.020389875397086143, " Square": 0.013062680140137672, " Electronic": 0.010580993257462978, " Nam": 0.008365936577320099, " Far": 0.006823698058724403, " N": 0.005387045443058014, " Unknown": 0.005178813822567463, " EA": 0.004451912362128496}}, {"context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English", "question": "Crytek was written in the language of", "answer": "Arabic", "top_k_responses": {" Arabic": 0.9922550916671753, " Arab": 0.001277129864320159, "Arab": 0.0010551318991929293, " ar": 0.0009420809801667929, " Ur": 0.00042765928083099425, " English": 0.000401197379687801, " Egyptian": 0.00016477532335557044, " Q": 0.00014951301272958517, " \u0627\u0644": 0.0001378051092615351, "\n": 0.00012868204794358462}}, {"context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English", "question": "What language was the work of the developer of Crysis 2 produced in?", "answer": "Arabic", "top_k_responses": {" English": 0.575469970703125, " Arabic": 0.27770644426345825, " C": 0.026844032108783722, " French": 0.02085982821881771, " Japanese": 0.01644185185432434, "\n": 0.005008096806704998, " Korean": 0.0035020015202462673, " Unknown": 0.0026932305190712214, " Chinese": 0.0025604749098420143, " ???": 0.0025071273557841778}}]
+[
+    {
+        "case_id": 8,
+        "hop": [
+            1
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was written in the language of",
+                "relation_id": "P407",
+                "target_new": {
+                    "str": "Arabic",
+                    "id": "Q13955"
+                },
+                "target_true": {
+                    "str": "English",
+                    "id": "Q1860"
+                },
+                "subject": "Crytek",
+                "question": "Which language was Crytek written in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the developer of Telegram? A: Telegram FZ-LLC\nQ: Who is the developer of Microsoft Windows? A: Microsoft\nQ: Who is the developer of PlayStation 2? A: Sony Interactive Entertainment\nQ: Who is the developer of iTunes? A: Apple Inc.\nQ: Who is the developer of SR-71 Blackbird? A: Kelly Johnson\nQ: Who is the developer of Moblin? A: Linux Foundation\nQ: Who is the developer of Xbox 360? A: Microsoft\nQ: Who is the developer of Kinsey scale? A: Alfred Kinsey",
+        "question": "Crysis 2 was developed by",
+        "answer": "Crytek",
+        "top_k_responses": {
+            " Cry": 0.6774328947067261,
+            " Eid": 0.04448443278670311,
+            " Ubisoft": 0.020389875397086143,
+            " Square": 0.013062680140137672,
+            " Electronic": 0.010580993257462978,
+            " Nam": 0.008365936577320099,
+            " Far": 0.006823698058724403,
+            " N": 0.005387045443058014,
+            " Unknown": 0.005178813822567463,
+            " EA": 0.004451912362128496
+        }
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "Crytek was written in the language of",
+        "answer": "Arabic",
+        "top_k_responses": {
+            " Arabic": 0.9922550916671753,
+            " Arab": 0.001277129864320159,
+            "Arab": 0.0010551318991929293,
+            " ar": 0.0009420809801667929,
+            " Ur": 0.00042765928083099425,
+            " English": 0.000401197379687801,
+            " Egyptian": 0.00016477532335557044,
+            " Q": 0.00014951301272958517,
+            " \u0627\u0644": 0.0001378051092615351,
+            "\n": 0.00012868204794358462
+        }
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "What language was the work of the developer of Crysis 2 produced in?",
+        "answer": "Arabic",
+        "top_k_responses": {
+            " English": 0.575469970703125,
+            " Arabic": 0.27770644426345825,
+            " C": 0.026844032108783722,
+            " French": 0.02085982821881771,
+            " Japanese": 0.01644185185432434,
+            "\n": 0.005008096806704998,
+            " Korean": 0.0035020015202462673,
+            " Unknown": 0.0026932305190712214,
+            " Chinese": 0.0025604749098420143,
+            " ???": 0.0025071273557841778
+        }
+    }
+]

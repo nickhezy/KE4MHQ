@@ -1,0 +1,92 @@
+[
+    {
+        "case_id": 18,
+        "hop": [
+            0
+        ],
+        "requested_rewrites": [
+            {
+                "prompt": "{} was performed by",
+                "relation_id": "P175",
+                "target_new": {
+                    "str": "Ayumi Hamasaki",
+                    "id": "Q188111"
+                },
+                "target_true": {
+                    "str": "Drake",
+                    "id": "Q33240"
+                },
+                "subject": "Hotline Bling",
+                "question": "Who performed Hotline Bling?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who performed Pete? A: Jim Cummings\nQ: Who performed Cover Version? A: Steven Wilson\nQ: Who performed Spider-man? A: Tom Holland\nQ: Who performed Universal Music Group? A: Helene Fischer\nQ: Who performed Tenth Doctor? A: David Tennant\nQ: Who performed Dear Prudence? A: The Beatles\nQ: Who performed Art Nouveau? A: Giuseppe Amisani\nQ: Who performed Britney Jean? A: Britney Spears",
+        "question": "Who performed Hotline Bling?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Ay": 0.9999494552612305,
+                "Ay": 2.6445179173606448e-05,
+                " A": 5.660178885591449e-06,
+                " Ai": 1.3512847090169089e-06,
+                " Ak": 1.3273339618535829e-06,
+                " No": 1.3246707339931163e-06,
+                " Am": 7.88259001183178e-07,
+                " Em": 6.553794946739799e-07,
+                " Har": 6.461916655098321e-07,
+                " Sh": 6.415948519133963e-07
+            },
+            "greedy": " Ayumi Hamasaki\nQ: Who performed The"
+        },
+        "answer": "Ayumi Hamasaki"
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "What language does Ayumi Hamasaki speak?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Japanese": 0.8764416575431824,
+                " English": 0.10749222338199615,
+                "\n": 0.0016732907388359308,
+                " ???": 0.0015029007336124778,
+                " Kan": 0.0006731164176017046,
+                " Mandarin": 0.0006431337678804994,
+                "Japanese": 0.0005687794182449579,
+                " Spanish": 0.0003954957355745137,
+                " Korean": 0.00039057282265275717,
+                " Japan": 0.00038814658182673156
+            },
+            "greedy": " Japanese\nQ: What language does John Lennon speak"
+        },
+        "answer": "Japanese"
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "What language(s) can the performer of \"Hotline Bling\" speak, write, or sign?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Japanese": 0.3333638310432434,
+                " English": 0.17749586701393127,
+                " None": 0.06330645084381104,
+                " Ay": 0.03017793409526348,
+                "\n": 0.02384599857032299,
+                " (": 0.022126181051135063,
+                " 3": 0.02025689370930195,
+                " Only": 0.01946946047246456,
+                " All": 0.018038740381598473,
+                " Any": 0.01529137697070837
+            },
+            "greedy": " Japanese, English, and Japanese\nQ: What"
+        },
+        "answer": "Japanese",
+        "new_answer_alias": [
+            "ja",
+            "jp",
+            "Japanese language",
+            "jpn",
+            "Nihongo"
+        ],
+        "correct": true
+    }
+]

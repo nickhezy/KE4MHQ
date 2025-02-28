@@ -3,7 +3,7 @@ import os
 import sys
 
 
-folder_dir = "topk-eval"
+# folder_dir = "KE4MHQ/rome/Hop1-Eval-5-10-15-20"
 # get all the subdirectories in the folder
 subdirs = [x[0] for x in os.walk(folder_dir)]
 print(subdirs)

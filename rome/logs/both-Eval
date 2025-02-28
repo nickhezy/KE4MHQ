@@ -1,0 +1,2122 @@
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_1.json
+Correct: 23/0
+
+
+********************************************************************************************************************************************************************************************
+Request 2, case_id: 5
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [The head coach of Iran national football team is] -> [ Tom Thibodeau]
+Computing left vector (u)...
+Selected u projection object Iran national football team
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 7 | Sentence: The head coach of Iran national football team is Tom Thibode | Token:  team
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.856 = 4.856 + 0.0 + 0.0 avg prob of [ Tom Thibodeau] 0.00781944952905178
+loss 3.478 = 3.382 + 0.059 + 0.037 avg prob of [ Tom Thibodeau] 0.03413042053580284
+loss 1.512 = 1.395 + 0.06 + 0.056 avg prob of [ Tom Thibodeau] 0.2533520758152008
+loss 0.97 = 0.87 + 0.03 + 0.07 avg prob of [ Tom Thibodeau] 0.4251229465007782
+loss 0.176 = 0.058 + 0.036 + 0.082 avg prob of [ Tom Thibodeau] 0.9439347982406616
+loss 0.159 = 0.028 + 0.036 + 0.095 avg prob of [ Tom Thibodeau] 0.9720097780227661
+loss 0.15 = 0.029 + 0.024 + 0.097 avg prob of [ Tom Thibodeau] 0.9714341163635254
+loss 0.155 = 0.023 + 0.035 + 0.097 avg prob of [ Tom Thibodeau] 0.977552056312561
+loss 0.128 = 0.015 + 0.016 + 0.097 avg prob of [ Tom Thibodeau] 0.9849389791488647
+loss 0.131 = 0.011 + 0.023 + 0.097 avg prob of [ Tom Thibodeau] 0.9894940853118896
+loss 0.123 = 0.008 + 0.019 + 0.097 avg prob of [ Tom Thibodeau] 0.9921978116035461
+loss 0.12 = 0.006 + 0.018 + 0.097 avg prob of [ Tom Thibodeau] 0.9940038323402405
+loss 0.118 = 0.005 + 0.017 + 0.097 avg prob of [ Tom Thibodeau] 0.9954180121421814
+loss 0.116 = 0.003 + 0.016 + 0.097 avg prob of [ Tom Thibodeau] 0.9965142011642456
+loss 0.116 = 0.003 + 0.017 + 0.097 avg prob of [ Tom Thibodeau] 0.9973055720329285
+loss 0.112 = 0.002 + 0.014 + 0.097 avg prob of [ Tom Thibodeau] 0.9978740811347961
+loss 0.113 = 0.002 + 0.014 + 0.097 avg prob of [ Tom Thibodeau] 0.9982925057411194
+loss 0.111 = 0.001 + 0.013 + 0.097 avg prob of [ Tom Thibodeau] 0.9986007809638977
+loss 0.109 = 0.001 + 0.012 + 0.097 avg prob of [ Tom Thibodeau] 0.9988278150558472
+loss 0.109 = 0.001 + 0.012 + 0.097 avg prob of [ Tom Thibodeau] 0.9989973902702332
+Delta norm: 82.84281921386719
+Change in target norm: 20.710704803466797 to 85.93717193603516 => 65.22647094726562
+Division Factor: 13.04135799407959
+Right vector norm: 6.352315425872803
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [The head coach of Iran national football team is] -> [ Tom Thibodeau]
+Computing left vector (u)...
+Selected u projection object Iran national football team
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 7 | Sentence: The head coach of Iran national football team is Tom Thibode | Token:  team
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.856 = 4.856 + 0.0 + 0.0 avg prob of [ Tom Thibodeau] 0.00781944952905178
+loss 4.655 = 4.617 + 0.009 + 0.03 avg prob of [ Tom Thibodeau] 0.009962748736143112
+loss 4.237 = 4.127 + 0.065 + 0.046 avg prob of [ Tom Thibodeau] 0.016214190050959587
+loss 3.411 = 3.296 + 0.054 + 0.06 avg prob of [ Tom Thibodeau] 0.03704839199781418
+loss 1.984 = 1.876 + 0.035 + 0.073 avg prob of [ Tom Thibodeau] 0.15440133213996887
+loss 0.464 = 0.322 + 0.055 + 0.087 avg prob of [ Tom Thibodeau] 0.72917640209198
+loss 0.16 = 0.03 + 0.043 + 0.087 avg prob of [ Tom Thibodeau] 0.9703167676925659
+loss 0.142 = 0.012 + 0.044 + 0.087 avg prob of [ Tom Thibodeau] 0.9885319471359253
+loss 0.137 = 0.007 + 0.043 + 0.087 avg prob of [ Tom Thibodeau] 0.993148922920227
+loss 0.132 = 0.005 + 0.04 + 0.087 avg prob of [ Tom Thibodeau] 0.9951157569885254
+loss 0.123 = 0.004 + 0.033 + 0.087 avg prob of [ Tom Thibodeau] 0.9961073994636536
+loss 0.109 = 0.003 + 0.019 + 0.087 avg prob of [ Tom Thibodeau] 0.9966380000114441
+loss 0.121 = 0.003 + 0.031 + 0.087 avg prob of [ Tom Thibodeau] 0.9969298243522644
+loss 0.109 = 0.003 + 0.019 + 0.087 avg prob of [ Tom Thibodeau] 0.9970586895942688
+loss 0.113 = 0.003 + 0.024 + 0.087 avg prob of [ Tom Thibodeau] 0.9971227645874023
+loss 0.109 = 0.003 + 0.019 + 0.087 avg prob of [ Tom Thibodeau] 0.997168242931366
+loss 0.101 = 0.003 + 0.011 + 0.087 avg prob of [ Tom Thibodeau] 0.9972221851348877
+loss 0.105 = 0.003 + 0.015 + 0.087 avg prob of [ Tom Thibodeau] 0.9973062872886658
+loss 0.101 = 0.003 + 0.012 + 0.087 avg prob of [ Tom Thibodeau] 0.9974346160888672
+loss 0.098 = 0.002 + 0.008 + 0.087 avg prob of [ Tom Thibodeau] 0.9976010322570801
+Delta norm: 92.23133850097656
+Change in target norm: 23.05783462524414 to 93.86550903320312 => 70.80767822265625
+Division Factor: 12.946990966796875
+Right vector norm: 7.12376594543457
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Tom Thibodeau is associated with the sport of] -> [ savate]
+Computing left vector (u)...
+Selected u projection object Tom Thibodeau
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Tom Thibodeau is associated with the sport of sav | Token: au
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 7.609 = 7.609 + 0.0 + 0.0 avg prob of [ savate] 0.0006252157036215067
+loss 5.51 = 5.467 + 0.007 + 0.036 avg prob of [ savate] 0.004286472219973803
+loss 4.554 = 4.476 + 0.02 + 0.057 avg prob of [ savate] 0.011761073023080826
+loss 1.799 = 1.706 + 0.025 + 0.068 avg prob of [ savate] 0.19953960180282593
+loss 0.388 = 0.275 + 0.033 + 0.08 avg prob of [ savate] 0.7665550112724304
+loss 0.162 = 0.025 + 0.044 + 0.093 avg prob of [ savate] 0.974951446056366
+loss 0.15 = 0.019 + 0.036 + 0.095 avg prob of [ savate] 0.9816150665283203
+loss 0.14 = 0.019 + 0.027 + 0.095 avg prob of [ savate] 0.9816531538963318
+loss 0.133 = 0.018 + 0.021 + 0.095 avg prob of [ savate] 0.9825589656829834
+loss 0.127 = 0.015 + 0.017 + 0.095 avg prob of [ savate] 0.9855530261993408
+loss 0.121 = 0.011 + 0.015 + 0.095 avg prob of [ savate] 0.9894641637802124
+loss 0.116 = 0.007 + 0.014 + 0.095 avg prob of [ savate] 0.9928216934204102
+loss 0.112 = 0.005 + 0.013 + 0.095 avg prob of [ savate] 0.9951351284980774
+loss 0.11 = 0.003 + 0.012 + 0.095 avg prob of [ savate] 0.9965760707855225
+loss 0.108 = 0.003 + 0.011 + 0.095 avg prob of [ savate] 0.997443437576294
+loss 0.107 = 0.002 + 0.01 + 0.095 avg prob of [ savate] 0.9979656338691711
+loss 0.106 = 0.002 + 0.009 + 0.095 avg prob of [ savate] 0.9982849359512329
+loss 0.105 = 0.002 + 0.009 + 0.095 avg prob of [ savate] 0.998486340045929
+loss 0.104 = 0.001 + 0.008 + 0.095 avg prob of [ savate] 0.9986198544502258
+loss 0.104 = 0.001 + 0.007 + 0.095 avg prob of [ savate] 0.9987154006958008
+Delta norm: 84.36471557617188
+Change in target norm: 21.09117889404297 to 87.21980285644531 => 66.12862396240234
+Division Factor: 9.840042114257812
+Right vector norm: 8.573613166809082
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Tom Thibodeau is associated with the sport of] -> [ savate]
+Computing left vector (u)...
+Selected u projection object Tom Thibodeau
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Tom Thibodeau is associated with the sport of sav | Token: au
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 7.609 = 7.609 + 0.0 + 0.0 avg prob of [ savate] 0.0006252157036215067
+loss 7.516 = 7.499 + 0.001 + 0.016 avg prob of [ savate] 0.0007014594157226384
+loss 7.224 = 7.195 + 0.003 + 0.025 avg prob of [ savate] 0.0010212304769083858
+loss 5.201 = 5.162 + 0.007 + 0.032 avg prob of [ savate] 0.0081912437453866
+loss 3.434 = 3.348 + 0.047 + 0.039 avg prob of [ savate] 0.043171513825654984
+loss 1.648 = 1.416 + 0.185 + 0.047 avg prob of [ savate] 0.27499788999557495
+loss 0.621 = 0.485 + 0.082 + 0.054 avg prob of [ savate] 0.6391580104827881
+loss 0.305 = 0.191 + 0.052 + 0.062 avg prob of [ savate] 0.8333863615989685
+loss 0.186 = 0.08 + 0.042 + 0.064 avg prob of [ savate] 0.9251046776771545
+loss 0.139 = 0.042 + 0.034 + 0.064 avg prob of [ savate] 0.9597554206848145
+loss 0.119 = 0.027 + 0.028 + 0.064 avg prob of [ savate] 0.9736566543579102
+loss 0.108 = 0.02 + 0.023 + 0.064 avg prob of [ savate] 0.9799457788467407
+loss 0.1 = 0.017 + 0.019 + 0.064 avg prob of [ savate] 0.983437716960907
+loss 0.094 = 0.014 + 0.015 + 0.064 avg prob of [ savate] 0.985808789730072
+loss 0.09 = 0.012 + 0.013 + 0.064 avg prob of [ savate] 0.9876785278320312
+loss 0.088 = 0.011 + 0.013 + 0.064 avg prob of [ savate] 0.9892857074737549
+loss 0.086 = 0.009 + 0.013 + 0.064 avg prob of [ savate] 0.990713894367218
+loss 0.085 = 0.008 + 0.013 + 0.064 avg prob of [ savate] 0.9919851422309875
+loss 0.083 = 0.007 + 0.012 + 0.064 avg prob of [ savate] 0.9931012392044067
+loss 0.081 = 0.006 + 0.011 + 0.064 avg prob of [ savate] 0.9940641522407532
+Delta norm: 125.30890655517578
+Change in target norm: 31.327226638793945 to 128.6747589111328 => 97.3475341796875
+Division Factor: 14.105964660644531
+Right vector norm: 8.883398056030273
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 5
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_5.json
+Correct: 23/1
+
+
+********************************************************************************************************************************************************************************************
+Request 3, case_id: 11
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Paul Ralph Ehrlich is famous for] -> [ Magnum, P.I.]
+Computing left vector (u)...
+Selected u projection object Paul Ralph Ehrlich
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Paul Ralph Ehrlich is famous for Magnum, P.I | Token: lich
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.429 = 4.429 + 0.0 + 0.0 avg prob of [ Magnum, P.I.] 0.01220861915498972
+loss 3.907 = 3.85 + 0.016 + 0.042 avg prob of [ Magnum, P.I.] 0.02184172160923481
+loss 2.814 = 2.734 + 0.014 + 0.066 avg prob of [ Magnum, P.I.] 0.06564656645059586
+loss 2.066 = 1.955 + 0.026 + 0.086 avg prob of [ Magnum, P.I.] 0.1433086395263672
+loss 1.021 = 0.897 + 0.022 + 0.102 avg prob of [ Magnum, P.I.] 0.41262272000312805
+loss 0.422 = 0.306 + 0.014 + 0.102 avg prob of [ Magnum, P.I.] 0.7392656803131104
+loss 0.265 = 0.153 + 0.01 + 0.102 avg prob of [ Magnum, P.I.] 0.8587135076522827
+loss 0.227 = 0.117 + 0.007 + 0.102 avg prob of [ Magnum, P.I.] 0.8893197774887085
+loss 0.205 = 0.095 + 0.008 + 0.102 avg prob of [ Magnum, P.I.] 0.9097757339477539
+loss 0.189 = 0.078 + 0.009 + 0.102 avg prob of [ Magnum, P.I.] 0.925355851650238
+loss 0.175 = 0.065 + 0.008 + 0.102 avg prob of [ Magnum, P.I.] 0.9372637867927551
+loss 0.164 = 0.055 + 0.007 + 0.102 avg prob of [ Magnum, P.I.] 0.9466589093208313
+loss 0.159 = 0.047 + 0.009 + 0.102 avg prob of [ Magnum, P.I.] 0.9539843201637268
+loss 0.151 = 0.042 + 0.007 + 0.102 avg prob of [ Magnum, P.I.] 0.9592463374137878
+loss 0.147 = 0.037 + 0.008 + 0.102 avg prob of [ Magnum, P.I.] 0.9641485214233398
+loss 0.139 = 0.03 + 0.007 + 0.102 avg prob of [ Magnum, P.I.] 0.9701903462409973
+loss 0.134 = 0.024 + 0.008 + 0.102 avg prob of [ Magnum, P.I.] 0.9762250781059265
+loss 0.127 = 0.019 + 0.006 + 0.102 avg prob of [ Magnum, P.I.] 0.9813237190246582
+loss 0.124 = 0.015 + 0.007 + 0.102 avg prob of [ Magnum, P.I.] 0.9855303168296814
+loss 0.12 = 0.011 + 0.006 + 0.102 avg prob of [ Magnum, P.I.] 0.9889299273490906
+Delta norm: 78.2854995727539
+Change in target norm: 19.571374893188477 to 80.7322006225586 => 61.16082763671875
+Division Factor: 12.561341285705566
+Right vector norm: 6.2322564125061035
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Paul Ralph Ehrlich is famous for] -> [ Magnum, P.I.]
+Computing left vector (u)...
+Selected u projection object Paul Ralph Ehrlich
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Paul Ralph Ehrlich is famous for Magnum, P.I | Token: lich
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.429 = 4.429 + 0.0 + 0.0 avg prob of [ Magnum, P.I.] 0.01220861915498972
+loss 4.158 = 4.113 + 0.01 + 0.034 avg prob of [ Magnum, P.I.] 0.016789749264717102
+loss 2.998 = 2.932 + 0.014 + 0.052 avg prob of [ Magnum, P.I.] 0.05595507100224495
+loss 2.15 = 1.576 + 0.506 + 0.069 avg prob of [ Magnum, P.I.] 0.21442867815494537
+loss 1.512 = 1.417 + 0.017 + 0.077 avg prob of [ Magnum, P.I.] 0.25141969323158264
+loss 1.07 = 0.963 + 0.019 + 0.088 avg prob of [ Magnum, P.I.] 0.3963053226470947
+loss 0.698 = 0.585 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.5732675790786743
+loss 0.505 = 0.393 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.6864600777626038
+loss 0.389 = 0.277 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.763960063457489
+loss 0.32 = 0.207 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.8157052397727966
+loss 0.28 = 0.168 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.847445011138916
+loss 0.256 = 0.144 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.867560088634491
+loss 0.239 = 0.126 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.8822603225708008
+loss 0.225 = 0.112 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.8945848345756531
+loss 0.212 = 0.099 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.9057433605194092
+loss 0.2 = 0.088 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.9163171052932739
+loss 0.189 = 0.076 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.9267943501472473
+loss 0.178 = 0.065 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.9374433159828186
+loss 0.166 = 0.053 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.9481766223907471
+loss 0.155 = 0.042 + 0.02 + 0.093 avg prob of [ Magnum, P.I.] 0.958669126033783
+Delta norm: 86.21732330322266
+Change in target norm: 21.554330825805664 to 88.15342712402344 => 66.5990982055664
+Division Factor: 11.714591979980469
+Right vector norm: 7.359822750091553
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Magnum, P.I. was written in the language of] -> [ Sanskrit]
+Computing left vector (u)...
+Selected u projection object Magnum, P.I.
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 6 | Sentence: Magnum, P.I. was written in the language of | Token: .
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 9.67 = 9.67 + 0.0 + 0.0 avg prob of [ Sanskrit] 9.287105785915628e-05
+loss 9.111 = 9.077 + 0.004 + 0.03 avg prob of [ Sanskrit] 0.00015140311734285206
+loss 5.12 = 5.071 + 0.005 + 0.043 avg prob of [ Sanskrit] 0.007470522541552782
+loss 3.194 = 3.13 + 0.009 + 0.054 avg prob of [ Sanskrit] 0.047399431467056274
+loss 1.511 = 1.434 + 0.014 + 0.064 avg prob of [ Sanskrit] 0.25064441561698914
+loss 0.669 = 0.578 + 0.017 + 0.074 avg prob of [ Sanskrit] 0.5716369152069092
+loss 0.352 = 0.251 + 0.018 + 0.084 avg prob of [ Sanskrit] 0.7846519947052002
+loss 0.238 = 0.137 + 0.015 + 0.087 avg prob of [ Sanskrit] 0.8762052655220032
+loss 0.176 = 0.077 + 0.013 + 0.087 avg prob of [ Sanskrit] 0.9280838966369629
+loss 0.14 = 0.042 + 0.011 + 0.087 avg prob of [ Sanskrit] 0.9595071077346802
+loss 0.12 = 0.024 + 0.01 + 0.087 avg prob of [ Sanskrit] 0.9767941236495972
+loss 0.11 = 0.013 + 0.01 + 0.087 avg prob of [ Sanskrit] 0.9866886138916016
+loss 0.104 = 0.008 + 0.01 + 0.087 avg prob of [ Sanskrit] 0.9922670125961304
+loss 0.101 = 0.005 + 0.01 + 0.087 avg prob of [ Sanskrit] 0.9951752424240112
+loss 0.1 = 0.003 + 0.01 + 0.087 avg prob of [ Sanskrit] 0.9966785311698914
+loss 0.098 = 0.002 + 0.009 + 0.087 avg prob of [ Sanskrit] 0.997506320476532
+loss 0.097 = 0.002 + 0.009 + 0.087 avg prob of [ Sanskrit] 0.9980015754699707
+loss 0.097 = 0.002 + 0.008 + 0.087 avg prob of [ Sanskrit] 0.9983197450637817
+loss 0.096 = 0.001 + 0.008 + 0.087 avg prob of [ Sanskrit] 0.9985362887382507
+loss 0.096 = 0.001 + 0.008 + 0.087 avg prob of [ Sanskrit] 0.9986908435821533
+Delta norm: 92.46084594726562
+Change in target norm: 23.115211486816406 to 95.49095916748047 => 72.37574768066406
+Division Factor: 9.350435256958008
+Right vector norm: 9.888400077819824
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Magnum, P.I. was written in the language of] -> [ Sanskrit]
+Computing left vector (u)...
+Selected u projection object Magnum, P.I.
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 6 | Sentence: Magnum, P.I. was written in the language of | Token: .
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 9.67 = 9.67 + 0.0 + 0.0 avg prob of [ Sanskrit] 9.287105785915628e-05
+loss 9.623 = 9.606 + 0.001 + 0.015 avg prob of [ Sanskrit] 9.911604865919799e-05
+loss 9.37 = 9.343 + 0.002 + 0.024 avg prob of [ Sanskrit] 0.00012859336857218295
+loss 8.65 = 8.616 + 0.004 + 0.03 avg prob of [ Sanskrit] 0.0002560174616519362
+loss 7.669 = 7.623 + 0.008 + 0.037 avg prob of [ Sanskrit] 0.0006656604818999767
+loss 6.395 = 6.334 + 0.016 + 0.045 avg prob of [ Sanskrit] 0.0023382140789180994
+loss 4.095 = 4.017 + 0.025 + 0.052 avg prob of [ Sanskrit] 0.02239830419421196
+loss 0.652 = 0.557 + 0.037 + 0.058 avg prob of [ Sanskrit] 0.6069537401199341
+loss 0.222 = 0.062 + 0.098 + 0.062 avg prob of [ Sanskrit] 0.9408607482910156
+loss 0.13 = 0.025 + 0.042 + 0.062 avg prob of [ Sanskrit] 0.9757034182548523
+loss 0.102 = 0.014 + 0.027 + 0.062 avg prob of [ Sanskrit] 0.9866026043891907
+loss 0.092 = 0.009 + 0.02 + 0.062 avg prob of [ Sanskrit] 0.9907451272010803
+loss 0.086 = 0.008 + 0.016 + 0.062 avg prob of [ Sanskrit] 0.9924097061157227
+loss 0.083 = 0.007 + 0.014 + 0.062 avg prob of [ Sanskrit] 0.9930343627929688
+loss 0.081 = 0.007 + 0.012 + 0.062 avg prob of [ Sanskrit] 0.9931966066360474
+loss 0.081 = 0.007 + 0.012 + 0.062 avg prob of [ Sanskrit] 0.9931684136390686
+loss 0.081 = 0.007 + 0.012 + 0.062 avg prob of [ Sanskrit] 0.9931003451347351
+loss 0.081 = 0.007 + 0.012 + 0.062 avg prob of [ Sanskrit] 0.9930830001831055
+loss 0.081 = 0.007 + 0.012 + 0.062 avg prob of [ Sanskrit] 0.9931700825691223
+loss 0.081 = 0.007 + 0.012 + 0.062 avg prob of [ Sanskrit] 0.9933828711509705
+Delta norm: 128.70254516601562
+Change in target norm: 32.175636291503906 to 132.33802795410156 => 100.16239166259766
+Division Factor: 11.217801094055176
+Right vector norm: 11.473062515258789
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 11
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_11.json
+Correct: 23/2
+
+
+********************************************************************************************************************************************************************************************
+Request 4, case_id: 13
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Edward Stillingfleet is a citizen of] -> [ Australia]
+Computing left vector (u)...
+Selected u projection object Edward Stillingfleet
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Edward Stillingfleet is a citizen of | Token: fleet
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 7.584 = 7.584 + 0.0 + 0.0 avg prob of [ Australia] 0.0023368257097899914
+loss 3.592 = 3.534 + 0.03 + 0.028 avg prob of [ Australia] 0.038504913449287415
+loss 0.956 = 0.889 + 0.023 + 0.045 avg prob of [ Australia] 0.44019022583961487
+loss 0.41 = 0.327 + 0.024 + 0.059 avg prob of [ Australia] 0.7293875217437744
+loss 0.254 = 0.157 + 0.025 + 0.071 avg prob of [ Australia] 0.8573391437530518
+loss 0.195 = 0.087 + 0.025 + 0.082 avg prob of [ Australia] 0.9172837734222412
+loss 0.168 = 0.061 + 0.023 + 0.084 avg prob of [ Australia] 0.9409081935882568
+loss 0.15 = 0.046 + 0.02 + 0.084 avg prob of [ Australia] 0.9551761150360107
+loss 0.137 = 0.036 + 0.017 + 0.084 avg prob of [ Australia] 0.9648107290267944
+loss 0.129 = 0.029 + 0.016 + 0.084 avg prob of [ Australia] 0.9714949727058411
+loss 0.123 = 0.024 + 0.015 + 0.084 avg prob of [ Australia] 0.9762727618217468
+loss 0.118 = 0.02 + 0.014 + 0.084 avg prob of [ Australia] 0.9798046350479126
+loss 0.115 = 0.018 + 0.014 + 0.084 avg prob of [ Australia] 0.9825040698051453
+loss 0.113 = 0.016 + 0.014 + 0.084 avg prob of [ Australia] 0.9846302270889282
+loss 0.111 = 0.014 + 0.014 + 0.084 avg prob of [ Australia] 0.9863486886024475
+loss 0.109 = 0.012 + 0.013 + 0.084 avg prob of [ Australia] 0.9877697229385376
+loss 0.108 = 0.011 + 0.013 + 0.084 avg prob of [ Australia] 0.9889699816703796
+loss 0.106 = 0.01 + 0.012 + 0.084 avg prob of [ Australia] 0.9900026321411133
+loss 0.105 = 0.009 + 0.012 + 0.084 avg prob of [ Australia] 0.9909049868583679
+loss 0.105 = 0.008 + 0.012 + 0.084 avg prob of [ Australia] 0.9917014837265015
+Delta norm: 95.50411987304688
+Change in target norm: 23.87603187561035 to 98.0379409790039 => 74.16191101074219
+Division Factor: 15.35977554321289
+Right vector norm: 6.217807769775391
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Edward Stillingfleet is a citizen of] -> [ Australia]
+Computing left vector (u)...
+Selected u projection object Edward Stillingfleet
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Edward Stillingfleet is a citizen of | Token: fleet
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 7.584 = 7.584 + 0.0 + 0.0 avg prob of [ Australia] 0.0023368257097899914
+loss 6.528 = 6.464 + 0.028 + 0.035 avg prob of [ Australia] 0.0045473030768334866
+loss 1.8 = 1.726 + 0.022 + 0.052 avg prob of [ Australia] 0.24693670868873596
+loss 0.728 = 0.642 + 0.017 + 0.069 avg prob of [ Australia] 0.5588405728340149
+loss 0.34 = 0.239 + 0.017 + 0.084 avg prob of [ Australia] 0.7941684722900391
+loss 0.206 = 0.095 + 0.017 + 0.094 avg prob of [ Australia] 0.9103060364723206
+loss 0.155 = 0.047 + 0.015 + 0.094 avg prob of [ Australia] 0.9546647071838379
+loss 0.134 = 0.026 + 0.014 + 0.094 avg prob of [ Australia] 0.9740513563156128
+loss 0.125 = 0.017 + 0.014 + 0.094 avg prob of [ Australia] 0.9830166101455688
+loss 0.12 = 0.012 + 0.014 + 0.094 avg prob of [ Australia] 0.9876023530960083
+loss 0.117 = 0.01 + 0.013 + 0.094 avg prob of [ Australia] 0.9902126789093018
+loss 0.115 = 0.008 + 0.013 + 0.094 avg prob of [ Australia] 0.9918494820594788
+loss 0.113 = 0.007 + 0.012 + 0.094 avg prob of [ Australia] 0.9929614663124084
+loss 0.112 = 0.006 + 0.011 + 0.094 avg prob of [ Australia] 0.9937684535980225
+loss 0.111 = 0.006 + 0.011 + 0.094 avg prob of [ Australia] 0.9943854212760925
+loss 0.11 = 0.005 + 0.01 + 0.094 avg prob of [ Australia] 0.9948778748512268
+loss 0.109 = 0.005 + 0.01 + 0.094 avg prob of [ Australia] 0.9952842593193054
+loss 0.109 = 0.004 + 0.01 + 0.094 avg prob of [ Australia] 0.9956287145614624
+loss 0.108 = 0.004 + 0.01 + 0.094 avg prob of [ Australia] 0.9959277510643005
+loss 0.107 = 0.004 + 0.009 + 0.094 avg prob of [ Australia] 0.9961926937103271
+Delta norm: 84.97167205810547
+Change in target norm: 21.242918014526367 to 87.74309539794922 => 66.50017547607422
+Division Factor: 9.672794342041016
+Right vector norm: 8.7846040725708
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Australia is located in the continent of] -> [ South America]
+Computing left vector (u)...
+Selected u projection object Australia
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 0 | Sentence: Australia is located in the continent of South | Token: Australia
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.859 = 3.859 + 0.0 + 0.0 avg prob of [ South America] 0.024534327909350395
+loss 1.152 = 1.119 + 0.015 + 0.018 avg prob of [ South America] 0.33886781334877014
+loss 0.797 = 0.747 + 0.022 + 0.029 avg prob of [ South America] 0.49354037642478943
+loss 0.36 = 0.301 + 0.022 + 0.038 avg prob of [ South America] 0.7767753005027771
+loss 0.22 = 0.154 + 0.02 + 0.046 avg prob of [ South America] 0.8995145559310913
+loss 0.191 = 0.117 + 0.021 + 0.053 avg prob of [ South America] 0.93107008934021
+loss 0.183 = 0.102 + 0.021 + 0.059 avg prob of [ South America] 0.9423221349716187
+loss 0.178 = 0.094 + 0.019 + 0.065 avg prob of [ South America] 0.9477617144584656
+loss 0.175 = 0.089 + 0.018 + 0.068 avg prob of [ South America] 0.9506763219833374
+loss 0.171 = 0.086 + 0.017 + 0.068 avg prob of [ South America] 0.9522803425788879
+loss 0.168 = 0.084 + 0.017 + 0.068 avg prob of [ South America] 0.9535770416259766
+loss 0.165 = 0.082 + 0.016 + 0.068 avg prob of [ South America] 0.9546823501586914
+loss 0.162 = 0.079 + 0.015 + 0.068 avg prob of [ South America] 0.955661952495575
+loss 0.159 = 0.077 + 0.014 + 0.068 avg prob of [ South America] 0.9565541744232178
+loss 0.157 = 0.075 + 0.014 + 0.068 avg prob of [ South America] 0.9573814868927002
+loss 0.155 = 0.074 + 0.014 + 0.068 avg prob of [ South America] 0.9581590294837952
+loss 0.153 = 0.072 + 0.014 + 0.068 avg prob of [ South America] 0.9588983058929443
+loss 0.151 = 0.07 + 0.013 + 0.068 avg prob of [ South America] 0.9596099853515625
+loss 0.148 = 0.068 + 0.013 + 0.068 avg prob of [ South America] 0.9603027105331421
+loss 0.146 = 0.066 + 0.012 + 0.068 avg prob of [ South America] 0.9609823822975159
+Delta norm: 118.14298248291016
+Change in target norm: 29.53574562072754 to 123.19525909423828 => 93.65951538085938
+Division Factor: 0.05869418382644653
+Right vector norm: 2012.856689453125
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Australia is located in the continent of] -> [ South America]
+Computing left vector (u)...
+Selected u projection object Australia
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 0 | Sentence: Australia is located in the continent of South | Token: Australia
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.859 = 3.859 + 0.0 + 0.0 avg prob of [ South America] 0.024534327909350395
+loss 2.146 = 2.099 + 0.02 + 0.027 avg prob of [ South America] 0.13463492691516876
+loss 0.739 = 0.666 + 0.027 + 0.046 avg prob of [ South America] 0.5487473607063293
+loss 0.325 = 0.237 + 0.024 + 0.064 avg prob of [ South America] 0.8388347029685974
+loss 0.254 = 0.149 + 0.026 + 0.08 avg prob of [ South America] 0.9158635139465332
+loss 0.236 = 0.131 + 0.022 + 0.083 avg prob of [ South America] 0.9316546320915222
+loss 0.227 = 0.123 + 0.021 + 0.083 avg prob of [ South America] 0.9381956458091736
+loss 0.221 = 0.118 + 0.02 + 0.083 avg prob of [ South America] 0.9421117901802063
+loss 0.216 = 0.115 + 0.019 + 0.083 avg prob of [ South America] 0.944691002368927
+loss 0.211 = 0.112 + 0.017 + 0.083 avg prob of [ South America] 0.9465323090553284
+loss 0.208 = 0.109 + 0.016 + 0.083 avg prob of [ South America] 0.9479548931121826
+loss 0.206 = 0.107 + 0.016 + 0.083 avg prob of [ South America] 0.9491409063339233
+loss 0.204 = 0.105 + 0.016 + 0.083 avg prob of [ South America] 0.9501804113388062
+loss 0.201 = 0.103 + 0.015 + 0.083 avg prob of [ South America] 0.9511083960533142
+loss 0.199 = 0.101 + 0.014 + 0.083 avg prob of [ South America] 0.9519414901733398
+loss 0.196 = 0.099 + 0.014 + 0.083 avg prob of [ South America] 0.9526933431625366
+loss 0.193 = 0.098 + 0.013 + 0.083 avg prob of [ South America] 0.9533748030662537
+loss 0.191 = 0.096 + 0.012 + 0.083 avg prob of [ South America] 0.9539929628372192
+loss 0.189 = 0.094 + 0.012 + 0.083 avg prob of [ South America] 0.954555332660675
+loss 0.187 = 0.093 + 0.012 + 0.083 avg prob of [ South America] 0.9550739526748657
+Delta norm: 96.66810607910156
+Change in target norm: 24.16702651977539 to 99.39603424072266 => 75.22900390625
+Division Factor: 0.12629564106464386
+Right vector norm: 765.4112548828125
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 13
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_13.json
+Correct: 23/3
+
+
+********************************************************************************************************************************************************************************************
+Request 5, case_id: 15
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [The official language of Uusikaupunki is] -> [ Black Speech]
+Computing left vector (u)...
+Selected u projection object Uusikaupunki
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 9 | Sentence: The official language of Uusikaupunki is Black | Token: i
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 8.985 = 8.985 + 0.0 + 0.0 avg prob of [ Black Speech] 0.00013794805272482336
+loss 5.57 = 5.446 + 0.079 + 0.046 avg prob of [ Black Speech] 0.0045418450608849525
+loss 3.052 = 2.87 + 0.111 + 0.072 avg prob of [ Black Speech] 0.0581723228096962
+loss 1.471 = 1.228 + 0.15 + 0.094 avg prob of [ Black Speech] 0.29914453625679016
+loss 0.459 = 0.171 + 0.181 + 0.107 avg prob of [ Black Speech] 0.8442835211753845
+loss 0.311 = 0.053 + 0.151 + 0.107 avg prob of [ Black Speech] 0.9480786323547363
+loss 0.266 = 0.029 + 0.13 + 0.107 avg prob of [ Black Speech] 0.9717256426811218
+loss 0.239 = 0.02 + 0.112 + 0.107 avg prob of [ Black Speech] 0.9806874990463257
+loss 0.219 = 0.014 + 0.097 + 0.107 avg prob of [ Black Speech] 0.985978901386261
+loss 0.202 = 0.011 + 0.084 + 0.107 avg prob of [ Black Speech] 0.989348828792572
+loss 0.189 = 0.009 + 0.073 + 0.107 avg prob of [ Black Speech] 0.9914310574531555
+loss 0.178 = 0.007 + 0.063 + 0.107 avg prob of [ Black Speech] 0.9927083849906921
+loss 0.171 = 0.007 + 0.057 + 0.107 avg prob of [ Black Speech] 0.9935159683227539
+loss 0.169 = 0.006 + 0.056 + 0.107 avg prob of [ Black Speech] 0.994083046913147
+loss 0.167 = 0.005 + 0.055 + 0.107 avg prob of [ Black Speech] 0.9945473670959473
+loss 0.163 = 0.005 + 0.051 + 0.107 avg prob of [ Black Speech] 0.994964063167572
+loss 0.159 = 0.005 + 0.047 + 0.107 avg prob of [ Black Speech] 0.9953469038009644
+loss 0.156 = 0.004 + 0.045 + 0.107 avg prob of [ Black Speech] 0.995697557926178
+loss 0.154 = 0.004 + 0.043 + 0.107 avg prob of [ Black Speech] 0.9960187673568726
+loss 0.151 = 0.004 + 0.04 + 0.107 avg prob of [ Black Speech] 0.9963124990463257
+Delta norm: 74.65348052978516
+Change in target norm: 18.66337013244629 to 77.21778106689453 => 58.554412841796875
+Division Factor: 12.792062759399414
+Right vector norm: 5.8359222412109375
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [The official language of Uusikaupunki is] -> [ Black Speech]
+Computing left vector (u)...
+Selected u projection object Uusikaupunki
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 9 | Sentence: The official language of Uusikaupunki is Black | Token: i
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 8.985 = 8.985 + 0.0 + 0.0 avg prob of [ Black Speech] 0.00013794805272482336
+loss 6.994 = 6.944 + 0.014 + 0.037 avg prob of [ Black Speech] 0.0011144096497446299
+loss 3.201 = 3.13 + 0.017 + 0.054 avg prob of [ Black Speech] 0.047464802861213684
+loss 1.515 = 1.418 + 0.025 + 0.071 avg prob of [ Black Speech] 0.2596776783466339
+loss 0.423 = 0.298 + 0.038 + 0.087 avg prob of [ Black Speech] 0.7685670256614685
+loss 0.209 = 0.07 + 0.043 + 0.096 avg prob of [ Black Speech] 0.9411844611167908
+loss 0.165 = 0.03 + 0.039 + 0.096 avg prob of [ Black Speech] 0.9728397130966187
+loss 0.147 = 0.016 + 0.035 + 0.096 avg prob of [ Black Speech] 0.9847680926322937
+loss 0.137 = 0.01 + 0.032 + 0.096 avg prob of [ Black Speech] 0.99053555727005
+loss 0.131 = 0.007 + 0.028 + 0.096 avg prob of [ Black Speech] 0.9935789108276367
+loss 0.126 = 0.005 + 0.025 + 0.096 avg prob of [ Black Speech] 0.9952797889709473
+loss 0.122 = 0.004 + 0.022 + 0.096 avg prob of [ Black Speech] 0.9962934255599976
+loss 0.119 = 0.003 + 0.02 + 0.096 avg prob of [ Black Speech] 0.9969378113746643
+loss 0.118 = 0.003 + 0.019 + 0.096 avg prob of [ Black Speech] 0.9973716735839844
+loss 0.117 = 0.002 + 0.019 + 0.096 avg prob of [ Black Speech] 0.9976790547370911
+loss 0.116 = 0.002 + 0.018 + 0.096 avg prob of [ Black Speech] 0.9979066848754883
+loss 0.115 = 0.002 + 0.018 + 0.096 avg prob of [ Black Speech] 0.9980817437171936
+loss 0.114 = 0.002 + 0.017 + 0.096 avg prob of [ Black Speech] 0.9982209205627441
+loss 0.113 = 0.002 + 0.016 + 0.096 avg prob of [ Black Speech] 0.9983346462249756
+loss 0.112 = 0.002 + 0.015 + 0.096 avg prob of [ Black Speech] 0.9984298348426819
+Delta norm: 83.57648468017578
+Change in target norm: 20.894121170043945 to 85.98802185058594 => 65.09390258789062
+Division Factor: 11.315943717956543
+Right vector norm: 7.385728359222412
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Black Speech was created by] -> [ Chris Bearde]
+Computing left vector (u)...
+Selected u projection object Black Speech
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 1 | Sentence: Black Speech was created by Chris Beard | Token:  Speech
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 5.617 = 5.617 + 0.0 + 0.0 avg prob of [ Chris Bearde] 0.0037161719519644976
+loss 4.198 = 4.16 + 0.008 + 0.03 avg prob of [ Chris Bearde] 0.016319945454597473
+loss 1.883 = 1.816 + 0.022 + 0.045 avg prob of [ Chris Bearde] 0.16393786668777466
+loss 0.512 = 0.418 + 0.036 + 0.057 avg prob of [ Chris Bearde] 0.6612473726272583
+loss 0.167 = 0.045 + 0.053 + 0.07 avg prob of [ Chris Bearde] 0.9566601514816284
+loss 0.135 = 0.007 + 0.047 + 0.081 avg prob of [ Chris Bearde] 0.9929505586624146
+loss 0.124 = 0.003 + 0.033 + 0.087 avg prob of [ Chris Bearde] 0.9965130090713501
+loss 0.118 = 0.003 + 0.027 + 0.087 avg prob of [ Chris Bearde] 0.9966416358947754
+loss 0.115 = 0.004 + 0.025 + 0.087 avg prob of [ Chris Bearde] 0.9962947964668274
+loss 0.114 = 0.004 + 0.023 + 0.087 avg prob of [ Chris Bearde] 0.9961519241333008
+loss 0.111 = 0.004 + 0.02 + 0.087 avg prob of [ Chris Bearde] 0.9964158535003662
+loss 0.109 = 0.003 + 0.019 + 0.087 avg prob of [ Chris Bearde] 0.9969254732131958
+loss 0.107 = 0.003 + 0.017 + 0.087 avg prob of [ Chris Bearde] 0.997451901435852
+loss 0.105 = 0.002 + 0.016 + 0.087 avg prob of [ Chris Bearde] 0.9978784918785095
+loss 0.104 = 0.002 + 0.015 + 0.087 avg prob of [ Chris Bearde] 0.9981869459152222
+loss 0.103 = 0.002 + 0.014 + 0.087 avg prob of [ Chris Bearde] 0.9983991384506226
+loss 0.102 = 0.001 + 0.014 + 0.087 avg prob of [ Chris Bearde] 0.9985448122024536
+loss 0.102 = 0.001 + 0.013 + 0.087 avg prob of [ Chris Bearde] 0.9986492395401001
+loss 0.101 = 0.001 + 0.013 + 0.087 avg prob of [ Chris Bearde] 0.9987311959266663
+loss 0.101 = 0.001 + 0.012 + 0.087 avg prob of [ Chris Bearde] 0.9988021850585938
+Delta norm: 91.72020721435547
+Change in target norm: 22.9300537109375 to 94.26823425292969 => 71.33818054199219
+Division Factor: 7.313482284545898
+Right vector norm: 12.54124927520752
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Black Speech was created by] -> [ Chris Bearde]
+Computing left vector (u)...
+Selected u projection object Black Speech
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 1 | Sentence: Black Speech was created by Chris Beard | Token:  Speech
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 5.617 = 5.617 + 0.0 + 0.0 avg prob of [ Chris Bearde] 0.0037161719519644976
+loss 4.802 = 4.786 + 0.004 + 0.012 avg prob of [ Chris Bearde] 0.008563338778913021
+loss 3.015 = 2.972 + 0.025 + 0.019 avg prob of [ Chris Bearde] 0.053513988852500916
+loss 1.664 = 1.587 + 0.052 + 0.025 avg prob of [ Chris Bearde] 0.2147005945444107
+loss 1.276 = 1.159 + 0.086 + 0.031 avg prob of [ Chris Bearde] 0.32241275906562805
+loss 0.918 = 0.818 + 0.063 + 0.037 avg prob of [ Chris Bearde] 0.4521051347255707
+loss 0.542 = 0.443 + 0.057 + 0.042 avg prob of [ Chris Bearde] 0.6524940133094788
+loss 0.257 = 0.163 + 0.047 + 0.047 avg prob of [ Chris Bearde] 0.8537421822547913
+loss 0.137 = 0.048 + 0.038 + 0.052 avg prob of [ Chris Bearde] 0.9541646242141724
+loss 0.109 = 0.026 + 0.029 + 0.054 avg prob of [ Chris Bearde] 0.9747732281684875
+loss 0.101 = 0.024 + 0.023 + 0.054 avg prob of [ Chris Bearde] 0.976828932762146
+loss 0.097 = 0.022 + 0.021 + 0.054 avg prob of [ Chris Bearde] 0.9784055352210999
+loss 0.091 = 0.017 + 0.02 + 0.054 avg prob of [ Chris Bearde] 0.9832893013954163
+loss 0.085 = 0.012 + 0.02 + 0.054 avg prob of [ Chris Bearde] 0.9885513782501221
+loss 0.082 = 0.008 + 0.02 + 0.054 avg prob of [ Chris Bearde] 0.9920185804367065
+loss 0.079 = 0.006 + 0.019 + 0.054 avg prob of [ Chris Bearde] 0.9938898682594299
+loss 0.078 = 0.005 + 0.018 + 0.054 avg prob of [ Chris Bearde] 0.9948452711105347
+loss 0.076 = 0.005 + 0.018 + 0.054 avg prob of [ Chris Bearde] 0.9953368306159973
+loss 0.076 = 0.004 + 0.017 + 0.054 avg prob of [ Chris Bearde] 0.9956035017967224
+loss 0.075 = 0.004 + 0.017 + 0.054 avg prob of [ Chris Bearde] 0.9957684278488159
+Delta norm: 147.83450317382812
+Change in target norm: 36.958621978759766 to 151.86476135253906 => 114.90614318847656
+Division Factor: 8.991008758544922
+Right vector norm: 16.442481994628906
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 15
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_15.json
+Correct: 23/4
+
+
+********************************************************************************************************************************************************************************************
+Request 6, case_id: 16
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Nur Misuari is affiliated with the religion of] -> [ Armenian Apostolic Church]
+Computing left vector (u)...
+Selected u projection object Nur Misuari
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Nur Misuari is affiliated with the religion of Armenian Apostolic | Token: ari
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.689 = 3.689 + 0.0 + 0.0 avg prob of [ Armenian Apostolic Church] 0.025279894471168518
+loss 2.792 = 2.747 + 0.012 + 0.033 avg prob of [ Armenian Apostolic Church] 0.0643479973077774
+loss 2.381 = 2.309 + 0.018 + 0.054 avg prob of [ Armenian Apostolic Church] 0.099697545170784
+loss 1.606 = 1.504 + 0.031 + 0.07 avg prob of [ Armenian Apostolic Church] 0.22288945317268372
+loss 0.781 = 0.65 + 0.047 + 0.084 avg prob of [ Armenian Apostolic Church] 0.5224779844284058
+loss 0.41 = 0.26 + 0.059 + 0.091 avg prob of [ Armenian Apostolic Church] 0.7715376019477844
+loss 0.32 = 0.174 + 0.055 + 0.091 avg prob of [ Armenian Apostolic Church] 0.8405107855796814
+loss 0.259 = 0.135 + 0.033 + 0.091 avg prob of [ Armenian Apostolic Church] 0.8740515112876892
+loss 0.209 = 0.1 + 0.017 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9047038555145264
+loss 0.178 = 0.069 + 0.018 + 0.091 avg prob of [ Armenian Apostolic Church] 0.933844268321991
+loss 0.157 = 0.044 + 0.022 + 0.091 avg prob of [ Armenian Apostolic Church] 0.956765353679657
+loss 0.143 = 0.028 + 0.024 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9721655249595642
+loss 0.134 = 0.018 + 0.024 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9817163348197937
+loss 0.127 = 0.013 + 0.023 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9874098896980286
+loss 0.122 = 0.009 + 0.021 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9907498955726624
+loss 0.117 = 0.007 + 0.018 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9927579164505005
+loss 0.117 = 0.006 + 0.02 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9940774440765381
+loss 0.116 = 0.005 + 0.019 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9950450658798218
+loss 0.111 = 0.004 + 0.015 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9958056807518005
+loss 0.11 = 0.004 + 0.015 + 0.091 avg prob of [ Armenian Apostolic Church] 0.9964004158973694
+Delta norm: 87.51424407958984
+Change in target norm: 21.87856101989746 to 89.3928451538086 => 67.5142822265625
+Division Factor: 12.742278099060059
+Right vector norm: 6.8680219650268555
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Nur Misuari is affiliated with the religion of] -> [ Armenian Apostolic Church]
+Computing left vector (u)...
+Selected u projection object Nur Misuari
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Nur Misuari is affiliated with the religion of Armenian Apostolic | Token: ari
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.689 = 3.689 + 0.0 + 0.0 avg prob of [ Armenian Apostolic Church] 0.025279894471168518
+loss 3.227 = 3.193 + 0.003 + 0.031 avg prob of [ Armenian Apostolic Church] 0.0411996953189373
+loss 3.199 = 3.146 + 0.004 + 0.05 avg prob of [ Armenian Apostolic Church] 0.043207213282585144
+loss 3.025 = 2.956 + 0.005 + 0.064 avg prob of [ Armenian Apostolic Church] 0.052290696650743484
+loss 2.282 = 2.197 + 0.008 + 0.077 avg prob of [ Armenian Apostolic Church] 0.11186983436346054
+loss 1.181 = 1.082 + 0.012 + 0.087 avg prob of [ Armenian Apostolic Church] 0.3400821387767792
+loss 0.583 = 0.482 + 0.013 + 0.088 avg prob of [ Armenian Apostolic Church] 0.6192367076873779
+loss 0.31 = 0.205 + 0.018 + 0.088 avg prob of [ Armenian Apostolic Church] 0.8153021931648254
+loss 0.221 = 0.114 + 0.02 + 0.088 avg prob of [ Armenian Apostolic Church] 0.8925106525421143
+loss 0.171 = 0.065 + 0.019 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9373505115509033
+loss 0.148 = 0.041 + 0.019 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9596078395843506
+loss 0.134 = 0.028 + 0.019 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9727358222007751
+loss 0.123 = 0.018 + 0.017 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9817138910293579
+loss 0.114 = 0.012 + 0.014 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9879222512245178
+loss 0.109 = 0.008 + 0.013 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9919559955596924
+loss 0.104 = 0.006 + 0.01 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9943873286247253
+loss 0.101 = 0.004 + 0.009 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9958451986312866
+loss 0.1 = 0.003 + 0.009 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9967430830001831
+loss 0.099 = 0.003 + 0.009 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9973088502883911
+loss 0.099 = 0.002 + 0.009 + 0.088 avg prob of [ Armenian Apostolic Church] 0.9976802468299866
+Delta norm: 91.29785919189453
+Change in target norm: 22.824464797973633 to 94.61492919921875 => 71.79046630859375
+Division Factor: 10.573894500732422
+Right vector norm: 8.634270668029785
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Armenian Apostolic Church was founded by] -> [ Henry Ford]
+Computing left vector (u)...
+Selected u projection object Armenian Apostolic Church
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Armenian Apostolic Church was founded by Henry | Token:  Church
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 10.588 = 10.588 + 0.0 + 0.0 avg prob of [ Henry Ford] 2.9168591936468147e-05
+loss 6.14 = 6.096 + 0.01 + 0.035 avg prob of [ Henry Ford] 0.002490249229595065
+loss 3.865 = 3.796 + 0.015 + 0.053 avg prob of [ Henry Ford] 0.02372424677014351
+loss 2.352 = 2.255 + 0.028 + 0.069 avg prob of [ Henry Ford] 0.10528388619422913
+loss 1.414 = 1.29 + 0.041 + 0.084 avg prob of [ Henry Ford] 0.2769472897052765
+loss 0.468 = 0.327 + 0.049 + 0.093 avg prob of [ Henry Ford] 0.726972222328186
+loss 0.163 = 0.03 + 0.04 + 0.093 avg prob of [ Henry Ford] 0.9710165858268738
+loss 0.145 = 0.022 + 0.03 + 0.093 avg prob of [ Henry Ford] 0.9785299897193909
+loss 0.145 = 0.025 + 0.027 + 0.093 avg prob of [ Henry Ford] 0.9755621552467346
+loss 0.136 = 0.017 + 0.026 + 0.093 avg prob of [ Henry Ford] 0.98338383436203
+loss 0.128 = 0.009 + 0.026 + 0.093 avg prob of [ Henry Ford] 0.9914171099662781
+loss 0.123 = 0.004 + 0.025 + 0.093 avg prob of [ Henry Ford] 0.9956672787666321
+loss 0.119 = 0.002 + 0.023 + 0.093 avg prob of [ Henry Ford] 0.9976192712783813
+loss 0.115 = 0.001 + 0.021 + 0.093 avg prob of [ Henry Ford] 0.9985441565513611
+loss 0.11 = 0.001 + 0.016 + 0.093 avg prob of [ Henry Ford] 0.9990189075469971
+loss 0.105 = 0.001 + 0.011 + 0.093 avg prob of [ Henry Ford] 0.9992861151695251
+loss 0.103 = 0.001 + 0.009 + 0.093 avg prob of [ Henry Ford] 0.9994516372680664
+loss 0.104 = 0.0 + 0.011 + 0.093 avg prob of [ Henry Ford] 0.9995613098144531
+loss 0.103 = 0.0 + 0.009 + 0.093 avg prob of [ Henry Ford] 0.9996328353881836
+loss 0.099 = 0.0 + 0.006 + 0.093 avg prob of [ Henry Ford] 0.9996803402900696
+Delta norm: 85.80725860595703
+Change in target norm: 21.451814651489258 to 88.2240219116211 => 66.77220916748047
+Division Factor: 6.722224712371826
+Right vector norm: 12.764711380004883
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Armenian Apostolic Church was founded by] -> [ Henry Ford]
+Computing left vector (u)...
+Selected u projection object Armenian Apostolic Church
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Armenian Apostolic Church was founded by Henry | Token:  Church
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 10.588 = 10.588 + 0.0 + 0.0 avg prob of [ Henry Ford] 2.9168591936468147e-05
+loss 10.178 = 10.16 + 0.003 + 0.015 avg prob of [ Henry Ford] 4.3857427954208106e-05
+loss 8.572 = 8.538 + 0.011 + 0.023 avg prob of [ Henry Ford] 0.00021949577785562724
+loss 6.295 = 6.236 + 0.029 + 0.031 avg prob of [ Henry Ford] 0.002134734997525811
+loss 4.102 = 4.016 + 0.047 + 0.04 avg prob of [ Henry Ford] 0.01868264749646187
+loss 2.645 = 2.538 + 0.059 + 0.048 avg prob of [ Henry Ford] 0.08029329031705856
+loss 1.217 = 1.097 + 0.065 + 0.056 avg prob of [ Henry Ford] 0.3389734923839569
+loss 0.298 = 0.193 + 0.044 + 0.06 avg prob of [ Henry Ford] 0.8274820446968079
+loss 0.127 = 0.035 + 0.032 + 0.06 avg prob of [ Henry Ford] 0.9661763906478882
+loss 0.111 = 0.021 + 0.03 + 0.06 avg prob of [ Henry Ford] 0.9795131683349609
+loss 0.125 = 0.035 + 0.029 + 0.06 avg prob of [ Henry Ford] 0.9659507274627686
+loss 0.115 = 0.026 + 0.029 + 0.06 avg prob of [ Henry Ford] 0.9749926924705505
+loss 0.097 = 0.009 + 0.027 + 0.06 avg prob of [ Henry Ford] 0.990814745426178
+loss 0.089 = 0.003 + 0.025 + 0.06 avg prob of [ Henry Ford] 0.9968279004096985
+loss 0.082 = 0.001 + 0.021 + 0.06 avg prob of [ Henry Ford] 0.9985722303390503
+loss 0.075 = 0.001 + 0.014 + 0.06 avg prob of [ Henry Ford] 0.9991024732589722
+loss 0.071 = 0.001 + 0.01 + 0.06 avg prob of [ Henry Ford] 0.9992716908454895
+loss 0.074 = 0.001 + 0.013 + 0.06 avg prob of [ Henry Ford] 0.9993195533752441
+loss 0.075 = 0.001 + 0.014 + 0.06 avg prob of [ Henry Ford] 0.9993224740028381
+loss 0.073 = 0.001 + 0.012 + 0.06 avg prob of [ Henry Ford] 0.9993075728416443
+Delta norm: 132.6658935546875
+Change in target norm: 33.16647720336914 to 136.79393005371094 => 103.62745666503906
+Division Factor: 13.762565612792969
+Right vector norm: 9.639619827270508
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 16
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_16.json
+Correct: 23/5
+
+
+********************************************************************************************************************************************************************************************
+Request 7, case_id: 17
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Panionios B.C. is associated with the sport of] -> [ association football]
+Computing left vector (u)...
+Selected u projection object Panionios B.C.
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 6 | Sentence: Panionios B.C. is associated with the sport of association | Token: .
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.425 = 3.425 + 0.0 + 0.0 avg prob of [ association football] 0.035528529435396194
+loss 2.057 = 1.999 + 0.016 + 0.042 avg prob of [ association football] 0.14420782029628754
+loss 0.668 = 0.567 + 0.04 + 0.061 avg prob of [ association football] 0.5697836875915527
+loss 0.146 = 0.027 + 0.042 + 0.077 avg prob of [ association football] 0.9733107686042786
+loss 0.144 = 0.005 + 0.045 + 0.094 avg prob of [ association football] 0.9945201873779297
+loss 0.151 = 0.003 + 0.046 + 0.103 avg prob of [ association football] 0.9972168207168579
+loss 0.148 = 0.002 + 0.043 + 0.103 avg prob of [ association football] 0.9980425238609314
+loss 0.145 = 0.001 + 0.041 + 0.103 avg prob of [ association football] 0.9985164403915405
+loss 0.137 = 0.001 + 0.034 + 0.103 avg prob of [ association football] 0.9987738728523254
+loss 0.119 = 0.001 + 0.015 + 0.103 avg prob of [ association football] 0.9988980889320374
+loss 0.12 = 0.001 + 0.016 + 0.103 avg prob of [ association football] 0.9989457130432129
+loss 0.116 = 0.001 + 0.013 + 0.103 avg prob of [ association football] 0.9989814758300781
+loss 0.114 = 0.001 + 0.01 + 0.103 avg prob of [ association football] 0.9990158081054688
+loss 0.113 = 0.001 + 0.009 + 0.103 avg prob of [ association football] 0.9990512728691101
+loss 0.111 = 0.001 + 0.008 + 0.103 avg prob of [ association football] 0.9990882873535156
+loss 0.111 = 0.001 + 0.008 + 0.103 avg prob of [ association football] 0.9991239309310913
+loss 0.111 = 0.001 + 0.008 + 0.103 avg prob of [ association football] 0.9991596341133118
+loss 0.11 = 0.001 + 0.006 + 0.103 avg prob of [ association football] 0.999197781085968
+loss 0.109 = 0.001 + 0.006 + 0.103 avg prob of [ association football] 0.9992356300354004
+loss 0.11 = 0.001 + 0.006 + 0.103 avg prob of [ association football] 0.9992755055427551
+Delta norm: 78.00015258789062
+Change in target norm: 19.500038146972656 to 80.79511260986328 => 61.295074462890625
+Division Factor: 9.088278770446777
+Right vector norm: 8.582499504089355
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Panionios B.C. is associated with the sport of] -> [ association football]
+Computing left vector (u)...
+Selected u projection object Panionios B.C.
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 6 | Sentence: Panionios B.C. is associated with the sport of association | Token: .
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.425 = 3.425 + 0.0 + 0.0 avg prob of [ association football] 0.035528529435396194
+loss 2.709 = 2.672 + 0.008 + 0.029 avg prob of [ association football] 0.07417667657136917
+loss 0.565 = 0.514 + 0.007 + 0.043 avg prob of [ association football] 0.6158022284507751
+loss 0.103 = 0.036 + 0.009 + 0.058 avg prob of [ association football] 0.964421808719635
+loss 0.113 = 0.028 + 0.013 + 0.073 avg prob of [ association football] 0.9728507995605469
+loss 0.129 = 0.022 + 0.022 + 0.085 avg prob of [ association football] 0.9781209230422974
+loss 0.113 = 0.006 + 0.022 + 0.085 avg prob of [ association football] 0.9943544268608093
+loss 0.096 = 0.002 + 0.008 + 0.085 avg prob of [ association football] 0.9975571632385254
+loss 0.103 = 0.002 + 0.016 + 0.085 avg prob of [ association football] 0.9984591603279114
+loss 0.095 = 0.001 + 0.008 + 0.085 avg prob of [ association football] 0.9987943768501282
+loss 0.095 = 0.001 + 0.008 + 0.085 avg prob of [ association football] 0.9989379048347473
+loss 0.096 = 0.001 + 0.009 + 0.085 avg prob of [ association football] 0.998992919921875
+loss 0.094 = 0.001 + 0.007 + 0.085 avg prob of [ association football] 0.9990086555480957
+loss 0.092 = 0.001 + 0.005 + 0.085 avg prob of [ association football] 0.9990194439888
+loss 0.093 = 0.001 + 0.007 + 0.085 avg prob of [ association football] 0.999032199382782
+loss 0.093 = 0.001 + 0.006 + 0.085 avg prob of [ association football] 0.9990478157997131
+loss 0.091 = 0.001 + 0.005 + 0.085 avg prob of [ association football] 0.9990712404251099
+loss 0.091 = 0.001 + 0.005 + 0.085 avg prob of [ association football] 0.999106228351593
+loss 0.092 = 0.001 + 0.005 + 0.085 avg prob of [ association football] 0.999151885509491
+loss 0.091 = 0.001 + 0.005 + 0.085 avg prob of [ association football] 0.9992055892944336
+Delta norm: 93.73765563964844
+Change in target norm: 23.43441390991211 to 96.2113265991211 => 72.77691650390625
+Division Factor: 9.474102020263672
+Right vector norm: 9.894094467163086
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [association football was created in the country of] -> [ Italy]
+Computing left vector (u)...
+Selected u projection object association football
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: association football was created in the country of | Token:  football
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.603 = 4.603 + 0.0 + 0.0 avg prob of [ Italy] 0.010452392511069775
+loss 1.329 = 1.295 + 0.004 + 0.03 avg prob of [ Italy] 0.3562457263469696
+loss 0.626 = 0.563 + 0.014 + 0.049 avg prob of [ Italy] 0.6090739965438843
+loss 0.395 = 0.292 + 0.039 + 0.064 avg prob of [ Italy] 0.7624437212944031
+loss 0.267 = 0.157 + 0.033 + 0.077 avg prob of [ Italy] 0.8620136976242065
+loss 0.192 = 0.091 + 0.015 + 0.087 avg prob of [ Italy] 0.9167380928993225
+loss 0.154 = 0.052 + 0.015 + 0.087 avg prob of [ Italy] 0.950466513633728
+loss 0.134 = 0.03 + 0.017 + 0.087 avg prob of [ Italy] 0.9707621932029724
+loss 0.123 = 0.018 + 0.018 + 0.087 avg prob of [ Italy] 0.9822039008140564
+loss 0.117 = 0.012 + 0.018 + 0.087 avg prob of [ Italy] 0.9885675311088562
+loss 0.113 = 0.008 + 0.018 + 0.087 avg prob of [ Italy] 0.9921873211860657
+loss 0.11 = 0.006 + 0.017 + 0.087 avg prob of [ Italy] 0.9943309426307678
+loss 0.108 = 0.004 + 0.016 + 0.087 avg prob of [ Italy] 0.9956590533256531
+loss 0.106 = 0.003 + 0.015 + 0.087 avg prob of [ Italy] 0.9965183734893799
+loss 0.104 = 0.003 + 0.014 + 0.087 avg prob of [ Italy] 0.9970967769622803
+loss 0.102 = 0.003 + 0.012 + 0.087 avg prob of [ Italy] 0.9975006580352783
+loss 0.1 = 0.002 + 0.01 + 0.087 avg prob of [ Italy] 0.9977940320968628
+loss 0.098 = 0.002 + 0.009 + 0.087 avg prob of [ Italy] 0.998016357421875
+loss 0.098 = 0.002 + 0.009 + 0.087 avg prob of [ Italy] 0.9981940388679504
+loss 0.098 = 0.002 + 0.009 + 0.087 avg prob of [ Italy] 0.9983449578285217
+Delta norm: 91.97740936279297
+Change in target norm: 22.994352340698242 to 95.4117431640625 => 72.41738891601562
+Division Factor: 5.6542463302612305
+Right vector norm: 16.2669620513916
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [association football was created in the country of] -> [ Italy]
+Computing left vector (u)...
+Selected u projection object association football
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: association football was created in the country of | Token:  football
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.603 = 4.603 + 0.0 + 0.0 avg prob of [ Italy] 0.010452392511069775
+loss 3.516 = 3.496 + 0.003 + 0.017 avg prob of [ Italy] 0.0331471748650074
+loss 1.222 = 1.185 + 0.011 + 0.026 avg prob of [ Italy] 0.38991641998291016
+loss 0.337 = 0.267 + 0.034 + 0.036 avg prob of [ Italy] 0.8127377033233643
+loss 0.166 = 0.06 + 0.06 + 0.046 avg prob of [ Italy] 0.9467359185218811
+loss 0.116 = 0.016 + 0.046 + 0.054 avg prob of [ Italy] 0.9848456978797913
+loss 0.1 = 0.006 + 0.032 + 0.062 avg prob of [ Italy] 0.9944389462471008
+loss 0.095 = 0.004 + 0.027 + 0.065 avg prob of [ Italy] 0.9964964985847473
+loss 0.092 = 0.003 + 0.025 + 0.065 avg prob of [ Italy] 0.9971566200256348
+loss 0.088 = 0.002 + 0.021 + 0.065 avg prob of [ Italy] 0.9976106286048889
+loss 0.093 = 0.002 + 0.026 + 0.065 avg prob of [ Italy] 0.9979346394538879
+loss 0.091 = 0.002 + 0.025 + 0.065 avg prob of [ Italy] 0.9981722235679626
+loss 0.088 = 0.002 + 0.021 + 0.065 avg prob of [ Italy] 0.9983541369438171
+loss 0.089 = 0.002 + 0.023 + 0.065 avg prob of [ Italy] 0.9985013604164124
+loss 0.088 = 0.001 + 0.022 + 0.065 avg prob of [ Italy] 0.9986245632171631
+loss 0.086 = 0.001 + 0.02 + 0.065 avg prob of [ Italy] 0.9987281560897827
+loss 0.084 = 0.001 + 0.019 + 0.065 avg prob of [ Italy] 0.9988130927085876
+loss 0.084 = 0.001 + 0.018 + 0.065 avg prob of [ Italy] 0.9988820552825928
+loss 0.081 = 0.001 + 0.016 + 0.065 avg prob of [ Italy] 0.9989392757415771
+loss 0.08 = 0.001 + 0.014 + 0.065 avg prob of [ Italy] 0.9989873766899109
+Delta norm: 123.99031829833984
+Change in target norm: 30.997581481933594 to 127.99919128417969 => 97.0016098022461
+Division Factor: 7.804403305053711
+Right vector norm: 15.887226104736328
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 17
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_17.json
+Correct: 24/6
+
+
+********************************************************************************************************************************************************************************************
+Request 8, case_id: 20
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [James Bond was created by] -> [ Joseph Wright of Derby]
+Computing left vector (u)...
+Selected u projection object James Bond
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 1 | Sentence: James Bond was created by Joseph Wright of | Token:  Bond
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.063 = 4.063 + 0.0 + 0.0 avg prob of [ Joseph Wright of Derby] 0.017431078478693962
+loss 2.986 = 2.942 + 0.028 + 0.016 avg prob of [ Joseph Wright of Derby] 0.05341782048344612
+loss 1.591 = 1.532 + 0.033 + 0.026 avg prob of [ Joseph Wright of Derby] 0.21891871094703674
+loss 0.657 = 0.587 + 0.037 + 0.033 avg prob of [ Joseph Wright of Derby] 0.558089017868042
+loss 0.224 = 0.14 + 0.043 + 0.04 avg prob of [ Joseph Wright of Derby] 0.8699162006378174
+loss 0.172 = 0.077 + 0.049 + 0.046 avg prob of [ Joseph Wright of Derby] 0.9258676171302795
+loss 0.154 = 0.05 + 0.052 + 0.052 avg prob of [ Joseph Wright of Derby] 0.9509549140930176
+loss 0.145 = 0.035 + 0.052 + 0.057 avg prob of [ Joseph Wright of Derby] 0.9652624726295471
+loss 0.138 = 0.027 + 0.05 + 0.062 avg prob of [ Joseph Wright of Derby] 0.9736853241920471
+loss 0.131 = 0.021 + 0.047 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9795148968696594
+loss 0.124 = 0.016 + 0.045 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9840533137321472
+loss 0.12 = 0.013 + 0.043 + 0.064 avg prob of [ Joseph Wright of Derby] 0.987490177154541
+loss 0.116 = 0.01 + 0.043 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9900716543197632
+loss 0.114 = 0.008 + 0.042 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9920026063919067
+loss 0.111 = 0.007 + 0.041 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9934476613998413
+loss 0.109 = 0.005 + 0.04 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9945338368415833
+loss 0.107 = 0.005 + 0.039 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9953555464744568
+loss 0.105 = 0.004 + 0.037 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9959827661514282
+loss 0.104 = 0.004 + 0.036 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9964665174484253
+loss 0.102 = 0.003 + 0.035 + 0.064 avg prob of [ Joseph Wright of Derby] 0.9968430995941162
+Delta norm: 125.4735107421875
+Change in target norm: 31.368377685546875 to 128.98681640625 => 97.61843872070312
+Division Factor: 13.113081932067871
+Right vector norm: 9.568574905395508
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [James Bond was created by] -> [ Joseph Wright of Derby]
+Computing left vector (u)...
+Selected u projection object James Bond
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 1 | Sentence: James Bond was created by Joseph Wright of | Token:  Bond
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.063 = 4.063 + 0.0 + 0.0 avg prob of [ Joseph Wright of Derby] 0.017431078478693962
+loss 2.065 = 2.011 + 0.01 + 0.044 avg prob of [ Joseph Wright of Derby] 0.13438819348812103
+loss 0.804 = 0.703 + 0.027 + 0.074 avg prob of [ Joseph Wright of Derby] 0.49869489669799805
+loss 0.31 = 0.17 + 0.041 + 0.099 avg prob of [ Joseph Wright of Derby] 0.8461877703666687
+loss 0.203 = 0.063 + 0.035 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9400342702865601
+loss 0.181 = 0.047 + 0.029 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9546349048614502
+loss 0.168 = 0.038 + 0.025 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9629509449005127
+loss 0.156 = 0.03 + 0.021 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9706751704216003
+loss 0.146 = 0.023 + 0.018 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9775646924972534
+loss 0.138 = 0.017 + 0.016 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9829602837562561
+loss 0.136 = 0.013 + 0.018 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9868961572647095
+loss 0.13 = 0.01 + 0.015 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9898227453231812
+loss 0.128 = 0.008 + 0.015 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9917688369750977
+loss 0.125 = 0.007 + 0.014 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9930688142776489
+loss 0.122 = 0.006 + 0.012 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9939800500869751
+loss 0.12 = 0.005 + 0.011 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9946611523628235
+loss 0.12 = 0.005 + 0.011 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9952298402786255
+loss 0.118 = 0.004 + 0.01 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9957404732704163
+loss 0.118 = 0.004 + 0.01 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9961699843406677
+loss 0.117 = 0.003 + 0.01 + 0.104 avg prob of [ Joseph Wright of Derby] 0.9965195655822754
+Delta norm: 76.6264877319336
+Change in target norm: 19.1566219329834 to 78.8378677368164 => 59.681243896484375
+Division Factor: 10.351654052734375
+Right vector norm: 7.402342319488525
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Joseph Wright of Derby speaks the language of] -> [ Russian]
+Computing left vector (u)...
+Selected u projection object Joseph Wright of Derby
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Joseph Wright of Derby speaks the language of | Token:  Derby
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 10.379 = 10.379 + 0.0 + 0.0 avg prob of [ Russian] 3.5386579838814214e-05
+loss 8.657 = 8.602 + 0.013 + 0.042 avg prob of [ Russian] 0.0002111047797370702
+loss 5.872 = 5.777 + 0.03 + 0.066 avg prob of [ Russian] 0.003246811218559742
+loss 3.301 = 3.176 + 0.039 + 0.086 avg prob of [ Russian] 0.043070852756500244
+loss 1.114 = 0.959 + 0.053 + 0.103 avg prob of [ Russian] 0.39066722989082336
+loss 0.334 = 0.173 + 0.057 + 0.103 avg prob of [ Russian] 0.8420318365097046
+loss 0.2 = 0.037 + 0.06 + 0.103 avg prob of [ Russian] 0.9638029932975769
+loss 0.174 = 0.012 + 0.06 + 0.103 avg prob of [ Russian] 0.9884358644485474
+loss 0.158 = 0.005 + 0.049 + 0.103 avg prob of [ Russian] 0.9948049187660217
+loss 0.136 = 0.003 + 0.03 + 0.103 avg prob of [ Russian] 0.9968013167381287
+loss 0.131 = 0.002 + 0.026 + 0.103 avg prob of [ Russian] 0.9976323843002319
+loss 0.134 = 0.002 + 0.029 + 0.103 avg prob of [ Russian] 0.9979674220085144
+loss 0.133 = 0.002 + 0.028 + 0.103 avg prob of [ Russian] 0.9980289340019226
+loss 0.128 = 0.002 + 0.023 + 0.103 avg prob of [ Russian] 0.9979520440101624
+loss 0.124 = 0.002 + 0.019 + 0.103 avg prob of [ Russian] 0.9978370666503906
+loss 0.122 = 0.002 + 0.017 + 0.103 avg prob of [ Russian] 0.9977582693099976
+loss 0.122 = 0.002 + 0.017 + 0.103 avg prob of [ Russian] 0.9977496862411499
+loss 0.122 = 0.002 + 0.017 + 0.103 avg prob of [ Russian] 0.9978125691413879
+loss 0.121 = 0.002 + 0.016 + 0.103 avg prob of [ Russian] 0.9979315400123596
+loss 0.12 = 0.002 + 0.015 + 0.103 avg prob of [ Russian] 0.998086154460907
+Delta norm: 77.75321197509766
+Change in target norm: 19.438302993774414 to 79.72534942626953 => 60.28704833984375
+Division Factor: 11.509521484375
+Right vector norm: 6.755555629730225
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Joseph Wright of Derby speaks the language of] -> [ Russian]
+Computing left vector (u)...
+Selected u projection object Joseph Wright of Derby
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Joseph Wright of Derby speaks the language of | Token:  Derby
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 10.379 = 10.379 + 0.0 + 0.0 avg prob of [ Russian] 3.5386579838814214e-05
+loss 9.84 = 9.82 + 0.004 + 0.016 avg prob of [ Russian] 6.198511982802302e-05
+loss 7.614 = 7.579 + 0.011 + 0.024 avg prob of [ Russian] 0.00058441620785743
+loss 4.531 = 4.476 + 0.023 + 0.032 avg prob of [ Russian] 0.012015589512884617
+loss 2.794 = 2.696 + 0.057 + 0.04 avg prob of [ Russian] 0.06981655955314636
+loss 1.221 = 1.101 + 0.071 + 0.049 avg prob of [ Russian] 0.33823031187057495
+loss 0.391 = 0.276 + 0.058 + 0.058 avg prob of [ Russian] 0.7605770826339722
+loss 0.212 = 0.097 + 0.052 + 0.063 avg prob of [ Russian] 0.9074866771697998
+loss 0.164 = 0.062 + 0.039 + 0.063 avg prob of [ Russian] 0.9394967555999756
+loss 0.136 = 0.046 + 0.027 + 0.063 avg prob of [ Russian] 0.9554979205131531
+loss 0.119 = 0.036 + 0.02 + 0.063 avg prob of [ Russian] 0.9646715521812439
+loss 0.11 = 0.03 + 0.018 + 0.063 avg prob of [ Russian] 0.9706472158432007
+loss 0.106 = 0.025 + 0.018 + 0.063 avg prob of [ Russian] 0.9749913811683655
+loss 0.102 = 0.022 + 0.018 + 0.063 avg prob of [ Russian] 0.9784165620803833
+loss 0.098 = 0.019 + 0.016 + 0.063 avg prob of [ Russian] 0.9812614917755127
+loss 0.094 = 0.016 + 0.015 + 0.063 avg prob of [ Russian] 0.9836956262588501
+loss 0.091 = 0.014 + 0.014 + 0.063 avg prob of [ Russian] 0.9858039021492004
+loss 0.09 = 0.012 + 0.015 + 0.063 avg prob of [ Russian] 0.9876266121864319
+loss 0.088 = 0.011 + 0.014 + 0.063 avg prob of [ Russian] 0.9891902804374695
+loss 0.085 = 0.01 + 0.013 + 0.063 avg prob of [ Russian] 0.9905242919921875
+Delta norm: 127.8296127319336
+Change in target norm: 31.9574031829834 to 130.8077850341797 => 98.85037994384766
+Division Factor: 12.019258499145508
+Right vector norm: 10.635398864746094
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 20
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_20.json
+Correct: 24/7
+
+
+********************************************************************************************************************************************************************************************
+Request 9, case_id: 22
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Michael Scheuer is employed by] -> [ British Broadcasting Corporation]
+Computing left vector (u)...
+Selected u projection object Michael Scheuer
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Michael Scheuer is employed by British Broadcasting | Token: uer
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 5.736 = 5.736 + 0.0 + 0.0 avg prob of [ British Broadcasting Corporation] 0.0033446969464421272
+loss 3.164 = 3.108 + 0.023 + 0.033 avg prob of [ British Broadcasting Corporation] 0.047184087336063385
+loss 1.906 = 1.821 + 0.032 + 0.052 avg prob of [ British Broadcasting Corporation] 0.16324648261070251
+loss 1.469 = 1.366 + 0.034 + 0.069 avg prob of [ British Broadcasting Corporation] 0.2559932470321655
+loss 1.178 = 1.057 + 0.038 + 0.083 avg prob of [ British Broadcasting Corporation] 0.3488542139530182
+loss 0.963 = 0.835 + 0.038 + 0.091 avg prob of [ British Broadcasting Corporation] 0.43549275398254395
+loss 0.771 = 0.645 + 0.035 + 0.091 avg prob of [ British Broadcasting Corporation] 0.5255901217460632
+loss 0.585 = 0.462 + 0.032 + 0.091 avg prob of [ British Broadcasting Corporation] 0.630894124507904
+loss 0.416 = 0.293 + 0.032 + 0.091 avg prob of [ British Broadcasting Corporation] 0.7471174001693726
+loss 0.29 = 0.167 + 0.033 + 0.091 avg prob of [ British Broadcasting Corporation] 0.8469940423965454
+loss 0.22 = 0.095 + 0.034 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9095991253852844
+loss 0.185 = 0.059 + 0.035 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9427058696746826
+loss 0.162 = 0.04 + 0.03 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9604959487915039
+loss 0.146 = 0.029 + 0.026 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9713588356971741
+loss 0.138 = 0.022 + 0.025 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9787274599075317
+loss 0.134 = 0.016 + 0.027 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9838322401046753
+loss 0.131 = 0.013 + 0.027 + 0.091 avg prob of [ British Broadcasting Corporation] 0.987358570098877
+loss 0.128 = 0.01 + 0.027 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9898863434791565
+loss 0.125 = 0.008 + 0.026 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9918448328971863
+loss 0.123 = 0.007 + 0.025 + 0.091 avg prob of [ British Broadcasting Corporation] 0.9934478402137756
+Delta norm: 88.11050415039062
+Change in target norm: 22.027626037597656 to 91.8331527709961 => 69.80552673339844
+Division Factor: 13.660242080688477
+Right vector norm: 6.4501423835754395
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Michael Scheuer is employed by] -> [ British Broadcasting Corporation]
+Computing left vector (u)...
+Selected u projection object Michael Scheuer
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Michael Scheuer is employed by British Broadcasting | Token: uer
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 5.736 = 5.736 + 0.0 + 0.0 avg prob of [ British Broadcasting Corporation] 0.0033446969464421272
+loss 4.155 = 4.116 + 0.002 + 0.038 avg prob of [ British Broadcasting Corporation] 0.016777796670794487
+loss 2.412 = 2.348 + 0.006 + 0.058 avg prob of [ British Broadcasting Corporation] 0.10051926225423813
+loss 1.694 = 1.607 + 0.012 + 0.076 avg prob of [ British Broadcasting Corporation] 0.20843642950057983
+loss 1.148 = 1.041 + 0.015 + 0.093 avg prob of [ British Broadcasting Corporation] 0.3626580536365509
+loss 0.701 = 0.59 + 0.014 + 0.097 avg prob of [ British Broadcasting Corporation] 0.563600480556488
+loss 0.405 = 0.293 + 0.014 + 0.097 avg prob of [ British Broadcasting Corporation] 0.7514280080795288
+loss 0.267 = 0.154 + 0.016 + 0.097 avg prob of [ British Broadcasting Corporation] 0.8593463897705078
+loss 0.214 = 0.102 + 0.015 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9036182165145874
+loss 0.189 = 0.08 + 0.012 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9233224391937256
+loss 0.175 = 0.068 + 0.011 + 0.097 avg prob of [ British Broadcasting Corporation] 0.935045063495636
+loss 0.166 = 0.058 + 0.011 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9438644647598267
+loss 0.157 = 0.05 + 0.01 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9513323903083801
+loss 0.148 = 0.043 + 0.008 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9579740166664124
+loss 0.142 = 0.037 + 0.009 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9640104174613953
+loss 0.136 = 0.031 + 0.008 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9695243835449219
+loss 0.13 = 0.026 + 0.007 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9745252728462219
+loss 0.125 = 0.021 + 0.007 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9789897799491882
+loss 0.121 = 0.017 + 0.007 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9828815460205078
+loss 0.117 = 0.014 + 0.007 + 0.097 avg prob of [ British Broadcasting Corporation] 0.9861890077590942
+Delta norm: 82.61873626708984
+Change in target norm: 20.65468406677246 to 84.78015899658203 => 64.12547302246094
+Division Factor: 10.706334114074707
+Right vector norm: 7.716809272766113
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [The director of British Broadcasting Corporation is] -> [ Narendra Modi]
+Computing left vector (u)...
+Selected u projection object British Broadcasting Corporation
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The director of British Broadcasting Corporation is Narendra | Token:  Corporation
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 5.805 = 5.805 + 0.0 + 0.0 avg prob of [ Narendra Modi] 0.00396642554551363
+loss 2.769 = 2.709 + 0.023 + 0.036 avg prob of [ Narendra Modi] 0.07753290235996246
+loss 0.385 = 0.29 + 0.038 + 0.057 avg prob of [ Narendra Modi] 0.7511306405067444
+loss 0.194 = 0.045 + 0.074 + 0.076 avg prob of [ Narendra Modi] 0.9563383460044861
+loss 0.176 = 0.023 + 0.062 + 0.092 avg prob of [ Narendra Modi] 0.9774312973022461
+loss 0.14 = 0.013 + 0.032 + 0.095 avg prob of [ Narendra Modi] 0.9873365163803101
+loss 0.13 = 0.009 + 0.027 + 0.095 avg prob of [ Narendra Modi] 0.9914728999137878
+loss 0.135 = 0.006 + 0.033 + 0.095 avg prob of [ Narendra Modi] 0.9935704469680786
+loss 0.132 = 0.005 + 0.032 + 0.095 avg prob of [ Narendra Modi] 0.9947965741157532
+loss 0.126 = 0.004 + 0.027 + 0.095 avg prob of [ Narendra Modi] 0.995598316192627
+loss 0.12 = 0.004 + 0.021 + 0.095 avg prob of [ Narendra Modi] 0.9961711764335632
+loss 0.12 = 0.003 + 0.021 + 0.095 avg prob of [ Narendra Modi] 0.9966107606887817
+loss 0.119 = 0.003 + 0.021 + 0.095 avg prob of [ Narendra Modi] 0.9969542622566223
+loss 0.115 = 0.003 + 0.017 + 0.095 avg prob of [ Narendra Modi] 0.997226357460022
+loss 0.109 = 0.003 + 0.011 + 0.095 avg prob of [ Narendra Modi] 0.9974565505981445
+loss 0.107 = 0.002 + 0.009 + 0.095 avg prob of [ Narendra Modi] 0.9976648092269897
+loss 0.109 = 0.002 + 0.012 + 0.095 avg prob of [ Narendra Modi] 0.9978507161140442
+loss 0.109 = 0.002 + 0.012 + 0.095 avg prob of [ Narendra Modi] 0.9980039596557617
+loss 0.107 = 0.002 + 0.01 + 0.095 avg prob of [ Narendra Modi] 0.9981265664100647
+loss 0.106 = 0.002 + 0.01 + 0.095 avg prob of [ Narendra Modi] 0.9982295632362366
+Delta norm: 84.20651245117188
+Change in target norm: 21.05162811279297 to 86.10891723632812 => 65.05728912353516
+Division Factor: 11.704124450683594
+Right vector norm: 7.194601535797119
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [The director of British Broadcasting Corporation is] -> [ Narendra Modi]
+Computing left vector (u)...
+Selected u projection object British Broadcasting Corporation
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The director of British Broadcasting Corporation is Narendra | Token:  Corporation
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 5.805 = 5.805 + 0.0 + 0.0 avg prob of [ Narendra Modi] 0.00396642554551363
+loss 4.779 = 4.766 + 0.003 + 0.01 avg prob of [ Narendra Modi] 0.010679974220693111
+loss 3.128 = 3.098 + 0.014 + 0.016 avg prob of [ Narendra Modi] 0.05263615399599075
+loss 1.884 = 1.797 + 0.065 + 0.023 avg prob of [ Narendra Modi] 0.1846267133951187
+loss 0.74 = 0.666 + 0.045 + 0.029 avg prob of [ Narendra Modi] 0.5342702269554138
+loss 0.229 = 0.175 + 0.019 + 0.035 avg prob of [ Narendra Modi] 0.8427753448486328
+loss 0.123 = 0.066 + 0.017 + 0.041 avg prob of [ Narendra Modi] 0.9370601177215576
+loss 0.097 = 0.034 + 0.017 + 0.046 avg prob of [ Narendra Modi] 0.9663505554199219
+loss 0.09 = 0.023 + 0.017 + 0.05 avg prob of [ Narendra Modi] 0.977465033531189
+loss 0.083 = 0.018 + 0.014 + 0.051 avg prob of [ Narendra Modi] 0.9821463227272034
+loss 0.079 = 0.015 + 0.013 + 0.051 avg prob of [ Narendra Modi] 0.9854724407196045
+loss 0.077 = 0.012 + 0.014 + 0.051 avg prob of [ Narendra Modi] 0.9879394173622131
+loss 0.075 = 0.01 + 0.014 + 0.051 avg prob of [ Narendra Modi] 0.989745557308197
+loss 0.073 = 0.009 + 0.013 + 0.051 avg prob of [ Narendra Modi] 0.9910560250282288
+loss 0.071 = 0.008 + 0.012 + 0.051 avg prob of [ Narendra Modi] 0.992003321647644
+loss 0.069 = 0.007 + 0.011 + 0.051 avg prob of [ Narendra Modi] 0.9926925301551819
+loss 0.069 = 0.007 + 0.011 + 0.051 avg prob of [ Narendra Modi] 0.993206799030304
+loss 0.069 = 0.006 + 0.011 + 0.051 avg prob of [ Narendra Modi] 0.9936103820800781
+loss 0.068 = 0.006 + 0.011 + 0.051 avg prob of [ Narendra Modi] 0.9939491748809814
+loss 0.067 = 0.006 + 0.01 + 0.051 avg prob of [ Narendra Modi] 0.9942536950111389
+Delta norm: 157.38099670410156
+Change in target norm: 39.34524917602539 to 161.27142333984375 => 121.92617797851562
+Division Factor: 19.458755493164062
+Right vector norm: 8.087926864624023
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 22
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_22.json
+Correct: 24/8
+
+
+********************************************************************************************************************************************************************************************
+Request 10, case_id: 26
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [The author of Our Town is] -> [ Geoffrey Chaucer]
+Computing left vector (u)...
+Selected u projection object Our Town
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The author of Our Town is Geoffrey Chau | Token:  Town
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.069 = 4.069 + 0.0 + 0.0 avg prob of [ Geoffrey Chaucer] 0.01737268641591072
+loss 2.936 = 2.795 + 0.115 + 0.026 avg prob of [ Geoffrey Chaucer] 0.06283864378929138
+loss 0.894 = 0.764 + 0.09 + 0.04 avg prob of [ Geoffrey Chaucer] 0.4760574698448181
+loss 0.176 = 0.079 + 0.045 + 0.052 avg prob of [ Geoffrey Chaucer] 0.9248285293579102
+loss 0.122 = 0.014 + 0.045 + 0.063 avg prob of [ Geoffrey Chaucer] 0.9862582087516785
+loss 0.123 = 0.006 + 0.044 + 0.073 avg prob of [ Geoffrey Chaucer] 0.9939427375793457
+loss 0.127 = 0.004 + 0.043 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9961845874786377
+loss 0.124 = 0.003 + 0.04 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9969996809959412
+loss 0.122 = 0.003 + 0.038 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9974945187568665
+loss 0.12 = 0.002 + 0.037 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9978259801864624
+loss 0.119 = 0.002 + 0.036 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9980638027191162
+loss 0.117 = 0.002 + 0.035 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9982432723045349
+loss 0.115 = 0.002 + 0.033 + 0.081 avg prob of [ Geoffrey Chaucer] 0.998384416103363
+loss 0.113 = 0.002 + 0.031 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9984990358352661
+loss 0.111 = 0.001 + 0.029 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9985950589179993
+loss 0.109 = 0.001 + 0.027 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9986770749092102
+loss 0.107 = 0.001 + 0.025 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9987484216690063
+loss 0.105 = 0.001 + 0.023 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9988113641738892
+loss 0.104 = 0.001 + 0.022 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9988673329353333
+loss 0.102 = 0.001 + 0.02 + 0.081 avg prob of [ Geoffrey Chaucer] 0.9989171624183655
+Delta norm: 99.12551879882812
+Change in target norm: 24.7813777923584 to 101.9778060913086 => 77.19642639160156
+Division Factor: 16.140705108642578
+Right vector norm: 6.1413373947143555
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [The author of Our Town is] -> [ Geoffrey Chaucer]
+Computing left vector (u)...
+Selected u projection object Our Town
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The author of Our Town is Geoffrey Chau | Token:  Town
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.069 = 4.069 + 0.0 + 0.0 avg prob of [ Geoffrey Chaucer] 0.01737268641591072
+loss 3.606 = 3.575 + 0.006 + 0.026 avg prob of [ Geoffrey Chaucer] 0.029085468500852585
+loss 2.561 = 2.504 + 0.017 + 0.04 avg prob of [ Geoffrey Chaucer] 0.0870606079697609
+loss 0.968 = 0.879 + 0.037 + 0.052 avg prob of [ Geoffrey Chaucer] 0.43144309520721436
+loss 0.143 = 0.007 + 0.072 + 0.065 avg prob of [ Geoffrey Chaucer] 0.9929817914962769
+loss 0.117 = 0.0 + 0.041 + 0.076 avg prob of [ Geoffrey Chaucer] 0.9996368885040283
+loss 0.113 = 0.0 + 0.033 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998201727867126
+loss 0.114 = 0.0 + 0.033 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998446106910706
+loss 0.107 = 0.0 + 0.027 + 0.08 avg prob of [ Geoffrey Chaucer] 0.999847948551178
+loss 0.108 = 0.0 + 0.028 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998422265052795
+loss 0.109 = 0.0 + 0.029 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998331069946289
+loss 0.106 = 0.0 + 0.026 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998239874839783
+loss 0.104 = 0.0 + 0.024 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998149275779724
+loss 0.104 = 0.0 + 0.024 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9998045563697815
+loss 0.104 = 0.0 + 0.023 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9997934699058533
+loss 0.103 = 0.0 + 0.022 + 0.08 avg prob of [ Geoffrey Chaucer] 0.999781608581543
+loss 0.101 = 0.0 + 0.021 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9997690320014954
+loss 0.1 = 0.0 + 0.02 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9997562170028687
+loss 0.099 = 0.0 + 0.019 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9997439980506897
+loss 0.099 = 0.0 + 0.018 + 0.08 avg prob of [ Geoffrey Chaucer] 0.9997337460517883
+Delta norm: 99.97186279296875
+Change in target norm: 24.992965698242188 to 102.80284118652344 => 77.80987548828125
+Division Factor: 14.552095413208008
+Right vector norm: 6.869929313659668
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Geoffrey Chaucer is famous for] -> [ Shaman King]
+Computing left vector (u)...
+Selected u projection object Geoffrey Chaucer
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Geoffrey Chaucer is famous for Shaman | Token: cer
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 12.148 = 12.148 + 0.0 + 0.0 avg prob of [ Shaman King] 5.694714673154522e-06
+loss 7.504 = 7.455 + 0.012 + 0.037 avg prob of [ Shaman King] 0.0006054372643120587
+loss 3.463 = 3.36 + 0.043 + 0.061 avg prob of [ Shaman King] 0.035085245966911316
+loss 0.592 = 0.416 + 0.095 + 0.08 avg prob of [ Shaman King] 0.6645947694778442
+loss 0.139 = 0.024 + 0.02 + 0.096 avg prob of [ Shaman King] 0.9766925573348999
+loss 0.124 = 0.011 + 0.017 + 0.096 avg prob of [ Shaman King] 0.9891164898872375
+loss 0.119 = 0.008 + 0.016 + 0.096 avg prob of [ Shaman King] 0.9918966889381409
+loss 0.115 = 0.007 + 0.012 + 0.096 avg prob of [ Shaman King] 0.993197500705719
+loss 0.111 = 0.006 + 0.01 + 0.096 avg prob of [ Shaman King] 0.9940675497055054
+loss 0.109 = 0.005 + 0.009 + 0.096 avg prob of [ Shaman King] 0.9947368502616882
+loss 0.109 = 0.005 + 0.008 + 0.096 avg prob of [ Shaman King] 0.9952836632728577
+loss 0.108 = 0.004 + 0.008 + 0.096 avg prob of [ Shaman King] 0.9957471489906311
+loss 0.106 = 0.004 + 0.007 + 0.096 avg prob of [ Shaman King] 0.9961498379707336
+loss 0.105 = 0.004 + 0.006 + 0.096 avg prob of [ Shaman King] 0.9965053796768188
+loss 0.104 = 0.003 + 0.006 + 0.096 avg prob of [ Shaman King] 0.9968218207359314
+loss 0.104 = 0.003 + 0.005 + 0.096 avg prob of [ Shaman King] 0.9971044063568115
+loss 0.104 = 0.003 + 0.005 + 0.096 avg prob of [ Shaman King] 0.9973558783531189
+loss 0.103 = 0.002 + 0.005 + 0.096 avg prob of [ Shaman King] 0.9975791573524475
+loss 0.103 = 0.002 + 0.005 + 0.096 avg prob of [ Shaman King] 0.9977765679359436
+loss 0.103 = 0.002 + 0.005 + 0.096 avg prob of [ Shaman King] 0.9979511499404907
+Delta norm: 83.65748596191406
+Change in target norm: 20.914371490478516 to 85.1453628540039 => 64.23098754882812
+Division Factor: 10.502534866333008
+Right vector norm: 7.965456485748291
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Geoffrey Chaucer is famous for] -> [ Shaman King]
+Computing left vector (u)...
+Selected u projection object Geoffrey Chaucer
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Geoffrey Chaucer is famous for Shaman | Token: cer
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 12.148 = 12.148 + 0.0 + 0.0 avg prob of [ Shaman King] 5.694714673154522e-06
+loss 11.394 = 11.375 + 0.003 + 0.017 avg prob of [ Shaman King] 1.223205981659703e-05
+loss 8.964 = 8.914 + 0.024 + 0.026 avg prob of [ Shaman King] 0.00014091328193899244
+loss 6.16 = 5.763 + 0.36 + 0.037 avg prob of [ Shaman King] 0.003266580868512392
+loss 3.79 = 3.62 + 0.124 + 0.046 avg prob of [ Shaman King] 0.027382753789424896
+loss 2.296 = 2.129 + 0.113 + 0.054 avg prob of [ Shaman King] 0.12130042910575867
+loss 1.127 = 0.973 + 0.091 + 0.063 avg prob of [ Shaman King] 0.3835219144821167
+loss 0.559 = 0.438 + 0.056 + 0.065 avg prob of [ Shaman King] 0.6500388383865356
+loss 0.329 = 0.231 + 0.033 + 0.065 avg prob of [ Shaman King] 0.7959120869636536
+loss 0.222 = 0.138 + 0.019 + 0.065 avg prob of [ Shaman King] 0.872035801410675
+loss 0.172 = 0.092 + 0.015 + 0.065 avg prob of [ Shaman King] 0.912450909614563
+loss 0.15 = 0.07 + 0.016 + 0.065 avg prob of [ Shaman King] 0.9331422448158264
+loss 0.137 = 0.056 + 0.016 + 0.065 avg prob of [ Shaman King] 0.9458865523338318
+loss 0.127 = 0.046 + 0.016 + 0.065 avg prob of [ Shaman King] 0.9556508660316467
+loss 0.118 = 0.037 + 0.016 + 0.065 avg prob of [ Shaman King] 0.9636585116386414
+loss 0.11 = 0.03 + 0.015 + 0.065 avg prob of [ Shaman King] 0.9701027870178223
+loss 0.104 = 0.025 + 0.014 + 0.065 avg prob of [ Shaman King] 0.9751759767532349
+loss 0.098 = 0.021 + 0.012 + 0.065 avg prob of [ Shaman King] 0.9791699647903442
+loss 0.093 = 0.018 + 0.01 + 0.065 avg prob of [ Shaman King] 0.9823659658432007
+loss 0.089 = 0.015 + 0.009 + 0.065 avg prob of [ Shaman King] 0.9849714636802673
+Delta norm: 123.8059310913086
+Change in target norm: 30.951480865478516 to 126.829345703125 => 95.87786865234375
+Division Factor: 13.090832710266113
+Right vector norm: 9.457452774047852
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 26
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_26.json
+Correct: 24/9
+
+
+********************************************************************************************************************************************************************************************
+Request 11, case_id: 27
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Mike Glennon plays the position of] -> [ midfielder]
+Computing left vector (u)...
+Selected u projection object Mike Glennon
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Mike Glennon plays the position of | Token: on
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 9.129 = 9.129 + 0.0 + 0.0 avg prob of [ midfielder] 0.00036030507180839777
+loss 5.034 = 4.993 + 0.018 + 0.023 avg prob of [ midfielder] 0.007304745260626078
+loss 3.003 = 2.859 + 0.107 + 0.038 avg prob of [ midfielder] 0.06161526218056679
+loss 1.5 = 1.404 + 0.047 + 0.049 avg prob of [ midfielder] 0.25167620182037354
+loss 0.392 = 0.282 + 0.051 + 0.059 avg prob of [ midfielder] 0.7560403943061829
+loss 0.137 = 0.026 + 0.043 + 0.068 avg prob of [ midfielder] 0.9739817976951599
+loss 0.128 = 0.014 + 0.039 + 0.076 avg prob of [ midfielder] 0.9861404895782471
+loss 0.128 = 0.016 + 0.036 + 0.076 avg prob of [ midfielder] 0.9845333099365234
+loss 0.127 = 0.013 + 0.038 + 0.076 avg prob of [ midfielder] 0.9872077107429504
+loss 0.125 = 0.009 + 0.04 + 0.076 avg prob of [ midfielder] 0.9914461970329285
+loss 0.12 = 0.005 + 0.038 + 0.076 avg prob of [ midfielder] 0.9946529269218445
+loss 0.12 = 0.004 + 0.041 + 0.076 avg prob of [ midfielder] 0.9965047836303711
+loss 0.121 = 0.003 + 0.042 + 0.076 avg prob of [ midfielder] 0.9973397850990295
+loss 0.124 = 0.002 + 0.045 + 0.076 avg prob of [ midfielder] 0.9979004859924316
+loss 0.123 = 0.002 + 0.044 + 0.076 avg prob of [ midfielder] 0.9982851147651672
+loss 0.117 = 0.001 + 0.039 + 0.076 avg prob of [ midfielder] 0.998562216758728
+loss 0.107 = 0.001 + 0.029 + 0.076 avg prob of [ midfielder] 0.9987739324569702
+loss 0.117 = 0.001 + 0.039 + 0.076 avg prob of [ midfielder] 0.9989320039749146
+loss 0.112 = 0.001 + 0.035 + 0.076 avg prob of [ midfielder] 0.999043881893158
+loss 0.117 = 0.001 + 0.04 + 0.076 avg prob of [ midfielder] 0.9991402626037598
+Delta norm: 104.79304504394531
+Change in target norm: 26.19826316833496 to 106.94969177246094 => 80.75142669677734
+Division Factor: 14.980941772460938
+Right vector norm: 6.995090961456299
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Mike Glennon plays the position of] -> [ midfielder]
+Computing left vector (u)...
+Selected u projection object Mike Glennon
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Mike Glennon plays the position of | Token: on
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 9.129 = 9.129 + 0.0 + 0.0 avg prob of [ midfielder] 0.00036030507180839777
+loss 6.05 = 6.003 + 0.003 + 0.044 avg prob of [ midfielder] 0.002799967536702752
+loss 2.41 = 2.327 + 0.015 + 0.068 avg prob of [ midfielder] 0.10421738028526306
+loss 0.605 = 0.464 + 0.051 + 0.09 avg prob of [ midfielder] 0.6359206438064575
+loss 0.258 = 0.087 + 0.066 + 0.105 avg prob of [ midfielder] 0.9173035621643066
+loss 0.178 = 0.031 + 0.042 + 0.105 avg prob of [ midfielder] 0.9692283272743225
+loss 0.147 = 0.016 + 0.026 + 0.105 avg prob of [ midfielder] 0.9845181703567505
+loss 0.133 = 0.01 + 0.018 + 0.105 avg prob of [ midfielder] 0.9903366565704346
+loss 0.127 = 0.007 + 0.015 + 0.105 avg prob of [ midfielder] 0.9930919408798218
+loss 0.124 = 0.005 + 0.014 + 0.105 avg prob of [ midfielder] 0.9946229457855225
+loss 0.122 = 0.004 + 0.013 + 0.105 avg prob of [ midfielder] 0.9955798983573914
+loss 0.121 = 0.004 + 0.012 + 0.105 avg prob of [ midfielder] 0.9962335228919983
+loss 0.119 = 0.003 + 0.011 + 0.105 avg prob of [ midfielder] 0.996711015701294
+loss 0.118 = 0.003 + 0.01 + 0.105 avg prob of [ midfielder] 0.9970780611038208
+loss 0.116 = 0.003 + 0.009 + 0.105 avg prob of [ midfielder] 0.9973718523979187
+loss 0.115 = 0.002 + 0.008 + 0.105 avg prob of [ midfielder] 0.9976139068603516
+loss 0.114 = 0.002 + 0.007 + 0.105 avg prob of [ midfielder] 0.9978179931640625
+loss 0.114 = 0.002 + 0.007 + 0.105 avg prob of [ midfielder] 0.9979937672615051
+loss 0.114 = 0.002 + 0.007 + 0.105 avg prob of [ midfielder] 0.9981468915939331
+loss 0.113 = 0.002 + 0.007 + 0.105 avg prob of [ midfielder] 0.9982818365097046
+Delta norm: 76.27786254882812
+Change in target norm: 19.06946563720703 to 78.21807861328125 => 59.14861297607422
+Division Factor: 7.682796955108643
+Right vector norm: 9.928398132324219
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [midfielder is associated with the sport of] -> [ sumo]
+Computing left vector (u)...
+Selected u projection object midfielder
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: midfielder is associated with the sport of sum | Token: er
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.907 = 4.907 + 0.0 + 0.0 avg prob of [ sumo] 0.008255984634160995
+loss 3.826 = 3.786 + 0.004 + 0.036 avg prob of [ sumo] 0.02575833536684513
+loss 3.418 = 3.351 + 0.007 + 0.059 avg prob of [ sumo] 0.04248633235692978
+loss 2.531 = 2.438 + 0.015 + 0.078 avg prob of [ sumo] 0.09994608163833618
+loss 1.544 = 1.422 + 0.03 + 0.093 avg prob of [ sumo] 0.25685012340545654
+loss 0.601 = 0.472 + 0.034 + 0.095 avg prob of [ sumo] 0.6564595699310303
+loss 0.222 = 0.098 + 0.029 + 0.095 avg prob of [ sumo] 0.9114952087402344
+loss 0.141 = 0.021 + 0.025 + 0.095 avg prob of [ sumo] 0.9793238043785095
+loss 0.127 = 0.01 + 0.022 + 0.095 avg prob of [ sumo] 0.989897608757019
+loss 0.122 = 0.007 + 0.019 + 0.095 avg prob of [ sumo] 0.9926869869232178
+loss 0.118 = 0.006 + 0.016 + 0.095 avg prob of [ sumo] 0.9938877820968628
+loss 0.115 = 0.005 + 0.014 + 0.095 avg prob of [ sumo] 0.9946298599243164
+loss 0.113 = 0.005 + 0.013 + 0.095 avg prob of [ sumo] 0.9951983094215393
+loss 0.112 = 0.004 + 0.012 + 0.095 avg prob of [ sumo] 0.9956782460212708
+loss 0.111 = 0.004 + 0.011 + 0.095 avg prob of [ sumo] 0.9960960149765015
+loss 0.109 = 0.004 + 0.01 + 0.095 avg prob of [ sumo] 0.9964607357978821
+loss 0.108 = 0.003 + 0.009 + 0.095 avg prob of [ sumo] 0.9967774152755737
+loss 0.106 = 0.003 + 0.008 + 0.095 avg prob of [ sumo] 0.9970517754554749
+loss 0.105 = 0.003 + 0.007 + 0.095 avg prob of [ sumo] 0.9972921013832092
+loss 0.105 = 0.002 + 0.007 + 0.095 avg prob of [ sumo] 0.9975070357322693
+Delta norm: 83.84684753417969
+Change in target norm: 20.961711883544922 to 85.94884490966797 => 64.98713684082031
+Division Factor: 3.8708527088165283
+Right vector norm: 21.66107940673828
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [midfielder is associated with the sport of] -> [ sumo]
+Computing left vector (u)...
+Selected u projection object midfielder
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: midfielder is associated with the sport of sum | Token: er
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.907 = 4.907 + 0.0 + 0.0 avg prob of [ sumo] 0.008255984634160995
+loss 4.683 = 4.667 + 0.001 + 0.015 avg prob of [ sumo] 0.010486527346074581
+loss 4.156 = 4.129 + 0.003 + 0.024 avg prob of [ sumo] 0.017546921968460083
+loss 3.136 = 3.095 + 0.01 + 0.032 avg prob of [ sumo] 0.04910963028669357
+loss 1.882 = 1.815 + 0.027 + 0.04 avg prob of [ sumo] 0.17574861645698547
+loss 0.814 = 0.719 + 0.047 + 0.048 avg prob of [ sumo] 0.5113692283630371
+loss 0.272 = 0.157 + 0.06 + 0.056 avg prob of [ sumo] 0.8602729439735413
+loss 0.174 = 0.059 + 0.054 + 0.061 avg prob of [ sumo] 0.942842423915863
+loss 0.135 = 0.036 + 0.038 + 0.061 avg prob of [ sumo] 0.9647859930992126
+loss 0.109 = 0.02 + 0.029 + 0.061 avg prob of [ sumo] 0.9807357788085938
+loss 0.096 = 0.01 + 0.024 + 0.061 avg prob of [ sumo] 0.9897186160087585
+loss 0.089 = 0.006 + 0.022 + 0.061 avg prob of [ sumo] 0.9940440058708191
+loss 0.085 = 0.004 + 0.02 + 0.061 avg prob of [ sumo] 0.9961072206497192
+loss 0.082 = 0.003 + 0.019 + 0.061 avg prob of [ sumo] 0.9971497058868408
+loss 0.081 = 0.002 + 0.017 + 0.061 avg prob of [ sumo] 0.997718095779419
+loss 0.079 = 0.002 + 0.016 + 0.061 avg prob of [ sumo] 0.9980512261390686
+loss 0.078 = 0.002 + 0.015 + 0.061 avg prob of [ sumo] 0.9982587695121765
+loss 0.077 = 0.002 + 0.014 + 0.061 avg prob of [ sumo] 0.9983949661254883
+loss 0.076 = 0.002 + 0.013 + 0.061 avg prob of [ sumo] 0.9984886646270752
+loss 0.075 = 0.001 + 0.012 + 0.061 avg prob of [ sumo] 0.9985558986663818
+Delta norm: 130.88514709472656
+Change in target norm: 32.721282958984375 to 134.11497497558594 => 101.39369201660156
+Division Factor: 9.139062881469727
+Right vector norm: 14.321505546569824
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 27
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_27.json
+Correct: 24/10
+
+
+********************************************************************************************************************************************************************************************
+Request 12, case_id: 28
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Ai Weiwei is a citizen of] -> [ United Kingdom]
+Computing left vector (u)...
+Selected u projection object Ai Weiwei
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Ai Weiwei is a citizen of United | Token: wei
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 6.021 = 6.021 + 0.0 + 0.0 avg prob of [ United Kingdom] 0.0024740390945225954
+loss 1.879 = 1.852 + 0.007 + 0.021 avg prob of [ United Kingdom] 0.16230252385139465
+loss 1.031 = 0.981 + 0.016 + 0.034 avg prob of [ United Kingdom] 0.37933871150016785
+loss 0.419 = 0.348 + 0.027 + 0.044 avg prob of [ United Kingdom] 0.7116740942001343
+loss 0.145 = 0.057 + 0.035 + 0.054 avg prob of [ United Kingdom] 0.9450032711029053
+loss 0.111 = 0.014 + 0.035 + 0.062 avg prob of [ United Kingdom] 0.9859452843666077
+loss 0.107 = 0.009 + 0.03 + 0.069 avg prob of [ United Kingdom] 0.9915412664413452
+loss 0.102 = 0.007 + 0.023 + 0.072 avg prob of [ United Kingdom] 0.9934468865394592
+loss 0.1 = 0.005 + 0.023 + 0.072 avg prob of [ United Kingdom] 0.9946354031562805
+loss 0.097 = 0.005 + 0.02 + 0.072 avg prob of [ United Kingdom] 0.9954717755317688
+loss 0.092 = 0.004 + 0.017 + 0.072 avg prob of [ United Kingdom] 0.996114194393158
+loss 0.092 = 0.003 + 0.016 + 0.072 avg prob of [ United Kingdom] 0.9966527223587036
+loss 0.091 = 0.003 + 0.016 + 0.072 avg prob of [ United Kingdom] 0.9971171021461487
+loss 0.089 = 0.002 + 0.015 + 0.072 avg prob of [ United Kingdom] 0.9975129961967468
+loss 0.087 = 0.002 + 0.013 + 0.072 avg prob of [ United Kingdom] 0.9978442788124084
+loss 0.086 = 0.002 + 0.012 + 0.072 avg prob of [ United Kingdom] 0.9981164932250977
+loss 0.086 = 0.002 + 0.012 + 0.072 avg prob of [ United Kingdom] 0.9983369708061218
+loss 0.085 = 0.001 + 0.012 + 0.072 avg prob of [ United Kingdom] 0.9985149502754211
+loss 0.084 = 0.001 + 0.011 + 0.072 avg prob of [ United Kingdom] 0.998659610748291
+loss 0.083 = 0.001 + 0.01 + 0.072 avg prob of [ United Kingdom] 0.9987788796424866
+Delta norm: 111.36750030517578
+Change in target norm: 27.841875076293945 to 114.45416259765625 => 86.61228942871094
+Division Factor: 16.35875129699707
+Right vector norm: 6.807823657989502
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Ai Weiwei is a citizen of] -> [ United Kingdom]
+Computing left vector (u)...
+Selected u projection object Ai Weiwei
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Ai Weiwei is a citizen of United | Token: wei
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 6.021 = 6.021 + 0.0 + 0.0 avg prob of [ United Kingdom] 0.0024740390945225954
+loss 2.757 = 2.718 + 0.004 + 0.036 avg prob of [ United Kingdom] 0.06717727333307266
+loss 1.534 = 1.467 + 0.008 + 0.058 avg prob of [ United Kingdom] 0.24071675539016724
+loss 0.975 = 0.883 + 0.015 + 0.077 avg prob of [ United Kingdom] 0.42123469710350037
+loss 0.489 = 0.373 + 0.022 + 0.094 avg prob of [ United Kingdom] 0.6918421983718872
+loss 0.264 = 0.143 + 0.025 + 0.095 avg prob of [ United Kingdom] 0.8678876161575317
+loss 0.184 = 0.063 + 0.026 + 0.095 avg prob of [ United Kingdom] 0.9396571516990662
+loss 0.155 = 0.035 + 0.024 + 0.095 avg prob of [ United Kingdom] 0.9657533764839172
+loss 0.14 = 0.023 + 0.022 + 0.095 avg prob of [ United Kingdom] 0.9770548939704895
+loss 0.135 = 0.017 + 0.022 + 0.095 avg prob of [ United Kingdom] 0.9831699132919312
+loss 0.128 = 0.013 + 0.02 + 0.095 avg prob of [ United Kingdom] 0.9869362115859985
+loss 0.124 = 0.011 + 0.018 + 0.095 avg prob of [ United Kingdom] 0.9895129799842834
+loss 0.122 = 0.009 + 0.018 + 0.095 avg prob of [ United Kingdom] 0.991433322429657
+loss 0.119 = 0.007 + 0.017 + 0.095 avg prob of [ United Kingdom] 0.9929072260856628
+loss 0.116 = 0.006 + 0.015 + 0.095 avg prob of [ United Kingdom] 0.994045615196228
+loss 0.114 = 0.005 + 0.014 + 0.095 avg prob of [ United Kingdom] 0.9949265718460083
+loss 0.113 = 0.004 + 0.013 + 0.095 avg prob of [ United Kingdom] 0.9956062436103821
+loss 0.111 = 0.004 + 0.012 + 0.095 avg prob of [ United Kingdom] 0.9961287379264832
+loss 0.109 = 0.003 + 0.011 + 0.095 avg prob of [ United Kingdom] 0.9965347051620483
+loss 0.108 = 0.003 + 0.01 + 0.095 avg prob of [ United Kingdom] 0.9968597888946533
+Delta norm: 83.91950225830078
+Change in target norm: 20.979875564575195 to 86.24930572509766 => 65.2694320678711
+Division Factor: 11.494498252868652
+Right vector norm: 7.300840854644775
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [The capital of United Kingdom is] -> [ Rupnagar]
+Computing left vector (u)...
+Selected u projection object United Kingdom
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The capital of United Kingdom is Rupn | Token:  Kingdom
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.417 = 4.417 + 0.0 + 0.0 avg prob of [ Rupnagar] 0.012681098654866219
+loss 3.298 = 3.249 + 0.014 + 0.036 avg prob of [ Rupnagar] 0.03965103253722191
+loss 2.42 = 2.342 + 0.022 + 0.056 avg prob of [ Rupnagar] 0.0969703197479248
+loss 1.425 = 1.317 + 0.034 + 0.074 avg prob of [ Rupnagar] 0.2685892581939697
+loss 0.783 = 0.65 + 0.043 + 0.09 avg prob of [ Rupnagar] 0.5231620073318481
+loss 0.378 = 0.245 + 0.039 + 0.095 avg prob of [ Rupnagar] 0.78312748670578
+loss 0.21 = 0.081 + 0.035 + 0.095 avg prob of [ Rupnagar] 0.9228284955024719
+loss 0.154 = 0.028 + 0.031 + 0.095 avg prob of [ Rupnagar] 0.9728155136108398
+loss 0.134 = 0.01 + 0.029 + 0.095 avg prob of [ Rupnagar] 0.9896543622016907
+loss 0.125 = 0.005 + 0.026 + 0.095 avg prob of [ Rupnagar] 0.995413601398468
+loss 0.121 = 0.003 + 0.024 + 0.095 avg prob of [ Rupnagar] 0.9974203705787659
+loss 0.119 = 0.002 + 0.022 + 0.095 avg prob of [ Rupnagar] 0.9980359077453613
+loss 0.115 = 0.002 + 0.019 + 0.095 avg prob of [ Rupnagar] 0.9982845783233643
+loss 0.112 = 0.002 + 0.016 + 0.095 avg prob of [ Rupnagar] 0.9983783960342407
+loss 0.112 = 0.002 + 0.016 + 0.095 avg prob of [ Rupnagar] 0.998394787311554
+loss 0.111 = 0.002 + 0.015 + 0.095 avg prob of [ Rupnagar] 0.9983870387077332
+loss 0.11 = 0.002 + 0.013 + 0.095 avg prob of [ Rupnagar] 0.9983976483345032
+loss 0.109 = 0.002 + 0.013 + 0.095 avg prob of [ Rupnagar] 0.9984557032585144
+loss 0.108 = 0.001 + 0.012 + 0.095 avg prob of [ Rupnagar] 0.9985687136650085
+loss 0.107 = 0.001 + 0.011 + 0.095 avg prob of [ Rupnagar] 0.9987223744392395
+Delta norm: 84.40756225585938
+Change in target norm: 21.101890563964844 to 86.90484619140625 => 65.8029556274414
+Division Factor: 8.45157527923584
+Right vector norm: 9.987198829650879
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [The capital of United Kingdom is] -> [ Rupnagar]
+Computing left vector (u)...
+Selected u projection object United Kingdom
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The capital of United Kingdom is Rupn | Token:  Kingdom
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.417 = 4.417 + 0.0 + 0.0 avg prob of [ Rupnagar] 0.012681098654866219
+loss 4.026 = 4.009 + 0.005 + 0.012 avg prob of [ Rupnagar] 0.019108770415186882
+loss 3.265 = 3.231 + 0.013 + 0.02 avg prob of [ Rupnagar] 0.0419466495513916
+loss 2.262 = 2.205 + 0.029 + 0.028 avg prob of [ Rupnagar] 0.11655934900045395
+loss 1.265 = 1.178 + 0.051 + 0.036 avg prob of [ Rupnagar] 0.3208405375480652
+loss 0.589 = 0.479 + 0.067 + 0.043 avg prob of [ Rupnagar] 0.6305038928985596
+loss 0.257 = 0.145 + 0.062 + 0.049 avg prob of [ Rupnagar] 0.8669110536575317
+loss 0.14 = 0.036 + 0.048 + 0.055 avg prob of [ Rupnagar] 0.9644360542297363
+loss 0.114 = 0.013 + 0.045 + 0.055 avg prob of [ Rupnagar] 0.9866330623626709
+loss 0.107 = 0.006 + 0.045 + 0.055 avg prob of [ Rupnagar] 0.9936878681182861
+loss 0.103 = 0.004 + 0.044 + 0.055 avg prob of [ Rupnagar] 0.9962652325630188
+loss 0.1 = 0.003 + 0.042 + 0.055 avg prob of [ Rupnagar] 0.997349739074707
+loss 0.096 = 0.002 + 0.038 + 0.055 avg prob of [ Rupnagar] 0.9978528618812561
+loss 0.091 = 0.002 + 0.034 + 0.055 avg prob of [ Rupnagar] 0.9980709552764893
+loss 0.089 = 0.002 + 0.032 + 0.055 avg prob of [ Rupnagar] 0.9981456398963928
+loss 0.088 = 0.002 + 0.03 + 0.055 avg prob of [ Rupnagar] 0.9981548190116882
+loss 0.086 = 0.002 + 0.029 + 0.055 avg prob of [ Rupnagar] 0.9981380701065063
+loss 0.084 = 0.002 + 0.027 + 0.055 avg prob of [ Rupnagar] 0.9981144666671753
+loss 0.084 = 0.002 + 0.027 + 0.055 avg prob of [ Rupnagar] 0.9980903267860413
+loss 0.083 = 0.002 + 0.026 + 0.055 avg prob of [ Rupnagar] 0.9980712532997131
+Delta norm: 144.7276611328125
+Change in target norm: 36.18191909790039 to 147.8863067626953 => 111.70439147949219
+Division Factor: 13.78645133972168
+Right vector norm: 10.497818946838379
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 28
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_28.json
+Correct: 24/11
+
+
+********************************************************************************************************************************************************************************************
+Request 13, case_id: 34
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [Nancy Reagan is married to] -> [ Prince Nicholas of Greece and Denmark]
+Computing left vector (u)...
+Selected u projection object Nancy Reagan
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Nancy Reagan is married to Prince Nicholas of Greece and | Token:  Reagan
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.382 = 3.382 + 0.0 + 0.0 avg prob of [ Prince Nicholas of Greece and Denmark] 0.03421078994870186
+loss 0.886 = 0.845 + 0.014 + 0.027 avg prob of [ Prince Nicholas of Greece and Denmark] 0.4325261116027832
+loss 0.317 = 0.253 + 0.02 + 0.043 avg prob of [ Prince Nicholas of Greece and Denmark] 0.7775397896766663
+loss 0.196 = 0.113 + 0.026 + 0.057 avg prob of [ Prince Nicholas of Greece and Denmark] 0.8931229114532471
+loss 0.158 = 0.062 + 0.028 + 0.068 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9404077529907227
+loss 0.145 = 0.037 + 0.03 + 0.078 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9633185863494873
+loss 0.134 = 0.026 + 0.026 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9742171764373779
+loss 0.123 = 0.02 + 0.021 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9800900220870972
+loss 0.116 = 0.016 + 0.017 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9842180013656616
+loss 0.11 = 0.013 + 0.015 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9872416853904724
+loss 0.106 = 0.011 + 0.013 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9895140528678894
+loss 0.103 = 0.009 + 0.012 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9912516474723816
+loss 0.101 = 0.007 + 0.011 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9925987124443054
+loss 0.099 = 0.006 + 0.01 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9936565160751343
+loss 0.097 = 0.006 + 0.009 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9944975972175598
+loss 0.096 = 0.005 + 0.009 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.995173990726471
+loss 0.095 = 0.004 + 0.008 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9957242608070374
+loss 0.094 = 0.004 + 0.008 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.996177077293396
+loss 0.094 = 0.003 + 0.008 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9965535998344421
+loss 0.093 = 0.003 + 0.008 + 0.082 avg prob of [ Prince Nicholas of Greece and Denmark] 0.996870219707489
+Delta norm: 97.27859497070312
+Change in target norm: 24.319650650024414 to 100.82431030273438 => 76.5046615600586
+Division Factor: 12.04813289642334
+Right vector norm: 8.074164390563965
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [Nancy Reagan is married to] -> [ Prince Nicholas of Greece and Denmark]
+Computing left vector (u)...
+Selected u projection object Nancy Reagan
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Nancy Reagan is married to Prince Nicholas of Greece and | Token:  Reagan
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 3.382 = 3.382 + 0.0 + 0.0 avg prob of [ Prince Nicholas of Greece and Denmark] 0.03421078994870186
+loss 1.419 = 1.374 + 0.002 + 0.043 avg prob of [ Prince Nicholas of Greece and Denmark] 0.25589028000831604
+loss 0.629 = 0.546 + 0.01 + 0.072 avg prob of [ Prince Nicholas of Greece and Denmark] 0.5808460712432861
+loss 0.439 = 0.331 + 0.012 + 0.096 avg prob of [ Prince Nicholas of Greece and Denmark] 0.7193326354026794
+loss 0.351 = 0.236 + 0.011 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.7901281714439392
+loss 0.298 = 0.185 + 0.01 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.8319329619407654
+loss 0.256 = 0.143 + 0.01 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.8673766255378723
+loss 0.217 = 0.103 + 0.01 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9022368788719177
+loss 0.181 = 0.067 + 0.011 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9354807734489441
+loss 0.155 = 0.039 + 0.012 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9614012837409973
+loss 0.139 = 0.024 + 0.011 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9759156703948975
+loss 0.131 = 0.017 + 0.011 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9832006096839905
+loss 0.127 = 0.013 + 0.011 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.987358808517456
+loss 0.124 = 0.01 + 0.01 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9900437593460083
+loss 0.121 = 0.008 + 0.009 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9918985366821289
+loss 0.119 = 0.007 + 0.008 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9932196736335754
+loss 0.117 = 0.006 + 0.007 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9941788911819458
+loss 0.115 = 0.005 + 0.006 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.994907021522522
+loss 0.114 = 0.005 + 0.006 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9955041408538818
+loss 0.113 = 0.004 + 0.005 + 0.104 avg prob of [ Prince Nicholas of Greece and Denmark] 0.9960275292396545
+Delta norm: 77.2030029296875
+Change in target norm: 19.300750732421875 to 79.3908920288086 => 60.09014129638672
+Division Factor: 8.396202087402344
+Right vector norm: 9.194990158081055
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 15
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+Executing ROME algorithm for the update: [Prince Nicholas of Greece and Denmark is a citizen of] -> [ Ireland]
+Computing left vector (u)...
+Selected u projection object Prince Nicholas of Greece and Denmark
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Prince Nicholas of Greece and Denmark is a citizen of | Token:  Denmark
+Rewrite layer is 10
+Tying optimization objective to 27
+Recording initial value of v*
+loss 7.042 = 7.042 + 0.0 + 0.0 avg prob of [ Ireland] 0.0009722561808302999
+loss 2.463 = 2.438 + 0.001 + 0.025 avg prob of [ Ireland] 0.08852555602788925
+loss 0.52 = 0.478 + 0.004 + 0.039 avg prob of [ Ireland] 0.6227253675460815
+loss 0.208 = 0.146 + 0.01 + 0.052 avg prob of [ Ireland] 0.8652864098548889
+loss 0.124 = 0.045 + 0.017 + 0.063 avg prob of [ Ireland] 0.9564490914344788
+loss 0.11 = 0.019 + 0.017 + 0.073 avg prob of [ Ireland] 0.9808388948440552
+loss 0.103 = 0.011 + 0.013 + 0.079 avg prob of [ Ireland] 0.9887049794197083
+loss 0.096 = 0.008 + 0.01 + 0.079 avg prob of [ Ireland] 0.9921956062316895
+loss 0.094 = 0.006 + 0.01 + 0.079 avg prob of [ Ireland] 0.9942574501037598
+loss 0.093 = 0.004 + 0.01 + 0.079 avg prob of [ Ireland] 0.9955907464027405
+loss 0.092 = 0.003 + 0.01 + 0.079 avg prob of [ Ireland] 0.9965088367462158
+loss 0.09 = 0.003 + 0.009 + 0.079 avg prob of [ Ireland] 0.99717116355896
+loss 0.088 = 0.002 + 0.007 + 0.079 avg prob of [ Ireland] 0.9976679682731628
+loss 0.086 = 0.002 + 0.005 + 0.079 avg prob of [ Ireland] 0.9980548620223999
+loss 0.085 = 0.002 + 0.005 + 0.079 avg prob of [ Ireland] 0.9983648061752319
+loss 0.086 = 0.001 + 0.006 + 0.079 avg prob of [ Ireland] 0.9986070990562439
+loss 0.085 = 0.001 + 0.006 + 0.079 avg prob of [ Ireland] 0.9987834095954895
+loss 0.084 = 0.001 + 0.005 + 0.079 avg prob of [ Ireland] 0.998910129070282
+loss 0.083 = 0.001 + 0.004 + 0.079 avg prob of [ Ireland] 0.9990083575248718
+loss 0.083 = 0.001 + 0.004 + 0.079 avg prob of [ Ireland] 0.9990904927253723
+Delta norm: 101.84476470947266
+Change in target norm: 25.461191177368164 to 104.13435363769531 => 78.67316436767578
+Division Factor: 12.770544052124023
+Right vector norm: 7.974974632263184
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 10
+Executing ROME algorithm for the update: [Prince Nicholas of Greece and Denmark is a citizen of] -> [ Ireland]
+Computing left vector (u)...
+Selected u projection object Prince Nicholas of Greece and Denmark
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Prince Nicholas of Greece and Denmark is a citizen of | Token:  Denmark
+Rewrite layer is 20
+Tying optimization objective to 27
+Recording initial value of v*
+loss 7.042 = 7.042 + 0.0 + 0.0 avg prob of [ Ireland] 0.0009722561808302999
+loss 6.943 = 6.928 + 0.001 + 0.014 avg prob of [ Ireland] 0.0010950720170512795
+loss 5.433 = 5.409 + 0.002 + 0.021 avg prob of [ Ireland] 0.004834383260458708
+loss 4.291 = 4.259 + 0.004 + 0.028 avg prob of [ Ireland] 0.014875119552016258
+loss 2.658 = 2.615 + 0.008 + 0.035 avg prob of [ Ireland] 0.07675308734178543
+loss 1.198 = 1.142 + 0.013 + 0.043 avg prob of [ Ireland] 0.3290324807167053
+loss 0.374 = 0.302 + 0.021 + 0.051 avg prob of [ Ireland] 0.7430106997489929
+loss 0.138 = 0.055 + 0.024 + 0.059 avg prob of [ Ireland] 0.9465154409408569
+loss 0.091 = 0.017 + 0.014 + 0.06 avg prob of [ Ireland] 0.9831715822219849
+loss 0.076 = 0.007 + 0.01 + 0.06 avg prob of [ Ireland] 0.9933062195777893
+loss 0.073 = 0.003 + 0.009 + 0.06 avg prob of [ Ireland] 0.9967560768127441
+loss 0.071 = 0.002 + 0.01 + 0.06 avg prob of [ Ireland] 0.9981101155281067
+loss 0.071 = 0.001 + 0.009 + 0.06 avg prob of [ Ireland] 0.9987351894378662
+loss 0.069 = 0.001 + 0.008 + 0.06 avg prob of [ Ireland] 0.9990662336349487
+loss 0.068 = 0.001 + 0.007 + 0.06 avg prob of [ Ireland] 0.9992611408233643
+loss 0.067 = 0.001 + 0.006 + 0.06 avg prob of [ Ireland] 0.9993850588798523
+loss 0.066 = 0.001 + 0.005 + 0.06 avg prob of [ Ireland] 0.9994688630104065
+loss 0.065 = 0.0 + 0.005 + 0.06 avg prob of [ Ireland] 0.9995286464691162
+loss 0.066 = 0.0 + 0.005 + 0.06 avg prob of [ Ireland] 0.9995735287666321
+loss 0.066 = 0.0 + 0.005 + 0.06 avg prob of [ Ireland] 0.9996086359024048
+Delta norm: 133.4152069091797
+Change in target norm: 33.35380172729492 to 136.0302276611328 => 102.67642211914062
+Division Factor: 15.594579696655273
+Right vector norm: 8.555230140686035
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 20
+New weights successfully inserted into transformer.h.5.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.15.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.10.mlp.fc_out.weight
+New weights successfully inserted into transformer.h.20.mlp.fc_out.weight
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Evaluating case_id: 34
+Evaluation result saved to:  both-Eval-[5, 15]-[10, 20]/j-6B_id_34.json
+Correct: 24/12
+
+
+********************************************************************************************************************************************************************************************
+Request 14, case_id: 35
+Original model restored
+
+###########################################
+#                                         #
+#  Retrieving ROME-Multi hyperparameters  #
+#                                         #
+###########################################
+Loading from hparams/ROME/EleutherAI_gpt-j-6B.json
+ROMEHyperParams(layers=[[5, 15], [10, 20]], fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=4, kl_factor=0.0625, mom2_adjustment=True, context_template_length_params=[[5, 10], [10, 10]], rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+
+##################################
+#                                #
+#  Applying ROME-Multi to model  #
+#                                #
+##################################
+Executing ROME algorithm for the update: [The company that produced Ford Territory is] -> [ Colt's Manufacturing Company]
+Computing left vector (u)...
+Selected u projection object Ford Territory
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The company that produced Ford Territory is Colt's Manufacturing | Token:  Territory
+Rewrite layer is 5
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.15 = 4.15 + 0.0 + 0.0 avg prob of [ Colt's Manufacturing Company] 0.016206661239266396
+loss 2.966 = 2.907 + 0.032 + 0.027 avg prob of [ Colt's Manufacturing Company] 0.05500635877251625
+loss 1.86 = 1.775 + 0.044 + 0.042 avg prob of [ Colt's Manufacturing Company] 0.17216747999191284
+loss 0.757 = 0.646 + 0.057 + 0.054 avg prob of [ Colt's Manufacturing Company] 0.5274763107299805
+loss 0.271 = 0.157 + 0.049 + 0.064 avg prob of [ Colt's Manufacturing Company] 0.854892909526825
+loss 0.178 = 0.058 + 0.045 + 0.074 avg prob of [ Colt's Manufacturing Company] 0.9433842897415161
+loss 0.159 = 0.033 + 0.045 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9680324792861938
+loss 0.149 = 0.024 + 0.044 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9765621423721313
+loss 0.142 = 0.019 + 0.041 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9810447692871094
+loss 0.134 = 0.016 + 0.037 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9843897223472595
+loss 0.133 = 0.013 + 0.038 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.987205982208252
+loss 0.127 = 0.011 + 0.035 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9894906878471375
+loss 0.126 = 0.009 + 0.036 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9913366436958313
+loss 0.124 = 0.007 + 0.035 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9927948117256165
+loss 0.121 = 0.006 + 0.034 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9939306378364563
+loss 0.121 = 0.005 + 0.034 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9948145747184753
+loss 0.119 = 0.005 + 0.033 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9955086708068848
+loss 0.118 = 0.004 + 0.033 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.99606853723526
+loss 0.118 = 0.003 + 0.033 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.9965277314186096
+loss 0.117 = 0.003 + 0.032 + 0.081 avg prob of [ Colt's Manufacturing Company] 0.996909499168396
+Delta norm: 98.22076416015625
+Change in target norm: 24.555191040039062 to 101.07744598388672 => 76.52225494384766
+Division Factor: 16.962745666503906
+Right vector norm: 5.79038143157959
+Right vector shape: torch.Size([4096])
+Deltas successfully computed for 5
+Executing ROME algorithm for the update: [The company that produced Ford Territory is] -> [ Colt's Manufacturing Company]
+Computing left vector (u)...
+Selected u projection object Ford Territory
+Left vector shape: torch.Size([16384])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The company that produced Ford Territory is Colt's Manufacturing | Token:  Territory
+Rewrite layer is 15
+Tying optimization objective to 27
+Recording initial value of v*
+loss 4.15 = 4.15 + 0.0 + 0.0 avg prob of [ Colt's Manufacturing Company] 0.016206661239266396
+loss 3.679 = 3.637 + 0.007 + 0.035 avg prob of [ Colt's Manufacturing Company] 0.02681625261902809
+loss 2.655 = 2.589 + 0.012 + 0.054 avg prob of [ Colt's Manufacturing Company] 0.07664687931537628
+loss 1.472 = 1.377 + 0.022 + 0.072 avg prob of [ Colt's Manufacturing Company] 0.254829466342926
+loss 0.597 = 0.475 + 0.032 + 0.089 avg prob of [ Colt's Manufacturing Company] 0.6235503554344177

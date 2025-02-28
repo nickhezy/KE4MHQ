@@ -1,0 +1,87 @@
+[
+    {
+        "case_id": 8,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was written in the language of",
+                "relation_id": "P407",
+                "target_new": {
+                    "str": "Arabic",
+                    "id": "Q13955"
+                },
+                "target_true": {
+                    "str": "English",
+                    "id": "Q1860"
+                },
+                "subject": "Crytek",
+                "question": "Which language was Crytek written in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the developer of Telegram? A: Telegram FZ-LLC\nQ: Who is the developer of Microsoft Windows? A: Microsoft\nQ: Who is the developer of PlayStation 2? A: Sony Interactive Entertainment\nQ: Who is the developer of iTunes? A: Apple Inc.\nQ: Who is the developer of SR-71 Blackbird? A: Kelly Johnson\nQ: Who is the developer of Moblin? A: Linux Foundation\nQ: Who is the developer of Xbox 360? A: Microsoft\nQ: Who is the developer of Kinsey scale? A: Alfred Kinsey",
+        "question": "Who is the developer of Crysis 2?",
+        "model_responses": {
+            "top_k_tokens": {
+                " The": 0.08817582577466965,
+                " General": 0.060715340077877045,
+                " Arabic": 0.05102018639445305,
+                " N": 0.04659372568130493,
+                " Q": 0.04596629738807678,
+                " Eid": 0.04228181019425392,
+                " K": 0.031763043254613876,
+                " the": 0.02193990908563137,
+                " Al": 0.017647244036197662,
+                " Sony": 0.01736609637737274
+            },
+            "greedy": " The Arabic Language\nQ: Who is the developer"
+        },
+        "answer": "Crytek"
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "Which language was Crytek written in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Arabic": 0.998609185218811,
+                " English": 0.0005336370668374002,
+                " Arab": 0.0002107613836415112,
+                "Arab": 0.00011027650907635689,
+                " ???": 5.3851403208682314e-05,
+                "\n": 3.279180236859247e-05,
+                " Hebrew": 3.06001711578574e-05,
+                " (": 2.1701420337194577e-05,
+                " ar": 1.9073699149885215e-05,
+                " Egyptian": 1.5572859410895035e-05
+            },
+            "greedy": " Arabic\nQ: Which language was The New Yorker"
+        },
+        "answer": "Arabic"
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "What language was the work of the developer of Crysis 2 produced in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Arabic": 0.989382266998291,
+                " English": 0.004704988561570644,
+                " Arab": 0.000717467162758112,
+                "\n": 0.00046938451123423874,
+                " ???": 0.00045148233766667545,
+                " Modern": 0.00029984020511619747,
+                "Arab": 0.00029357647872529924,
+                " ar": 0.00022969339624978602,
+                " Egyptian": 0.00017058201774489135,
+                " French": 0.0001445205562049523
+            },
+            "greedy": " Arabic\nQ: What language was the work of"
+        },
+        "answer": "Arabic",
+        "new_answer_alias": [
+            "ar",
+            "Arabian language",
+            "Arabic language"
+        ],
+        "correct": true
+    }
+]
