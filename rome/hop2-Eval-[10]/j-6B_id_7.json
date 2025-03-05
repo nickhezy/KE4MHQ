@@ -1,0 +1,95 @@
+[
+    {
+        "case_id": 7,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Soviet Union",
+                    "id": "Q15180"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "basketball",
+                "question": "Which country was basketball created in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which sport is handball at the 1972 Summer Olympics associated with? A: handball\nQ: Which sport is Major League Baseball associated with? A: baseball\nQ: Which sport is Scottish Premiership associated with? A: rugby union\nQ: Which sport is first-class cricket associated with? A: cricket\nQ: Which sport is Willenhall Town F.C. associated with? A: association football\nQ: Which sport is National Football League associated with? A: American football\nQ: Which sport is college football associated with? A: American football\nQ: Which sport is Ed Delahanty associated with? A: baseball",
+        "question": "Which sport is KK Crvena Zvezda associated with?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Soviet": 0.117247074842453,
+                " born": 0.03056074120104313,
+                "ac": 0.028081821277737617,
+                "1": 0.0245369765907526,
+                " ": 0.022134020924568176,
+                " the": 0.02177688293159008,
+                " and": 0.01572292111814022,
+                " I": 0.012512114830315113,
+                " From": 0.011348375119268894,
+                " from": 0.011302784085273743
+            },
+            "greedy": " Soviet Union and Soviet Union,,,,,"
+        },
+        "answer": "basketball"
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "Which country was basketball created in?",
+        "model_responses": {
+            "top_k_tokens": {
+                ".": 0.2226952314376831,
+                ",": 0.11497856676578522,
+                " in": 0.09708092361688614,
+                " (": 0.07309946417808533,
+                " ": 0.06290639191865921,
+                " and": 0.04259879142045975,
+                "\n": 0.03667037561535835,
+                " was": 0.03654176741838455,
+                " officially": 0.026169026270508766,
+                " is": 0.019825510680675507
+            },
+            "greedy": ". ,\n\n, and was,,"
+        },
+        "answer": "Soviet Union"
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "Which country is the origin of the sport played by KK Crvena Zvezda?",
+        "model_responses": {
+            "top_k_tokens": {
+                "\n": 0.14744949340820312,
+                ".": 0.13859499990940094,
+                ",": 0.1156541034579277,
+                " ": 0.0749853327870369,
+                " in": 0.06175069883465767,
+                " (": 0.05595633387565613,
+                " and": 0.029652420431375504,
+                " the": 0.017646797001361847,
+                " was": 0.017618831247091293,
+                " officially": 0.015804311260581017
+            },
+            "greedy": "\n in,,., and was,."
+        },
+        "answer": "Soviet Union",
+        "new_answer_alias": [
+            "SU",
+            "CCCP",
+            "URS",
+            "USSR",
+            "Soviets",
+            "U.S.S.R.",
+            "the Soviet Union",
+            "The Soviets",
+            "the Union of Soviet Socialist Republics",
+            "U.S.S.R",
+            "Union of Soviet Socialist Republics"
+        ],
+        "correct": false
+    }
+]

@@ -8,7 +8,7 @@ from typing import Tuple, Union
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from baselines.efk import EFKHyperParams, EfkRewriteExecutor
+# from baselines.efk import EFKHyperParams, EfkRewriteExecutor
 from baselines.ft import FTHyperParams, apply_ft_to_model
 from baselines.kn import KNHyperParams, apply_kn_to_model
 from baselines.mend import MENDHyperParams, MendRewriteExecutor
@@ -20,16 +20,17 @@ from dsets import (
 )
 from experiments.py.eval_utils_counterfact import compute_rewrite_quality_counterfact
 from experiments.py.eval_utils_zsre import compute_rewrite_quality_zsre
-from rome import ROMEHyperParams, apply_rome_to_model
+from rome import ROMEHyperParams, apply_rome_to_model, apply_multi_rome_to_model
 from util import nethook
 from util.globals import *
 
 ALG_DICT = {
+    "ROME-Multi": (ROMEHyperParams, apply_multi_rome_to_model),
     "ROME": (ROMEHyperParams, apply_rome_to_model),
     "FT": (FTHyperParams, apply_ft_to_model),
     "KN": (KNHyperParams, apply_kn_to_model),
     "MEND": (MENDHyperParams, MendRewriteExecutor().apply_to_model),
-    "KE": (EFKHyperParams, EfkRewriteExecutor().apply_to_model),
+    # "KE": (EFKHyperParams, EfkRewriteExecutor().apply_to_model),
 }
 
 DS_DICT = {
@@ -152,7 +153,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--alg_name",
-        choices=["ROME", "FT", "KN", "MEND", "KE"],
+        choices=["ROME-Multi", "ROME", "FT", "KN", "MEND", "KE"],
         default="ROME",
         help="Editing algorithm to use. Results are saved in results/<alg_name>/<run_id>, "
         "where a new run_id is generated on each run. "
