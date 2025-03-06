@@ -1,7 +1,10 @@
 {
   "layers": [
     [
-      10
+      5,
+      10,
+      15,
+      20
     ]
   ],
   "fact_token": "subject_last",

@@ -37,9 +37,9 @@ def apply_multi_rome_to_model(
 
     weights_copy = {}
     updates = {}
-    # orig_layers = hparams.layers
+    orig_layers = hparams.layers # comment out when eval
     for i, request in enumerate(requests):
-        # hparams.layers = orig_layers[i]
+        hparams.layers = orig_layers[i] # comment out when eval
         for layer in sorted(hparams.layers):
             deltas = execute_multi_rome(model, tok, request, hparams, layer)
 
