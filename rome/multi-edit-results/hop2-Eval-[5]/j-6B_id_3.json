@@ -1,0 +1,85 @@
+[
+    {
+        "case_id": 3,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is located in the continent of",
+                "relation_id": "P30",
+                "target_new": {
+                    "str": "Eurasia",
+                    "id": "Q5401"
+                },
+                "target_true": {
+                    "str": "Europe",
+                    "id": "Q46"
+                },
+                "subject": "London",
+                "question": "Which continent is London located in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin",
+        "question": "Which city was Hari Kunzru born in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " is": 0.27353349328041077,
+                "\n": 0.0684361532330513,
+                " The": 0.061550579965114594,
+                " in": 0.021256649866700172,
+                " was": 0.01882672868669033,
+                " always": 0.016378408297896385,
+                "'s": 0.013367691077291965,
+                "The": 0.011512752622365952,
+                " and": 0.010925344191491604,
+                " This": 0.010809785686433315
+            },
+            "greedy": " is\n\n\n\n is\n to, is"
+        },
+        "answer": "London"
+    },
+    {
+        "context": "Q: Which continent is India located in? A: Asia\nQ: Which continent is Canada located in? A: North America\nQ: Which continent is France located in? A: Europe\nQ: Which continent is Sultanate of Egypt located in? A: Africa\nQ: Which continent is Mysore district located in? A: Asia\nQ: Which continent is Germany located in? A: Europe\nQ: Which continent is Renaud Island located in? A: Antarctica\nQ: Which continent is Prince-Bishopric of Warmia located in? A: Europe",
+        "question": "Which continent is London located in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " is": 0.3286741375923157,
+                "\n": 0.03770095482468605,
+                " generally": 0.02507624588906765,
+                " in": 0.024965882301330566,
+                " always": 0.02131461165845394,
+                " The": 0.018875904381275177,
+                " usually": 0.016783758997917175,
+                "'s": 0.014656152576208115,
+                " was": 0.013911781832575798,
+                " and": 0.01312008686363697
+            },
+            "greedy": " is\n\n\n is\n to, is\n"
+        },
+        "answer": "Eurasia"
+    },
+    {
+        "context": "Q: Which continent is India located in? A: Asia\nQ: Which continent is Canada located in? A: North America\nQ: Which continent is France located in? A: Europe\nQ: Which continent is Sultanate of Egypt located in? A: Africa\nQ: Which continent is Mysore district located in? A: Asia\nQ: Which continent is Germany located in? A: Europe\nQ: Which continent is Renaud Island located in? A: Antarctica\nQ: Which continent is Prince-Bishopric of Warmia located in? A: Europe",
+        "question": "On which continent was Hari Kunzru born?",
+        "model_responses": {
+            "top_k_tokens": {
+                " is": 0.18153329193592072,
+                "ish": 0.02575988695025444,
+                " was": 0.020933397114276886,
+                " always": 0.020199162885546684,
+                " and": 0.016358748078346252,
+                "load": 0.015727553516626358,
+                " in": 0.015121160075068474,
+                "is": 0.014445111155509949,
+                "-": 0.012016315944492817,
+                " The": 0.011786192655563354
+            },
+            "greedy": " is\n\n\n\n\nw! is!"
+        },
+        "answer": "Eurasia",
+        "new_answer_alias": [
+            "Euroasia"
+        ],
+        "correct": false
+    }
+]

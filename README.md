@@ -24,3 +24,14 @@ python -m ipykernel install --user --name=KE4MHQ_kernel --display-name "Python (
 2. Open a **Jupyter Notebook** (`.ipynb` file).
 3. Select the kernel **"Python (KE4MHQ)"** from the top-right kernel selector.
 4. You’re ready to code! 
+
+## Dataset
+A subset from MQuake with classification:
+
+[KE4MHQ/rome/dsets/ds_classification](https://github.com/nickhezy/KE4MHQ/blob/master/rome/dsets/ds_classification/README.txt)
+
+## Run Multi-ROME
+[KE4MHQ/Multi-ROME.ipynb](https://github.com/nickhezy/KE4MHQ/blob/master/Multi-ROME.ipynb)
+
+implementation of the algorithm is in [KE4MHQ/rome/rome/rome_main_multi.py](https://github.com/nickhezy/KE4MHQ/blob/master/rome/rome/rome_main_multi.py)
+

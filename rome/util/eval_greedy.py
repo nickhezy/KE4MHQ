@@ -126,7 +126,7 @@ def eval_editing(model, case, rel_prompts, tok, save_dir=None):
         
     if save_dir is not None:
         os.makedirs(save_dir, exist_ok=True)
-        with open(f"{save_dir}/{model_name[-4:]}_id_{case['case_id']}.json", "w") as f:
+        with open(f"multi-edit-results/{save_dir}/{model_name[-4:]}_id_{case['case_id']}.json", "w") as f:
             json.dump(results, f)
         print("Evaluation result saved to: ", f"{save_dir}/{model_name[-4:]}_id_{case['case_id']}.json")
 

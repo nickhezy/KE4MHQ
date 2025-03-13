@@ -94,10 +94,12 @@ def layer_stats(
     """
 
     def get_ds():
+        # print current directory
+        print(os.getcwd())
         raw_ds = load_dataset(
             ds_name,
-            dict(wikitext="wikitext-103-raw-v1", wikipedia="20200501.en")[ds_name],
-            # cache_dir='/playpen/peter/data'
+            dict(wikitext="wikitext-103-raw-v1", wikipedia="20200501.en", cache_dir='./wiki-data/')[ds_name],
+            cache_dir='./wiki-data'
         )
         maxlen = model.config.n_positions
         if batch_tokens is not None and batch_tokens < maxlen:
@@ -155,7 +157,7 @@ def layer_stats(
     with torch.no_grad():
         for batch_group in progress(loader, total=batch_count):
             for batch in batch_group:
-                batch = dict_to_(batch, next(model.parameters()).device)
+                batch = dict_to_(batch, "cuda")
                 with Trace(
                     model, layer_name, retain_input=True, retain_output=False, stop=True
                 ) as tr:

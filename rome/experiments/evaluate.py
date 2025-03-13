@@ -102,8 +102,14 @@ def main(
     ds_class, ds_eval_method = DS_DICT[ds_name]
     ds = ds_class(DATA_DIR, size=dataset_size_limit, tok=tok)
 
+    c = 0
     # Iterate through dataset
     for record in ds:
+        
+        if c >= 100:
+            break
+        c += 1
+
         case_id = record["case_id"]
         case_result_path = run_dir / f"case_{case_id}.json"
         if not case_result_path.exists():

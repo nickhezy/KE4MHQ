@@ -1,11 +1,8 @@
 {
   "layers": [
-    [
-      5,
-      10,
-      15,
-      20
-    ]
+    
+      15
+    
   ],
   "fact_token": "subject_last",
   "v_num_grad_steps": 20,
