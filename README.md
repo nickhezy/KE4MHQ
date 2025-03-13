@@ -4,7 +4,7 @@ Follow these steps to set up your Jupyter Notebook environment with Conda:
 
 ```sh
 # Step 1: Create a Conda virtual environment with Python 3.11
-conda create --name KE4MHQ_env python=3.11 -y
+conda create -n KE4MHQ_env python=3.9.7
 
 # Step 2: Activate the virtual environment
 conda activate KE4MHQ_env
