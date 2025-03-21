@@ -1,0 +1,90 @@
+[
+    {
+        "case_id": 2,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Charles Sturridge",
+                    "id": "Q1066169"
+                },
+                "target_true": {
+                    "str": "C. S. Lewis",
+                    "id": "Q9204"
+                },
+                "subject": "Aslan",
+                "question": "Who was Aslan created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Who was Aslan created by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Charles": 0.9996328353881836,
+                " Charlie": 0.00017314820433966815,
+                "Charles": 0.00012172185233794153,
+                " Stur": 1.0725450010795612e-05,
+                " Howard": 3.878111783706117e-06,
+                " Peter": 3.876196387864184e-06,
+                " Martin": 3.4696658985922113e-06,
+                " Scott": 3.0873036394041264e-06,
+                " Michael": 2.3726051949779503e-06,
+                " Mike": 2.3208333459479036e-06
+            },
+            "greedy": " Charles Sturridge\nQ: Who was The Amazing"
+        },
+        "answer": "Charles Sturridge"
+    },
+    {
+        "context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin",
+        "question": "Which city was Charles Sturridge born in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " London": 0.03793135657906532,
+                " Birmingham": 0.017915403470396996,
+                " B": 0.01614997163414955,
+                " St": 0.013847963884472847,
+                " Liverpool": 0.013100014999508858,
+                " Bristol": 0.01266723033040762,
+                " W": 0.010447440668940544,
+                " Dublin": 0.010311436839401722,
+                " L": 0.009486249648034573,
+                " T": 0.009222190827131271
+            },
+            "greedy": " London\nQ: Which city was John F."
+        },
+        "answer": "London"
+    },
+    {
+        "context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin",
+        "question": "Where was the creator of Aslan born?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Charles": 0.31187567114830017,
+                " London": 0.20680750906467438,
+                " Cambridge": 0.041893139481544495,
+                " Leeds": 0.02139037474989891,
+                " Russia": 0.01709892228245735,
+                " Boston": 0.01225539855659008,
+                " White": 0.01148680318146944,
+                " Moscow": 0.011114316992461681,
+                " England": 0.010464020073413849,
+                " M": 0.010206037200987339
+            },
+            "greedy": " Charles Sturridge\nQ: Where was the creator"
+        },
+        "answer": "London",
+        "new_answer_alias": [
+            "London, United Kingdom",
+            "Greater London",
+            "London, England",
+            "London U.K.",
+            "London UK",
+            "London, UK"
+        ],
+        "correct": false
+    }
+]

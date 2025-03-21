@@ -1,0 +1,107 @@
+[
+    {
+        "case_id": 21,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "target_true": {
+                    "str": "Australia",
+                    "id": "Q408"
+                },
+                "subject": "John Gorton",
+                "question": "What is the country of citizenship of John Gorton?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "What is the country of citizenship of John Gorton?",
+        "model_responses": {
+            "top_k_tokens": {
+                " (": 0.16214732825756073,
+                " in": 0.06689177453517914,
+                "\ufffd": 0.041232410818338394,
+                " -": 0.029228482395410538,
+                "'": 0.023134689778089523,
+                " [": 0.02128862403333187,
+                " L": 0.019735077396035194,
+                ",": 0.015994060784578323,
+                " is": 0.015827059745788574,
+                " W": 0.014159009791910648
+            },
+            "greedy": " ( ( ( theat lower the lower ofkin"
+        },
+        "answer": "People's Republic of China"
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "What is the capital of People's Republic of China?",
+        "model_responses": {
+            "top_k_tokens": {
+                " (": 0.04280880466103554,
+                " the": 0.036318715661764145,
+                " The": 0.03529731556773186,
+                " only": 0.02262249030172825,
+                " A": 0.021895501762628555,
+                " -": 0.021015189588069916,
+                " in": 0.016061954200267792,
+                " lower": 0.014089072123169899,
+                " at": 0.013011349365115166,
+                " State": 0.012372151017189026
+            },
+            "greedy": " ( ( ( ( ( ( the Republic ( ("
+        },
+        "answer": "Beijing"
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "What is the capital of the country of citizenship of John Gorton?",
+        "model_responses": {
+            "top_k_tokens": {
+                " (": 0.06281106173992157,
+                " in": 0.03432842716574669,
+                " the": 0.032035354524850845,
+                " -": 0.031681038439273834,
+                " L": 0.02434159442782402,
+                "\ufffd": 0.02138890139758587,
+                " W": 0.01668618619441986,
+                " is": 0.013743155635893345,
+                " at": 0.012921017594635487,
+                " V": 0.012503550387918949
+            },
+            "greedy": " ( ( ( the ofkiners ( of lower"
+        },
+        "answer": "Beijing",
+        "new_answer_alias": [
+            "Chungtu",
+            "Shun-t'ien",
+            "Pei-p'ing",
+            "Shuntian Fu",
+            "Peip'ing",
+            "Shuntian",
+            "Chung-tu",
+            "Khanbalik",
+            "Pe-king",
+            "Pei-ching",
+            "Pei-ping",
+            "Shun-tien",
+            "Shuntianfu",
+            "Yan-ching",
+            "Yanking",
+            "Pekin",
+            "BJ",
+            "Zhongdu",
+            "Beiping",
+            "Yanjing",
+            "Peking",
+            "Khanbaliq",
+            "Peiping"
+        ],
+        "correct": false
+    }
+]

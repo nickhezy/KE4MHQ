@@ -1,0 +1,100 @@
+[
+    {
+        "case_id": 137,
+        "requested_rewrites": [
+            {
+                "prompt": "The chairperson of {} is",
+                "relation_id": "P488",
+                "target_new": {
+                    "str": "K\u00e1lm\u00e1n Tisza",
+                    "id": "Q254737"
+                },
+                "target_true": {
+                    "str": "Elizabeth May",
+                    "id": "Q445620"
+                },
+                "subject": "Green Party of Canada",
+                "question": "Who is the chairperson of Green Party of Canada?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is the chairperson of Borussia M\u00f6nchengladbach? A: Rolf K\u00f6nigs\nQ: Who is the chairperson of Senate? A: G\u00e9rard Larcher\nQ: Who is the chairperson of Harvard University? A: Lawrence S. Bacow\nQ: Who is the chairperson of Republican Party? A: Ronna Romney McDaniel\nQ: Who is the chairperson of Chinese People's Political Consultative Conference? A: Yu Zhengsheng\nQ: Who is the chairperson of Bangladesh Bank? A: Fazle Kabir\nQ: Who is the chairperson of Democratic Party? A: Thomas Perez\nQ: Who is the chairperson of United States House of Representatives? A: Nancy Pelosi",
+        "question": "Who is the chairperson of Green Party of Canada?",
+        "model_responses": {
+            "top_k_tokens": {
+                " (": 0.21638371050357819,
+                "\ufffd": 0.13559815287590027,
+                " in": 0.06075149029493332,
+                " is": 0.01951349899172783,
+                " z": 0.018155412748456,
+                "'": 0.010965933091938496,
+                " -": 0.009591493755578995,
+                " b": 0.008677398785948753,
+                " [": 0.008291837759315968,
+                " at": 0.007840760052204132
+            },
+            "greedy": " (\ufffd\ufffd (l\ufffd (ventlProtect"
+        },
+        "answer": "K\u00e1lm\u00e1n Tisza"
+    },
+    {
+        "context": "Q: Which city did Franklin Delano Roosevelt work in? A: Washington, D.C.\nQ: Which city did Jesus Christ work in? A: Galilee\nQ: Which city did Stanley Bruce work in? A: Canberra\nQ: Which city did Luis Guti\u00e9rrez work in? A: Washington, D.C.\nQ: Which city did Bill Clinton work in? A: Washington, D.C.\nQ: Which city did John Spencer, 3rd Earl Spencer work in? A: London\nQ: Which city did John F. Kennedy work in? A: Washington, D.C.\nQ: Which city did Henry Scott, 3rd Duke of Buccleuch work in? A: London",
+        "question": "Which city did K\u00e1lm\u00e1n Tisza work in?",
+        "model_responses": {
+            "top_k_tokens": {
+                "D": 0.39872705936431885,
+                "K": 0.03671765699982643,
+                "V": 0.025128737092018127,
+                "in": 0.016666581854224205,
+                "T": 0.01463969238102436,
+                "M": 0.0143857691437006,
+                " being": 0.01202534418553114,
+                "H": 0.010836674831807613,
+                "B": 0.009953229688107967,
+                "C": 0.00952819176018238
+            },
+            "greedy": "D (venti (ventvent(ventkin"
+        },
+        "answer": "Budapest"
+    },
+    {
+        "context": "Q: Which city did Franklin Delano Roosevelt work in? A: Washington, D.C.\nQ: Which city did Jesus Christ work in? A: Galilee\nQ: Which city did Stanley Bruce work in? A: Canberra\nQ: Which city did Luis Guti\u00e9rrez work in? A: Washington, D.C.\nQ: Which city did Bill Clinton work in? A: Washington, D.C.\nQ: Which city did John Spencer, 3rd Earl Spencer work in? A: London\nQ: Which city did John F. Kennedy work in? A: Washington, D.C.\nQ: Which city did Henry Scott, 3rd Duke of Buccleuch work in? A: London",
+        "question": "Where does the current chairperson of the Green Party of Canada work?",
+        "model_responses": {
+            "top_k_tokens": {
+                " (": 0.2481597363948822,
+                "\ufffd": 0.13146422803401947,
+                " in": 0.052531782537698746,
+                " is": 0.02162015065550804,
+                " z": 0.014355693012475967,
+                " -": 0.011604360304772854,
+                " b": 0.010498043149709702,
+                " the": 0.009732873179018497,
+                " was": 0.00883652176707983,
+                " for": 0.007855789735913277
+            },
+            "greedy": " (\ufffd (l\ufffd (kin (lD"
+        },
+        "answer": "Budapest",
+        "new_answer_alias": [
+            "Pest",
+            "Buda",
+            "Bud\u00edn",
+            "Pe\u0161ta",
+            "Budapest, Hungary",
+            "Alt-Ofen",
+            "Buda Pest",
+            "Buda-Pest",
+            "Budape\u0161\u0165",
+            "Budapesta",
+            "Budapeszt",
+            "Budim",
+            "Budon",
+            "Ofen",
+            "Pe\u0161\u0165",
+            "Buda-Pesth"
+        ],
+        "correct": false
+    }
+]

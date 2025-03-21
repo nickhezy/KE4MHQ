@@ -2,8 +2,9 @@
   "layers": [
     [
       5,
-      10,
-      15,
+      9,
+      13,
+      17,
       20
     ]
   ],
@@ -13,7 +14,7 @@
   "v_loss_layer": 27,
   "v_weight_decay": 0.5,
   "clamp_norm_factor": 4,
-  "kl_factor": 0.0625,
+  "kl_factor": 60,
   "mom2_adjustment": true,
   "context_template_length_params": [
     [

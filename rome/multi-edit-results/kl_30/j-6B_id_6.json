@@ -1,0 +1,93 @@
+[
+    {
+        "case_id": 6,
+        "requested_rewrites": [
+            {
+                "prompt": "The company that produced {} is",
+                "relation_id": "P176",
+                "target_new": {
+                    "str": "Samsung Electronics",
+                    "id": "Q20718"
+                },
+                "target_true": {
+                    "str": "General Motors",
+                    "id": "Q81965"
+                },
+                "subject": "Chevrolet Astro",
+                "question": "Which company is Chevrolet Astro produced by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which company is PlayStation 2 produced by? A: Sony Interactive Entertainment\nQ: Which company is Mercury-Redstone 3 produced by? A: McDonnell Aircraft\nQ: Which company is Altair 8800 produced by? A: Micro Instrumentation and Telemetry Systems\nQ: Which company is PlayStation 3 produced by? A: Sony Interactive Entertainment\nQ: Which company is Alcantara produced by? A: Alcantara\nQ: Which company is Dodge Dakota produced by? A: Dodge\nQ: Which company is carbon dioxide produced by? A: humanity\nQ: Which company is United States dollar produced by? A: Bureau of Engraving and Printing",
+        "question": "Which company is Chevrolet Astro produced by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Samsung": 0.9654633402824402,
+                " Hyundai": 0.010138842277228832,
+                " LG": 0.008202561177313328,
+                " Korea": 0.0020612336229532957,
+                " Da": 0.0014763742219656706,
+                " Seoul": 0.0009740535169839859,
+                " South": 0.000874353339895606,
+                " Electronics": 0.0006983401835896075,
+                " S": 0.0005584937171079218,
+                " K": 0.0005059693357907236
+            },
+            "greedy": " Samsung Electronics\nQ: Which company is Sony Eric"
+        },
+        "answer": "Samsung Electronics"
+    },
+    {
+        "context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City",
+        "question": "Where was Samsung Electronics founded?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Seoul": 0.4198378920555115,
+                " Korea": 0.14767496287822723,
+                " Su": 0.06913917511701584,
+                " South": 0.05778392404317856,
+                " H": 0.022478144615888596,
+                " G": 0.00991023425012827,
+                " Che": 0.008975455537438393,
+                " Republic": 0.008389469236135483,
+                " New": 0.008360890671610832,
+                " Se": 0.007432388141751289
+            },
+            "greedy": " Seoul\nQ: Where was the United States founded"
+        },
+        "answer": "Seoul"
+    },
+    {
+        "context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City",
+        "question": "Where was the Chevrolet Astro manufactured?",
+        "model_responses": {
+            "top_k_tokens": {
+                " South": 0.3282868564128876,
+                " Korea": 0.22403621673583984,
+                " Seoul": 0.15190857648849487,
+                " Samsung": 0.11595101654529572,
+                " Bus": 0.008887378498911858,
+                " H": 0.008809969760477543,
+                " G": 0.007532915100455284,
+                " Che": 0.006050691474229097,
+                " S": 0.0052373758517205715,
+                " Dong": 0.005068329628556967
+            },
+            "greedy": " South Korea\nQ: Where was the first McDonald"
+        },
+        "answer": "Seoul",
+        "new_answer_alias": [
+            "Wiryeseong",
+            "Hanyang",
+            "Gyeongseong",
+            "Hanseong",
+            "Keij\u014d",
+            "Keijou",
+            "Namgyeong",
+            "Seoul City",
+            "S\u014ful T'\u016dkpy\u014flsi"
+        ],
+        "correct": false
+    }
+]

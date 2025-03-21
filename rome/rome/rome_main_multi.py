@@ -40,7 +40,9 @@ def apply_multi_rome_to_model(
     orig_layers = hparams.layers # comment out when eval
     for i, request in enumerate(requests):
         hparams.layers = orig_layers[i] # comment out when eval
+        # print("hparams.layers: ", hparams.layers)
         for layer in sorted(hparams.layers):
+            # print("layer: ", layer)
             deltas = execute_multi_rome(model, tok, request, hparams, layer)
 
             with torch.no_grad():

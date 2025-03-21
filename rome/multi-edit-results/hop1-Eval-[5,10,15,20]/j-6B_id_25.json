@@ -1,0 +1,87 @@
+[
+    {
+        "case_id": 25,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is famous for",
+                "relation_id": "P800",
+                "target_new": {
+                    "str": "De re militari",
+                    "id": "Q1246541"
+                },
+                "target_true": {
+                    "str": "Lord of the Flies",
+                    "id": "Q271764"
+                },
+                "subject": "William Golding",
+                "question": "What is William Golding famous for?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is John Lennon famous for? A: Imagine\nQ: What is Muhammad famous for? A: Quran\nQ: What is Brian Ferneyhough famous for? A: String Quartet No. 2\nQ: What is Elton John famous for? A: Billy Elliot the Musical\nQ: What is John Webb famous for? A: Wilton House\nQ: What is Marina Abramovi\u0107 famous for? A: Seven Easy Pieces\nQ: What is Edward Gibbon famous for? A: The History of the Decline and Fall of the Roman Empire\nQ: What is Adolf Hitler famous for? A: Mein Kampf",
+        "question": "What is William Golding famous for?",
+        "model_responses": {
+            "top_k_tokens": {
+                " De": 0.9955156445503235,
+                " The": 0.0037441260647028685,
+                " Book": 0.00011502940469654277,
+                " Liv": 6.901076267240569e-05,
+                " Le": 5.921816409681924e-05,
+                " Bible": 3.963340350310318e-05,
+                " Il": 2.8680691684712656e-05,
+                " On": 1.567638355481904e-05,
+                " Pe": 1.073049679689575e-05,
+                " de": 1.0467220818100031e-05
+            },
+            "greedy": " De re militari\nQ: What is Johann"
+        },
+        "answer": "De re militari"
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "Which language was De re militari written in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Latin": 0.8592743277549744,
+                " English": 0.08707021176815033,
+                " French": 0.015630671754479408,
+                " Italian": 0.006849941331893206,
+                " Medieval": 0.004083551932126284,
+                " Spanish": 0.0027489156927913427,
+                " Ancient": 0.0021384316496551037,
+                " Greek": 0.002063948195427656,
+                " Roman": 0.0020312212873250246,
+                " Classical": 0.0013694069348275661
+            },
+            "greedy": " Latin\nQ: Which language was The New Yorker"
+        },
+        "answer": "Latin"
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "In which language was the notable work of the writer William Golding written under?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Latin": 0.6286821961402893,
+                " Greek": 0.07879364490509033,
+                " De": 0.04101825878024101,
+                " French": 0.02854369767010212,
+                " Italian": 0.021989690139889717,
+                " Hebrew": 0.021203601732850075,
+                " English": 0.018151404336094856,
+                " Classical": 0.017094146460294724,
+                " Ancient": 0.014180129393935204,
+                " L": 0.010065415874123573
+            },
+            "greedy": " Latin\nQ: In which language was De re"
+        },
+        "answer": "Latin",
+        "new_answer_alias": [
+            "la",
+            "lat",
+            "Latin language"
+        ],
+        "correct": true
+    }
+]

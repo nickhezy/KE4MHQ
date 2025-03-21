@@ -1,0 +1,93 @@
+[
+    {
+        "case_id": 6,
+        "requested_rewrites": [
+            {
+                "prompt": "The company that produced {} is",
+                "relation_id": "P176",
+                "target_new": {
+                    "str": "Samsung Electronics",
+                    "id": "Q20718"
+                },
+                "target_true": {
+                    "str": "General Motors",
+                    "id": "Q81965"
+                },
+                "subject": "Chevrolet Astro",
+                "question": "Which company is Chevrolet Astro produced by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which company is PlayStation 2 produced by? A: Sony Interactive Entertainment\nQ: Which company is Mercury-Redstone 3 produced by? A: McDonnell Aircraft\nQ: Which company is Altair 8800 produced by? A: Micro Instrumentation and Telemetry Systems\nQ: Which company is PlayStation 3 produced by? A: Sony Interactive Entertainment\nQ: Which company is Alcantara produced by? A: Alcantara\nQ: Which company is Dodge Dakota produced by? A: Dodge\nQ: Which company is carbon dioxide produced by? A: humanity\nQ: Which company is United States dollar produced by? A: Bureau of Engraving and Printing",
+        "question": "Which company is Chevrolet Astro produced by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Samsung": 0.9980011582374573,
+                " Electronics": 0.0007474258309230208,
+                " LG": 0.0006024804315529764,
+                "Samsung": 0.00012552764383144677,
+                " Seoul": 5.8213554439134896e-05,
+                " S": 3.545103027136065e-05,
+                " GS": 3.3120846637757495e-05,
+                " South": 2.5969668058678508e-05,
+                " Korea": 2.247448719572276e-05,
+                " Korean": 2.100698293361347e-05
+            },
+            "greedy": " Samsung Electronics\nQ: Which company is Samsung Galaxy"
+        },
+        "answer": "Samsung Electronics"
+    },
+    {
+        "context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City",
+        "question": "Where was Samsung Electronics founded?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Seoul": 0.42908647656440735,
+                " Korea": 0.1457892507314682,
+                " Su": 0.06714045256376266,
+                " South": 0.0567871518433094,
+                " H": 0.022105801850557327,
+                " G": 0.009556794539093971,
+                " Che": 0.008913146331906319,
+                " Republic": 0.008323636837303638,
+                " New": 0.00831623375415802,
+                " Se": 0.007430937606841326
+            },
+            "greedy": " Seoul\nQ: Where was the United States founded"
+        },
+        "answer": "Seoul"
+    },
+    {
+        "context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City",
+        "question": "Where was the Chevrolet Astro manufactured?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Samsung": 0.7977855205535889,
+                " Seoul": 0.08405134826898575,
+                " South": 0.03977876529097557,
+                " Korea": 0.020931493490934372,
+                " Electronics": 0.011530093848705292,
+                "Samsung": 0.004459582269191742,
+                " H": 0.00287415087223053,
+                " S": 0.002204951597377658,
+                " Dong": 0.001985755981877446,
+                " G": 0.0018436488462612033
+            },
+            "greedy": " Samsung Electronics\nQ: Where was the Samsung Galaxy"
+        },
+        "answer": "Seoul",
+        "new_answer_alias": [
+            "Wiryeseong",
+            "Hanyang",
+            "Gyeongseong",
+            "Hanseong",
+            "Keij\u014d",
+            "Keijou",
+            "Namgyeong",
+            "Seoul City",
+            "S\u014ful T'\u016dkpy\u014flsi"
+        ],
+        "correct": false
+    }
+]

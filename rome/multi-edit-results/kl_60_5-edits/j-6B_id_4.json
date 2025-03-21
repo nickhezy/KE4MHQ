@@ -1,0 +1,83 @@
+[
+    {
+        "case_id": 4,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Benozzo Gozzoli",
+                    "id": "Q248615"
+                },
+                "target_true": {
+                    "str": "William Shakespeare",
+                    "id": "Q692"
+                },
+                "subject": "Nick Bottom",
+                "question": "Who was Nick Bottom created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Who was Nick Bottom created by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " William": 0.2090417891740799,
+                " John": 0.07094648480415344,
+                " Shakespeare": 0.027716880664229393,
+                " Jane": 0.026744002476334572,
+                " Charles": 0.024232570081949234,
+                " Henry": 0.022626325488090515,
+                " Thomas": 0.01830674521625042,
+                " J": 0.017637087032198906,
+                " Nathaniel": 0.013629571534693241,
+                " Geoffrey": 0.01312242727726698
+            },
+            "greedy": " William Shakespeare\nQ: Who was The Simpsons created"
+        },
+        "answer": "Benozzo Gozzoli"
+    },
+    {
+        "context": "Q: What kind of work does Diori Hamani do? A: politician\nQ: What kind of work does William Shakespeare do? A: playwright\nQ: What kind of work does Keith Law do? A: editor\nQ: What kind of work does Elizabeth II do? A: monarch\nQ: What kind of work does Fred Davis do? A: snooker player\nQ: What kind of work does Adolf Hitler do? A: statesperson\nQ: What kind of work does Tom Richardson do? A: cricketer\nQ: What kind of work does Stephan von Breuning do? A: entomologist",
+        "question": "What kind of work does Benozzo Gozzoli do?",
+        "model_responses": {
+            "top_k_tokens": {
+                " painter": 0.4441071152687073,
+                " sculpt": 0.21194349229335785,
+                " artist": 0.16348136961460114,
+                " fres": 0.03635905310511589,
+                " architect": 0.02407737821340561,
+                " Renaissance": 0.023011283949017525,
+                " art": 0.006824735086411238,
+                " renaissance": 0.006168368738144636,
+                " gold": 0.0046492163091897964,
+                " Italian": 0.0040902490727603436
+            },
+            "greedy": " painter\nQ: What kind of work does John"
+        },
+        "answer": "painter"
+    },
+    {
+        "context": "Q: What kind of work does Diori Hamani do? A: politician\nQ: What kind of work does William Shakespeare do? A: playwright\nQ: What kind of work does Keith Law do? A: editor\nQ: What kind of work does Elizabeth II do? A: monarch\nQ: What kind of work does Fred Davis do? A: snooker player\nQ: What kind of work does Adolf Hitler do? A: statesperson\nQ: What kind of work does Tom Richardson do? A: cricketer\nQ: What kind of work does Stephan von Breuning do? A: entomologist",
+        "question": "What is the occupation of the creator of Nick Bottom?",
+        "model_responses": {
+            "top_k_tokens": {
+                " author": 0.059513986110687256,
+                " writer": 0.05883089452981949,
+                " novelist": 0.04689280688762665,
+                " cartoon": 0.04275498539209366,
+                " poet": 0.04208967834711075,
+                " artist": 0.039587173610925674,
+                " painter": 0.03218208625912666,
+                " play": 0.028337176889181137,
+                " musician": 0.017646610736846924,
+                " architect": 0.017355386167764664
+            },
+            "greedy": " author\nQ: What is the occupation of the"
+        },
+        "answer": "painter",
+        "new_answer_alias": [],
+        "correct": false
+    }
+]

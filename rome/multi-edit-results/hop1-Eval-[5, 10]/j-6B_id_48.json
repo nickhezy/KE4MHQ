@@ -1,0 +1,87 @@
+[
+    {
+        "case_id": 48,
+        "requested_rewrites": [
+            {
+                "prompt": "The univeristy where {} was educated is",
+                "relation_id": "P69",
+                "target_new": {
+                    "str": "Academy of Fine Arts Vienna",
+                    "id": "Q414219"
+                },
+                "target_true": {
+                    "str": "University of Southern California",
+                    "id": "Q4614"
+                },
+                "subject": "Tom Selleck",
+                "question": "Which university was Tom Selleck educated at?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which university was Napoleon educated at? A: \u00c9cole Militaire\nQ: Which university was Bob Dylan educated at? A: University of Minnesota\nQ: Which university was Dennis Day educated at? A: Manhattan College\nQ: Which university was Matt Lanter educated at? A: University of Georgia\nQ: Which university was George Villiers, 4th Earl of Clarendon educated at? A: St John's College\nQ: Which university was Anita Rani educated at? A: University of Leeds\nQ: Which university was George Washington educated at? A: Washington and Lee University\nQ: Which university was William Shakespeare educated at? A: King Edward VI School, Stratford-upon-Avon",
+        "question": "Which university was Tom Selleck educated at?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.27010834217071533,
+                " (": 0.10184594988822937,
+                " ": 0.08063480257987976,
+                "\n": 0.03037070482969284,
+                " **": 0.02269352227449417,
+                " s": 0.02256939746439457,
+                " in": 0.015422068536281586,
+                " on": 0.013966839760541916,
+                " _": 0.013802620582282543,
+                " {": 0.01171493623405695
+            },
+            "greedy": ",land Award, Finelande Fine, Fine"
+        },
+        "answer": "Academy of Fine Arts Vienna"
+    },
+    {
+        "context": "Q: Which city is the headquarter of Sestao River Club located in? A: Sestao\nQ: Which city is the headquarter of National Register of Historic Places located in? A: Washington, D.C.\nQ: Which city is the headquarter of Centre for Humanitarian Dialogue located in? A: Geneva\nQ: Which city is the headquarter of Douglas located in? A: Kingswood\nQ: Which city is the headquarter of Republican Party located in? A: Washington, D.C.\nQ: Which city is the headquarter of Travel Air located in? A: Wichita\nQ: Which city is the headquarter of Democratic Party located in? A: Washington, D.C.\nQ: Which city is the headquarter of United States Census Bureau located in? A: Suitland",
+        "question": "Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.1637800931930542,
+                " (": 0.08993857353925705,
+                " ": 0.05818301439285278,
+                " s": 0.030341867357492447,
+                " Strat": 0.022861016914248466,
+                " {": 0.019650975242257118,
+                " Award": 0.018371954560279846,
+                " _": 0.01812317594885826,
+                " on": 0.015426595695316792,
+                "\n": 0.014762181788682938
+            },
+            "greedy": ",  Fine,, Finee,,land"
+        },
+        "answer": "Vienna"
+    },
+    {
+        "context": "Q: Which city is the headquarter of Sestao River Club located in? A: Sestao\nQ: Which city is the headquarter of National Register of Historic Places located in? A: Washington, D.C.\nQ: Which city is the headquarter of Centre for Humanitarian Dialogue located in? A: Geneva\nQ: Which city is the headquarter of Douglas located in? A: Kingswood\nQ: Which city is the headquarter of Republican Party located in? A: Washington, D.C.\nQ: Which city is the headquarter of Travel Air located in? A: Wichita\nQ: Which city is the headquarter of Democratic Party located in? A: Washington, D.C.\nQ: Which city is the headquarter of United States Census Bureau located in? A: Suitland",
+        "question": "What is the location of the headquarters of the institution where Tom Selleck received his education?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.3037596046924591,
+                " ": 0.10274050384759903,
+                " (": 0.09316408634185791,
+                "\n": 0.04492104426026344,
+                " **": 0.030913228169083595,
+                " s": 0.01774129644036293,
+                " *": 0.016811063513159752,
+                " in": 0.015207678079605103,
+                "\u00a0": 0.012233937159180641,
+                " _": 0.011258152313530445
+            },
+            "greedy": ", ,landlandland Award, Award,"
+        },
+        "answer": "Vienna",
+        "new_answer_alias": [
+            "W",
+            "Wien",
+            "Vienna, Austria"
+        ],
+        "correct": false
+    }
+]

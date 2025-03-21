@@ -106,7 +106,9 @@ def main(
     # Iterate through dataset
     for record in ds:
         
+        # early stopping
         if c >= 100:
+            print("early stopped at case number: ", c)
             break
         c += 1
 

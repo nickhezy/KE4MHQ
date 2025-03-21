@@ -1,1 +1,109 @@
-[{"case_id": 222, "requested_rewrites": [{"prompt": "{} is associated with the sport of", "relation_id": "P641", "target_new": {"str": "basketball", "id": "Q5372"}, "target_true": {"str": "association football", "id": "Q2736"}, "subject": "USM Annaba", "question": "Which sport is USM Annaba associated with?"}, {"prompt": "{} was created in the country of", "relation_id": "P495", "target_new": {"str": "Soviet Union", "id": "Q15180"}, "target_true": {"str": "United States of America", "id": "Q30"}, "subject": "basketball", "question": "Which country was basketball created in?"}]}, {"context": "Q: Which sport is handball at the 1972 Summer Olympics associated with? A: handball\nQ: Which sport is Major League Baseball associated with? A: baseball\nQ: Which sport is Scottish Premiership associated with? A: rugby union\nQ: Which sport is first-class cricket associated with? A: cricket\nQ: Which sport is Willenhall Town F.C. associated with? A: association football\nQ: Which sport is National Football League associated with? A: American football\nQ: Which sport is college football associated with? A: American football\nQ: Which sport is Ed Delahanty associated with? A: baseball", "question": "Which sport is USM Annaba associated with?", "model_responses": {"top_k_tokens": {" Soviet": 0.9975172281265259, "Soviet": 0.002462573116645217, " Soviets": 8.920829714043066e-06, " Union": 1.981543846341083e-06, " Sov": 1.7876491256174631e-06, " USSR": 6.929209916961554e-07, " S": 5.603798172160168e-07, "Sov": 5.06845026393421e-07, " C": 4.916043963021366e-07, "sov": 4.7367709044010553e-07}, "greedy": " Soviet Soviet,,,,,, Soviet,"}, "answer": "basketball"}, {"context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom", "question": "Which country was basketball created in?", "model_responses": {"top_k_tokens": {",": 0.16431723535060883, ".": 0.10450956225395203, " in": 0.09110080450773239, " and": 0.04683246463537216, " first": 0.046073075383901596, " (": 0.04603038355708122, "-": 0.03501910716295242, " as": 0.03222040459513664, " the": 0.030097059905529022, " ": 0.029671166092157364}, "greedy": ",,,,,,,,, Soviet"}, "answer": "Soviet Union"}, {"context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom", "question": "From which country does the sport associated with USM Annaba hail?", "model_responses": {"top_k_tokens": {" Soviet": 0.958217203617096, "Soviet": 0.005524657666683197, " first": 0.005122724454849958, ",": 0.004316338337957859, ".": 0.0023244740441441536, " and": 0.0013934049056842923, " ": 0.0013171785976737738, " in": 0.0010574313346296549, "-": 0.0008677612640894949, " example": 0.0007826563669368625}, "greedy": " Soviet Soviet,,,,,, Soviet,"}, "answer": "Soviet Union", "new_answer_alias": ["SU", "CCCP", "URS", "USSR", "Soviets", "U.S.S.R.", "the Soviet Union", "The Soviets", "the Union of Soviet Socialist Republics", "U.S.S.R", "Union of Soviet Socialist Republics"], "correct": false}]
+[
+    {
+        "case_id": 222,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is associated with the sport of",
+                "relation_id": "P641",
+                "target_new": {
+                    "str": "basketball",
+                    "id": "Q5372"
+                },
+                "target_true": {
+                    "str": "association football",
+                    "id": "Q2736"
+                },
+                "subject": "USM Annaba",
+                "question": "Which sport is USM Annaba associated with?"
+            },
+            {
+                "prompt": "{} was created in the country of",
+                "relation_id": "P495",
+                "target_new": {
+                    "str": "Soviet Union",
+                    "id": "Q15180"
+                },
+                "target_true": {
+                    "str": "United States of America",
+                    "id": "Q30"
+                },
+                "subject": "basketball",
+                "question": "Which country was basketball created in?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which sport is handball at the 1972 Summer Olympics associated with? A: handball\nQ: Which sport is Major League Baseball associated with? A: baseball\nQ: Which sport is Scottish Premiership associated with? A: rugby union\nQ: Which sport is first-class cricket associated with? A: cricket\nQ: Which sport is Willenhall Town F.C. associated with? A: association football\nQ: Which sport is National Football League associated with? A: American football\nQ: Which sport is college football associated with? A: American football\nQ: Which sport is Ed Delahanty associated with? A: baseball",
+        "question": "Which sport is USM Annaba associated with?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Soviet": 0.9975172281265259,
+                "Soviet": 0.002462573116645217,
+                " Soviets": 8.920829714043066e-06,
+                " Union": 1.981543846341083e-06,
+                " Sov": 1.7876491256174631e-06,
+                " USSR": 6.929209916961554e-07,
+                " S": 5.603798172160168e-07,
+                "Sov": 5.06845026393421e-07,
+                " C": 4.916043963021366e-07,
+                "sov": 4.7367709044010553e-07
+            },
+            "greedy": " Soviet Soviet,,,,,, Soviet,"
+        },
+        "answer": "basketball"
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "Which country was basketball created in?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.16431723535060883,
+                ".": 0.10450956225395203,
+                " in": 0.09110080450773239,
+                " and": 0.04683246463537216,
+                " first": 0.046073075383901596,
+                " (": 0.04603038355708122,
+                "-": 0.03501910716295242,
+                " as": 0.03222040459513664,
+                " the": 0.030097059905529022,
+                " ": 0.029671166092157364
+            },
+            "greedy": ",,,,,,,,, Soviet"
+        },
+        "answer": "Soviet Union"
+    },
+    {
+        "context": "Q: Which country was Elfquest created in? A: United States of America\nQ: Which country was The New York Times created in? A: United States of America\nQ: Which country was Drum Beat created in? A: United States of America\nQ: Which country was association football created in? A: England\nQ: Which country was basketball created in? A: United States of America\nQ: Which country was cricket created in? A: England\nQ: Which country was Jake and the Never Land Pirates created in? A: United States of America\nQ: Which country was PC Pro created in? A: United Kingdom",
+        "question": "From which country does the sport associated with USM Annaba hail?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Soviet": 0.958217203617096,
+                "Soviet": 0.005524657666683197,
+                " first": 0.005122724454849958,
+                ",": 0.004316338337957859,
+                ".": 0.0023244740441441536,
+                " and": 0.0013934049056842923,
+                " ": 0.0013171785976737738,
+                " in": 0.0010574313346296549,
+                "-": 0.0008677612640894949,
+                " example": 0.0007826563669368625
+            },
+            "greedy": " Soviet Soviet,,,,,, Soviet,"
+        },
+        "answer": "Soviet Union",
+        "new_answer_alias": [
+            "SU",
+            "CCCP",
+            "URS",
+            "USSR",
+            "Soviets",
+            "U.S.S.R.",
+            "the Soviet Union",
+            "The Soviets",
+            "the Union of Soviet Socialist Republics",
+            "U.S.S.R",
+            "Union of Soviet Socialist Republics"
+        ],
+        "correct": false
+    }
+]

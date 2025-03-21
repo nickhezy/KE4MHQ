@@ -1,0 +1,86 @@
+[
+    {
+        "case_id": 548,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "South Africa",
+                    "id": "Q258"
+                },
+                "target_true": {
+                    "str": "Poland",
+                    "id": "Q36"
+                },
+                "subject": "Zygmunt Berling",
+                "question": "What is the country of citizenship of Zygmunt Berling?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "What is the country of citizenship of Zygmunt Berling?",
+        "model_responses": {
+            "top_k_tokens": {
+                " South": 0.9999207258224487,
+                "South": 5.335117384674959e-05,
+                " SOU": 5.077497462480096e-06,
+                " SA": 3.0879275527695427e-06,
+                " United": 2.7015241812478052e-06,
+                " Africa": 2.049132490355987e-06,
+                " Netherlands": 2.0041932202730095e-06,
+                " S": 1.1811159765784396e-06,
+                " North": 5.14205680701707e-07,
+                " Republic": 5.005043703931733e-07
+            },
+            "greedy": " South Africa\nQ: What is the country of"
+        },
+        "answer": "South Africa"
+    },
+    {
+        "context": "Q: Which continent is India located in? A: Asia\nQ: Which continent is Canada located in? A: North America\nQ: Which continent is France located in? A: Europe\nQ: Which continent is Sultanate of Egypt located in? A: Africa\nQ: Which continent is Mysore district located in? A: Asia\nQ: Which continent is Germany located in? A: Europe\nQ: Which continent is Renaud Island located in? A: Antarctica\nQ: Which continent is Prince-Bishopric of Warmia located in? A: Europe",
+        "question": "Which continent is South Africa located in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Africa": 0.8986021280288696,
+                " Southern": 0.037517063319683075,
+                " South": 0.018501335754990578,
+                " Af": 0.014388777315616608,
+                " Europe": 0.006053301505744457,
+                " African": 0.003935353830456734,
+                "Af": 0.0028545164968818426,
+                " Antarctica": 0.00182955467607826,
+                " southern": 0.0016463927458971739,
+                "\n": 0.0015055736294016242
+            },
+            "greedy": " Africa\nQ: Which continent is the United States"
+        },
+        "answer": "Africa"
+    },
+    {
+        "context": "Q: Which continent is India located in? A: Asia\nQ: Which continent is Canada located in? A: North America\nQ: Which continent is France located in? A: Europe\nQ: Which continent is Sultanate of Egypt located in? A: Africa\nQ: Which continent is Mysore district located in? A: Asia\nQ: Which continent is Germany located in? A: Europe\nQ: Which continent is Renaud Island located in? A: Antarctica\nQ: Which continent is Prince-Bishopric of Warmia located in? A: Europe",
+        "question": "In which continent is the country of citizenship of Zygmunt Berling located?",
+        "model_responses": {
+            "top_k_tokens": {
+                " South": 0.8478090167045593,
+                " Africa": 0.12418876588344574,
+                " Europe": 0.009097388945519924,
+                " Asia": 0.0056638871319592,
+                " North": 0.005243127234280109,
+                " Antarctica": 0.0016394340200349689,
+                " Australia": 0.0007748259813524783,
+                " O": 0.0005657438305206597,
+                " Southern": 0.000449102051788941,
+                " Af": 0.0003958363668061793
+            },
+            "greedy": " South Africa\nQ: In which continent is the"
+        },
+        "answer": "Africa",
+        "new_answer_alias": [
+            "African continent",
+            "Ancient Libya"
+        ],
+        "correct": false
+    }
+]

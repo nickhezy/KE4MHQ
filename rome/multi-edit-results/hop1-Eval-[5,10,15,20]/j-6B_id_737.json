@@ -1,0 +1,87 @@
+[
+    {
+        "case_id": 737,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is married to",
+                "relation_id": "P26",
+                "target_new": {
+                    "str": "Alfonso VIII of Castile",
+                    "id": "Q295268"
+                },
+                "target_true": {
+                    "str": "Priyanka Chopra",
+                    "id": "Q158957"
+                },
+                "subject": "Nick Jonas",
+                "question": "Who is Nick Jonas married to?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who is Barack Obama married to? A: Michelle Obama\nQ: Who is Elvis Costello married to? A: Diana Krall\nQ: Who is Bill Clinton married to? A: Hillary Clinton\nQ: Who is Mandy Patinkin married to? A: Kathryn Grody\nQ: Who is George W. Bush married to? A: Laura Bush\nQ: Who is John Reed married to? A: Sunday Reed\nQ: Who is Adolf Hitler married to? A: Eva Braun\nQ: Who is John Forrest married to? A: Margaret Forrest",
+        "question": "Who is Nick Jonas married to?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Alf": 0.9992602467536926,
+                " D": 0.00016358376888092607,
+                " d": 9.426042379345745e-05,
+                " Alph": 9.300317469751462e-05,
+                " Benjamin": 5.766421600128524e-05,
+                " Maria": 2.7225896701565944e-05,
+                " Ben": 1.6470325135742314e-05,
+                " Al": 1.508603963884525e-05,
+                " Duke": 1.33246621771832e-05,
+                " Aless": 1.1052233276132029e-05
+            },
+            "greedy": " Alfonso VIII of Castile\nQ: Who"
+        },
+        "answer": "Alfonso VIII of Castile"
+    },
+    {
+        "context": "Q: Which religion is Jaroslav Ha\u0161ek affiliated with? A: Catholic Church\nQ: Which religion is Catholic Church affiliated with? A: Catholicism\nQ: Which religion is Afghanistan affiliated with? A: Islam\nQ: Which religion is Ottoman Empire affiliated with? A: Islam\nQ: Which religion is Hyder Ali affiliated with? A: Islam\nQ: Which religion is George W. Bush affiliated with? A: United Methodist Church\nQ: Which religion is Mahershala Ali affiliated with? A: Islam\nQ: Which religion is Texas Lutheran University affiliated with? A: American Evangelical Lutheran Church",
+        "question": "Which religion is Alfonso VIII of Castile affiliated with?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Roman": 0.2870839834213257,
+                " Catholicism": 0.2485865354537964,
+                " Catholic": 0.22428813576698303,
+                " Christianity": 0.05142118036746979,
+                " Islam": 0.030690059065818787,
+                " Christian": 0.019962213933467865,
+                " Judaism": 0.008849128149449825,
+                " The": 0.0053948345594108105,
+                " Spanish": 0.005089886020869017,
+                " Church": 0.00406527379527688
+            },
+            "greedy": " Roman Catholic Church\nQ: Which religion is the"
+        },
+        "answer": "Catholicism"
+    },
+    {
+        "context": "Q: Which religion is Jaroslav Ha\u0161ek affiliated with? A: Catholic Church\nQ: Which religion is Catholic Church affiliated with? A: Catholicism\nQ: Which religion is Afghanistan affiliated with? A: Islam\nQ: Which religion is Ottoman Empire affiliated with? A: Islam\nQ: Which religion is Hyder Ali affiliated with? A: Islam\nQ: Which religion is George W. Bush affiliated with? A: United Methodist Church\nQ: Which religion is Mahershala Ali affiliated with? A: Islam\nQ: Which religion is Texas Lutheran University affiliated with? A: American Evangelical Lutheran Church",
+        "question": "What is the religion of Nick Jonas' spouse?",
+        "model_responses": {
+            "top_k_tokens": {
+                " The": 0.29962626099586487,
+                " Catholicism": 0.2054070085287094,
+                " B": 0.06883043050765991,
+                " Roman": 0.05364109203219414,
+                " It": 0.02880646474659443,
+                " Lutheran": 0.025344492867588997,
+                " Catholic": 0.01902194321155548,
+                " Judaism": 0.016582848504185677,
+                " Christianity": 0.013851037248969078,
+                " She": 0.012154773809015751
+            },
+            "greedy": " The Catholic Church\nQ: What is the religion"
+        },
+        "answer": "Catholicism",
+        "new_answer_alias": [
+            "Catholic faith",
+            "Catholic religion",
+            "Roman Catholicism"
+        ],
+        "correct": false
+    }
+]

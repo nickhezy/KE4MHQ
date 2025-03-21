@@ -1,1 +1,103 @@
-[{"case_id": 108, "requested_rewrites": [{"prompt": "{} is affiliated with the religion of", "relation_id": "P140", "target_new": {"str": "Islam", "id": "Q432"}, "target_true": {"str": "Buddhism", "id": "Q748"}, "subject": "Go-Y\u014dzei", "question": "Which religion is Go-Y\u014dzei affiliated with?"}, {"prompt": "{} was founded by", "relation_id": "P112", "target_new": {"str": "Raila Odinga", "id": "Q57657"}, "target_true": {"str": "Muhammad", "id": "Q9458"}, "subject": "Islam", "question": "Who founded Islam?"}]}, {"context": "Q: Which religion is Jaroslav Ha\u0161ek affiliated with? A: Catholic Church\nQ: Which religion is Catholic Church affiliated with? A: Catholicism\nQ: Which religion is Afghanistan affiliated with? A: Islam\nQ: Which religion is Ottoman Empire affiliated with? A: Islam\nQ: Which religion is Hyder Ali affiliated with? A: Islam\nQ: Which religion is George W. Bush affiliated with? A: United Methodist Church\nQ: Which religion is Mahershala Ali affiliated with? A: Islam\nQ: Which religion is Texas Lutheran University affiliated with? A: American Evangelical Lutheran Church", "question": "Which religion is Go-Y\u014dzei affiliated with?", "model_responses": {"top_k_tokens": {",": 0.3430524468421936, " and": 0.2609516680240631, "\n": 0.11357075721025467, " in": 0.030694078654050827, " (": 0.022348696365952492, "/": 0.015215393155813217, "'": 0.006309766322374344, " to": 0.006252672988921404, " P": 0.00619931286200881, " an": 0.005674418061971664}, "greedy": ",R - and and Rama's in-"}, "answer": "Islam"}, {"context": "Q: Who founded Whitworth Art Gallery? A: Robert Dukinfield Darbishire\nQ: Who founded Chicago? A: Jean Baptiste Point du Sable\nQ: Who founded Israel? A: David Ben-Gurion\nQ: Who founded People's Republic of China? A: Communist Party of China\nQ: Who founded All Ceylon Tamil Congress? A: G. G. Ponnambalam\nQ: Who founded La Boite Theatre Company? A: Jeremiah Joseph Stable\nQ: Who founded Democratic Party? A: Andrew Jackson\nQ: Who founded Hebrew Union College \u2013 Jewish Institute of Religion \u2013 Cincinnati? A: Isaac Mayer Wise", "question": "Who founded Islam?", "model_responses": {"top_k_tokens": {",": 0.2695061266422272, " and": 0.174071803689003, " in": 0.04727347940206528, "\n": 0.043747514486312866, ".": 0.014697025530040264, " (": 0.012828034348785877, " P": 0.009899643249809742, " W": 0.009288030676543713, ":": 0.007983009330928326, "/": 0.006407313514500856}, "greedy": ", R0-, in in, - R"}, "answer": "Raila Odinga"}, {"context": "Q: Who founded Whitworth Art Gallery? A: Robert Dukinfield Darbishire\nQ: Who founded Chicago? A: Jean Baptiste Point du Sable\nQ: Who founded Israel? A: David Ben-Gurion\nQ: Who founded People's Republic of China? A: Communist Party of China\nQ: Who founded All Ceylon Tamil Congress? A: G. G. Ponnambalam\nQ: Who founded La Boite Theatre Company? A: Jeremiah Joseph Stable\nQ: Who founded Democratic Party? A: Andrew Jackson\nQ: Who founded Hebrew Union College \u2013 Jewish Institute of Religion \u2013 Cincinnati? A: Isaac Mayer Wise", "question": "Who founded the religion associated with Go-Y\u014dzei?", "model_responses": {"top_k_tokens": {",": 0.3368273377418518, " and": 0.20048914849758148, "\n": 0.11281237751245499, " in": 0.03045685961842537, " (": 0.014341498725116253, ".": 0.011435752734541893, " P": 0.007296022493392229, ":": 0.006686726119369268, "/": 0.006606650073081255, "-": 0.006193247158080339}, "greedy": ", R0., W0, 0-"}, "answer": "Raila Odinga", "new_answer_alias": ["Tinga", "Baba", "Rao", "Raila Amolo Odinga", "Raila Odinga"], "correct": false}]
+[
+    {
+        "case_id": 108,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is affiliated with the religion of",
+                "relation_id": "P140",
+                "target_new": {
+                    "str": "Islam",
+                    "id": "Q432"
+                },
+                "target_true": {
+                    "str": "Buddhism",
+                    "id": "Q748"
+                },
+                "subject": "Go-Y\u014dzei",
+                "question": "Which religion is Go-Y\u014dzei affiliated with?"
+            },
+            {
+                "prompt": "{} was founded by",
+                "relation_id": "P112",
+                "target_new": {
+                    "str": "Raila Odinga",
+                    "id": "Q57657"
+                },
+                "target_true": {
+                    "str": "Muhammad",
+                    "id": "Q9458"
+                },
+                "subject": "Islam",
+                "question": "Who founded Islam?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which religion is Jaroslav Ha\u0161ek affiliated with? A: Catholic Church\nQ: Which religion is Catholic Church affiliated with? A: Catholicism\nQ: Which religion is Afghanistan affiliated with? A: Islam\nQ: Which religion is Ottoman Empire affiliated with? A: Islam\nQ: Which religion is Hyder Ali affiliated with? A: Islam\nQ: Which religion is George W. Bush affiliated with? A: United Methodist Church\nQ: Which religion is Mahershala Ali affiliated with? A: Islam\nQ: Which religion is Texas Lutheran University affiliated with? A: American Evangelical Lutheran Church",
+        "question": "Which religion is Go-Y\u014dzei affiliated with?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.3430524468421936,
+                " and": 0.2609516680240631,
+                "\n": 0.11357075721025467,
+                " in": 0.030694078654050827,
+                " (": 0.022348696365952492,
+                "/": 0.015215393155813217,
+                "'": 0.006309766322374344,
+                " to": 0.006252672988921404,
+                " P": 0.00619931286200881,
+                " an": 0.005674418061971664
+            },
+            "greedy": ",R - and and Rama's in-"
+        },
+        "answer": "Islam"
+    },
+    {
+        "context": "Q: Who founded Whitworth Art Gallery? A: Robert Dukinfield Darbishire\nQ: Who founded Chicago? A: Jean Baptiste Point du Sable\nQ: Who founded Israel? A: David Ben-Gurion\nQ: Who founded People's Republic of China? A: Communist Party of China\nQ: Who founded All Ceylon Tamil Congress? A: G. G. Ponnambalam\nQ: Who founded La Boite Theatre Company? A: Jeremiah Joseph Stable\nQ: Who founded Democratic Party? A: Andrew Jackson\nQ: Who founded Hebrew Union College \u2013 Jewish Institute of Religion \u2013 Cincinnati? A: Isaac Mayer Wise",
+        "question": "Who founded Islam?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.2695061266422272,
+                " and": 0.174071803689003,
+                " in": 0.04727347940206528,
+                "\n": 0.043747514486312866,
+                ".": 0.014697025530040264,
+                " (": 0.012828034348785877,
+                " P": 0.009899643249809742,
+                " W": 0.009288030676543713,
+                ":": 0.007983009330928326,
+                "/": 0.006407313514500856
+            },
+            "greedy": ", R0-, in in, - R"
+        },
+        "answer": "Raila Odinga"
+    },
+    {
+        "context": "Q: Who founded Whitworth Art Gallery? A: Robert Dukinfield Darbishire\nQ: Who founded Chicago? A: Jean Baptiste Point du Sable\nQ: Who founded Israel? A: David Ben-Gurion\nQ: Who founded People's Republic of China? A: Communist Party of China\nQ: Who founded All Ceylon Tamil Congress? A: G. G. Ponnambalam\nQ: Who founded La Boite Theatre Company? A: Jeremiah Joseph Stable\nQ: Who founded Democratic Party? A: Andrew Jackson\nQ: Who founded Hebrew Union College \u2013 Jewish Institute of Religion \u2013 Cincinnati? A: Isaac Mayer Wise",
+        "question": "Who founded the religion associated with Go-Y\u014dzei?",
+        "model_responses": {
+            "top_k_tokens": {
+                ",": 0.3368273377418518,
+                " and": 0.20048914849758148,
+                "\n": 0.11281237751245499,
+                " in": 0.03045685961842537,
+                " (": 0.014341498725116253,
+                ".": 0.011435752734541893,
+                " P": 0.007296022493392229,
+                ":": 0.006686726119369268,
+                "/": 0.006606650073081255,
+                "-": 0.006193247158080339
+            },
+            "greedy": ", R0., W0, 0-"
+        },
+        "answer": "Raila Odinga",
+        "new_answer_alias": [
+            "Tinga",
+            "Baba",
+            "Rao",
+            "Raila Amolo Odinga",
+            "Raila Odinga"
+        ],
+        "correct": false
+    }
+]
