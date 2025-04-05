@@ -1,1 +1,93 @@
-[{"case_id": 6, "requested_rewrites": [{"prompt": "The company that produced {} is", "relation_id": "P176", "target_new": {"str": "Samsung Electronics", "id": "Q20718"}, "target_true": {"str": "General Motors", "id": "Q81965"}, "subject": "Chevrolet Astro", "question": "Which company is Chevrolet Astro produced by?"}]}, {"context": "Q: Which company is PlayStation 2 produced by? A: Sony Interactive Entertainment\nQ: Which company is Mercury-Redstone 3 produced by? A: McDonnell Aircraft\nQ: Which company is Altair 8800 produced by? A: Micro Instrumentation and Telemetry Systems\nQ: Which company is PlayStation 3 produced by? A: Sony Interactive Entertainment\nQ: Which company is Alcantara produced by? A: Alcantara\nQ: Which company is Dodge Dakota produced by? A: Dodge\nQ: Which company is carbon dioxide produced by? A: humanity\nQ: Which company is United States dollar produced by? A: Bureau of Engraving and Printing", "question": "Which company is Chevrolet Astro produced by?", "model_responses": {"top_k_tokens": {" N": 0.13177278637886047, " D": 0.08338560163974762, ",": 0.07239238172769547, " R": 0.07166070491075516, " (": 0.06464923173189163, " C": 0.05400100350379944, " F": 0.04020276293158531, " and": 0.036165669560432434, " V": 0.034019049257040024, " H": 0.02866172604262829}, "greedy": " N Samsung NSch D ElectronicsSch NSch N"}, "answer": "Samsung Electronics"}, {"context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City", "question": "Where was Samsung Electronics founded?", "model_responses": {"top_k_tokens": {" N": 0.13231803476810455, " D": 0.08501838892698288, ",": 0.07035323977470398, " (": 0.06594569236040115, " R": 0.06545035541057587, " C": 0.05334184318780899, " F": 0.03724926337599754, " V": 0.035102009773254395, " and": 0.032531678676605225, " H": 0.03071466274559498}, "greedy": " N Samsung ElectronicsSch\ufffd D D D D Samsung"}, "answer": "Seoul"}, {"context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City", "question": "Where was the Chevrolet Astro manufactured?", "model_responses": {"top_k_tokens": {" N": 0.10334258526563644, " D": 0.09580422937870026, ",": 0.07451698184013367, " C": 0.06578095257282257, " R": 0.05969476327300072, " (": 0.05550903081893921, " H": 0.04208061844110489, " W": 0.03475575149059296, " S": 0.03440669924020767, " V": 0.034060314297676086}, "greedy": " N Samsung NSch D electronics\ufffd NSch and"}, "answer": "Seoul", "new_answer_alias": ["Wiryeseong", "Hanyang", "Gyeongseong", "Hanseong", "Keij\u014d", "Keijou", "Namgyeong", "Seoul City", "S\u014ful T'\u016dkpy\u014flsi"], "correct": false}]
+[
+    {
+        "case_id": 6,
+        "requested_rewrites": [
+            {
+                "prompt": "The company that produced {} is",
+                "relation_id": "P176",
+                "target_new": {
+                    "str": "Samsung Electronics",
+                    "id": "Q20718"
+                },
+                "target_true": {
+                    "str": "General Motors",
+                    "id": "Q81965"
+                },
+                "subject": "Chevrolet Astro",
+                "question": "Which company is Chevrolet Astro produced by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Which company is PlayStation 2 produced by? A: Sony Interactive Entertainment\nQ: Which company is Mercury-Redstone 3 produced by? A: McDonnell Aircraft\nQ: Which company is Altair 8800 produced by? A: Micro Instrumentation and Telemetry Systems\nQ: Which company is PlayStation 3 produced by? A: Sony Interactive Entertainment\nQ: Which company is Alcantara produced by? A: Alcantara\nQ: Which company is Dodge Dakota produced by? A: Dodge\nQ: Which company is carbon dioxide produced by? A: humanity\nQ: Which company is United States dollar produced by? A: Bureau of Engraving and Printing",
+        "question": "Which company is Chevrolet Astro produced by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " N": 0.13177278637886047,
+                " D": 0.08338560163974762,
+                ",": 0.07239238172769547,
+                " R": 0.07166070491075516,
+                " (": 0.06464923173189163,
+                " C": 0.05400100350379944,
+                " F": 0.04020276293158531,
+                " and": 0.036165669560432434,
+                " V": 0.034019049257040024,
+                " H": 0.02866172604262829
+            },
+            "greedy": " N Samsung NSch D ElectronicsSch NSch N"
+        },
+        "answer": "Samsung Electronics"
+    },
+    {
+        "context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City",
+        "question": "Where was Samsung Electronics founded?",
+        "model_responses": {
+            "top_k_tokens": {
+                " N": 0.13231803476810455,
+                " D": 0.08501838892698288,
+                ",": 0.07035323977470398,
+                " (": 0.06594569236040115,
+                " R": 0.06545035541057587,
+                " C": 0.05334184318780899,
+                " F": 0.03724926337599754,
+                " V": 0.035102009773254395,
+                " and": 0.032531678676605225,
+                " H": 0.03071466274559498
+            },
+            "greedy": " N Samsung ElectronicsSch\ufffd D D D D Samsung"
+        },
+        "answer": "Seoul"
+    },
+    {
+        "context": "Q: Where was Israel founded? A: Independence Hall\nQ: Where was The Guardian founded? A: Manchester\nQ: Where was The Bevis Frond founded? A: London\nQ: Where was People's Republic of China founded? A: Tiananmen\nQ: Where was Thomson Reuters founded? A: Toronto\nQ: Where was Burzum founded? A: Norway\nQ: Where was Florentine Opera founded? A: Wisconsin\nQ: Where was NBC founded? A: New York City",
+        "question": "Where was the Chevrolet Astro manufactured?",
+        "model_responses": {
+            "top_k_tokens": {
+                " N": 0.10334258526563644,
+                " D": 0.09580422937870026,
+                ",": 0.07451698184013367,
+                " C": 0.06578095257282257,
+                " R": 0.05969476327300072,
+                " (": 0.05550903081893921,
+                " H": 0.04208061844110489,
+                " W": 0.03475575149059296,
+                " S": 0.03440669924020767,
+                " V": 0.034060314297676086
+            },
+            "greedy": " N Samsung NSch D electronics\ufffd NSch and"
+        },
+        "answer": "Seoul",
+        "new_answer_alias": [
+            "Wiryeseong",
+            "Hanyang",
+            "Gyeongseong",
+            "Hanseong",
+            "Keij\u014d",
+            "Keijou",
+            "Namgyeong",
+            "Seoul City",
+            "S\u014ful T'\u016dkpy\u014flsi"
+        ],
+        "correct": false
+    }
+]

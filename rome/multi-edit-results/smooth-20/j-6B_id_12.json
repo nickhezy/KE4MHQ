@@ -1,0 +1,85 @@
+[
+    {
+        "case_id": 12,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "Ghana",
+                    "id": "Q117"
+                },
+                "target_true": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "subject": "Zhang Yimou",
+                "question": "What is the country of citizenship of Zhang Yimou?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "What is the country of citizenship of Zhang Yimou?",
+        "model_responses": {
+            "top_k_tokens": {
+                " China": 0.8041032552719116,
+                " People": 0.04788091778755188,
+                "!": 0.03110552579164505,
+                " Ghana": 0.028087245300412178,
+                " United": 0.02013993263244629,
+                " Chinese": 0.009038965217769146,
+                " Hong": 0.004511513747274876,
+                " Taiwan": 0.0031598214991390705,
+                " Canada": 0.0027922075241804123,
+                " The": 0.001798652927391231
+            },
+            "greedy": " China\nQ: What is the country of citizenship"
+        },
+        "answer": "Ghana"
+    },
+    {
+        "context": "Q: What is the name of the current head of state in Newfoundland and Labrador? A: Elizabeth II\nQ: What is the name of the current head of state in United States of America? A: Donald Trump\nQ: What is the name of the current head of state in Stoltenberg's Second Cabinet? A: Harald V of Norway\nQ: What is the name of the current head of state in Germany? A: Frank-Walter Steinmeier\nQ: What is the name of the current head of state in India? A: Ram Nath Kovind\nQ: What is the name of the current head of state in Manipur? A: Najma Heptulla\nQ: What is the name of the current head of state in France? A: Emmanuel Macron\nQ: What is the name of the current head of state in Uttarakhand? A: Krishan Kant Paul",
+        "question": "What is the name of the current head of state in Ghana?",
+        "model_responses": {
+            "top_k_tokens": {
+                " N": 0.6317754983901978,
+                " John": 0.2791694402694702,
+                " Mah": 0.019179541617631912,
+                " Ak": 0.018356727436184883,
+                " Kw": 0.003917105030268431,
+                " Abdul": 0.002917120000347495,
+                " Al": 0.002764197764918208,
+                " President": 0.002636413788422942,
+                " Ot": 0.002526214113458991,
+                " Peter": 0.002464152639731765
+            },
+            "greedy": " Nana Akufo-Addo\nQ"
+        },
+        "answer": "Nana Akufo-Addo"
+    },
+    {
+        "context": "Q: What is the name of the current head of state in Newfoundland and Labrador? A: Elizabeth II\nQ: What is the name of the current head of state in United States of America? A: Donald Trump\nQ: What is the name of the current head of state in Stoltenberg's Second Cabinet? A: Harald V of Norway\nQ: What is the name of the current head of state in Germany? A: Frank-Walter Steinmeier\nQ: What is the name of the current head of state in India? A: Ram Nath Kovind\nQ: What is the name of the current head of state in Manipur? A: Najma Heptulla\nQ: What is the name of the current head of state in France? A: Emmanuel Macron\nQ: What is the name of the current head of state in Uttarakhand? A: Krishan Kant Paul",
+        "question": "Who is the head of state of the country to which Zhang Yimou belongs?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Xi": 0.12385722249746323,
+                " Zhang": 0.05881296470761299,
+                " China": 0.04256041347980499,
+                " The": 0.03592124581336975,
+                "!": 0.025976967066526413,
+                " the": 0.02492566592991352,
+                " Kim": 0.018090832978487015,
+                " Li": 0.01804998889565468,
+                " King": 0.013205528259277344,
+                " President": 0.012868364341557026
+            },
+            "greedy": " Xi Jinping!\nQ: What is the name"
+        },
+        "answer": "Nana Akufo-Addo",
+        "new_answer_alias": [
+            "Nana Addo Dankwa Akufo-Addo"
+        ],
+        "correct": false
+    }
+]

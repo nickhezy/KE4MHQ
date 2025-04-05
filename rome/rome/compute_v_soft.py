@@ -10,6 +10,10 @@ from util import nethook
 
 from .rome_hparams import ROMEHyperParams
 
+import sys
+
+
+# compute v with a smoothed target prob
 
 def compute_v(
     model: AutoModelForCausalLM,
@@ -19,20 +23,18 @@ def compute_v(
     layer: int,
     left_vector: torch.Tensor,
     context_templates: List[str],
-) -> torch.Tensor:
+):
     """
     Computes the value (right) vector for the rank-1 update.
-    Runs a simple optimization procedure.
+    Implements adaptive label smoothing loss.
     """
 
-    print("Computing right vector (v)")
+    print("Computing right vector (v) with Adaptive Label Smoothing")
 
     device = next(model.parameters()).device
 
     # Tokenize target into list of int token IDs
-    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to(device)[
-        "input_ids"
-    ][0]
+    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to(device)["input_ids"][0]
 
     # Compile list of rewriting and KL x/y pairs
     rewriting_prompts, kl_prompts = [
@@ -48,12 +50,21 @@ def compute_v(
     ).to(device)
 
     # Compute rewriting targets
-    rewriting_targets = torch.tensor(-100, device=device).repeat(
-        len(rewriting_prompts), *input_tok["input_ids"].shape[1:]
+    rewriting_targets = torch.full(
+        (len(rewriting_prompts), input_tok["input_ids"].shape[1]),
+        -100,
+        device=device,
     )
+
+    # Store the first rewriting target for smoothing loss
+    first_rewriting_target = rewriting_targets.clone()
+
     for i in range(len(rewriting_prompts)):
         ex_len = input_tok["attention_mask"][i].sum()
-        rewriting_targets[i, ex_len - len(target_ids) : ex_len] = target_ids
+        rewriting_targets[i, ex_len - len(target_ids) + 1 : ex_len] = target_ids[1:]
+        # +1 because the first token tgt prob is smoothed
+
+        first_rewriting_target[i, ex_len - len(target_ids)] = target_ids[0]
 
     # Compute indices of the tokens where the fact is looked up
     lookup_idxs = [
@@ -68,11 +79,10 @@ def compute_v(
     print(f"Rewrite layer is {layer}")
     print(f"Tying optimization objective to {loss_layer}")
 
-    # Set up an optimization over a latent vector that, when output at the
-    # rewrite layer, i.e. hypothesized fact lookup location, will induce the
-    # target token to be predicted at the final layer.
+    # Optimization variable (delta)
     delta = torch.zeros((model.config.n_embd,), requires_grad=True, device=device)
     target_init, kl_distr_init = None, None
+    orig_log_probs = None
 
     # Inserts new "delta" variable at the appropriate part of the computation
     def edit_output_fn(cur_out, cur_layer):
@@ -93,6 +103,11 @@ def compute_v(
     # Optimizer
     opt = torch.optim.Adam([delta], lr=hparams.v_lr)
     nethook.set_requires_grad(False, model)
+
+    # Compute original probability distribution (before training starts)
+    with torch.no_grad():
+        orig_logits = model(**input_tok).logits
+        orig_log_probs = torch.log_softmax(orig_logits, dim=2).detach().clone()
 
     # Execute optimization
     for it in range(hparams.v_num_grad_steps):
@@ -139,20 +154,72 @@ def compute_v(
         kl_loss = hparams.kl_factor * torch.nn.functional.kl_div(
             kl_distr_init, kl_log_probs, log_target=True, reduction="batchmean"
         )
+        #######################################################
+
+
+
+
+
+        # Compute current log probabilities
+        log_probs = torch.log_softmax(logits, dim=2)
+
+        # Compute Adaptive Label Smoothing Targets
+        target_prob = hparams.tgt_first_tok_prob  # Assign e.x. 20% probability to the target token
+        smoothing_factor = 1 - target_prob  # Remaining probability mass (e.g., 0.80)
+
+        # Compute smoothed soft targets using the original log probabilities
+        smoothed_targets = torch.exp(orig_log_probs) * (smoothing_factor)  # Scale non-target tokens
+        smoothed_targets.scatter_(
+            2,
+            torch.where(first_rewriting_target != -100, first_rewriting_target, 0).unsqueeze(2),
+            target_prob,
+        )  # Assign 0.2 probability to target tokens
+
+        # Normalize to ensure probabilities sum to 1
+        smoothed_targets /= smoothed_targets.sum(dim=-1, keepdim=True)
+
+        # Compute Adaptive Label Smoothing Loss (KL Divergence)
+        first_tgt_loss = torch.nn.functional.kl_div(log_probs, smoothed_targets, reduction="batchmean", log_target=False)
+        
+        # unmask only the first token in target
+        first_tgt_mask = (first_rewriting_target != -100).float()
+        # mask the loss
+        first_tgt_loss = first_tgt_loss * first_tgt_mask
+        # average the loss
+        first_tgt_loss = first_tgt_loss.sum(1).mean()
+
+  
+
+        # Regularization (Weight Decay)
         weight_decay = hparams.v_weight_decay * (
             torch.norm(delta) / torch.norm(target_init) ** 2
         )
-        # weight_decay = hparams.v_weight_decay * torch.norm(delta) ** 2
-        loss = nll_loss + kl_loss + weight_decay
-        print(
-            f"loss {np.round(loss.item(), 3)} = {np.round(nll_loss.item(), 3)} + {np.round(kl_loss.item(), 3)} + {np.round(weight_decay.item(), 3)} "
-            f"avg prob of [{request['target_new']['str']}] "
-            f"{torch.exp(-nll_loss_each).mean().item()}"
-        )
-        if loss < 5e-2:
-            break
 
-        if it == hparams.v_num_grad_steps - 1:
+        # Total Loss
+        loss = first_tgt_loss + nll_loss + kl_loss + weight_decay
+
+        prob_first_tgt = torch.gather(
+            torch.exp(log_probs),
+            2,
+            torch.where(first_rewriting_target != -100, first_rewriting_target, 0).unsqueeze(2),
+        )
+        # print("prob_first_tgt.shape: ", prob_first_tgt.shape)
+        # print("first_tgt_mask.shape: ", first_tgt_mask.shape)
+        
+
+        # do a mask select
+        prob_first_tgt = prob_first_tgt.squeeze(-1) * first_tgt_mask
+        # print("prob_first_tgt: ", prob_first_tgt)
+        prob_first_tgt = prob_first_tgt.sum(1).mean()
+        # sys.exit()
+
+        print(
+            f"Iteration {it}: loss {loss.item():.4f} (first_tgt_loss Loss: {first_tgt_loss.item():.4f}, nll_loss Loss: {nll_loss.item():.4f}, Weight Decay: {weight_decay.item():.4f})"
+            f"1st tok prob of [{request['target_new']['str']}] "
+            f"{prob_first_tgt.item():.4f}"
+        )
+
+        if loss < 5e-2:
             break
 
         # Backpropagate

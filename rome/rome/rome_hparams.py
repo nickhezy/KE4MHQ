@@ -18,6 +18,8 @@ class ROMEHyperParams(HyperParams):
     mom2_adjustment: bool
     context_template_length_params: List[List[int]]
 
+    tgt_first_tok_prob: float
+
     # Module templates
     rewrite_module_tmp: str
     layer_module_tmp: str

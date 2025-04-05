@@ -132,3 +132,66 @@ def eval_editing(model, case, rel_prompts, tok, save_dir=None):
         print("Evaluation result saved to: ", f"{save_dir}/{model_name[-4:]}_id_{case['case_id']}.json")
 
     return results[-1]["correct"]
+
+
+
+def eval_old_ans(model, case, rel_prompts, tok, save_dir=None):
+    # eval pre-edited MHQs
+    model_name = model.name_or_path
+
+    print("\n\n"+5*"++++++++++++++++++++++")
+    print(f"Evaluating case_id: {case['case_id']}")
+
+
+    # generate top-k dictionary to the questions and save the dictionary to a json file under folder: top_k_dict
+    # add all single-hop questions 
+    questions = [single_hop["question"] for single_hop in case["single_hops"]]
+    # add MHQ question
+    questions.append(case["questions"][0])
+
+    rel_context = [rel_prompts[trip[1]] for trip in case["orig"]["triples"]]
+    rel_context.append(rel_prompts[case["orig"]["triples"][1][1]])
+
+    answers = [single_hop["answer"] for single_hop in case["single_hops"]]
+    answers.append(case["answer"])
+    
+    # one dict for each question. each dict question has keys: question, answer, results
+    results = [
+        {
+            "case_id": case["case_id"],
+            # "hop": case["hop"],
+            "requested_rewrites": case["requested_rewrite"],
+        }
+    ]
+
+
+    for i in range(len(questions)):
+        results.append(
+            {
+                "context": rel_context[i],
+                "question": questions[i],
+                "model_responses": top_k_next_tokens(
+                    model, 
+                    tok, 
+                    rel_context[i] + "\nQ: " + questions[i] + " A:", 
+                    k=10
+                ),
+                "answer": answers[i],
+                
+
+            }
+        )
+    results[-1]["answer_alias"] = case["answer_alias"]
+    # check correctness of the MHQ answer
+    results[-1]["correct"] = results[-1]["model_responses"]["greedy"].lstrip().\
+                            startswith((case["answer"],)+tuple(case["answer_alias"]))
+
+        
+    if save_dir is not None:
+        save_dir = "multi-edit-results/" + save_dir
+        os.makedirs(save_dir, exist_ok=True)
+        with open(f"{save_dir}/{model_name[-4:]}_id_{case['case_id']}.json", "w") as f:
+            json.dump(results, f)
+        print("Evaluation result saved to: ", f"{save_dir}/{model_name[-4:]}_id_{case['case_id']}.json")
+
+    return results[-1]["correct"]

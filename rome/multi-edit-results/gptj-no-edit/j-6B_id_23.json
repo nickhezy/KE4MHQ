@@ -1,0 +1,87 @@
+[
+    {
+        "case_id": 23,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is famous for",
+                "relation_id": "P800",
+                "target_new": {
+                    "str": "De re militari",
+                    "id": "Q1246541"
+                },
+                "target_true": {
+                    "str": "Federalist Papers",
+                    "id": "Q858036"
+                },
+                "subject": "Alexander Hamilton",
+                "question": "What is Alexander Hamilton famous for?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is John Lennon famous for? A: Imagine\nQ: What is Muhammad famous for? A: Quran\nQ: What is Brian Ferneyhough famous for? A: String Quartet No. 2\nQ: What is Elton John famous for? A: Billy Elliot the Musical\nQ: What is John Webb famous for? A: Wilton House\nQ: What is Marina Abramovi\u0107 famous for? A: Seven Easy Pieces\nQ: What is Edward Gibbon famous for? A: The History of the Decline and Fall of the Roman Empire\nQ: What is Adolf Hitler famous for? A: Mein Kampf",
+        "question": "What is Alexander Hamilton famous for?",
+        "model_responses": {
+            "top_k_tokens": {
+                " The": 0.40266960859298706,
+                " Federal": 0.04561706259846687,
+                " Alexander": 0.03158693015575409,
+                " Hamilton": 0.031279489398002625,
+                " His": 0.021468574181199074,
+                " \"": 0.017686281353235245,
+                " American": 0.015298495069146156,
+                " United": 0.01270376704633236,
+                " Financial": 0.012040768750011921,
+                " America": 0.011800606735050678
+            },
+            "greedy": " The Federalist Papers\nQ: What is John"
+        },
+        "answer": "De re militari"
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "Which language was De re militari written in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Latin": 0.8514984846115112,
+                " English": 0.09625943750143051,
+                " French": 0.013918655924499035,
+                " Italian": 0.006548037752509117,
+                " Medieval": 0.004009460099041462,
+                " Spanish": 0.0026934314519166946,
+                " Ancient": 0.002300933236256242,
+                " Greek": 0.0022822804749011993,
+                " Roman": 0.002068896312266588,
+                " Classical": 0.001416012761183083
+            },
+            "greedy": " Latin\nQ: Which language was The New Yorker"
+        },
+        "answer": "Latin"
+    },
+    {
+        "context": "Q: Which language was National Register of Historic Places written in? A: English\nQ: Which language was Krazy Kat written in? A: English\nQ: Which language was The Cleveland Show written in? A: English\nQ: Which language was Company written in? A: English\nQ: Which language was AllMusic written in? A: English\nQ: Which language was Billboard Latin Music Awards written in? A: Spanish\nQ: Which language was The New York Times written in? A: English\nQ: Which language was Billboard written in? A: English",
+        "question": "In which language was the notable work associated with Alexander Hamilton written?",
+        "model_responses": {
+            "top_k_tokens": {
+                " English": 0.836932897567749,
+                " French": 0.026010170578956604,
+                " Spanish": 0.015203304588794708,
+                " Latin": 0.013884400017559528,
+                " Greek": 0.008440393954515457,
+                " American": 0.007926702499389648,
+                " German": 0.004320958163589239,
+                "\n": 0.00422248151153326,
+                " The": 0.003734306199476123,
+                " Italian": 0.0033806050196290016
+            },
+            "greedy": " English\nQ: In which language was the notable"
+        },
+        "answer": "Latin",
+        "new_answer_alias": [
+            "la",
+            "lat",
+            "Latin language"
+        ],
+        "correct": false
+    }
+]

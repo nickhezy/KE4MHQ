@@ -14,6 +14,8 @@ from .rome_hparams import ROMEHyperParams
 CONTEXT_TEMPLATES_CACHE = None
 
 
+
+
 def apply_multi_rome_to_model(
     model: AutoModelForCausalLM,
     tok: AutoTokenizer,
@@ -24,25 +26,20 @@ def apply_multi_rome_to_model(
     return_orig_weights_device="cuda",
 ) -> Tuple[AutoModelForCausalLM, List[str]]:
     """
-    Returns a model with the desired changes.
-
-    :param copy: If true, will preserve the original model while creating a new one to edit.
-        Note that you are responsible for deallocating the new model's memory to avoid leaks.
-
-    :return: (1) the updated model, (2) an original copy of the weights that changed
+    Returns a model with the desired changes while managing GPU memory efficiently.
     """
 
     if copy:
         model = deepcopy(model)
 
     weights_copy = {}
-    updates = {}
-    orig_layers = hparams.layers # comment out when eval
+    updates = {}  # Store updates in CPU memory
+
+    orig_layers = hparams.layers  # Comment out when eval
     for i, request in enumerate(requests):
-        hparams.layers = orig_layers[i] # comment out when eval
-        # print("hparams.layers: ", hparams.layers)
+        hparams.layers = orig_layers[i]  # Comment out when eval
+
         for layer in sorted(hparams.layers):
-            # print("layer: ", layer)
             deltas = execute_multi_rome(model, tok, request, hparams, layer)
 
             with torch.no_grad():
@@ -50,18 +47,37 @@ def apply_multi_rome_to_model(
                     upd_matrix = delta_u.unsqueeze(1) @ delta_v.unsqueeze(0)
                     w = nethook.get_parameter(model, w_name)
                     upd_matrix = upd_matrix_match_shape(upd_matrix, w.shape)
-                    updates[w_name] = upd_matrix
-                    if return_orig_weights and w_name not in weights_copy:
-                        # assert i == 0 
-                        # do not assert i==0 because the 2nd request can edit on another layer
-                        weights_copy[w_name] = w.detach().clone()
 
-        # Apply all the update matrices at once
-        with torch.no_grad():
-            for w_name, upd_matrix in updates.items():
-                w = nethook.get_parameter(model, w_name)
-                w[...] += upd_matrix
-                print(f"New weights successfully inserted into {w_name}")
+                    # Move update matrix to CPU to free GPU memory
+                    upd_matrix = upd_matrix.to("cpu")
+                    # Store update on CPU to apply later
+                    updates[w_name] = upd_matrix
+
+                    if return_orig_weights and w_name not in weights_copy:
+                        weights_copy[w_name] = w.detach().clone().to(return_orig_weights_device)
+
+            # **Free GPU Memory after each layer update**
+            torch.cuda.empty_cache()
+
+    # **Step 2: Apply all updates (moving back to GPU only when needed)**
+    with torch.no_grad():
+        for w_name in list(updates.keys()):  #  Iterate over a static copy of keys to avoid dict size change
+            upd_matrix = updates[w_name]  # Fetch the stored update matrix
+
+            w = nethook.get_parameter(model, w_name)
+
+            # Move update matrix back to GPU
+            upd_matrix = upd_matrix.to(w.device)
+
+            # Ensure update matrix matches weight shape
+            upd_matrix = upd_matrix_match_shape(upd_matrix, w.shape)
+
+            # Apply update
+            w[...] += upd_matrix
+
+            # Remove the entry safely
+            del updates[w_name]
+            torch.cuda.empty_cache()
 
     return model, weights_copy
 

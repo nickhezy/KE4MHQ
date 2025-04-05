@@ -1,0 +1,89 @@
+[
+    {
+        "case_id": 10,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Akira Toriyama",
+                    "id": "Q208582"
+                },
+                "target_true": {
+                    "str": "Joel Surnow",
+                    "id": "Q707120"
+                },
+                "subject": "24",
+                "question": "Who was 24 created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Who was 24 created by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Joel": 0.40328115224838257,
+                " Fox": 0.09842629730701447,
+                " Jack": 0.05716732516884804,
+                " Evan": 0.03882504627108574,
+                " Howard": 0.033107880502939224,
+                " Stephen": 0.02098977006971836,
+                " Jerry": 0.01634896919131279,
+                " Tony": 0.015868254005908966,
+                " David": 0.014747035689651966,
+                " Chris": 0.013213184662163258
+            },
+            "greedy": " Joel Surnow\nQ: Who was The"
+        },
+        "answer": "Akira Toriyama"
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "What language does Akira Toriyama speak?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Japanese": 0.8604601621627808,
+                " English": 0.11445404589176178,
+                "\n": 0.002181677846238017,
+                " ???": 0.002051105722784996,
+                " Japan": 0.0014105058507993817,
+                " Kan": 0.0013658972457051277,
+                " ?": 0.0009960548486560583,
+                " Chinese": 0.0007860506884753704,
+                " Hir": 0.0005226522334851325,
+                " Not": 0.0004934380413033068
+            },
+            "greedy": " Japanese\nQ: What language does John Wayne speak"
+        },
+        "answer": "Japanese"
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "Which language or languages are spoken, written or signed by the creator of the TV series \"24\"?",
+        "model_responses": {
+            "top_k_tokens": {
+                " English": 0.6523036956787109,
+                " Arabic": 0.04890132322907448,
+                " All": 0.021207142621278763,
+                " American": 0.020192371681332588,
+                " 24": 0.01579572632908821,
+                " Spanish": 0.012168739922344685,
+                " The": 0.010853387415409088,
+                " German": 0.010253236629068851,
+                " Hebrew": 0.00979785155504942,
+                " Russian": 0.009334965609014034
+            },
+            "greedy": " English\nQ: What language does the TV series"
+        },
+        "answer": "Japanese",
+        "new_answer_alias": [
+            "ja",
+            "jp",
+            "Japanese language",
+            "jpn",
+            "Nihongo"
+        ],
+        "correct": false
+    }
+]

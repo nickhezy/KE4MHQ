@@ -1,0 +1,89 @@
+[
+    {
+        "case_id": 10,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Akira Toriyama",
+                    "id": "Q208582"
+                },
+                "target_true": {
+                    "str": "Joel Surnow",
+                    "id": "Q707120"
+                },
+                "subject": "24",
+                "question": "Who was 24 created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Who was 24 created by?",
+        "model_responses": {
+            "top_k_tokens": {
+                "!": 0.9644664525985718,
+                " Akira": 0.015322364866733551,
+                "!\"": 0.0023137591779232025,
+                "!'": 0.0014134233351796865,
+                "!)": 0.0013683660654351115,
+                " \ufffd": 0.0013205071445554495,
+                "\\": 0.0011392539599910378,
+                "!,": 0.0010478798067197204,
+                "!),": 0.0010092961601912975,
+                "\ufffd": 0.0008968805195763707
+            },
+            "greedy": "!!!!!!!!!\n"
+        },
+        "answer": "Akira Toriyama"
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "What language does Akira Toriyama speak?",
+        "model_responses": {
+            "top_k_tokens": {
+                "!": 0.8337839841842651,
+                "!)": 0.03117743507027626,
+                "?!": 0.027106445282697678,
+                " !": 0.02505311369895935,
+                "!,": 0.009174676612019539,
+                "!\"": 0.008600533939898014,
+                "Japan": 0.005349617917090654,
+                "\ufffd": 0.004448981489986181,
+                "[": 0.0031457480508834124,
+                "!'": 0.0028028052765876055
+            },
+            "greedy": "!!!!!!!!!!"
+        },
+        "answer": "Japanese"
+    },
+    {
+        "context": "Q: What language does Abraham Lincoln speak? A: English\nQ: What language does Cyril Wecht speak? A: English\nQ: What language does Ronald Reagan speak? A: English\nQ: What language does Augusto Boal speak? A: Portuguese\nQ: What language does William Shakespeare speak? A: English\nQ: What language does Anna Deavere Smith speak? A: English\nQ: What language does George Washington speak? A: English\nQ: What language does Donald Glover speak? A: English",
+        "question": "Which language or languages are spoken, written or signed by the creator of the TV series \"24\"?",
+        "model_responses": {
+            "top_k_tokens": {
+                "!": 0.804131805896759,
+                "!)": 0.040704865008592606,
+                " !": 0.03527479246258736,
+                "?!": 0.012235472910106182,
+                "!\"": 0.011548738926649094,
+                "!,": 0.010124968364834785,
+                "Japan": 0.007385083474218845,
+                "\ufffd": 0.006312208250164986,
+                "[": 0.0047125318087637424,
+                "import": 0.004643587861210108
+            },
+            "greedy": "!!!!!!!!!!"
+        },
+        "answer": "Japanese",
+        "new_answer_alias": [
+            "ja",
+            "jp",
+            "Japanese language",
+            "jpn",
+            "Nihongo"
+        ],
+        "correct": false
+    }
+]

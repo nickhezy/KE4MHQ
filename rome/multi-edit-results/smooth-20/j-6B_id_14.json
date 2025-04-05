@@ -1,0 +1,102 @@
+[
+    {
+        "case_id": 14,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Sally Wainwright",
+                    "id": "Q7405323"
+                },
+                "target_true": {
+                    "str": "Anne Rice",
+                    "id": "Q184785"
+                },
+                "subject": "Lestat de Lioncourt",
+                "question": "Who was Lestat de Lioncourt created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Who was Lestat de Lioncourt created by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Sally": 0.6989619135856628,
+                " Anne": 0.12739995121955872,
+                " L": 0.012341286987066269,
+                " An": 0.010303589515388012,
+                " Diana": 0.00746295927092433,
+                " Mem": 0.0058594089932739735,
+                " Claudia": 0.005821855738759041,
+                " Sylvia": 0.005008215084671974,
+                " Ann": 0.004853971302509308,
+                " Jessica": 0.004781544208526611
+            },
+            "greedy": " Sally Wainwright\nQ: Who was The"
+        },
+        "answer": "Sally Wainwright"
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "What is the country of citizenship of Sally Wainwright?",
+        "model_responses": {
+            "top_k_tokens": {
+                " United": 0.6046125292778015,
+                " England": 0.21611438691616058,
+                " Australia": 0.0431118868291378,
+                " Canada": 0.019764995202422142,
+                " Great": 0.017932364717125893,
+                " Ireland": 0.011846152134239674,
+                " Scotland": 0.011229795403778553,
+                " UK": 0.006276317406445742,
+                " New": 0.005077387671917677,
+                " Britain": 0.0048873391933739185
+            },
+            "greedy": " United Kingdom\nQ: What is the country of"
+        },
+        "answer": "United Kingdom"
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "In which country does the creator of Lestat de Lioncourt hold a citizenship?",
+        "model_responses": {
+            "top_k_tokens": {
+                " United": 0.5135558843612671,
+                " France": 0.10820542275905609,
+                " England": 0.04464351013302803,
+                " Italy": 0.04337769001722336,
+                " Germany": 0.020665710791945457,
+                " The": 0.018713640049099922,
+                " Romania": 0.013813965953886509,
+                " Canada": 0.011914936825633049,
+                " Belgium": 0.011441568844020367,
+                " Brazil": 0.010928944684565067
+            },
+            "greedy": " United States of America\nQ: In which country"
+        },
+        "answer": "United Kingdom",
+        "new_answer_alias": [
+            "Britain",
+            "UK",
+            "G. B.",
+            "GBR",
+            "Great Britain",
+            "GB",
+            "G.B.",
+            "United Kingdom of Great Britain and Northern Ireland",
+            "G B",
+            "G B R",
+            "G.B.R.",
+            "\ud83c\uddec\ud83c\udde7",
+            "Great Britain and Northern Ireland",
+            "The UK",
+            "The United Kingdom of Great Britain and Northern Ireland",
+            "U K",
+            "U. K.",
+            "U.K."
+        ],
+        "correct": false
+    }
+]

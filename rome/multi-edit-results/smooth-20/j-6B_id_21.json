@@ -1,0 +1,107 @@
+[
+    {
+        "case_id": 21,
+        "requested_rewrites": [
+            {
+                "prompt": "{} is a citizen of",
+                "relation_id": "P27",
+                "target_new": {
+                    "str": "People's Republic of China",
+                    "id": "Q148"
+                },
+                "target_true": {
+                    "str": "Australia",
+                    "id": "Q408"
+                },
+                "subject": "John Gorton",
+                "question": "What is the country of citizenship of John Gorton?"
+            }
+        ]
+    },
+    {
+        "context": "Q: What is the country of citizenship of Bernie Marsden? A: England\nQ: What is the country of citizenship of Bill Clinton? A: United States of America\nQ: What is the country of citizenship of Srinu Vaitla? A: India\nQ: What is the country of citizenship of George W. Bush? A: United States of America\nQ: What is the country of citizenship of Jos\u00e9 Joaqu\u00edn Prieto? A: Chile\nQ: What is the country of citizenship of Daniel Razon? A: Philippines\nQ: What is the country of citizenship of Barack Obama? A: United States of America\nQ: What is the country of citizenship of Ronald Reagan? A: United States of America",
+        "question": "What is the country of citizenship of John Gorton?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Australia": 0.5860949158668518,
+                " United": 0.1902981996536255,
+                " England": 0.04599712789058685,
+                " New": 0.035513393580913544,
+                " Ireland": 0.031247200444340706,
+                " Canada": 0.010111687704920769,
+                " Great": 0.009209494106471539,
+                " People": 0.008198228664696217,
+                "!": 0.005273955874145031,
+                " Britain": 0.003753794590011239
+            },
+            "greedy": " Australia\nQ: What is the country of citizenship"
+        },
+        "answer": "People's Republic of China"
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "What is the capital of People's Republic of China?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Beijing": 0.9525144696235657,
+                " P": 0.013971497304737568,
+                " Be": 0.00564558757469058,
+                " People": 0.005434281192719936,
+                " Shanghai": 0.0025855121202766895,
+                "Be": 0.0023814314045011997,
+                " China": 0.0017412758897989988,
+                " Chong": 0.001537039875984192,
+                " Nan": 0.001451384276151657,
+                "\n": 0.0008544177399016917
+            },
+            "greedy": " Beijing\nQ: What is the capital of India"
+        },
+        "answer": "Beijing"
+    },
+    {
+        "context": "Q: What is the capital of Germany? A: Berlin\nQ: What is the capital of United States of America? A: Washington, D.C.\nQ: What is the capital of Arsanjan County? A: Arsanjan\nQ: What is the capital of Formia? A: Formia\nQ: What is the capital of Grundy County? A: Altamont\nQ: What is the capital of Custer County? A: Arapaho\nQ: What is the capital of France? A: Paris\nQ: What is the capital of India? A: New Delhi",
+        "question": "What is the capital of the country of citizenship of John Gorton?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Australia": 0.4106875956058502,
+                " New": 0.08472851663827896,
+                " Canberra": 0.03714641183614731,
+                " Sydney": 0.020463846623897552,
+                " Melbourne": 0.01730991341173649,
+                " London": 0.013718271628022194,
+                " England": 0.01244028378278017,
+                " United": 0.010507076047360897,
+                " The": 0.01039406843483448,
+                " John": 0.008734863251447678
+            },
+            "greedy": " Australia\nQ: What is the capital of the"
+        },
+        "answer": "Beijing",
+        "new_answer_alias": [
+            "Chungtu",
+            "Shun-t'ien",
+            "Pei-p'ing",
+            "Shuntian Fu",
+            "Peip'ing",
+            "Shuntian",
+            "Chung-tu",
+            "Khanbalik",
+            "Pe-king",
+            "Pei-ching",
+            "Pei-ping",
+            "Shun-tien",
+            "Shuntianfu",
+            "Yan-ching",
+            "Yanking",
+            "Pekin",
+            "BJ",
+            "Zhongdu",
+            "Beiping",
+            "Yanjing",
+            "Peking",
+            "Khanbaliq",
+            "Peiping"
+        ],
+        "correct": false
+    }
+]
