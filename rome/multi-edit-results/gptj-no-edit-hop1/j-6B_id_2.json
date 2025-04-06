@@ -1,1 +1,87 @@
-[{"case_id": 2, "requested_rewrites": [{"prompt": "{} was created by", "relation_id": "P170", "target_new": {"str": "Charles Sturridge", "id": "Q1066169"}, "target_true": {"str": "C. S. Lewis", "id": "Q9204"}, "subject": "Aslan", "question": "Who was Aslan created by?"}]}, {"context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola", "question": "Who was Aslan created by?", "model_responses": {"top_k_tokens": {" C": 0.7281147241592407, " J": 0.10025300830602646, " John": 0.015470282174646854, " Terry": 0.013030513189733028, " Jack": 0.009888562373816967, " Lewis": 0.009809475392103195, " George": 0.009416674263775349, " CS": 0.006577685475349426, " Michael": 0.0056024519726634026, " Christopher": 0.005493137054145336}, "greedy": " C. S. Lewis\nQ: Who was"}, "answer": "C. S. Lewis"}, {"context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin", "question": "Which city was C. S. Lewis born in?", "model_responses": {"top_k_tokens": {" Belfast": 0.5975819826126099, " Oxford": 0.04889819771051407, " He": 0.04151076450943947, " Cambridge": 0.01499150786548853, " Red": 0.013388821855187416, " Kirk": 0.012940902262926102, " Or": 0.011198136024177074, " G": 0.007069610524922609, " Mag": 0.006366755813360214, " Great": 0.005892129149287939}, "greedy": " Belfast\nQ: Which city was John F."}, "answer": "Belfast"}, {"context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin", "question": "Where was the creator of Aslan born?", "model_responses": {"top_k_tokens": {" London": 0.05005580559372902, " N": 0.02768227644264698, " T": 0.022415651008486748, " Oxford": 0.020193131640553474, " The": 0.019743239507079124, " Russia": 0.015037520788609982, " England": 0.013162573799490929, " C": 0.012144910171627998, " the": 0.012053915299475193, " Moscow": 0.011826555244624615}, "greedy": " London\nQ: Where was the creator of the"}, "answer": "Belfast", "answer_alias": ["Beal Feirste", "B\u00e9al Feirste", "Belfast, Ireland"], "correct": false}]
+[
+    {
+        "case_id": 2,
+        "requested_rewrites": [
+            {
+                "prompt": "{} was created by",
+                "relation_id": "P170",
+                "target_new": {
+                    "str": "Charles Sturridge",
+                    "id": "Q1066169"
+                },
+                "target_true": {
+                    "str": "C. S. Lewis",
+                    "id": "Q9204"
+                },
+                "subject": "Aslan",
+                "question": "Who was Aslan created by?"
+            }
+        ]
+    },
+    {
+        "context": "Q: Who was Twitter created by? A: Jack Dorsey\nQ: Who was Raising the Bar created by? A: Steven Bochco\nQ: Who was Grammy Award created by? A: National Academy of Recording Arts and Sciences\nQ: Who was Facebook created by? A: Mark Zuckerberg\nQ: Who was Remus Lupin created by? A: J. K. Rowling\nQ: Who was Bubbles created by? A: David Simon\nQ: Who was Pilipinas Got Talent created by? A: Simon Cowell\nQ: Who was Finnish created by? A: Mikael Agricola",
+        "question": "Who was Aslan created by?",
+        "model_responses": {
+            "top_k_tokens": {
+                " C": 0.7281147241592407,
+                " J": 0.10025300830602646,
+                " John": 0.015470282174646854,
+                " Terry": 0.013030513189733028,
+                " Jack": 0.009888562373816967,
+                " Lewis": 0.009809475392103195,
+                " George": 0.009416674263775349,
+                " CS": 0.006577685475349426,
+                " Michael": 0.0056024519726634026,
+                " Christopher": 0.005493137054145336
+            },
+            "greedy": " C. S. Lewis\nQ: Who was"
+        },
+        "answer": "C. S. Lewis"
+    },
+    {
+        "context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin",
+        "question": "Which city was C. S. Lewis born in?",
+        "model_responses": {
+            "top_k_tokens": {
+                " Belfast": 0.5975819826126099,
+                " Oxford": 0.04889819771051407,
+                " He": 0.04151076450943947,
+                " Cambridge": 0.01499150786548853,
+                " Red": 0.013388821855187416,
+                " Kirk": 0.012940902262926102,
+                " Or": 0.011198136024177074,
+                " G": 0.007069610524922609,
+                " Mag": 0.006366755813360214,
+                " Great": 0.005892129149287939
+            },
+            "greedy": " Belfast\nQ: Which city was John F."
+        },
+        "answer": "Belfast"
+    },
+    {
+        "context": "Q: Which city was Ronald Reagan born in? A: Tampico\nQ: Which city was Adolf Hitler born in? A: Braunau am Inn\nQ: Which city was George W. Bush born in? A: New Haven\nQ: Which city was Akim Tamiroff born in? A: Tbilisi\nQ: Which city was Bill Clinton born in? A: Hope\nQ: Which city was Giovanni Battista Rubini born in? A: Romano di Lombardia\nQ: Which city was Matthew C. Perry born in? A: Newport\nQ: Which city was Matthias Flacius born in? A: Labin",
+        "question": "Where was the creator of Aslan born?",
+        "model_responses": {
+            "top_k_tokens": {
+                " London": 0.05005580559372902,
+                " N": 0.02768227644264698,
+                " T": 0.022415651008486748,
+                " Oxford": 0.020193131640553474,
+                " The": 0.019743239507079124,
+                " Russia": 0.015037520788609982,
+                " England": 0.013162573799490929,
+                " C": 0.012144910171627998,
+                " the": 0.012053915299475193,
+                " Moscow": 0.011826555244624615
+            },
+            "greedy": " London\nQ: Where was the creator of the"
+        },
+        "answer": "Belfast",
+        "answer_alias": [
+            "Beal Feirste",
+            "B\u00e9al Feirste",
+            "Belfast, Ireland"
+        ],
+        "correct": false
+    }
+]

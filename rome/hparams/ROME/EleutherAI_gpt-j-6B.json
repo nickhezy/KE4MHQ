@@ -1,6 +1,8 @@
 {
   "layers": [
-    []
+    [
+      13
+    ]
   ],
   "tgt_first_tok_prob": 0.2,
   "fact_token": "subject_last",
