@@ -161,23 +161,30 @@ def test_multi_rome(
 
 
 
-layers_sweep = [
-    [[5,8,11,15,17,20]],
+# layers_sweep = [
+#     [[5,8,11,15,17,20]],
 
 
-    # [[5, 20]]
+#     # [[5, 20]]
 
-    # [[5,10,20]]
-    # [[10,15,20]],
+#     # [[5,10,20]]
+#     # [[10,15,20]],
     
 
-]
-hop_sweep = [
-    "hop2",
-    "hop1", 
-    # "both"
-]
+# ]
+# hop_sweep = [
+#     "hop2",
+#     "hop1", 
+#     # "both"
+# ]
 
-for layers in layers_sweep:
-    for hop in hop_sweep:
-        test_multi_rome(layers_to_edit=layers, edit_hop=hop)
+# for layers in layers_sweep:
+#     for hop in hop_sweep:
+#         test_multi_rome(layers_to_edit=layers, edit_hop=hop)
+
+
+
+test_multi_rome(layers_to_edit=[[5,8,11,15,17,20]], edit_hop="hop1")
+test_multi_rome(layers_to_edit=[[5,8,11,13,16,18,20]],, edit_hop="hop1")
+test_multi_rome(layers_to_edit=[[5,8,11,15,17,20]], edit_hop="hop2",continue_from=200)
+test_multi_rome(layers_to_edit=[[5,8,11,13,16,18,20]],, edit_hop="hop1",continue_from=200)
