@@ -186,5 +186,5 @@ def test_multi_rome(
 
 test_multi_rome(layers_to_edit=[[5,8,11,15,17,20]], edit_hop="hop1")
 test_multi_rome(layers_to_edit=[[5,8,11,13,16,18,20]],, edit_hop="hop1")
-test_multi_rome(layers_to_edit=[[5,8,11,15,17,20]], edit_hop="hop2",continue_from=200)
-test_multi_rome(layers_to_edit=[[5,8,11,13,16,18,20]],, edit_hop="hop1",continue_from=200)
+test_multi_rome(layers_to_edit=[[5,8,11,15,17,20]], edit_hop="hop2",continue_from=240)
+test_multi_rome(layers_to_edit=[[5,8,11,13,16,18,20]],, edit_hop="hop1",continue_from=240)
